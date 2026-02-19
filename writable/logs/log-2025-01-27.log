@@ -1,0 +1,28 @@
+CRITICAL - 2025-01-27 10:19:10 --> Undefined array key 0
+in APPPATH/Controllers/Evaluacion.php on line 1092.
+ 1 APPPATH/Controllers/Evaluacion.php(1092): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Evaluacion.php', 1092)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Evaluacion->getListadoAvanceUgel()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-27 10:19:25 --> Undefined array key 0
+in APPPATH/Controllers/Informes2.php on line 73.
+ 1 APPPATH/Controllers/Informes2.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Informes2.php', 73)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->getInformesUGEL()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-27 15:24:21 --> Undefined array key 0
+in APPPATH/Controllers/Informes2.php on line 73.
+ 1 APPPATH/Controllers/Informes2.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Informes2.php', 73)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->getInformesUGEL()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-27 15:32:59 --> Undefined array key 0
+in APPPATH/Controllers/Informes2.php on line 362.
+ 1 APPPATH/Controllers/Informes2.php(362): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Informes2.php', 362)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

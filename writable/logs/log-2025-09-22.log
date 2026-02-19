@@ -1,0 +1,802 @@
+CRITICAL - 2025-09-22 08:06:27 --> Undefined array key "email"
+in APPPATH\Controllers\Eval1.php on line 327.
+ 1 APPPATH\Controllers\Eval1.php(327): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Controllers\\Eval1.php', 327)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postRegEstu()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-22 08:06:46 --> Undefined array key "email"
+in APPPATH\Controllers\Eval1.php on line 327.
+ 1 APPPATH\Controllers\Eval1.php(327): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Controllers\\Eval1.php', 327)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postRegEstu()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-22 08:29:27 --> Undefined property: stdClass::$resp_profesor
+in APPPATH\Controllers\Eval1.php on line 585.
+ 1 APPPATH\Controllers\Eval1.php(585): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$resp_profesor', 'APPPATH\\Controllers\\Eval1.php', 585)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerAlter()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-22 08:30:32 --> Undefined array key "prof"
+in APPPATH\Controllers\Eval1.php on line 762.
+ 1 APPPATH\Controllers\Eval1.php(762): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prof"', 'APPPATH\\Controllers\\Eval1.php', 762)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postSetAlter()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-22 08:31:42 --> Undefined array key "prof"
+in APPPATH\Controllers\Eval1.php on line 764.
+ 1 APPPATH\Controllers\Eval1.php(764): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prof"', 'APPPATH\\Controllers\\Eval1.php', 764)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postSetAlter()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-22 08:31:52 --> Undefined array key "prof"
+in APPPATH\Controllers\Eval1.php on line 764.
+ 1 APPPATH\Controllers\Eval1.php(764): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prof"', 'APPPATH\\Controllers\\Eval1.php', 764)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postSetAlter()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-22 09:57:59 --> mysqli_sql_exception: Unknown column 'i.iiee_nombre' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `i`.`iie...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`iie...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`iie...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`iie...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(854): App\Models\Generaldb->selectSomeDataJoin('\r\n             ...', 'eval2_respuesta...', '\r\n             ...', 'r.resp_bien DES...', false, false, Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-09-22 09:57:59 --> Unknown column 'i.iiee_nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `i`.`iiee_nombre`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 2
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `r`.`resp_bien` DESC, (r.resp_mal + r.resp_vacio) ASC, `u`.`usua_paterno` ASC, `u`.`usua_materno` ASC, `u`.`usua_nombres` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`iiee_nombre`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 2
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `r`.`resp_bien` DESC, (r.resp_mal + r.resp_vacio) ASC, `u`.`usua_paterno` ASC, `u`.`usua_materno` ASC, `u`.`usua_nombres` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`iiee_nombre`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 2
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `r`.`resp_bien` DESC, (r.resp_mal + r.resp_vacio) ASC, `u`.`usua_paterno` ASC, `u`.`usua_materno` ASC, `u`.`usua_nombres` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`iiee_nombre`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 2
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `r`.`resp_bien` DESC, (r.resp_mal + r.resp_vacio) ASC, `u`.`usua_paterno` ASC, `u`.`usua_materno` ASC, `u`.`usua_nombres` ASC', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Eval1.php(854): App\Models\Generaldb->selectSomeDataJoin('
+                i.iiee_nombre,
+                u.usua_ide as id,
+                concat(u.usua_paterno,\' \',u.usua_materno,\', \',u.usua_nombres) as nombre,
+                r.resp_bien as bien,
+                r.resp_mal as mal,
+                r.resp_vacio as vacio
+            ', 'eval2_respuestas r', '
+                r.resp_eval2_ide = 2
+                AND
+                u.usua_ugel_ide = 210002
+            ', 'r.resp_bien DESC, (r.resp_mal + r.resp_vacio) ASC, u.usua_paterno ASC, u.usua_materno ASC, u.usua_nombres ASC', false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-22 10:00:29 --> mysqli_sql_exception: Unknown column '2*r.ressp_bien-r.resp_mal' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `i`.`iie...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`iie...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`iie...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`iie...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(857): App\Models\Generaldb->selectSomeDataJoin('\r\n             ...', 'eval2_respuesta...', '\r\n             ...', '\r\n             ...', false, false, Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-09-22 10:00:29 --> Unknown column '2*r.ressp_bien-r.resp_mal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`, `2*r`.`ressp_bien-r`.`resp_mal` as `puntaje`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 2
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `puntaje` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`, `2*r`.`ressp_bien-r`.`resp_mal` as `puntaje`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 2
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `puntaje` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`, `2*r`.`ressp_bien-r`.`resp_mal` as `puntaje`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 2
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `puntaje` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`, `2*r`.`ressp_bien-r`.`resp_mal` as `puntaje`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 2
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `puntaje` ASC', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Eval1.php(857): App\Models\Generaldb->selectSomeDataJoin('
+                i.iiee_cen_edu,
+                u.usua_ide as id,
+                concat(u.usua_paterno,\' \',u.usua_materno,\', \',u.usua_nombres) as nombre,
+                r.resp_bien as bien,
+                r.resp_mal as mal,
+                r.resp_vacio as vacio,
+                2*r.ressp_bien-r.resp_mal as puntaje
+            ', 'eval2_respuestas r', '
+                r.resp_eval2_ide = 2
+                AND
+                u.usua_ugel_ide = 210002
+            ', '
+                puntaje ASC
+            ', false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-22 10:00:45 --> mysqli_sql_exception: Unknown column '2*r.ressp_bien-r.resp_mal' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `i`.`iie...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`iie...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`iie...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`iie...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(857): App\Models\Generaldb->selectSomeDataJoin('\r\n             ...', 'eval2_respuesta...', '\r\n             ...', '\r\n             ...', false, false, Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-09-22 10:00:45 --> Unknown column '2*r.ressp_bien-r.resp_mal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`, `2*r`.`ressp_bien-r`.`resp_mal` as `puntaje`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 1
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `2*r`.`ressp_bien-r`.`resp_mal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`, `2*r`.`ressp_bien-r`.`resp_mal` as `puntaje`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 1
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `2*r`.`ressp_bien-r`.`resp_mal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`, `2*r`.`ressp_bien-r`.`resp_mal` as `puntaje`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 1
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `2*r`.`ressp_bien-r`.`resp_mal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`, `2*r`.`ressp_bien-r`.`resp_mal` as `puntaje`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 1
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `2*r`.`ressp_bien-r`.`resp_mal` ASC', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Eval1.php(857): App\Models\Generaldb->selectSomeDataJoin('
+                i.iiee_cen_edu,
+                u.usua_ide as id,
+                concat(u.usua_paterno,\' \',u.usua_materno,\', \',u.usua_nombres) as nombre,
+                r.resp_bien as bien,
+                r.resp_mal as mal,
+                r.resp_vacio as vacio,
+                2*r.ressp_bien-r.resp_mal as puntaje
+            ', 'eval2_respuestas r', '
+                r.resp_eval2_ide = 1
+                AND
+                u.usua_ugel_ide = 210002
+            ', '
+                2*r.ressp_bien-r.resp_mal ASC
+            ', false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-22 10:00:55 --> mysqli_sql_exception: Unknown column '2*r.ressp_bien-r.resp_mal' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `i`.`iie...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`iie...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`iie...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`iie...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(857): App\Models\Generaldb->selectSomeDataJoin('\r\n             ...', 'eval2_respuesta...', '\r\n             ...', '\r\n             ...', false, false, Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-09-22 10:00:55 --> Unknown column '2*r.ressp_bien-r.resp_mal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`, `2*r`.`ressp_bien-r`.`resp_mal` as `puntaje`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 2
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `2*r`.`ressp_bien-r`.`resp_mal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`, `2*r`.`ressp_bien-r`.`resp_mal` as `puntaje`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 2
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `2*r`.`ressp_bien-r`.`resp_mal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`, `2*r`.`ressp_bien-r`.`resp_mal` as `puntaje`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 2
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `2*r`.`ressp_bien-r`.`resp_mal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`, `2*r`.`ressp_bien-r`.`resp_mal` as `puntaje`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 2
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `2*r`.`ressp_bien-r`.`resp_mal` ASC', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Eval1.php(857): App\Models\Generaldb->selectSomeDataJoin('
+                i.iiee_cen_edu,
+                u.usua_ide as id,
+                concat(u.usua_paterno,\' \',u.usua_materno,\', \',u.usua_nombres) as nombre,
+                r.resp_bien as bien,
+                r.resp_mal as mal,
+                r.resp_vacio as vacio,
+                2*r.ressp_bien-r.resp_mal as puntaje
+            ', 'eval2_respuestas r', '
+                r.resp_eval2_ide = 2
+                AND
+                u.usua_ugel_ide = 210002
+            ', '
+                2*r.ressp_bien-r.resp_mal ASC
+            ', false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-22 10:02:00 --> mysqli_sql_exception: Unknown column '2*r.resp_bien-r.resp_mal' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `i`.`iie...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`iie...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`iie...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`iie...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(857): App\Models\Generaldb->selectSomeDataJoin('\r\n             ...', 'eval2_respuesta...', '\r\n             ...', '\r\n             ...', false, false, Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-09-22 10:02:00 --> Unknown column '2*r.resp_bien-r.resp_mal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`, `2*r`.`resp_bien-r`.`resp_mal` as `puntaje`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 1
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `2*r`.`resp_bien-r`.`resp_mal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`, `2*r`.`resp_bien-r`.`resp_mal` as `puntaje`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 1
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `2*r`.`resp_bien-r`.`resp_mal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`, `2*r`.`resp_bien-r`.`resp_mal` as `puntaje`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 1
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `2*r`.`resp_bien-r`.`resp_mal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`, `2*r`.`resp_bien-r`.`resp_mal` as `puntaje`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 1
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `2*r`.`resp_bien-r`.`resp_mal` ASC', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Eval1.php(857): App\Models\Generaldb->selectSomeDataJoin('
+                i.iiee_cen_edu,
+                u.usua_ide as id,
+                concat(u.usua_paterno,\' \',u.usua_materno,\', \',u.usua_nombres) as nombre,
+                r.resp_bien as bien,
+                r.resp_mal as mal,
+                r.resp_vacio as vacio,
+                2*r.resp_bien-r.resp_mal as puntaje
+            ', 'eval2_respuestas r', '
+                r.resp_eval2_ide = 1
+                AND
+                u.usua_ugel_ide = 210002
+            ', '
+                2*r.resp_bien-r.resp_mal ASC
+            ', false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-22 10:02:38 --> mysqli_sql_exception: Unknown column '2*r.resp_bien-r.resp_mal' in 'order clause' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `i`.`iie...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`iie...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`iie...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`iie...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(856): App\Models\Generaldb->selectSomeDataJoin('\r\n             ...', 'eval2_respuesta...', '\r\n             ...', '\r\n             ...', false, false, Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-09-22 10:02:38 --> Unknown column '2*r.resp_bien-r.resp_mal' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 2
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `2*r`.`resp_bien-r`.`resp_mal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 2
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `2*r`.`resp_bien-r`.`resp_mal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 2
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `2*r`.`resp_bien-r`.`resp_mal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 2
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `2*r`.`resp_bien-r`.`resp_mal` ASC', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Eval1.php(856): App\Models\Generaldb->selectSomeDataJoin('
+                i.iiee_cen_edu,
+                u.usua_ide as id,
+                concat(u.usua_paterno,\' \',u.usua_materno,\', \',u.usua_nombres) as nombre,
+                r.resp_bien as bien,
+                r.resp_mal as mal,
+                r.resp_vacio as vacio
+            ', 'eval2_respuestas r', '
+                r.resp_eval2_ide = 2
+                AND
+                u.usua_ugel_ide = 210002
+            ', '
+                2*r.resp_bien-r.resp_mal ASC
+            ', false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-22 10:03:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`r`.`resp_mal` ASC' at line 10 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `i`.`iie...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`iie...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`iie...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`iie...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(856): App\Models\Generaldb->selectSomeDataJoin('\r\n             ...', 'eval2_respuesta...', '\r\n             ...', '\r\n             ...', false, false, Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-09-22 10:03:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`r`.`resp_mal` ASC' at line 10
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 1
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `2 * r`.`resp_bien -` `r`.`resp_mal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 1
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `2 * r`.`resp_bien -` `r`.`resp_mal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 1
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `2 * r`.`resp_bien -` `r`.`resp_mal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, concat(u.usua_paterno, \' \', `u`.`usua_materno`, \', \', u.usua_nombres) as nombre, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 1
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY `2 * r`.`resp_bien -` `r`.`resp_mal` ASC', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Eval1.php(856): App\Models\Generaldb->selectSomeDataJoin('
+                i.iiee_cen_edu,
+                u.usua_ide as id,
+                concat(u.usua_paterno,\' \',u.usua_materno,\', \',u.usua_nombres) as nombre,
+                r.resp_bien as bien,
+                r.resp_mal as mal,
+                r.resp_vacio as vacio
+            ', 'eval2_respuestas r', '
+                r.resp_eval2_ide = 1
+                AND
+                u.usua_ugel_ide = 210002
+            ', '
+                2 * r.resp_bien - r.resp_mal ASC
+            ', false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-22 10:15:55 --> Call to undefined method App\Libraries\Componente::FilaTabla()
+in APPPATH\Controllers\Eval1.php on line 866.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-22 10:18:46 --> Undefined array key "name"
+in APPPATH\Views\componente\tabla.php on line 4.
+ 1 APPPATH\Views\componente\tabla.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Views\\componente\\tabla.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componente\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componente/tabla', [], true)
+ 5 APPPATH\Libraries\Componente.php(43): view('componente/tabla', [...])
+ 6 APPPATH\Controllers\Eval1.php(892): App\Libraries\Componente::Tabla('tabla-ranking', [...], [...], true, true, true, 'thead-light', 'D:\\wamp\\www\\monitoreo3', 'D:\\wamp\\www\\monitoreo3')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-22 10:18:54 --> Undefined array key "name"
+in APPPATH\Views\componente\tabla.php on line 4.
+ 1 APPPATH\Views\componente\tabla.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Views\\componente\\tabla.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componente\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componente/tabla', [], true)
+ 5 APPPATH\Libraries\Componente.php(43): view('componente/tabla', [...])
+ 6 APPPATH\Controllers\Eval1.php(892): App\Libraries\Componente::Tabla('tabla-ranking', [...], [...], true, true, true, 'thead-light', 'D:\\wamp\\www\\monitoreo3', 'D:\\wamp\\www\\monitoreo3')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-22 10:22:26 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\componente\tabla.php on line 40.
+ 1 APPPATH\Views\componente\tabla.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\componente\\tabla.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componente\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componente/tabla', [], true)
+ 5 APPPATH\Libraries\Componente.php(43): view('componente/tabla', [...])
+ 6 APPPATH\Controllers\Eval1.php(891): App\Libraries\Componente::Tabla('tabla-ranking', [...], [...], true, true, true, 'thead-light', 'D:\\wamp\\www\\monitoreo3', 'D:\\wamp\\www\\monitoreo3')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-22 10:23:02 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\componente\tabla.php on line 40.
+ 1 APPPATH\Views\componente\tabla.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\componente\\tabla.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componente\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componente/tabla', [], true)
+ 5 APPPATH\Libraries\Componente.php(43): view('componente/tabla', [...])
+ 6 APPPATH\Controllers\Eval1.php(891): App\Libraries\Componente::Tabla('tabla-ranking', [...], [...], true, true, true, 'thead-light', 'D:\\wamp\\www\\monitoreo3', 'D:\\wamp\\www\\monitoreo3')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-22 10:30:55 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\componente\tabla.php on line 40.
+ 1 APPPATH\Views\componente\tabla.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\componente\\tabla.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componente\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componente/tabla', [], true)
+ 5 APPPATH\Libraries\Componente.php(43): view('componente/tabla', [...])
+ 6 APPPATH\Controllers\Eval1.php(927): App\Libraries\Componente::Tabla('tabla-ranking', [...], [...], true, true, true, 'thead-light', 'D:\\wamp\\www\\monitoreo3', 'D:\\wamp\\www\\monitoreo3')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-22 10:31:52 --> Undefined array key "usua_ide"
+in APPPATH\Views\componente\tabla.php on line 29.
+ 1 APPPATH\Views\componente\tabla.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usua_ide"', 'APPPATH\\Views\\componente\\tabla.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componente\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componente/tabla', [], true)
+ 5 APPPATH\Libraries\Componente.php(43): view('componente/tabla', [...])
+ 6 APPPATH\Controllers\Eval1.php(927): App\Libraries\Componente::Tabla('tabla-ranking', [...], [...], true, true, true, 'thead-light', 'D:\\wamp\\www\\monitoreo3', 'D:\\wamp\\www\\monitoreo3')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-22 10:45:17 --> Undefined array key "usua_user"
+in APPPATH\Views\componente\tabla.php on line 29.
+ 1 APPPATH\Views\componente\tabla.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usua_user"', 'APPPATH\\Views\\componente\\tabla.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componente\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componente/tabla', [], true)
+ 5 APPPATH\Libraries\Componente.php(43): view('componente/tabla', [...])
+ 6 APPPATH\Controllers\Eval1.php(913): App\Libraries\Componente::Tabla('tabla-ranking', [...], [...], true, true, true, 'thead-light', 'D:\\wamp\\www\\monitoreo3', 'D:\\wamp\\www\\monitoreo3')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-22 10:45:26 --> Undefined array key "usua_user"
+in APPPATH\Views\componente\tabla.php on line 29.
+ 1 APPPATH\Views\componente\tabla.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usua_user"', 'APPPATH\\Views\\componente\\tabla.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componente\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componente/tabla', [], true)
+ 5 APPPATH\Libraries\Componente.php(43): view('componente/tabla', [...])
+ 6 APPPATH\Controllers\Eval1.php(913): App\Libraries\Componente::Tabla('tabla-ranking', [...], [...], true, true, true, 'thead-light', 'D:\\wamp\\www\\monitoreo3', 'D:\\wamp\\www\\monitoreo3')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-22 10:46:15 --> Undefined array key "usua_user"
+in APPPATH\Views\componente\tabla.php on line 29.
+ 1 APPPATH\Views\componente\tabla.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usua_user"', 'APPPATH\\Views\\componente\\tabla.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componente\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componente/tabla', [], true)
+ 5 APPPATH\Libraries\Componente.php(43): view('componente/tabla', [...])
+ 6 APPPATH\Controllers\Eval1.php(915): App\Libraries\Componente::Tabla('tabla-ranking', [...], [...], true, true, true, 'thead-light', 'D:\\wamp\\www\\monitoreo3', 'D:\\wamp\\www\\monitoreo3')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-22 10:49:12 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\componente\tabla.php on line 40.
+ 1 APPPATH\Views\componente\tabla.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\componente\\tabla.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componente\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componente/tabla', [], true)
+ 5 APPPATH\Libraries\Componente.php(43): view('componente/tabla', [...])
+ 6 APPPATH\Controllers\Eval1.php(908): App\Libraries\Componente::Tabla('tabla-ranking', [...], [...], true, true, true, 'thead-light', 'D:\\wamp\\www\\monitoreo3', 'D:\\wamp\\www\\monitoreo3')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-22 10:49:18 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\componente\tabla.php on line 40.
+ 1 APPPATH\Views\componente\tabla.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\componente\\tabla.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componente\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componente/tabla', [], true)
+ 5 APPPATH\Libraries\Componente.php(43): view('componente/tabla', [...])
+ 6 APPPATH\Controllers\Eval1.php(908): App\Libraries\Componente::Tabla('tabla-ranking', [...], [...], true, true, true, 'thead-light', 'D:\\wamp\\www\\monitoreo3', 'D:\\wamp\\www\\monitoreo3')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-22 10:51:18 --> Class "App\Controllers\Componentes" not found
+in APPPATH\Controllers\Eval1.php on line 898.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-22 11:44:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY (2 * r.resp' at line 7 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `i`.`iie...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`iie...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`iie...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`iie...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(860): App\Models\Generaldb->selectSomeDataJoin('\r\n             ...', 'eval2_respuesta...', '\r\n             ...', '\r\n             ...', false, false, Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-09-22 11:44:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY (2 * r.resp' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, `u`.`usua_paterno`, `u`.`usua_materno`, `u`.`usua_nombres`, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`, `r`.`resp_ini`, `r`.`resp_fin`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY (2 * r.resp_bien - r.resp_mal), TIMEDIFF(resp_fin, resp_ini) ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, `u`.`usua_paterno`, `u`.`usua_materno`, `u`.`usua_nombres`, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`, `r`.`resp_ini`, `r`.`resp_fin`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY (2 * r.resp_bien - r.resp_mal), TIMEDIFF(resp_fin, resp_ini) ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, `u`.`usua_paterno`, `u`.`usua_materno`, `u`.`usua_nombres`, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`, `r`.`resp_ini`, `r`.`resp_fin`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY (2 * r.resp_bien - r.resp_mal), TIMEDIFF(resp_fin, resp_ini) ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`iiee_cen_edu`, `u`.`usua_ide` as `id`, `u`.`usua_paterno`, `u`.`usua_materno`, `u`.`usua_nombres`, `r`.`resp_bien` as `bien`, `r`.`resp_mal` as `mal`, `r`.`resp_vacio` as `vacio`, `r`.`resp_ini`, `r`.`resp_fin`
+FROM `eval2_respuestas` `r`
+JOIN `usuarios` `u` ON `r`.`resp_usua_ide` = `u`.`usua_ide`
+JOIN `iiee` `i` ON `u`.`usua_iiee_ide` = `i`.`iiee_ide`
+WHERE 
+                r.resp_eval2_ide = 
+                AND
+                u.usua_ugel_ide = 210002
+            
+ORDER BY (2 * r.resp_bien - r.resp_mal), TIMEDIFF(resp_fin, resp_ini) ASC', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Eval1.php(860): App\Models\Generaldb->selectSomeDataJoin('
+                i.iiee_cen_edu,
+                u.usua_ide as id,
+                u.usua_paterno,
+                u.usua_materno,
+                u.usua_nombres,
+                r.resp_bien as bien,
+                r.resp_mal as mal,
+                r.resp_vacio as vacio,
+                r.resp_ini,
+                r.resp_fin
+            ', 'eval2_respuestas r', '
+                r.resp_eval2_ide = 
+                AND
+                u.usua_ugel_ide = 210002
+            ', '
+                (2 * r.resp_bien - r.resp_mal), TIMEDIFF(resp_fin,resp_ini) ASC
+            ', false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-22 11:46:06 --> Undefined array key "resp_bien"
+in APPPATH\Views\componente\tabla.php on line 28.
+ 1 APPPATH\Views\componente\tabla.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "resp_bien"', 'APPPATH\\Views\\componente\\tabla.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componente\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componente/tabla', [], true)
+ 5 APPPATH\Libraries\Componente.php(43): view('componente/tabla', [...])
+ 6 APPPATH\Controllers\Eval1.php(904): App\Libraries\Componente::Tabla('tabla_ranking_eval', [...], [...], 5, 'true', 'true', 'primary', [], 'D:\\wamp\\www\\monitoreo3')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

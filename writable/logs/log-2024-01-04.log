@@ -1,0 +1,494 @@
+CRITICAL - 2024-01-04 09:30:48 --> Undefined property: App\Controllers\Informes2::$session
+in APPPATH\Controllers\Informes2.php on line 308.
+ 1 APPPATH\Controllers\Informes2.php(308): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Informes2::$session', 'APPPATH\\Controllers\\Informes2.php', 308)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 09:49:19 --> Class "App\Controllers\Componentes" not found
+in APPPATH\Controllers\Informes2.php on line 338.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 10:07:36 --> Class "App\Controllers\Componentes" not found
+in APPPATH\Controllers\Informes2.php on line 341.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 10:07:49 --> Class "App\Controllers\Componentes" not found
+in APPPATH\Controllers\Informes2.php on line 341.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-04 10:09:23 --> mysqli_sql_exception: Unknown column 'i.iiee_esta_ide' in 'where clause' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Mgrilla.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Libraries\Lgrilla.php(182): App\Models\Mgrilla::getTotal('com_subidos', Array, Array, '(subi_archivo l...')
+#6 D:\wamp\www\simondrep\app\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, '')
+#7 D:\wamp\www\simondrep\app\Controllers\Informes2.php(359): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+#9 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+#10 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-04 10:09:23 --> Unknown column 'i.iiee_esta_ide' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 21
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `u`.`ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = \'210001\'
+AND `iiee_nive_ide` = \'11\'
+AND `i`.`iiee_esta_ide` = 1
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 21
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `u`.`ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = \'210001\'
+AND `iiee_nive_ide` = \'11\'
+AND `i`.`iiee_esta_ide` = 1
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 21
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `u`.`ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = \'210001\'
+AND `iiee_nive_ide` = \'11\'
+AND `i`.`iiee_esta_ide` = 1
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 21
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `u`.`ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = :iiee_ugel_ide:
+AND `iiee_nive_ide` = :iiee_nive_ide:
+AND `i`.`iiee_esta_ide` = :i.iiee_esta_ide:
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')', [...], false)
+ 5 APPPATH\Models\Mgrilla.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Lgrilla.php(182): App\Models\Mgrilla::getTotal('com_subidos', [...], [...], '(subi_archivo like \'%%\' OR subi_create_at like \'%%\' OR iiee_codmod like \'%%\' OR iiee_cen_edu like \'%%\' OR ugel_nombre like \'%%\' OR nive_nombre like \'%%\' OR ubig_dpto like \'%%\' OR ubig_prov like \'%%\' OR ubig_dist like \'%%\' OR ccpp_nombre like \'%%\')')
+ 7 APPPATH\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, 'D:\\wamp\\www\\simondrep')
+ 8 APPPATH\Controllers\Informes2.php(359): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-04 10:10:14 --> mysqli_sql_exception: Unknown column 'u.ubig_ide' in 'on clause' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Mgrilla.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Libraries\Lgrilla.php(182): App\Models\Mgrilla::getTotal('com_subidos', Array, Array, '(subi_archivo l...')
+#6 D:\wamp\www\simondrep\app\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, '')
+#7 D:\wamp\www\simondrep\app\Controllers\Informes2.php(359): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+#9 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+#10 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-04 10:10:14 --> Unknown column 'u.ubig_ide' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 21
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `u`.`ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = \'210001\'
+AND `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 1
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 21
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `u`.`ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = \'210001\'
+AND `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 1
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 21
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `u`.`ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = \'210001\'
+AND `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 1
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 21
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `u`.`ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = :iiee_ugel_ide:
+AND `iiee_nive_ide` = :iiee_nive_ide:
+AND `iiee_esta_ide` = :iiee_esta_ide:
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')', [...], false)
+ 5 APPPATH\Models\Mgrilla.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Lgrilla.php(182): App\Models\Mgrilla::getTotal('com_subidos', [...], [...], '(subi_archivo like \'%%\' OR subi_create_at like \'%%\' OR iiee_codmod like \'%%\' OR iiee_cen_edu like \'%%\' OR ugel_nombre like \'%%\' OR nive_nombre like \'%%\' OR ubig_dpto like \'%%\' OR ubig_prov like \'%%\' OR ubig_dist like \'%%\' OR ccpp_nombre like \'%%\')')
+ 7 APPPATH\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, 'D:\\wamp\\www\\simondrep')
+ 8 APPPATH\Controllers\Informes2.php(359): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-04 10:10:35 --> mysqli_sql_exception: Unknown column 'segu_ide' in 'order clause' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `subi_ar...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `subi_ar...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `subi_ar...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `subi_ar...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Mgrilla.php(74): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Libraries\Lgrilla.php(202): App\Models\Mgrilla::getData('subi_archivo,su...', 'com_subidos', Array, Array, '(subi_archivo l...', 'segu_ide desc', 0, 10)
+#6 D:\wamp\www\simondrep\app\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, '')
+#7 D:\wamp\www\simondrep\app\Controllers\Informes2.php(359): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+#9 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+#10 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-04 10:10:35 --> Unknown column 'segu_ide' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `subi_archivo`, `subi_create_at`, `iiee_codmod`, `iiee_cen_edu`, `ugel_nombre`, `nive_nombre`, `ubig_dpto`, `ubig_prov`, `ubig_dist`, `ccpp_nombre`
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 21
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = \'210001\'
+AND `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 1
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')
+ORDER BY `segu_ide` desc
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `subi_archivo`, `subi_create_at`, `iiee_codmod`, `iiee_cen_edu`, `ugel_nombre`, `nive_nombre`, `ubig_dpto`, `ubig_prov`, `ubig_dist`, `ccpp_nombre`
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 21
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = \'210001\'
+AND `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 1
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')
+ORDER BY `segu_ide` desc
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `subi_archivo`, `subi_create_at`, `iiee_codmod`, `iiee_cen_edu`, `ugel_nombre`, `nive_nombre`, `ubig_dpto`, `ubig_prov`, `ubig_dist`, `ccpp_nombre`
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 21
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = \'210001\'
+AND `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 1
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')
+ORDER BY `segu_ide` desc
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `subi_archivo`, `subi_create_at`, `iiee_codmod`, `iiee_cen_edu`, `ugel_nombre`, `nive_nombre`, `ubig_dpto`, `ubig_prov`, `ubig_dist`, `ccpp_nombre`
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 21
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = :iiee_ugel_ide:
+AND `iiee_nive_ide` = :iiee_nive_ide:
+AND `iiee_esta_ide` = :iiee_esta_ide:
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')
+ORDER BY `segu_ide` desc
+ LIMIT 10', [...], false)
+ 5 APPPATH\Models\Mgrilla.php(74): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Lgrilla.php(202): App\Models\Mgrilla::getData('subi_archivo,subi_create_at,iiee_codmod,iiee_cen_edu,ugel_nombre,nive_nombre,ubig_dpto,ubig_prov,ubig_dist,ccpp_nombre', 'com_subidos', [...], [...], '(subi_archivo like \'%%\' OR subi_create_at like \'%%\' OR iiee_codmod like \'%%\' OR iiee_cen_edu like \'%%\' OR ugel_nombre like \'%%\' OR nive_nombre like \'%%\' OR ubig_dpto like \'%%\' OR ubig_prov like \'%%\' OR ubig_dist like \'%%\' OR ccpp_nombre like \'%%\')', 'segu_ide desc', 0, 10)
+ 7 APPPATH\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, 'D:\\wamp\\www\\simondrep')
+ 8 APPPATH\Controllers\Informes2.php(359): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 10:32:24 --> Undefined array key "expe_server"
+in APPPATH\Views\grilla\vdatagrilla.php on line 19.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "expe_server"', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(361): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_recibir_expe')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 10:33:27 --> Undefined array key "expe_server"
+in APPPATH\Views\grilla\vdatagrilla.php on line 19.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "expe_server"', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(361): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_recibir_expe')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 10:34:43 --> Undefined array key "expe_server"
+in APPPATH\Views\grilla\vdatagrilla.php on line 19.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "expe_server"', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(361): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_recibir_expe')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 10:40:25 --> Undefined array key "expe_server"
+in APPPATH\Views\grilla\vdatagrilla.php on line 20.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "expe_server"', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(361): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_data_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 10:40:28 --> Undefined array key "expe_server"
+in APPPATH\Views\grilla\vdatagrilla.php on line 20.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "expe_server"', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(361): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_data_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 10:40:50 --> explode(): Passing null to parameter #2 ($string) of type string is deprecated
+in APPPATH\Views\grilla\vdatagrilla.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'explode(): Passing null to parameter #2 ($string) of type string is deprecated', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 22)
+ 2 APPPATH\Views\grilla\vdatagrilla.php(22): explode(',', null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 6 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 7 APPPATH\Controllers\Informes2.php(361): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_data_informes')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 10:40:53 --> explode(): Passing null to parameter #2 ($string) of type string is deprecated
+in APPPATH\Views\grilla\vdatagrilla.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'explode(): Passing null to parameter #2 ($string) of type string is deprecated', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 22)
+ 2 APPPATH\Views\grilla\vdatagrilla.php(22): explode(',', null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 6 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 7 APPPATH\Controllers\Informes2.php(361): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_data_informes')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 10:41:43 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\grilla\vdatagrilla.php on line 24.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(361): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_data_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 10:42:35 --> Undefined variable $base
+in APPPATH\Views\grilla\vdatagrilla.php on line 25.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(361): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_data_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 10:42:38 --> Undefined variable $base
+in APPPATH\Views\grilla\vdatagrilla.php on line 25.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(361): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_data_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 12:55:16 --> Undefined variable $arch
+in APPPATH\Views\grilla\vdatagrilla.php on line 27.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $arch', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(361): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_data_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 12:55:21 --> Undefined variable $arch
+in APPPATH\Views\grilla\vdatagrilla.php on line 27.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $arch', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(361): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_data_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 12:55:37 --> Undefined variable $arch
+in APPPATH\Views\grilla\vdatagrilla.php on line 27.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $arch', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(361): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_data_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 13:19:26 --> Undefined variable $archivos
+in APPPATH\Views\grilla\vdatagrilla.php on line 49.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $archivos', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(362): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 13:19:29 --> Undefined variable $archivos
+in APPPATH\Views\grilla\vdatagrilla.php on line 49.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $archivos', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(362): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 13:19:48 --> Undefined variable $archivos
+in APPPATH\Views\grilla\vdatagrilla.php on line 49.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $archivos', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(362): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 13:20:00 --> Undefined variable $archivos
+in APPPATH\Views\grilla\vdatagrilla.php on line 49.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $archivos', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(362): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 13:20:28 --> Undefined variable $archivos
+in APPPATH\Views\grilla\vdatagrilla.php on line 49.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $archivos', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(362): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 13:23:29 --> link() expects exactly 2 arguments, 4 given
+in APPPATH\Views\grilla\vdatagrilla.php on line 49.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(49): link('ti-file', 'secondary', 'Descargar', 'http://localhost/simondrep/archivos/1704395896_977b3a82dfd4bc53cf0d.pdf')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(362): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:38:12 --> Undefined array key "pag"
+in APPPATH\Views\grilla\vdatagrilla.php on line 11.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pag"', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(362): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 16:38:33 --> Undefined array key "pag"
+in APPPATH\Views\grilla\vdatagrilla.php on line 11.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pag"', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(362): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

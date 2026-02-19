@@ -1,0 +1,128 @@
+CRITICAL - 2025-07-11 00:29:03 --> Undefined array key "orden"
+in APPPATH/Controllers/Monitoreo.php on line 370.
+ 1 APPPATH/Controllers/Monitoreo.php(370): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "orden"', 'APPPATH/Controllers/Monitoreo.php', 370)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postActualizarNumItem()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-11 00:30:59 --> Undefined variable $asp_ide
+in APPPATH/Controllers/Monitoreo.php on line 182.
+ 1 APPPATH/Controllers/Monitoreo.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asp_ide', 'APPPATH/Controllers/Monitoreo.php', 182)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postActualizarInstrumento()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-11 00:31:12 --> Undefined variable $asp_ide
+in APPPATH/Controllers/Monitoreo.php on line 182.
+ 1 APPPATH/Controllers/Monitoreo.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asp_ide', 'APPPATH/Controllers/Monitoreo.php', 182)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postActualizarInstrumento()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-11 00:35:53 --> Undefined variable $aspects
+in APPPATH/Views/monitoreo/instrumento/editar_aspectos.php on line 63.
+ 1 APPPATH/Views/monitoreo/instrumento/editar_aspectos.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $aspects', 'APPPATH/Views/monitoreo/instrumento/editar_aspectos.php', 63)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/monitoreo/instrumento/editar_aspectos.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('monitoreo/instrumento/editar_aspectos', [], true)
+ 5 APPPATH/Controllers/Monitoreo.php(193): view('monitoreo/instrumento/editar_aspectos', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postActualizarInstrumento()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-11 00:36:18 --> syntax error, unexpected single-quoted string "aspects", expecting ")"
+in APPPATH/Controllers/Monitoreo.php on line 184.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Monitoreo.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Monitoreo')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Monitoreo')
+ 4 SYSTEMPATH/Router/AutoRouterImproved.php(264): class_exists('App\\Controllers\\Monitoreo')
+ 5 SYSTEMPATH/Router/AutoRouterImproved.php(115): CodeIgniter\Router\AutoRouterImproved->scanControllers([...])
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouterImproved->getRoute('monitoreo/actualizarinstrumento')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('monitoreo/actualizarinstrumento')
+ 8 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\Router->handle('monitoreo/actualizarinstrumento')
+ 9 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-11 00:36:28 --> Array to string conversion
+in APPPATH/Views/monitoreo/instrumento/editar_aspectos.php on line 150.
+ 1 APPPATH/Views/monitoreo/instrumento/editar_aspectos.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH/Views/monitoreo/instrumento/editar_aspectos.php', 150)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/monitoreo/instrumento/editar_aspectos.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('monitoreo/instrumento/editar_aspectos', [], true)
+ 5 APPPATH/Controllers/Monitoreo.php(194): view('monitoreo/instrumento/editar_aspectos', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postActualizarInstrumento()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-11 00:38:41 --> foreach() argument must be of type array|object, string given
+in APPPATH/Controllers/Monitoreo.php on line 131.
+ 1 APPPATH/Controllers/Monitoreo.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH/Controllers/Monitoreo.php', 131)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postActualizarInstrumento()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-11 00:41:10 --> Array to string conversion
+in APPPATH/Views/monitoreo/instrumento/editar_aspectos.php on line 150.
+ 1 APPPATH/Views/monitoreo/instrumento/editar_aspectos.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH/Views/monitoreo/instrumento/editar_aspectos.php', 150)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/monitoreo/instrumento/editar_aspectos.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('monitoreo/instrumento/editar_aspectos', [], true)
+ 5 APPPATH/Controllers/Monitoreo.php(181): view('monitoreo/instrumento/editar_aspectos', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postActualizarInstrumento()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-07-11 00:44:18 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dbuqkditkkybur`.`sd_instrumento_item`, CONSTRAINT `fk_sd_instrumento_has_sd_pregunta_sd_instrumento1` FOREIGN KEY (`ins_ide`) REFERENCES `sd_instrumento` (`ins_ide`)) in /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 /home/customer/www/xurainc.com/public_html/monitoreo/app/Models/Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Monitoreo.php(286): App\Models\Generaldb->insertData('sd_instrumento_...', Array)
+#6 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarItem()
+#7 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/customer/www/xurainc.com/public_html/monitoreo/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-07-11 00:45:03 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`dbuqkditkkybur`.`sd_instrumento_item`, CONSTRAINT `fk_sd_instrumento_has_sd_pregunta_sd_instrumento1` FOREIGN KEY (`ins_ide`) REFERENCES `sd_instrumento` (`ins_ide`)) in /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 /home/customer/www/xurainc.com/public_html/monitoreo/app/Models/Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Monitoreo.php(286): App\Models\Generaldb->insertData('sd_instrumento_...', Array)
+#6 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarItem()
+#7 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/customer/www/xurainc.com/public_html/monitoreo/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-07-11 00:45:25 --> Undefined array key "orden"
+in APPPATH/Controllers/Monitoreo.php on line 358.
+ 1 APPPATH/Controllers/Monitoreo.php(358): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "orden"', 'APPPATH/Controllers/Monitoreo.php', 358)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postActualizarNumItem()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-11 00:45:28 --> Undefined array key "orden"
+in APPPATH/Controllers/Monitoreo.php on line 358.
+ 1 APPPATH/Controllers/Monitoreo.php(358): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "orden"', 'APPPATH/Controllers/Monitoreo.php', 358)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postActualizarNumItem()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-11 00:45:42 --> Undefined array key "orden"
+in APPPATH/Controllers/Monitoreo.php on line 358.
+ 1 APPPATH/Controllers/Monitoreo.php(358): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "orden"', 'APPPATH/Controllers/Monitoreo.php', 358)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postActualizarNumItem()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-11 00:47:42 --> Undefined array key "orden"
+in APPPATH/Controllers/Monitoreo.php on line 358.
+ 1 APPPATH/Controllers/Monitoreo.php(358): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "orden"', 'APPPATH/Controllers/Monitoreo.php', 358)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postActualizarNumItem()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

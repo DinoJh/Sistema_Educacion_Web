@@ -1,0 +1,321 @@
+CRITICAL - 2025-01-14 07:30:24 --> unlink(/home/customer/www/xurainc.com/public_html/monitoreo/writable/debugbar/debugbar_1736861369.365282.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/home/customer/www/xurainc.com/public_html/monitoreo/writable/debugbar/debugbar_1736861369.365282.json): No such file or directory', 'SYSTEMPATH/Debug/Toolbar/Collectors/History.php', 76)
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(76): unlink('FCPATH/writable/debugbar/debugbar_1736861369.365282.json')
+ 3 SYSTEMPATH/Debug/Toolbar.php(500): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1736861423.419003', 20)
+ 4 SYSTEMPATH/Debug/Toolbar.php(477): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH/Config/Events.php(46): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(328): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 08:51:35 --> Undefined array key 0
+in APPPATH/Controllers/Evaluacion.php on line 1092.
+ 1 APPPATH/Controllers/Evaluacion.php(1092): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Evaluacion.php', 1092)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Evaluacion->getListadoAvanceUgel()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 09:32:55 --> Undefined array key 0
+in APPPATH/Controllers/Informes2.php on line 73.
+ 1 APPPATH/Controllers/Informes2.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Informes2.php', 73)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->getInformesUGEL()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 10:17:22 --> unlink(/home/customer/www/xurainc.com/public_html/monitoreo/writable/debugbar/debugbar_1736871426.618537.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/home/customer/www/xurainc.com/public_html/monitoreo/writable/debugbar/debugbar_1736871426.618537.json): No such file or directory', 'SYSTEMPATH/Debug/Toolbar/Collectors/History.php', 76)
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(76): unlink('FCPATH/writable/debugbar/debugbar_1736871426.618537.json')
+ 3 SYSTEMPATH/Debug/Toolbar.php(500): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1736871439.787101', 20)
+ 4 SYSTEMPATH/Debug/Toolbar.php(477): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH/Config/Events.php(46): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(328): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 10:54:50 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 10:55:00 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 16:54:06 --> Undefined array key 0
+in APPPATH/Controllers/Informes2.php on line 362.
+ 1 APPPATH/Controllers/Informes2.php(362): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Informes2.php', 362)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 20:11:28 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 20:11:39 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 20:11:52 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 22:31:16 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 22:34:25 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 22:34:41 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 22:34:52 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 22:35:01 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 22:35:12 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 22:35:12 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-14 23:13:32 --> Undefined array key "valor"
+in APPPATH/Controllers/Anexos2024.php on line 163.
+ 1 APPPATH/Controllers/Anexos2024.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "valor"', 'APPPATH/Controllers/Anexos2024.php', 163)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

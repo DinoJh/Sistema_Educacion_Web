@@ -1,0 +1,262 @@
+CRITICAL - 2023-04-10 05:45:34 --> unlink(C:\wamp64\www\plantillaciv4\writable\debugbar/debugbar_1681096749.146335.json): No such file or directory
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\wamp64\\www\\plantillaciv4\\writable\\debugbar/debugbar_1681096749.146335.json): No such file or directory', 'SYSTEMPATH\\Debug\\Toolbar\\Collectors\\History.php', 76)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(76): unlink('FCPATH\\writable\\debugbar/debugbar_1681096749.146335.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(500): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1681123534.524219', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(477): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(46): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(328): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-10 06:21:44 --> mysqli_sql_exception: Unknown column 'unor_ide' in 'where clause' in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1653): App\Models\General::getData('*', 'documentos,movi...', '\r\n             ...', 'movi_registro D...')
+#6 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1625): App\Controllers\Documento->formRepo('102')
+#7 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1530): App\Controllers\Documento->documentoRepo('102')
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->postVerRepoNuevo()
+#9 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#10 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-04-10 06:21:44 --> Unknown column 'unor_ide' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `documentos`, `movimientos`, `procedimiento`, `entidades`, `organos`
+WHERE 
+                movi_docu_ide = docu_ide AND 
+                `docu_proc_ide` = proc_ide AND 
+                `docu_enti_ide` = enti_ide AND 
+                `docu_unor_ide` = unor_ide AND 
+                `docu_unor_ide` = unor_ide AND 
+                `movi_esta_ide` = 5 AND 
+                `docu_ide` = 102
+ORDER BY `movi_registro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `documentos`, `movimientos`, `procedimiento`, `entidades`, `organos`
+WHERE 
+                movi_docu_ide = docu_ide AND 
+                `docu_proc_ide` = proc_ide AND 
+                `docu_enti_ide` = enti_ide AND 
+                `docu_unor_ide` = unor_ide AND 
+                `docu_unor_ide` = unor_ide AND 
+                `movi_esta_ide` = 5 AND 
+                `docu_ide` = 102
+ORDER BY `movi_registro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `documentos`, `movimientos`, `procedimiento`, `entidades`, `organos`
+WHERE 
+                movi_docu_ide = docu_ide AND 
+                `docu_proc_ide` = proc_ide AND 
+                `docu_enti_ide` = enti_ide AND 
+                `docu_unor_ide` = unor_ide AND 
+                `docu_unor_ide` = unor_ide AND 
+                `movi_esta_ide` = 5 AND 
+                `docu_ide` = 102
+ORDER BY `movi_registro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `documentos`, `movimientos`, `procedimiento`, `entidades`, `organos`
+WHERE 
+                movi_docu_ide = docu_ide AND 
+                `docu_proc_ide` = proc_ide AND 
+                `docu_enti_ide` = enti_ide AND 
+                `docu_unor_ide` = unor_ide AND 
+                `docu_unor_ide` = unor_ide AND 
+                `movi_esta_ide` = 5 AND 
+                `docu_ide` = 102
+ORDER BY `movi_registro` DESC', [], false)
+ 5 APPPATH\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(1653): App\Models\General::getData('*', 'documentos,movimientos,procedimiento,entidades,organos', '
+                movi_docu_ide = docu_ide AND 
+                docu_proc_ide = proc_ide AND 
+                docu_enti_ide = enti_ide AND 
+                docu_unor_ide = unor_ide AND 
+                docu_unor_ide = unor_ide AND 
+                movi_esta_ide = 5 AND 
+                docu_ide =102', 'movi_registro DESC')
+ 7 APPPATH\Controllers\Documento.php(1625): App\Controllers\Documento->formRepo('102')
+ 8 APPPATH\Controllers\Documento.php(1530): App\Controllers\Documento->documentoRepo('102')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postVerRepoNuevo()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-10 06:21:55 --> mysqli_sql_exception: Unknown column 'unor_ide' in 'where clause' in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1653): App\Models\General::getData('*', 'documentos,movi...', '\r\n             ...', 'movi_registro D...')
+#6 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1625): App\Controllers\Documento->formRepo('102')
+#7 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1530): App\Controllers\Documento->documentoRepo('102')
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->postVerRepoNuevo()
+#9 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#10 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-04-10 06:21:55 --> Unknown column 'unor_ide' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `documentos`, `movimientos`, `procedimiento`, `entidades`, `organos`
+WHERE 
+                movi_docu_ide = docu_ide AND 
+                `docu_proc_ide` = proc_ide AND 
+                `docu_enti_ide` = enti_ide AND 
+                `docu_unor_ide` = unor_ide AND 
+                `docu_unor_ide` = unor_ide AND 
+                `movi_esta_ide` = 5 AND 
+                `docu_ide` = 102
+ORDER BY `movi_registro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `documentos`, `movimientos`, `procedimiento`, `entidades`, `organos`
+WHERE 
+                movi_docu_ide = docu_ide AND 
+                `docu_proc_ide` = proc_ide AND 
+                `docu_enti_ide` = enti_ide AND 
+                `docu_unor_ide` = unor_ide AND 
+                `docu_unor_ide` = unor_ide AND 
+                `movi_esta_ide` = 5 AND 
+                `docu_ide` = 102
+ORDER BY `movi_registro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `documentos`, `movimientos`, `procedimiento`, `entidades`, `organos`
+WHERE 
+                movi_docu_ide = docu_ide AND 
+                `docu_proc_ide` = proc_ide AND 
+                `docu_enti_ide` = enti_ide AND 
+                `docu_unor_ide` = unor_ide AND 
+                `docu_unor_ide` = unor_ide AND 
+                `movi_esta_ide` = 5 AND 
+                `docu_ide` = 102
+ORDER BY `movi_registro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `documentos`, `movimientos`, `procedimiento`, `entidades`, `organos`
+WHERE 
+                movi_docu_ide = docu_ide AND 
+                `docu_proc_ide` = proc_ide AND 
+                `docu_enti_ide` = enti_ide AND 
+                `docu_unor_ide` = unor_ide AND 
+                `docu_unor_ide` = unor_ide AND 
+                `movi_esta_ide` = 5 AND 
+                `docu_ide` = 102
+ORDER BY `movi_registro` DESC', [], false)
+ 5 APPPATH\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(1653): App\Models\General::getData('*', 'documentos,movimientos,procedimiento,entidades,organos', '
+                movi_docu_ide = docu_ide AND 
+                docu_proc_ide = proc_ide AND 
+                docu_enti_ide = enti_ide AND 
+                docu_unor_ide = unor_ide AND 
+                docu_unor_ide = unor_ide AND 
+                movi_esta_ide = 5 AND 
+                docu_ide =102', 'movi_registro DESC')
+ 7 APPPATH\Controllers\Documento.php(1625): App\Controllers\Documento->formRepo('102')
+ 8 APPPATH\Controllers\Documento.php(1530): App\Controllers\Documento->documentoRepo('102')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postVerRepoNuevo()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-10 06:56:13 --> mysqli_sql_exception: Unknown column 'repo_est_ide' in 'where clause' in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Repositorio.php(17): App\Models\General::getData('*', 'repositorio,mov...', 'movi_ide = repo...', 'repo_titulo')
+#6 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Repositorio->getIndex()
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Repositorio))
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-10 06:56:13 --> Unknown column 'repo_est_ide' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `repositorio`, `movimientos`, `entidades`, `unidades_organicas`
+WHERE `movi_ide` = repo_movi_ide AND
+            `repo_est_ide` = 8
+ORDER BY `repo_titulo`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `repositorio`, `movimientos`, `entidades`, `unidades_organicas`
+WHERE `movi_ide` = repo_movi_ide AND
+            `repo_est_ide` = 8
+ORDER BY `repo_titulo`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `repositorio`, `movimientos`, `entidades`, `unidades_organicas`
+WHERE `movi_ide` = repo_movi_ide AND
+            `repo_est_ide` = 8
+ORDER BY `repo_titulo`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `repositorio`, `movimientos`, `entidades`, `unidades_organicas`
+WHERE `movi_ide` = repo_movi_ide AND
+            `repo_est_ide` = 8
+ORDER BY `repo_titulo`', [], false)
+ 5 APPPATH\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Repositorio.php(17): App\Models\General::getData('*', 'repositorio,movimientos,entidades,unidades_organicas', 'movi_ide = repo_movi_ide AND
+            repo_est_ide = 8', 'repo_titulo')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Repositorio->getIndex()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Repositorio))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-10 06:56:22 --> Undefined property: stdClass::$docu_titulo
+in APPPATH\Controllers\Repositorio.php on line 19.
+ 1 APPPATH\Controllers\Repositorio.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$docu_titulo', 'APPPATH\\Controllers\\Repositorio.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Repositorio->getIndex()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Repositorio))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-10 06:56:48 --> Undefined property: stdClass::$orga_nombre
+in APPPATH\Controllers\Repositorio.php on line 35.
+ 1 APPPATH\Controllers\Repositorio.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$orga_nombre', 'APPPATH\\Controllers\\Repositorio.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Repositorio->getIndex()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Repositorio))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-10 06:58:01 --> Undefined property: stdClass::$repo_fecha
+in APPPATH\Controllers\Repositorio.php on line 43.
+ 1 APPPATH\Controllers\Repositorio.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$repo_fecha', 'APPPATH\\Controllers\\Repositorio.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Repositorio->getIndex()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Repositorio))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-10 06:58:15 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Repositorio.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Repositorio->getIndex()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Repositorio))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-10 07:01:09 --> Invalid file: vheader.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vheader.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vheader', [], true)
+ 3 APPPATH\Controllers\Repositorio.php(87): view('vheader')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Repositorio->getIndex()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Repositorio))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-10 07:01:23 --> Undefined variable $system_name
+in APPPATH\Views\sistema\vheader.php on line 9.
+ 1 APPPATH\Views\sistema\vheader.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $system_name', 'APPPATH\\Views\\sistema\\vheader.php', 9)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Repositorio.php(87): view('sistema/vheader')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Repositorio->getIndex()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Repositorio))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-10 07:02:01 --> Undefined variable $system_name
+in APPPATH\Views\sistema\vheader.php on line 9.
+ 1 APPPATH\Views\sistema\vheader.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $system_name', 'APPPATH\\Views\\sistema\\vheader.php', 9)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Repositorio.php(87): view('sistema/vheader')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Repositorio->getIndex()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Repositorio))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

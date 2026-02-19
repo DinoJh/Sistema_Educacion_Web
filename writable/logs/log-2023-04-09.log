@@ -1,0 +1,632 @@
+CRITICAL - 2023-04-09 08:54:59 --> Undefined array key 0
+in APPPATH\Controllers\Documento.php on line 168.
+ 1 APPPATH\Controllers\Documento.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Documento.php', 168)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postCrearDocumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 08:55:17 --> Undefined array key 0
+in APPPATH\Controllers\Documento.php on line 168.
+ 1 APPPATH\Controllers\Documento.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Documento.php', 168)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postCrearDocumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-09 09:00:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':0:
+AND `proc_enti_ide` = :proc_enti_ide :
+AND `proc_unor_ide` = :proc_unor_ide ' at line 3 in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `proc_id...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `proc_id...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `proc_id...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `proc_id...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(68): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(53): App\Models\General::getData('proc_ide as id,...', 'procedimiento,f...', Array, 'proc_nombre')
+#6 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-09 09:00:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':0:
+AND `proc_enti_ide` = :proc_enti_ide :
+AND `proc_unor_ide` = :proc_unor_ide ' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE 0 = :0:
+AND `proc_enti_ide` = :proc_enti_ide :
+AND `proc_unor_ide` = :proc_unor_ide :
+ORDER BY `proc_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE 0 = :0:
+AND `proc_enti_ide` = :proc_enti_ide :
+AND `proc_unor_ide` = :proc_unor_ide :
+ORDER BY `proc_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE 0 = :0:
+AND `proc_enti_ide` = :proc_enti_ide :
+AND `proc_unor_ide` = :proc_unor_ide :
+ORDER BY `proc_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE 0 = :0:
+AND `proc_enti_ide` = :proc_enti_ide :
+AND `proc_unor_ide` = :proc_unor_ide :
+ORDER BY `proc_nombre`', [...], false)
+ 5 APPPATH\Models\General.php(68): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(53): App\Models\General::getData('proc_ide as id,proc_nombre as nombre', 'procedimiento,flujos', [...], 'proc_nombre')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-09 09:02:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND 2 = :2:
+ORDER BY `proc_nombre`' at line 3 in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `proc_id...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `proc_id...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `proc_id...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `proc_id...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(68): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(53): App\Models\General::getData('proc_ide as id,...', 'procedimiento,f...', Array, 'proc_nombre')
+#6 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-09 09:02:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND 2 = :2:
+ORDER BY `proc_nombre`' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE 0 = :0:
+AND 1 = :1:
+AND 2 = :2:
+ORDER BY `proc_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE 0 = :0:
+AND 1 = :1:
+AND 2 = :2:
+ORDER BY `proc_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE 0 = :0:
+AND 1 = :1:
+AND 2 = :2:
+ORDER BY `proc_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE 0 = :0:
+AND 1 = :1:
+AND 2 = :2:
+ORDER BY `proc_nombre`', [...], false)
+ 5 APPPATH\Models\General.php(68): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(53): App\Models\General::getData('proc_ide as id,proc_nombre as nombre', 'procedimiento,flujos', [...], 'proc_nombre')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-09 09:02:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':0:
+ORDER BY `proc_nombre`' at line 3 in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `proc_id...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `proc_id...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `proc_id...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `proc_id...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(68): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(53): App\Models\General::getData('proc_ide as id,...', 'procedimiento,f...', Array, 'proc_nombre')
+#6 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-09 09:02:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':0:
+ORDER BY `proc_nombre`' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE 0 = :0:
+ORDER BY `proc_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE 0 = :0:
+ORDER BY `proc_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE 0 = :0:
+ORDER BY `proc_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE 0 = :0:
+ORDER BY `proc_nombre`', [...], false)
+ 5 APPPATH\Models\General.php(68): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(53): App\Models\General::getData('proc_ide as id,proc_nombre as nombre', 'procedimiento,flujos', [...], 'proc_nombre')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-09 09:04:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`proc_ide`' at line 6 in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `proc_id...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `proc_id...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `proc_id...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `proc_id...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(68): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(52): App\Models\General::getData('proc_ide as id,...', 'procedimiento,f...', 'proc_ide = fluj...', 'proc_nombre GRO...')
+#6 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-09 09:04:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`proc_ide`' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE `proc_ide` = fluj_proc_ide AND
+            `proc_enti_ide` = 1 AND 
+            `proc_unor_ide` = 3
+ORDER BY `proc_nombre GROUP BY` `proc_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE `proc_ide` = fluj_proc_ide AND
+            `proc_enti_ide` = 1 AND 
+            `proc_unor_ide` = 3
+ORDER BY `proc_nombre GROUP BY` `proc_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE `proc_ide` = fluj_proc_ide AND
+            `proc_enti_ide` = 1 AND 
+            `proc_unor_ide` = 3
+ORDER BY `proc_nombre GROUP BY` `proc_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE `proc_ide` = fluj_proc_ide AND
+            `proc_enti_ide` = 1 AND 
+            `proc_unor_ide` = 3
+ORDER BY `proc_nombre GROUP BY` `proc_ide`', [], false)
+ 5 APPPATH\Models\General.php(68): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(52): App\Models\General::getData('proc_ide as id,proc_nombre as nombre', 'procedimiento,flujos', 'proc_ide = fluj_proc_ide AND
+            proc_enti_ide = 1 AND 
+            proc_unor_ide = 3 ', 'proc_nombre GROUP BY proc_ide')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 10:11:22 --> Undefined array key 0
+in APPPATH\Controllers\Documento.php on line 895.
+ 1 APPPATH\Controllers\Documento.php(895): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Documento.php', 895)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postRechazarDocumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 10:11:35 --> Undefined array key 0
+in APPPATH\Controllers\Documento.php on line 895.
+ 1 APPPATH\Controllers\Documento.php(895): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Documento.php', 895)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postRechazarDocumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 10:18:43 --> Undefined array key 0
+in APPPATH\Controllers\Documento.php on line 895.
+ 1 APPPATH\Controllers\Documento.php(895): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Documento.php', 895)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postRechazarDocumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 10:20:04 --> Undefined array key 0
+in APPPATH\Controllers\Documento.php on line 895.
+ 1 APPPATH\Controllers\Documento.php(895): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Documento.php', 895)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postRechazarDocumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-09 10:41:24 --> mysqli_sql_exception: Table 'dbsirre.estado' doesn't exist in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1323): App\Models\General::getData('*', 'movimientos,doc...', 'movi_doc_ide = ...', 'movi_registro A...')
+#6 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1284): App\Controllers\Documento->documentoFinalizadoVisualizar('98')
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->postVerFinalizado()
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#9 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-09 10:41:24 --> Table 'dbsirre.estado' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `movimientos`, `documentos`, `estado`
+WHERE `movi_doc_ide` = docu_ide AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_docu_ide` = 98
+ORDER BY `movi_registro` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `movimientos`, `documentos`, `estado`
+WHERE `movi_doc_ide` = docu_ide AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_docu_ide` = 98
+ORDER BY `movi_registro` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `movimientos`, `documentos`, `estado`
+WHERE `movi_doc_ide` = docu_ide AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_docu_ide` = 98
+ORDER BY `movi_registro` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movimientos`, `documentos`, `estado`
+WHERE `movi_doc_ide` = docu_ide AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_docu_ide` = 98
+ORDER BY `movi_registro` ASC', [], false)
+ 5 APPPATH\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(1323): App\Models\General::getData('*', 'movimientos,documentos,estado', 'movi_doc_ide = docu_ide AND
+            movi_esta_ide = esta_ide AND
+            movi_docu_ide =98', 'movi_registro ASC')
+ 7 APPPATH\Controllers\Documento.php(1284): App\Controllers\Documento->documentoFinalizadoVisualizar('98')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postVerFinalizado()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-09 10:41:34 --> mysqli_sql_exception: Table 'dbsirre.estado' doesn't exist in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1323): App\Models\General::getData('*', 'movimientos,doc...', 'movi_doc_ide = ...', 'movi_registro A...')
+#6 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1284): App\Controllers\Documento->documentoFinalizadoVisualizar('98')
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->postVerFinalizado()
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#9 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-09 10:41:34 --> Table 'dbsirre.estado' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `movimientos`, `documentos`, `estado`
+WHERE `movi_doc_ide` = docu_ide AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_docu_ide` = 98
+ORDER BY `movi_registro` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `movimientos`, `documentos`, `estado`
+WHERE `movi_doc_ide` = docu_ide AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_docu_ide` = 98
+ORDER BY `movi_registro` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `movimientos`, `documentos`, `estado`
+WHERE `movi_doc_ide` = docu_ide AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_docu_ide` = 98
+ORDER BY `movi_registro` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movimientos`, `documentos`, `estado`
+WHERE `movi_doc_ide` = docu_ide AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_docu_ide` = 98
+ORDER BY `movi_registro` ASC', [], false)
+ 5 APPPATH\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(1323): App\Models\General::getData('*', 'movimientos,documentos,estado', 'movi_doc_ide = docu_ide AND
+            movi_esta_ide = esta_ide AND
+            movi_docu_ide =98', 'movi_registro ASC')
+ 7 APPPATH\Controllers\Documento.php(1284): App\Controllers\Documento->documentoFinalizadoVisualizar('98')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postVerFinalizado()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-09 10:41:45 --> mysqli_sql_exception: Unknown column 'movi_doc_ide' in 'where clause' in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1323): App\Models\General::getData('*', 'movimientos,doc...', 'movi_doc_ide = ...', 'movi_registro A...')
+#6 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1284): App\Controllers\Documento->documentoFinalizadoVisualizar('98')
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->postVerFinalizado()
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#9 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-09 10:41:45 --> Unknown column 'movi_doc_ide' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `movimientos`, `documentos`, `estados`
+WHERE `movi_doc_ide` = docu_ide AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_docu_ide` = 98
+ORDER BY `movi_registro` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `movimientos`, `documentos`, `estados`
+WHERE `movi_doc_ide` = docu_ide AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_docu_ide` = 98
+ORDER BY `movi_registro` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `movimientos`, `documentos`, `estados`
+WHERE `movi_doc_ide` = docu_ide AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_docu_ide` = 98
+ORDER BY `movi_registro` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movimientos`, `documentos`, `estados`
+WHERE `movi_doc_ide` = docu_ide AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_docu_ide` = 98
+ORDER BY `movi_registro` ASC', [], false)
+ 5 APPPATH\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(1323): App\Models\General::getData('*', 'movimientos,documentos,estados', 'movi_doc_ide = docu_ide AND
+            movi_esta_ide = esta_ide AND
+            movi_docu_ide =98', 'movi_registro ASC')
+ 7 APPPATH\Controllers\Documento.php(1284): App\Controllers\Documento->documentoFinalizadoVisualizar('98')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postVerFinalizado()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-09 10:41:55 --> mysqli_sql_exception: Unknown column 'movi_doc_ide' in 'where clause' in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1323): App\Models\General::getData('*', 'movimientos,doc...', 'movi_doc_ide = ...', 'movi_registro A...')
+#6 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1284): App\Controllers\Documento->documentoFinalizadoVisualizar('98')
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->postVerFinalizado()
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#9 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-09 10:41:55 --> Unknown column 'movi_doc_ide' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `movimientos`, `documentos`, `estados`
+WHERE `movi_doc_ide` = docu_ide AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_docu_ide` = 98
+ORDER BY `movi_registro` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `movimientos`, `documentos`, `estados`
+WHERE `movi_doc_ide` = docu_ide AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_docu_ide` = 98
+ORDER BY `movi_registro` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `movimientos`, `documentos`, `estados`
+WHERE `movi_doc_ide` = docu_ide AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_docu_ide` = 98
+ORDER BY `movi_registro` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `movimientos`, `documentos`, `estados`
+WHERE `movi_doc_ide` = docu_ide AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_docu_ide` = 98
+ORDER BY `movi_registro` ASC', [], false)
+ 5 APPPATH\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(1323): App\Models\General::getData('*', 'movimientos,documentos,estados', 'movi_doc_ide = docu_ide AND
+            movi_esta_ide = esta_ide AND
+            movi_docu_ide =98', 'movi_registro ASC')
+ 7 APPPATH\Controllers\Documento.php(1284): App\Controllers\Documento->documentoFinalizadoVisualizar('98')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postVerFinalizado()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-09 10:42:05 --> mysqli_sql_exception: Unknown column 'movi_docu_ide' in 'where clause' in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1329): App\Models\General::getData('*', 'unidades_organi...', 'movi_docu_ide =...', 'unor_ide ASC')
+#6 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1284): App\Controllers\Documento->documentoFinalizadoVisualizar('98')
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->postVerFinalizado()
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#9 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-04-09 10:42:05 --> Unknown column 'movi_docu_ide' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `unidades_organicas`
+WHERE `movi_docu_ide` = docu_ide
+ORDER BY `unor_ide` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `unidades_organicas`
+WHERE `movi_docu_ide` = docu_ide
+ORDER BY `unor_ide` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `unidades_organicas`
+WHERE `movi_docu_ide` = docu_ide
+ORDER BY `unor_ide` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `unidades_organicas`
+WHERE `movi_docu_ide` = docu_ide
+ORDER BY `unor_ide` ASC', [], false)
+ 5 APPPATH\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(1329): App\Models\General::getData('*', 'unidades_organicas', 'movi_docu_ide = docu_ide', 'unor_ide ASC')
+ 7 APPPATH\Controllers\Documento.php(1284): App\Controllers\Documento->documentoFinalizadoVisualizar('98')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postVerFinalizado()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 10:48:04 --> Undefined variable $msg
+in APPPATH\Controllers\Documento.php on line 1409.
+ 1 APPPATH\Controllers\Documento.php(1409): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $msg', 'APPPATH\\Controllers\\Documento.php', 1409)
+ 2 APPPATH\Controllers\Documento.php(1327): App\Controllers\Documento->verMovimientos('98')
+ 3 APPPATH\Controllers\Documento.php(1284): App\Controllers\Documento->documentoFinalizadoVisualizar('98')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postVerFinalizado()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 10:48:06 --> Undefined variable $msg
+in APPPATH\Controllers\Documento.php on line 1409.
+ 1 APPPATH\Controllers\Documento.php(1409): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $msg', 'APPPATH\\Controllers\\Documento.php', 1409)
+ 2 APPPATH\Controllers\Documento.php(1327): App\Controllers\Documento->verMovimientos('97')
+ 3 APPPATH\Controllers\Documento.php(1284): App\Controllers\Documento->documentoFinalizadoVisualizar('97')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postVerFinalizado()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 10:48:14 --> Undefined variable $msg
+in APPPATH\Controllers\Documento.php on line 1409.
+ 1 APPPATH\Controllers\Documento.php(1409): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $msg', 'APPPATH\\Controllers\\Documento.php', 1409)
+ 2 APPPATH\Controllers\Documento.php(1327): App\Controllers\Documento->verMovimientos('97')
+ 3 APPPATH\Controllers\Documento.php(1284): App\Controllers\Documento->documentoFinalizadoVisualizar('97')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postVerFinalizado()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 10:57:05 --> Undefined array key 0
+in APPPATH\Controllers\Documento.php on line 774.
+ 1 APPPATH\Controllers\Documento.php(774): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Documento.php', 774)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postGuardarDocumentoFirmado()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 10:57:17 --> Undefined array key 0
+in APPPATH\Controllers\Documento.php on line 774.
+ 1 APPPATH\Controllers\Documento.php(774): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Documento.php', 774)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postGuardarDocumentoFirmado()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-09 11:02:22 --> mysqli_sql_exception: Unknown column 'fluj_unor_ide' in 'where clause' in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `fluj_un...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fluj_un...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fluj_un...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `fluj_un...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(777): App\Models\General::getData('fluj_unor_orige...', 'documentos,proc...', 'docu_ide = '101...', 'movi_registro D...')
+#6 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->postGuardarDocumentoFirmado()
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-09 11:02:22 --> Unknown column 'fluj_unor_ide' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `fluj_unor_origen`, `fluj_unor_destino`
+FROM `documentos`, `procedimiento`, `flujos`, `movimientos`
+WHERE `docu_ide` = \'101\' AND
+             `docu_proc_ide` = proc_ide AND
+             `proc_ide` = fluj_proc_ide AND
+             `fluj_unor_ide` = 3 AND
+             (`movi_esta_ide` = 3 OR
+             `movi_esta_ide` = 6)
+ORDER BY `movi_registro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fluj_unor_origen`, `fluj_unor_destino`
+FROM `documentos`, `procedimiento`, `flujos`, `movimientos`
+WHERE `docu_ide` = \'101\' AND
+             `docu_proc_ide` = proc_ide AND
+             `proc_ide` = fluj_proc_ide AND
+             `fluj_unor_ide` = 3 AND
+             (`movi_esta_ide` = 3 OR
+             `movi_esta_ide` = 6)
+ORDER BY `movi_registro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fluj_unor_origen`, `fluj_unor_destino`
+FROM `documentos`, `procedimiento`, `flujos`, `movimientos`
+WHERE `docu_ide` = \'101\' AND
+             `docu_proc_ide` = proc_ide AND
+             `proc_ide` = fluj_proc_ide AND
+             `fluj_unor_ide` = 3 AND
+             (`movi_esta_ide` = 3 OR
+             `movi_esta_ide` = 6)
+ORDER BY `movi_registro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `fluj_unor_origen`, `fluj_unor_destino`
+FROM `documentos`, `procedimiento`, `flujos`, `movimientos`
+WHERE `docu_ide` = \'101\' AND
+             `docu_proc_ide` = proc_ide AND
+             `proc_ide` = fluj_proc_ide AND
+             `fluj_unor_ide` = 3 AND
+             (`movi_esta_ide` = 3 OR
+             `movi_esta_ide` = 6)
+ORDER BY `movi_registro` DESC', [], false)
+ 5 APPPATH\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(777): App\Models\General::getData('fluj_unor_origen,fluj_unor_destino', 'documentos,procedimiento,flujos,movimientos', 'docu_ide = \'101\' AND
+             docu_proc_ide = proc_ide AND
+             proc_ide = fluj_proc_ide AND
+             fluj_unor_ide = 3 AND
+             (movi_esta_ide = 3 OR
+             movi_esta_ide = 6) ', 'movi_registro DESC')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postGuardarDocumentoFirmado()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 11:02:57 --> Undefined array key 0
+in APPPATH\Controllers\Documento.php on line 786.
+ 1 APPPATH\Controllers\Documento.php(786): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Documento.php', 786)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postGuardarDocumentoFirmado()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 11:03:38 --> Undefined array key 0
+in APPPATH\Controllers\Documento.php on line 784.
+ 1 APPPATH\Controllers\Documento.php(784): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Documento.php', 784)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postGuardarDocumentoFirmado()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 11:21:09 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Documento.php on line 338.
+ 1 APPPATH\Controllers\Documento.php(875): App\Controllers\Documento->uploadFile('RESOLUCION DE MATERNIDAD', 'userfile')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postRechazarDocumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 11:32:31 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Documento.php on line 338.
+ 1 APPPATH\Controllers\Documento.php(880): App\Controllers\Documento->uploadFile('RESOLUCION DE MATERNIDAD', 'userfile')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postRechazarDocumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 11:32:52 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Documento.php on line 338.
+ 1 APPPATH\Controllers\Documento.php(880): App\Controllers\Documento->uploadFile('RESOLUCION DE MATERNIDAD', 'userfile')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postRechazarDocumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 11:34:21 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Documento.php on line 338.
+ 1 APPPATH\Controllers\Documento.php(880): App\Controllers\Documento->uploadFile('RESOLUCION DE MATERNIDAD', 'userfile')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postRechazarDocumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 19:58:35 --> Undefined array key 0
+in APPPATH\Controllers\Documento.php on line 1284.
+ 1 APPPATH\Controllers\Documento.php(1284): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Documento.php', 1284)
+ 2 APPPATH\Controllers\Documento.php(1432): App\Controllers\Documento->documentoFinalizadoVisualizar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getRepositorio()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 19:59:13 --> Undefined array key 0
+in APPPATH\Controllers\Documento.php on line 1284.
+ 1 APPPATH\Controllers\Documento.php(1284): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Documento.php', 1284)
+ 2 APPPATH\Controllers\Documento.php(1432): App\Controllers\Documento->documentoFinalizadoVisualizar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getRepositorio()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-09 19:59:18 --> Undefined array key 0
+in APPPATH\Controllers\Documento.php on line 1284.
+ 1 APPPATH\Controllers\Documento.php(1284): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Documento.php', 1284)
+ 2 APPPATH\Controllers\Documento.php(1432): App\Controllers\Documento->documentoFinalizadoVisualizar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getRepositorio()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

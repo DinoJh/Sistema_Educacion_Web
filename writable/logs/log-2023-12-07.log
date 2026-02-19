@@ -1,0 +1,51 @@
+ERROR - 2023-12-07 17:46:42 --> mysqli_sql_exception: Table 'simondrep2_temp.procedimiento' doesn't exist in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `proc_id...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `proc_id...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `proc_id...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `proc_id...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Documento.php(54): App\Models\General::getData('proc_ide as id,...', 'procedimiento,f...', 'proc_ide = fluj...', 'proc_nombre', 'proc_ide')
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-07 17:46:42 --> Table 'simondrep2_temp.procedimiento' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE `proc_ide` = fluj_proc_ide AND
+            `proc_enti_ide` = 1 AND 
+            `proc_unor_ide` = 1
+GROUP BY `proc_ide`
+ORDER BY `proc_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE `proc_ide` = fluj_proc_ide AND
+            `proc_enti_ide` = 1 AND 
+            `proc_unor_ide` = 1
+GROUP BY `proc_ide`
+ORDER BY `proc_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE `proc_ide` = fluj_proc_ide AND
+            `proc_enti_ide` = 1 AND 
+            `proc_unor_ide` = 1
+GROUP BY `proc_ide`
+ORDER BY `proc_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE `proc_ide` = fluj_proc_ide AND
+            `proc_enti_ide` = 1 AND 
+            `proc_unor_ide` = 1
+GROUP BY `proc_ide`
+ORDER BY `proc_nombre`', [], false)
+ 5 APPPATH\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(54): App\Models\General::getData('proc_ide as id,proc_nombre as nombre', 'procedimiento,flujos', 'proc_ide = fluj_proc_ide AND
+            proc_enti_ide = 1 AND 
+            proc_unor_ide = 1 ', 'proc_nombre', 'proc_ide')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

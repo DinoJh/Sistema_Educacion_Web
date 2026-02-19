@@ -1,0 +1,538 @@
+ERROR - 2025-04-19 08:26:12 --> mysqli_sql_exception: Column 'pla_ide' in where clause is ambiguous in /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `sd_plan...', 0)
+#1 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sd_plan...')
+#2 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sd_plan...')
+#3 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `sd_plan...', Array, false)
+#4 /home/customer/www/xurainc.com/public_html/monitoreo/app/Models/Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Monitoreo.php(2500): App\Models\Generaldb->selectSomeDataJoin('sd_plan.pla_ide...', 'sd_plan', 'sd_plan.pla_est...', 'sd_plan_muestra...', 'sd_plan.pla_ide...', false, Array)
+#6 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(927): App\Controllers\Monitoreo->getVerFichaLlenada()
+#7 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/customer/www/xurainc.com/public_html/monitoreo/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-19 08:26:12 --> Column 'pla_ide' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `sd_plan`.`pla_ide`, `ite_numero`, `sd_item`.`ite_ide`, `ite_titulo`, `sd_alternativa`.`alt_ide`, `alt_titulo`, `alt_valor`, `res_alt_ide`, `res_valor`, SUM( CASE WHEN res_valor = alt_valor THEN 1 ELSE 0 END) AS subtotal_alternativa
+FROM `sd_plan`
+JOIN `sd_plan_muestra` ON `sd_plan`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_plan_instrumento` ON `sd_plan_instrumento`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_instrumento` ON `sd_plan_instrumento`.`ins_ide` = `sd_instrumento`.`ins_ide`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+LEFT JOIN `sd_respuesta` ON `sd_respuesta`.`res_pla_ide` = `sd_plan_muestra`.`pla_ide` AND
+`sd_respuesta`.`res_pm_ide` = `sd_plan_muestra`.`pm_ide` AND
+`sd_respuesta`.`res_ite_ide` = `sd_item`.`ite_ide` AND
+`sd_respuesta`.`res_ins_ide` = `sd_instrumento`.`ins_ide` AND `sd_respuesta`.`res_alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_plan`.`pla_esta_ide` = 1 AND
+                `pla_ide` = \'19\' AND
+                `ins_ide` = \'89\' AND
+                `pm_ide` = \'223\' AND
+                pm_estado_actual = \'EJECUTADO\'
+                
+GROUP BY `sd_plan`.`pla_ide`, `sd_item`.`ite_ide`, `sd_item`.`ite_titulo`, `sd_alternativa`.`alt_ide`, `sd_alternativa`.`alt_titulo`, `sd_alternativa`.`alt_valor`
+ORDER BY `sd_plan_muestra`.`pm_ide` ASC, `sd_item`.`ite_numero` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sd_plan`.`pla_ide`, `ite_numero`, `sd_item`.`ite_ide`, `ite_titulo`, `sd_alternativa`.`alt_ide`, `alt_titulo`, `alt_valor`, `res_alt_ide`, `res_valor`, SUM( CASE WHEN res_valor = alt_valor THEN 1 ELSE 0 END) AS subtotal_alternativa
+FROM `sd_plan`
+JOIN `sd_plan_muestra` ON `sd_plan`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_plan_instrumento` ON `sd_plan_instrumento`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_instrumento` ON `sd_plan_instrumento`.`ins_ide` = `sd_instrumento`.`ins_ide`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+LEFT JOIN `sd_respuesta` ON `sd_respuesta`.`res_pla_ide` = `sd_plan_muestra`.`pla_ide` AND
+`sd_respuesta`.`res_pm_ide` = `sd_plan_muestra`.`pm_ide` AND
+`sd_respuesta`.`res_ite_ide` = `sd_item`.`ite_ide` AND
+`sd_respuesta`.`res_ins_ide` = `sd_instrumento`.`ins_ide` AND `sd_respuesta`.`res_alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_plan`.`pla_esta_ide` = 1 AND
+                `pla_ide` = \'19\' AND
+                `ins_ide` = \'89\' AND
+                `pm_ide` = \'223\' AND
+                pm_estado_actual = \'EJECUTADO\'
+                
+GROUP BY `sd_plan`.`pla_ide`, `sd_item`.`ite_ide`, `sd_item`.`ite_titulo`, `sd_alternativa`.`alt_ide`, `sd_alternativa`.`alt_titulo`, `sd_alternativa`.`alt_valor`
+ORDER BY `sd_plan_muestra`.`pm_ide` ASC, `sd_item`.`ite_numero` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sd_plan`.`pla_ide`, `ite_numero`, `sd_item`.`ite_ide`, `ite_titulo`, `sd_alternativa`.`alt_ide`, `alt_titulo`, `alt_valor`, `res_alt_ide`, `res_valor`, SUM( CASE WHEN res_valor = alt_valor THEN 1 ELSE 0 END) AS subtotal_alternativa
+FROM `sd_plan`
+JOIN `sd_plan_muestra` ON `sd_plan`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_plan_instrumento` ON `sd_plan_instrumento`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_instrumento` ON `sd_plan_instrumento`.`ins_ide` = `sd_instrumento`.`ins_ide`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+LEFT JOIN `sd_respuesta` ON `sd_respuesta`.`res_pla_ide` = `sd_plan_muestra`.`pla_ide` AND
+`sd_respuesta`.`res_pm_ide` = `sd_plan_muestra`.`pm_ide` AND
+`sd_respuesta`.`res_ite_ide` = `sd_item`.`ite_ide` AND
+`sd_respuesta`.`res_ins_ide` = `sd_instrumento`.`ins_ide` AND `sd_respuesta`.`res_alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_plan`.`pla_esta_ide` = 1 AND
+                `pla_ide` = \'19\' AND
+                `ins_ide` = \'89\' AND
+                `pm_ide` = \'223\' AND
+                pm_estado_actual = \'EJECUTADO\'
+                
+GROUP BY `sd_plan`.`pla_ide`, `sd_item`.`ite_ide`, `sd_item`.`ite_titulo`, `sd_alternativa`.`alt_ide`, `sd_alternativa`.`alt_titulo`, `sd_alternativa`.`alt_valor`
+ORDER BY `sd_plan_muestra`.`pm_ide` ASC, `sd_item`.`ite_numero` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `sd_plan`.`pla_ide`, `ite_numero`, `sd_item`.`ite_ide`, `ite_titulo`, `sd_alternativa`.`alt_ide`, `alt_titulo`, `alt_valor`, `res_alt_ide`, `res_valor`, SUM( CASE WHEN res_valor = alt_valor THEN 1 ELSE 0 END) AS subtotal_alternativa
+FROM `sd_plan`
+JOIN `sd_plan_muestra` ON `sd_plan`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_plan_instrumento` ON `sd_plan_instrumento`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_instrumento` ON `sd_plan_instrumento`.`ins_ide` = `sd_instrumento`.`ins_ide`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+LEFT JOIN `sd_respuesta` ON `sd_respuesta`.`res_pla_ide` = `sd_plan_muestra`.`pla_ide` AND
+`sd_respuesta`.`res_pm_ide` = `sd_plan_muestra`.`pm_ide` AND
+`sd_respuesta`.`res_ite_ide` = `sd_item`.`ite_ide` AND
+`sd_respuesta`.`res_ins_ide` = `sd_instrumento`.`ins_ide` AND `sd_respuesta`.`res_alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_plan`.`pla_esta_ide` = 1 AND
+                `pla_ide` = \'19\' AND
+                `ins_ide` = \'89\' AND
+                `pm_ide` = \'223\' AND
+                pm_estado_actual = \'EJECUTADO\'
+                
+GROUP BY `sd_plan`.`pla_ide`, `sd_item`.`ite_ide`, `sd_item`.`ite_titulo`, `sd_alternativa`.`alt_ide`, `sd_alternativa`.`alt_titulo`, `sd_alternativa`.`alt_valor`
+ORDER BY `sd_plan_muestra`.`pm_ide` ASC, `sd_item`.`ite_numero` ASC', [], false)
+ 5 APPPATH/Models/Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Monitoreo.php(2500): App\Models\Generaldb->selectSomeDataJoin('sd_plan.pla_ide, ite_numero, sd_item.ite_ide, ite_titulo, sd_alternativa.alt_ide, alt_titulo, alt_valor,
+                res_alt_ide, res_valor, SUM( CASE WHEN res_valor = alt_valor THEN 1 ELSE 0 END) AS subtotal_alternativa 
+                ', 'sd_plan', 'sd_plan.pla_esta_ide = 1 AND
+                pla_ide = \'19\' AND
+                ins_ide = \'89\' AND
+                pm_ide = \'223\' AND
+                pm_estado_actual = \'EJECUTADO\'
+                ', 'sd_plan_muestra.pm_ide ASC,sd_item.ite_numero ASC ', 'sd_plan.pla_ide, 
+                sd_item.ite_ide, 
+                sd_item.ite_titulo, 
+                sd_alternativa.alt_ide, 
+                sd_alternativa.alt_titulo, 
+                sd_alternativa.alt_valor', false, [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->getVerFichaLlenada()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-19 08:26:40 --> mysqli_sql_exception: Column 'pla_ide' in where clause is ambiguous in /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `sd_plan...', 0)
+#1 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sd_plan...')
+#2 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sd_plan...')
+#3 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `sd_plan...', Array, false)
+#4 /home/customer/www/xurainc.com/public_html/monitoreo/app/Models/Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Monitoreo.php(2500): App\Models\Generaldb->selectSomeDataJoin('sd_plan.pla_ide...', 'sd_plan', 'sd_plan.pla_est...', 'sd_plan_muestra...', 'sd_plan.pla_ide...', false, Array)
+#6 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(927): App\Controllers\Monitoreo->getVerFichaLlenada()
+#7 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/customer/www/xurainc.com/public_html/monitoreo/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-19 08:26:40 --> Column 'pla_ide' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `sd_plan`.`pla_ide`, `ite_numero`, `sd_item`.`ite_ide`, `ite_titulo`, `sd_alternativa`.`alt_ide`, `alt_titulo`, `alt_valor`, `res_alt_ide`, `res_valor`, SUM( CASE WHEN res_valor = alt_valor THEN 1 ELSE 0 END) AS subtotal_alternativa
+FROM `sd_plan`
+JOIN `sd_plan_muestra` ON `sd_plan`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_plan_instrumento` ON `sd_plan_instrumento`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_instrumento` ON `sd_plan_instrumento`.`ins_ide` = `sd_instrumento`.`ins_ide`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+LEFT JOIN `sd_respuesta` ON `sd_respuesta`.`res_pla_ide` = `sd_plan_muestra`.`pla_ide` AND
+`sd_respuesta`.`res_pm_ide` = `sd_plan_muestra`.`pm_ide` AND
+`sd_respuesta`.`res_ite_ide` = `sd_item`.`ite_ide` AND
+`sd_respuesta`.`res_ins_ide` = `sd_instrumento`.`ins_ide` AND `sd_respuesta`.`res_alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_plan`.`pla_esta_ide` = 1 AND
+                `pla_ide` = \'19\' AND
+                `ins_ide` = \'89\' AND
+                `pm_ide` = \'224\' AND
+                pm_estado_actual = \'EJECUTADO\'
+                
+GROUP BY `sd_plan`.`pla_ide`, `sd_item`.`ite_ide`, `sd_item`.`ite_titulo`, `sd_alternativa`.`alt_ide`, `sd_alternativa`.`alt_titulo`, `sd_alternativa`.`alt_valor`
+ORDER BY `sd_plan_muestra`.`pm_ide` ASC, `sd_item`.`ite_numero` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sd_plan`.`pla_ide`, `ite_numero`, `sd_item`.`ite_ide`, `ite_titulo`, `sd_alternativa`.`alt_ide`, `alt_titulo`, `alt_valor`, `res_alt_ide`, `res_valor`, SUM( CASE WHEN res_valor = alt_valor THEN 1 ELSE 0 END) AS subtotal_alternativa
+FROM `sd_plan`
+JOIN `sd_plan_muestra` ON `sd_plan`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_plan_instrumento` ON `sd_plan_instrumento`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_instrumento` ON `sd_plan_instrumento`.`ins_ide` = `sd_instrumento`.`ins_ide`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+LEFT JOIN `sd_respuesta` ON `sd_respuesta`.`res_pla_ide` = `sd_plan_muestra`.`pla_ide` AND
+`sd_respuesta`.`res_pm_ide` = `sd_plan_muestra`.`pm_ide` AND
+`sd_respuesta`.`res_ite_ide` = `sd_item`.`ite_ide` AND
+`sd_respuesta`.`res_ins_ide` = `sd_instrumento`.`ins_ide` AND `sd_respuesta`.`res_alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_plan`.`pla_esta_ide` = 1 AND
+                `pla_ide` = \'19\' AND
+                `ins_ide` = \'89\' AND
+                `pm_ide` = \'224\' AND
+                pm_estado_actual = \'EJECUTADO\'
+                
+GROUP BY `sd_plan`.`pla_ide`, `sd_item`.`ite_ide`, `sd_item`.`ite_titulo`, `sd_alternativa`.`alt_ide`, `sd_alternativa`.`alt_titulo`, `sd_alternativa`.`alt_valor`
+ORDER BY `sd_plan_muestra`.`pm_ide` ASC, `sd_item`.`ite_numero` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sd_plan`.`pla_ide`, `ite_numero`, `sd_item`.`ite_ide`, `ite_titulo`, `sd_alternativa`.`alt_ide`, `alt_titulo`, `alt_valor`, `res_alt_ide`, `res_valor`, SUM( CASE WHEN res_valor = alt_valor THEN 1 ELSE 0 END) AS subtotal_alternativa
+FROM `sd_plan`
+JOIN `sd_plan_muestra` ON `sd_plan`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_plan_instrumento` ON `sd_plan_instrumento`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_instrumento` ON `sd_plan_instrumento`.`ins_ide` = `sd_instrumento`.`ins_ide`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+LEFT JOIN `sd_respuesta` ON `sd_respuesta`.`res_pla_ide` = `sd_plan_muestra`.`pla_ide` AND
+`sd_respuesta`.`res_pm_ide` = `sd_plan_muestra`.`pm_ide` AND
+`sd_respuesta`.`res_ite_ide` = `sd_item`.`ite_ide` AND
+`sd_respuesta`.`res_ins_ide` = `sd_instrumento`.`ins_ide` AND `sd_respuesta`.`res_alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_plan`.`pla_esta_ide` = 1 AND
+                `pla_ide` = \'19\' AND
+                `ins_ide` = \'89\' AND
+                `pm_ide` = \'224\' AND
+                pm_estado_actual = \'EJECUTADO\'
+                
+GROUP BY `sd_plan`.`pla_ide`, `sd_item`.`ite_ide`, `sd_item`.`ite_titulo`, `sd_alternativa`.`alt_ide`, `sd_alternativa`.`alt_titulo`, `sd_alternativa`.`alt_valor`
+ORDER BY `sd_plan_muestra`.`pm_ide` ASC, `sd_item`.`ite_numero` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `sd_plan`.`pla_ide`, `ite_numero`, `sd_item`.`ite_ide`, `ite_titulo`, `sd_alternativa`.`alt_ide`, `alt_titulo`, `alt_valor`, `res_alt_ide`, `res_valor`, SUM( CASE WHEN res_valor = alt_valor THEN 1 ELSE 0 END) AS subtotal_alternativa
+FROM `sd_plan`
+JOIN `sd_plan_muestra` ON `sd_plan`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_plan_instrumento` ON `sd_plan_instrumento`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_instrumento` ON `sd_plan_instrumento`.`ins_ide` = `sd_instrumento`.`ins_ide`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+LEFT JOIN `sd_respuesta` ON `sd_respuesta`.`res_pla_ide` = `sd_plan_muestra`.`pla_ide` AND
+`sd_respuesta`.`res_pm_ide` = `sd_plan_muestra`.`pm_ide` AND
+`sd_respuesta`.`res_ite_ide` = `sd_item`.`ite_ide` AND
+`sd_respuesta`.`res_ins_ide` = `sd_instrumento`.`ins_ide` AND `sd_respuesta`.`res_alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_plan`.`pla_esta_ide` = 1 AND
+                `pla_ide` = \'19\' AND
+                `ins_ide` = \'89\' AND
+                `pm_ide` = \'224\' AND
+                pm_estado_actual = \'EJECUTADO\'
+                
+GROUP BY `sd_plan`.`pla_ide`, `sd_item`.`ite_ide`, `sd_item`.`ite_titulo`, `sd_alternativa`.`alt_ide`, `sd_alternativa`.`alt_titulo`, `sd_alternativa`.`alt_valor`
+ORDER BY `sd_plan_muestra`.`pm_ide` ASC, `sd_item`.`ite_numero` ASC', [], false)
+ 5 APPPATH/Models/Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Monitoreo.php(2500): App\Models\Generaldb->selectSomeDataJoin('sd_plan.pla_ide, ite_numero, sd_item.ite_ide, ite_titulo, sd_alternativa.alt_ide, alt_titulo, alt_valor,
+                res_alt_ide, res_valor, SUM( CASE WHEN res_valor = alt_valor THEN 1 ELSE 0 END) AS subtotal_alternativa 
+                ', 'sd_plan', 'sd_plan.pla_esta_ide = 1 AND
+                pla_ide = \'19\' AND
+                ins_ide = \'89\' AND
+                pm_ide = \'224\' AND
+                pm_estado_actual = \'EJECUTADO\'
+                ', 'sd_plan_muestra.pm_ide ASC,sd_item.ite_numero ASC ', 'sd_plan.pla_ide, 
+                sd_item.ite_ide, 
+                sd_item.ite_titulo, 
+                sd_alternativa.alt_ide, 
+                sd_alternativa.alt_titulo, 
+                sd_alternativa.alt_valor', false, [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->getVerFichaLlenada()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-19 08:28:30 --> mysqli_sql_exception: Column 'pla_ide' in where clause is ambiguous in /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `sd_plan...', 0)
+#1 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sd_plan...')
+#2 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sd_plan...')
+#3 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `sd_plan...', Array, false)
+#4 /home/customer/www/xurainc.com/public_html/monitoreo/app/Models/Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Monitoreo.php(2500): App\Models\Generaldb->selectSomeDataJoin('sd_plan.pla_ide...', 'sd_plan', 'sd_plan.pla_est...', 'sd_plan_muestra...', 'sd_plan.pla_ide...', false, Array)
+#6 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(927): App\Controllers\Monitoreo->getVerFichaLlenada()
+#7 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/customer/www/xurainc.com/public_html/monitoreo/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-19 08:28:30 --> Column 'pla_ide' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `sd_plan`.`pla_ide`, `ite_numero`, `sd_item`.`ite_ide`, `ite_titulo`, `sd_alternativa`.`alt_ide`, `alt_titulo`, `alt_valor`, `res_alt_ide`, `res_valor`, SUM( CASE WHEN res_valor = alt_valor THEN 1 ELSE 0 END) AS subtotal_alternativa
+FROM `sd_plan`
+JOIN `sd_plan_muestra` ON `sd_plan`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_plan_instrumento` ON `sd_plan_instrumento`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_instrumento` ON `sd_plan_instrumento`.`ins_ide` = `sd_instrumento`.`ins_ide`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+LEFT JOIN `sd_respuesta` ON `sd_respuesta`.`res_pla_ide` = `sd_plan_muestra`.`pla_ide` AND
+`sd_respuesta`.`res_pm_ide` = `sd_plan_muestra`.`pm_ide` AND
+`sd_respuesta`.`res_ite_ide` = `sd_item`.`ite_ide` AND
+`sd_respuesta`.`res_ins_ide` = `sd_instrumento`.`ins_ide` AND `sd_respuesta`.`res_alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_plan`.`pla_esta_ide` = 1 AND
+                `pla_ide` = \'19\' AND
+                `ins_ide` = \'89\' AND
+                `pm_ide` = \'223\' AND
+                pm_estado_actual = \'EJECUTADO\'
+                
+GROUP BY `sd_plan`.`pla_ide`, `sd_item`.`ite_ide`, `sd_item`.`ite_titulo`, `sd_alternativa`.`alt_ide`, `sd_alternativa`.`alt_titulo`, `sd_alternativa`.`alt_valor`
+ORDER BY `sd_plan_muestra`.`pm_ide` ASC, `sd_item`.`ite_numero` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sd_plan`.`pla_ide`, `ite_numero`, `sd_item`.`ite_ide`, `ite_titulo`, `sd_alternativa`.`alt_ide`, `alt_titulo`, `alt_valor`, `res_alt_ide`, `res_valor`, SUM( CASE WHEN res_valor = alt_valor THEN 1 ELSE 0 END) AS subtotal_alternativa
+FROM `sd_plan`
+JOIN `sd_plan_muestra` ON `sd_plan`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_plan_instrumento` ON `sd_plan_instrumento`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_instrumento` ON `sd_plan_instrumento`.`ins_ide` = `sd_instrumento`.`ins_ide`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+LEFT JOIN `sd_respuesta` ON `sd_respuesta`.`res_pla_ide` = `sd_plan_muestra`.`pla_ide` AND
+`sd_respuesta`.`res_pm_ide` = `sd_plan_muestra`.`pm_ide` AND
+`sd_respuesta`.`res_ite_ide` = `sd_item`.`ite_ide` AND
+`sd_respuesta`.`res_ins_ide` = `sd_instrumento`.`ins_ide` AND `sd_respuesta`.`res_alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_plan`.`pla_esta_ide` = 1 AND
+                `pla_ide` = \'19\' AND
+                `ins_ide` = \'89\' AND
+                `pm_ide` = \'223\' AND
+                pm_estado_actual = \'EJECUTADO\'
+                
+GROUP BY `sd_plan`.`pla_ide`, `sd_item`.`ite_ide`, `sd_item`.`ite_titulo`, `sd_alternativa`.`alt_ide`, `sd_alternativa`.`alt_titulo`, `sd_alternativa`.`alt_valor`
+ORDER BY `sd_plan_muestra`.`pm_ide` ASC, `sd_item`.`ite_numero` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sd_plan`.`pla_ide`, `ite_numero`, `sd_item`.`ite_ide`, `ite_titulo`, `sd_alternativa`.`alt_ide`, `alt_titulo`, `alt_valor`, `res_alt_ide`, `res_valor`, SUM( CASE WHEN res_valor = alt_valor THEN 1 ELSE 0 END) AS subtotal_alternativa
+FROM `sd_plan`
+JOIN `sd_plan_muestra` ON `sd_plan`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_plan_instrumento` ON `sd_plan_instrumento`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_instrumento` ON `sd_plan_instrumento`.`ins_ide` = `sd_instrumento`.`ins_ide`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+LEFT JOIN `sd_respuesta` ON `sd_respuesta`.`res_pla_ide` = `sd_plan_muestra`.`pla_ide` AND
+`sd_respuesta`.`res_pm_ide` = `sd_plan_muestra`.`pm_ide` AND
+`sd_respuesta`.`res_ite_ide` = `sd_item`.`ite_ide` AND
+`sd_respuesta`.`res_ins_ide` = `sd_instrumento`.`ins_ide` AND `sd_respuesta`.`res_alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_plan`.`pla_esta_ide` = 1 AND
+                `pla_ide` = \'19\' AND
+                `ins_ide` = \'89\' AND
+                `pm_ide` = \'223\' AND
+                pm_estado_actual = \'EJECUTADO\'
+                
+GROUP BY `sd_plan`.`pla_ide`, `sd_item`.`ite_ide`, `sd_item`.`ite_titulo`, `sd_alternativa`.`alt_ide`, `sd_alternativa`.`alt_titulo`, `sd_alternativa`.`alt_valor`
+ORDER BY `sd_plan_muestra`.`pm_ide` ASC, `sd_item`.`ite_numero` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `sd_plan`.`pla_ide`, `ite_numero`, `sd_item`.`ite_ide`, `ite_titulo`, `sd_alternativa`.`alt_ide`, `alt_titulo`, `alt_valor`, `res_alt_ide`, `res_valor`, SUM( CASE WHEN res_valor = alt_valor THEN 1 ELSE 0 END) AS subtotal_alternativa
+FROM `sd_plan`
+JOIN `sd_plan_muestra` ON `sd_plan`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_plan_instrumento` ON `sd_plan_instrumento`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_instrumento` ON `sd_plan_instrumento`.`ins_ide` = `sd_instrumento`.`ins_ide`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+LEFT JOIN `sd_respuesta` ON `sd_respuesta`.`res_pla_ide` = `sd_plan_muestra`.`pla_ide` AND
+`sd_respuesta`.`res_pm_ide` = `sd_plan_muestra`.`pm_ide` AND
+`sd_respuesta`.`res_ite_ide` = `sd_item`.`ite_ide` AND
+`sd_respuesta`.`res_ins_ide` = `sd_instrumento`.`ins_ide` AND `sd_respuesta`.`res_alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_plan`.`pla_esta_ide` = 1 AND
+                `pla_ide` = \'19\' AND
+                `ins_ide` = \'89\' AND
+                `pm_ide` = \'223\' AND
+                pm_estado_actual = \'EJECUTADO\'
+                
+GROUP BY `sd_plan`.`pla_ide`, `sd_item`.`ite_ide`, `sd_item`.`ite_titulo`, `sd_alternativa`.`alt_ide`, `sd_alternativa`.`alt_titulo`, `sd_alternativa`.`alt_valor`
+ORDER BY `sd_plan_muestra`.`pm_ide` ASC, `sd_item`.`ite_numero` ASC', [], false)
+ 5 APPPATH/Models/Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Monitoreo.php(2500): App\Models\Generaldb->selectSomeDataJoin('sd_plan.pla_ide, ite_numero, sd_item.ite_ide, ite_titulo, sd_alternativa.alt_ide, alt_titulo, alt_valor,
+                res_alt_ide, res_valor, SUM( CASE WHEN res_valor = alt_valor THEN 1 ELSE 0 END) AS subtotal_alternativa 
+                ', 'sd_plan', 'sd_plan.pla_esta_ide = 1 AND
+                pla_ide = \'19\' AND
+                ins_ide = \'89\' AND
+                pm_ide = \'223\' AND
+                pm_estado_actual = \'EJECUTADO\'
+                ', 'sd_plan_muestra.pm_ide ASC,sd_item.ite_numero ASC ', 'sd_plan.pla_ide, 
+                sd_item.ite_ide, 
+                sd_item.ite_titulo, 
+                sd_alternativa.alt_ide, 
+                sd_alternativa.alt_titulo, 
+                sd_alternativa.alt_valor', false, [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->getVerFichaLlenada()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-19 08:30:43 --> Class "Mpdf\Mpdf" not found
+in APPPATH/Libraries/Pdf.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Libraries/Pdf.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\Pdf')
+ 4 APPPATH/Controllers/Monitoreo.php(2921): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\Pdf')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->getInstrumentoPdf()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-19 08:30:49 --> Undefined array key 0
+in APPPATH/Views/monitoreo/pdf/monitoreo.php on line 6.
+ 1 APPPATH/Views/monitoreo/pdf/monitoreo.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Views/monitoreo/pdf/monitoreo.php', 6)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/monitoreo/pdf/monitoreo.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('monitoreo/pdf/monitoreo', [], true)
+ 5 APPPATH/Controllers/Monitoreo.php(2918): view('monitoreo/pdf/monitoreo', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->getInstrumentoPdf()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-19 08:44:12 --> Undefined array key "mue_ide"
+in APPPATH/Controllers/Monitoreo.php on line 2389.
+ 1 APPPATH/Controllers/Monitoreo.php(2389): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mue_ide"', 'APPPATH/Controllers/Monitoreo.php', 2389)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->getVerFichaLlenada()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-19 10:31:43 --> Class "Mpdf\Mpdf" not found
+in APPPATH/Libraries/Pdf.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Libraries/Pdf.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\Pdf')
+ 4 APPPATH/Controllers/Monitoreo.php(2921): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\Pdf')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->getInstrumentoPdf()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-19 10:31:48 --> Undefined array key 0
+in APPPATH/Views/monitoreo/pdf/monitoreo.php on line 6.
+ 1 APPPATH/Views/monitoreo/pdf/monitoreo.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Views/monitoreo/pdf/monitoreo.php', 6)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/monitoreo/pdf/monitoreo.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('monitoreo/pdf/monitoreo', [], true)
+ 5 APPPATH/Controllers/Monitoreo.php(2918): view('monitoreo/pdf/monitoreo', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->getInstrumentoPdf()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-19 16:19:01 --> mysqli_sql_exception: Column 'pla_ide' in where clause is ambiguous in /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `sd_plan...', 0)
+#1 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sd_plan...')
+#2 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sd_plan...')
+#3 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `sd_plan...', Array, false)
+#4 /home/customer/www/xurainc.com/public_html/monitoreo/app/Models/Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Monitoreo.php(2500): App\Models\Generaldb->selectSomeDataJoin('sd_plan.pla_ide...', 'sd_plan', 'sd_plan.pla_est...', 'sd_plan_muestra...', 'sd_plan.pla_ide...', false, Array)
+#6 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(927): App\Controllers\Monitoreo->getVerFichaLlenada()
+#7 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/customer/www/xurainc.com/public_html/monitoreo/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-19 16:19:01 --> Column 'pla_ide' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `sd_plan`.`pla_ide`, `ite_numero`, `sd_item`.`ite_ide`, `ite_titulo`, `sd_alternativa`.`alt_ide`, `alt_titulo`, `alt_valor`, `res_alt_ide`, `res_valor`, SUM( CASE WHEN res_valor = alt_valor THEN 1 ELSE 0 END) AS subtotal_alternativa
+FROM `sd_plan`
+JOIN `sd_plan_muestra` ON `sd_plan`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_plan_instrumento` ON `sd_plan_instrumento`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_instrumento` ON `sd_plan_instrumento`.`ins_ide` = `sd_instrumento`.`ins_ide`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+LEFT JOIN `sd_respuesta` ON `sd_respuesta`.`res_pla_ide` = `sd_plan_muestra`.`pla_ide` AND
+`sd_respuesta`.`res_pm_ide` = `sd_plan_muestra`.`pm_ide` AND
+`sd_respuesta`.`res_ite_ide` = `sd_item`.`ite_ide` AND
+`sd_respuesta`.`res_ins_ide` = `sd_instrumento`.`ins_ide` AND `sd_respuesta`.`res_alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_plan`.`pla_esta_ide` = 1 AND
+                `pla_ide` = \'20\' AND
+                `ins_ide` = \'88\' AND
+                `pm_ide` = \'229\' AND
+                pm_estado_actual = \'EJECUTADO\'
+                
+GROUP BY `sd_plan`.`pla_ide`, `sd_item`.`ite_ide`, `sd_item`.`ite_titulo`, `sd_alternativa`.`alt_ide`, `sd_alternativa`.`alt_titulo`, `sd_alternativa`.`alt_valor`
+ORDER BY `sd_plan_muestra`.`pm_ide` ASC, `sd_item`.`ite_numero` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sd_plan`.`pla_ide`, `ite_numero`, `sd_item`.`ite_ide`, `ite_titulo`, `sd_alternativa`.`alt_ide`, `alt_titulo`, `alt_valor`, `res_alt_ide`, `res_valor`, SUM( CASE WHEN res_valor = alt_valor THEN 1 ELSE 0 END) AS subtotal_alternativa
+FROM `sd_plan`
+JOIN `sd_plan_muestra` ON `sd_plan`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_plan_instrumento` ON `sd_plan_instrumento`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_instrumento` ON `sd_plan_instrumento`.`ins_ide` = `sd_instrumento`.`ins_ide`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+LEFT JOIN `sd_respuesta` ON `sd_respuesta`.`res_pla_ide` = `sd_plan_muestra`.`pla_ide` AND
+`sd_respuesta`.`res_pm_ide` = `sd_plan_muestra`.`pm_ide` AND
+`sd_respuesta`.`res_ite_ide` = `sd_item`.`ite_ide` AND
+`sd_respuesta`.`res_ins_ide` = `sd_instrumento`.`ins_ide` AND `sd_respuesta`.`res_alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_plan`.`pla_esta_ide` = 1 AND
+                `pla_ide` = \'20\' AND
+                `ins_ide` = \'88\' AND
+                `pm_ide` = \'229\' AND
+                pm_estado_actual = \'EJECUTADO\'
+                
+GROUP BY `sd_plan`.`pla_ide`, `sd_item`.`ite_ide`, `sd_item`.`ite_titulo`, `sd_alternativa`.`alt_ide`, `sd_alternativa`.`alt_titulo`, `sd_alternativa`.`alt_valor`
+ORDER BY `sd_plan_muestra`.`pm_ide` ASC, `sd_item`.`ite_numero` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sd_plan`.`pla_ide`, `ite_numero`, `sd_item`.`ite_ide`, `ite_titulo`, `sd_alternativa`.`alt_ide`, `alt_titulo`, `alt_valor`, `res_alt_ide`, `res_valor`, SUM( CASE WHEN res_valor = alt_valor THEN 1 ELSE 0 END) AS subtotal_alternativa
+FROM `sd_plan`
+JOIN `sd_plan_muestra` ON `sd_plan`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_plan_instrumento` ON `sd_plan_instrumento`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_instrumento` ON `sd_plan_instrumento`.`ins_ide` = `sd_instrumento`.`ins_ide`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+LEFT JOIN `sd_respuesta` ON `sd_respuesta`.`res_pla_ide` = `sd_plan_muestra`.`pla_ide` AND
+`sd_respuesta`.`res_pm_ide` = `sd_plan_muestra`.`pm_ide` AND
+`sd_respuesta`.`res_ite_ide` = `sd_item`.`ite_ide` AND
+`sd_respuesta`.`res_ins_ide` = `sd_instrumento`.`ins_ide` AND `sd_respuesta`.`res_alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_plan`.`pla_esta_ide` = 1 AND
+                `pla_ide` = \'20\' AND
+                `ins_ide` = \'88\' AND
+                `pm_ide` = \'229\' AND
+                pm_estado_actual = \'EJECUTADO\'
+                
+GROUP BY `sd_plan`.`pla_ide`, `sd_item`.`ite_ide`, `sd_item`.`ite_titulo`, `sd_alternativa`.`alt_ide`, `sd_alternativa`.`alt_titulo`, `sd_alternativa`.`alt_valor`
+ORDER BY `sd_plan_muestra`.`pm_ide` ASC, `sd_item`.`ite_numero` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `sd_plan`.`pla_ide`, `ite_numero`, `sd_item`.`ite_ide`, `ite_titulo`, `sd_alternativa`.`alt_ide`, `alt_titulo`, `alt_valor`, `res_alt_ide`, `res_valor`, SUM( CASE WHEN res_valor = alt_valor THEN 1 ELSE 0 END) AS subtotal_alternativa
+FROM `sd_plan`
+JOIN `sd_plan_muestra` ON `sd_plan`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_plan_instrumento` ON `sd_plan_instrumento`.`pla_ide` = `sd_plan_muestra`.`pla_ide`
+JOIN `sd_instrumento` ON `sd_plan_instrumento`.`ins_ide` = `sd_instrumento`.`ins_ide`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+LEFT JOIN `sd_respuesta` ON `sd_respuesta`.`res_pla_ide` = `sd_plan_muestra`.`pla_ide` AND
+`sd_respuesta`.`res_pm_ide` = `sd_plan_muestra`.`pm_ide` AND
+`sd_respuesta`.`res_ite_ide` = `sd_item`.`ite_ide` AND
+`sd_respuesta`.`res_ins_ide` = `sd_instrumento`.`ins_ide` AND `sd_respuesta`.`res_alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_plan`.`pla_esta_ide` = 1 AND
+                `pla_ide` = \'20\' AND
+                `ins_ide` = \'88\' AND
+                `pm_ide` = \'229\' AND
+                pm_estado_actual = \'EJECUTADO\'
+                
+GROUP BY `sd_plan`.`pla_ide`, `sd_item`.`ite_ide`, `sd_item`.`ite_titulo`, `sd_alternativa`.`alt_ide`, `sd_alternativa`.`alt_titulo`, `sd_alternativa`.`alt_valor`
+ORDER BY `sd_plan_muestra`.`pm_ide` ASC, `sd_item`.`ite_numero` ASC', [], false)
+ 5 APPPATH/Models/Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Monitoreo.php(2500): App\Models\Generaldb->selectSomeDataJoin('sd_plan.pla_ide, ite_numero, sd_item.ite_ide, ite_titulo, sd_alternativa.alt_ide, alt_titulo, alt_valor,
+                res_alt_ide, res_valor, SUM( CASE WHEN res_valor = alt_valor THEN 1 ELSE 0 END) AS subtotal_alternativa 
+                ', 'sd_plan', 'sd_plan.pla_esta_ide = 1 AND
+                pla_ide = \'20\' AND
+                ins_ide = \'88\' AND
+                pm_ide = \'229\' AND
+                pm_estado_actual = \'EJECUTADO\'
+                ', 'sd_plan_muestra.pm_ide ASC,sd_item.ite_numero ASC ', 'sd_plan.pla_ide, 
+                sd_item.ite_ide, 
+                sd_item.ite_titulo, 
+                sd_alternativa.alt_ide, 
+                sd_alternativa.alt_titulo, 
+                sd_alternativa.alt_valor', false, [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->getVerFichaLlenada()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-19 17:45:39 --> Class "Mpdf\Mpdf" not found
+in APPPATH/Libraries/Pdf.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Libraries/Pdf.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\Pdf')
+ 4 APPPATH/Controllers/Monitoreo.php(2921): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\Pdf')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->getInstrumentoPdf()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-19 17:45:44 --> Undefined array key 0
+in APPPATH/Views/monitoreo/pdf/monitoreo.php on line 6.
+ 1 APPPATH/Views/monitoreo/pdf/monitoreo.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Views/monitoreo/pdf/monitoreo.php', 6)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/monitoreo/pdf/monitoreo.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('monitoreo/pdf/monitoreo', [], true)
+ 5 APPPATH/Controllers/Monitoreo.php(2918): view('monitoreo/pdf/monitoreo', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->getInstrumentoPdf()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,167 @@
+ERROR - 2024-01-31 05:51:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN `ugels` ON `ugel_ide` = `usua_ugel_ide`
+INNER JOIN `cargos` ON `carg_' at line 4 in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Mgrilla.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Libraries\Lgrilla.php(183): App\Models\Mgrilla::getTotal('com_subidos', Array, Array, '(subi_archivo l...')
+#6 D:\wamp\www\simondrep\app\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, '')
+#7 D:\wamp\www\simondrep\app\Controllers\Informes2.php(584): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfoUgel()
+#9 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+#10 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-31 05:51:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN `ugels` ON `ugel_ide` = `usua_ugel_ide`
+INNER JOIN `cargos` ON `carg_' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `usuarios` ON `usua_ide` = `subi_usua_ide` and `subi_info_ide` = 
+INNER JOIN `ugels` ON `ugel_ide` = `usua_ugel_ide`
+INNER JOIN `cargos` ON `carg_ide` = `usua_carg_ide`
+INNER JOIN `niveles` ON `nive_ide` = `carg_nive_ide`
+WHERE `usua_perf_ide` = 3
+AND `usua_esta_ide` = 1
+AND `carg_nive_ide` = \'11\'
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `usua_nombres` like \'%%\' OR `usua_paterno` like \'%%\' OR `usua_materno` like \'%%\' OR `ugel_nombre` like \'%%\' OR `carg_nombre` like \'%%\' OR `nive_nombre` like \'%%\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `usuarios` ON `usua_ide` = `subi_usua_ide` and `subi_info_ide` = 
+INNER JOIN `ugels` ON `ugel_ide` = `usua_ugel_ide`
+INNER JOIN `cargos` ON `carg_ide` = `usua_carg_ide`
+INNER JOIN `niveles` ON `nive_ide` = `carg_nive_ide`
+WHERE `usua_perf_ide` = 3
+AND `usua_esta_ide` = 1
+AND `carg_nive_ide` = \'11\'
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `usua_nombres` like \'%%\' OR `usua_paterno` like \'%%\' OR `usua_materno` like \'%%\' OR `ugel_nombre` like \'%%\' OR `carg_nombre` like \'%%\' OR `nive_nombre` like \'%%\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `usuarios` ON `usua_ide` = `subi_usua_ide` and `subi_info_ide` = 
+INNER JOIN `ugels` ON `ugel_ide` = `usua_ugel_ide`
+INNER JOIN `cargos` ON `carg_ide` = `usua_carg_ide`
+INNER JOIN `niveles` ON `nive_ide` = `carg_nive_ide`
+WHERE `usua_perf_ide` = 3
+AND `usua_esta_ide` = 1
+AND `carg_nive_ide` = \'11\'
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `usua_nombres` like \'%%\' OR `usua_paterno` like \'%%\' OR `usua_materno` like \'%%\' OR `ugel_nombre` like \'%%\' OR `carg_nombre` like \'%%\' OR `nive_nombre` like \'%%\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `usuarios` ON `usua_ide` = `subi_usua_ide` and `subi_info_ide` = 
+INNER JOIN `ugels` ON `ugel_ide` = `usua_ugel_ide`
+INNER JOIN `cargos` ON `carg_ide` = `usua_carg_ide`
+INNER JOIN `niveles` ON `nive_ide` = `carg_nive_ide`
+WHERE `usua_perf_ide` = :usua_perf_ide:
+AND `usua_esta_ide` = :usua_esta_ide:
+AND `carg_nive_ide` = :carg_nive_ide:
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `usua_nombres` like \'%%\' OR `usua_paterno` like \'%%\' OR `usua_materno` like \'%%\' OR `ugel_nombre` like \'%%\' OR `carg_nombre` like \'%%\' OR `nive_nombre` like \'%%\')', [...], false)
+ 5 APPPATH\Models\Mgrilla.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Lgrilla.php(183): App\Models\Mgrilla::getTotal('com_subidos', [...], [...], '(subi_archivo like \'%%\' OR subi_create_at like \'%%\' OR usua_nombres like \'%%\' OR usua_paterno like \'%%\' OR usua_materno like \'%%\' OR ugel_nombre like \'%%\' OR carg_nombre like \'%%\' OR nive_nombre like \'%%\')')
+ 7 APPPATH\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, 'D:\\wamp\\www\\simondrep')
+ 8 APPPATH\Controllers\Informes2.php(584): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfoUgel()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 06:10:52 --> Undefined array key 2
+in APPPATH\Views\grilla\vdatagrilla.php on line 72.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 2', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(588): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfoUgel()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 06:11:01 --> Undefined array key 2
+in APPPATH\Views\grilla\vdatagrilla.php on line 72.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 2', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(588): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfoUgel()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 06:55:50 --> Undefined array key "seleccionados"
+in APPPATH\Controllers\Informes2.php on line 609.
+ 1 APPPATH\Controllers\Informes2.php(609): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "seleccionados"', 'APPPATH\\Controllers\\Informes2.php', 609)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->postCaliSubi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 06:56:00 --> Undefined array key "seleccionados"
+in APPPATH\Controllers\Informes2.php on line 609.
+ 1 APPPATH\Controllers\Informes2.php(609): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "seleccionados"', 'APPPATH\\Controllers\\Informes2.php', 609)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->postCaliSubi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 06:57:34 --> Undefined array key "seleccionados"
+in APPPATH\Controllers\Informes2.php on line 610.
+ 1 APPPATH\Controllers\Informes2.php(610): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "seleccionados"', 'APPPATH\\Controllers\\Informes2.php', 610)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->postCaliSubi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 06:58:05 --> Undefined array key "seleccionados"
+in APPPATH\Controllers\Informes2.php on line 610.
+ 1 APPPATH\Controllers\Informes2.php(610): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "seleccionados"', 'APPPATH\\Controllers\\Informes2.php', 610)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->postCaliSubi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 08:16:21 --> Undefined array key "esta_clase"
+in APPPATH\Views\grilla\vdatagrilla.php on line 78.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "esta_clase"', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 78)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(616): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfoUgel()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 08:16:51 --> Undefined array key "esta_clase"
+in APPPATH\Views\grilla\vdatagrilla.php on line 78.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "esta_clase"', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 78)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(616): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfoUgel()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 08:16:59 --> Undefined array key "esta_clase"
+in APPPATH\Views\grilla\vdatagrilla.php on line 78.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "esta_clase"', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 78)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(616): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfoUgel()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 08:18:41 --> Undefined array key "esta_clase"
+in APPPATH\Views\grilla\vdatagrilla.php on line 78.
+ 1 APPPATH\Views\grilla\vdatagrilla.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "esta_clase"', 'APPPATH\\Views\\grilla\\vdatagrilla.php', 78)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\grilla\\vdatagrilla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('grilla/vdatagrilla', [], true)
+ 5 APPPATH\Libraries\Lgrilla.php(251): view('grilla/vdatagrilla', [...])
+ 6 APPPATH\Controllers\Informes2.php(616): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_informes')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfoUgel()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

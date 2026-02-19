@@ -1,0 +1,1085 @@
+CRITICAL - 2024-12-30 08:09:58 --> Undefined array key "celdas"
+in APPPATH\Controllers\Anexos2024.php on line 138.
+ 1 APPPATH\Controllers\Anexos2024.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "celdas"', 'APPPATH\\Controllers\\Anexos2024.php', 138)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-30 10:15:58 --> mysqli_sql_exception: Unknown column 'ane2_preg_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(157): App\Models\Generaldb->insertData('2024_anexo7a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:15:58 --> mysqli_sql_exception: Unknown column 'ane2_preg_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(157): App\Models\Generaldb->insertData('2024_anexo7a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:15:58 --> mysqli_sql_exception: Unknown column 'ane2_preg_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(157): App\Models\Generaldb->insertData('2024_anexo7a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:15:58 --> mysqli_sql_exception: Unknown column 'ane2_preg_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(157): App\Models\Generaldb->insertData('2024_anexo7a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:15:58 --> mysqli_sql_exception: Unknown column 'ane2_preg_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(157): App\Models\Generaldb->insertData('2024_anexo7a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:15:58 --> mysqli_sql_exception: Unknown column 'ane2_preg_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(157): App\Models\Generaldb->insertData('2024_anexo7a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:15:58 --> mysqli_sql_exception: Unknown column 'ane2_preg_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(157): App\Models\Generaldb->insertData('2024_anexo7a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:15:58 --> mysqli_sql_exception: Unknown column 'ane2_preg_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(157): App\Models\Generaldb->insertData('2024_anexo7a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:15:58 --> mysqli_sql_exception: Unknown column 'ane2_preg_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(157): App\Models\Generaldb->insertData('2024_anexo7a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:15:58 --> mysqli_sql_exception: Unknown column 'ane2_preg_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(157): App\Models\Generaldb->insertData('2024_anexo7a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:18:46 --> mysqli_sql_exception: Unknown column 'ane2_preg_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(157): App\Models\Generaldb->insertData('2024_anexo7a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:18:46 --> mysqli_sql_exception: Unknown column 'ane2_preg_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(157): App\Models\Generaldb->insertData('2024_anexo7a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:18:46 --> mysqli_sql_exception: Unknown column 'ane2_preg_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(157): App\Models\Generaldb->insertData('2024_anexo7a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:18:46 --> mysqli_sql_exception: Unknown column 'ane2_preg_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(157): App\Models\Generaldb->insertData('2024_anexo7a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:18:46 --> mysqli_sql_exception: Unknown column 'ane2_preg_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(157): App\Models\Generaldb->insertData('2024_anexo7a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:18:46 --> mysqli_sql_exception: Unknown column 'ane2_preg_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(157): App\Models\Generaldb->insertData('2024_anexo7a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:18:46 --> mysqli_sql_exception: Unknown column 'ane2_preg_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(157): App\Models\Generaldb->insertData('2024_anexo7a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:18:46 --> mysqli_sql_exception: Unknown column 'ane2_preg_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(157): App\Models\Generaldb->insertData('2024_anexo7a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:18:46 --> mysqli_sql_exception: Unknown column 'ane2_preg_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(157): App\Models\Generaldb->insertData('2024_anexo7a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:18:46 --> mysqli_sql_exception: Unknown column 'ane2_preg_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(157): App\Models\Generaldb->insertData('2024_anexo7a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardarDatos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 09:51:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 6 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(28): App\Models\Generaldb->selectSomeData('*', '2024_archivos', '\r\n             ...')
+#6 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(100): App\Controllers\Anexos2024->anexos(2024, 4, Array, '/anexos2024/ane...', Array)
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo4()
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#9 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-12-30 09:51:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 4,
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 4,
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 4,
+            ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 4,
+            ', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2024.php(28): App\Models\Generaldb->selectSomeData('*', '2024_archivos', '
+                arch_iiee_ide = 10177 AND
+                arch_anio = 2024 AND
+                arch_anexo = 4,
+            ')
+ 7 APPPATH\Controllers\Anexos2024.php(100): App\Controllers\Anexos2024->anexos(2024, 4, [...], '/anexos2024/anexo4', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo4()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-30 09:51:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 6 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(28): App\Models\Generaldb->selectSomeData('*', '2024_archivos', '\r\n             ...')
+#6 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(100): App\Controllers\Anexos2024->anexos(2024, 4, Array, '/anexos2024/ane...', Array)
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo4()
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#9 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-12-30 09:51:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 4,
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 4,
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 4,
+            ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 4,
+            ', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2024.php(28): App\Models\Generaldb->selectSomeData('*', '2024_archivos', '
+                arch_iiee_ide = 10177 AND
+                arch_anio = 2024 AND
+                arch_anexo = 4,
+            ')
+ 7 APPPATH\Controllers\Anexos2024.php(100): App\Controllers\Anexos2024->anexos(2024, 4, [...], '/anexos2024/anexo4', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo4()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-30 09:52:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 6 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(28): App\Models\Generaldb->selectSomeData('*', '2024_archivos', '\r\n             ...')
+#6 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(70): App\Controllers\Anexos2024->anexos(2024, 1, Array, '/anexos2024/ane...', Array)
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#9 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-12-30 09:52:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2024.php(28): App\Models\Generaldb->selectSomeData('*', '2024_archivos', '
+                arch_iiee_ide = 10177 AND
+                arch_anio = 2024 AND
+                arch_anexo = 1,
+            ')
+ 7 APPPATH\Controllers\Anexos2024.php(70): App\Controllers\Anexos2024->anexos(2024, 1, [...], '/anexos2024/anexo1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-30 09:52:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 6 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(28): App\Models\Generaldb->selectSomeData('*', '2024_archivos', '\r\n             ...')
+#6 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(70): App\Controllers\Anexos2024->anexos(2024, 1, Array, '/anexos2024/ane...', Array)
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#9 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-12-30 09:52:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2024.php(28): App\Models\Generaldb->selectSomeData('*', '2024_archivos', '
+                arch_iiee_ide = 10177 AND
+                arch_anio = 2024 AND
+                arch_anexo = 1,
+            ')
+ 7 APPPATH\Controllers\Anexos2024.php(70): App\Controllers\Anexos2024->anexos(2024, 1, [...], '/anexos2024/anexo1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-30 09:54:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 6 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(28): App\Models\Generaldb->selectSomeData('*', '2024_archivos', '\r\n             ...')
+#6 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(70): App\Controllers\Anexos2024->anexos(2024, 1, Array, '/anexos2024/ane...', Array)
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#9 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-12-30 09:54:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2024.php(28): App\Models\Generaldb->selectSomeData('*', '2024_archivos', '
+                arch_iiee_ide = 10177 AND
+                arch_anio = 2024 AND
+                arch_anexo = 1,
+            ')
+ 7 APPPATH\Controllers\Anexos2024.php(70): App\Controllers\Anexos2024->anexos(2024, 1, [...], '/anexos2024/anexo1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-30 09:56:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 6 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(28): App\Models\Generaldb->selectSomeData('*', '2024_archivos', '\r\n             ...')
+#6 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(70): App\Controllers\Anexos2024->anexos(2024, 1, Array, '/anexos2024/ane...', Array)
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#9 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-12-30 09:56:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2024.php(28): App\Models\Generaldb->selectSomeData('*', '2024_archivos', '
+                arch_iiee_ide = 10177 AND
+                arch_anio = 2024 AND
+                arch_anexo = 1,
+            ')
+ 7 APPPATH\Controllers\Anexos2024.php(70): App\Controllers\Anexos2024->anexos(2024, 1, [...], '/anexos2024/anexo1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-30 09:56:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 6 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(28): App\Models\Generaldb->selectSomeData('*', '2024_archivos', '\r\n             ...')
+#6 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(70): App\Controllers\Anexos2024->anexos(2024, 1, Array, '/anexos2024/ane...', Array)
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#9 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-12-30 09:56:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2024.php(28): App\Models\Generaldb->selectSomeData('*', '2024_archivos', '
+                arch_iiee_ide = 10177 AND
+                arch_anio = 2024 AND
+                arch_anexo = 1,
+            ')
+ 7 APPPATH\Controllers\Anexos2024.php(70): App\Controllers\Anexos2024->anexos(2024, 1, [...], '/anexos2024/anexo1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-30 09:56:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 6 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(28): App\Models\Generaldb->selectSomeData('*', '2024_archivos', '\r\n             ...')
+#6 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(129): App\Controllers\Anexos2024->anexos(2024, 7, Array, '/anexos2024/ane...')
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo7()
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#9 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-12-30 09:56:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 7,
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 7,
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 7,
+            ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 7,
+            ', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2024.php(28): App\Models\Generaldb->selectSomeData('*', '2024_archivos', '
+                arch_iiee_ide = 10177 AND
+                arch_anio = 2024 AND
+                arch_anexo = 7,
+            ')
+ 7 APPPATH\Controllers\Anexos2024.php(129): App\Controllers\Anexos2024->anexos(2024, 7, [...], '/anexos2024/anexo7')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo7()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-30 09:56:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 6 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(28): App\Models\Generaldb->selectSomeData('*', '2024_archivos', '\r\n             ...')
+#6 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(69): App\Controllers\Anexos2024->anexos(2024, 1, Array, '/anexos2024/ane...')
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#9 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-12-30 09:56:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2024.php(28): App\Models\Generaldb->selectSomeData('*', '2024_archivos', '
+                arch_iiee_ide = 10177 AND
+                arch_anio = 2024 AND
+                arch_anexo = 1,
+            ')
+ 7 APPPATH\Controllers\Anexos2024.php(69): App\Controllers\Anexos2024->anexos(2024, 1, [...], '/anexos2024/anexo1')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-30 09:56:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 6 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(28): App\Models\Generaldb->selectSomeData('*', '2024_archivos', '\r\n             ...')
+#6 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(68): App\Controllers\Anexos2024->anexos(2024, 1, Array, '/anexos2024/ane...')
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#9 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-12-30 09:56:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2024_archivos`
+WHERE 
+                arch_iiee_ide = 10177 AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1,
+            ', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2024.php(28): App\Models\Generaldb->selectSomeData('*', '2024_archivos', '
+                arch_iiee_ide = 10177 AND
+                arch_anio = 2024 AND
+                arch_anexo = 1,
+            ')
+ 7 APPPATH\Controllers\Anexos2024.php(68): App\Controllers\Anexos2024->anexos(2024, 1, [...], '/anexos2024/anexo1')
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-30 10:23:26 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexos1a' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(251): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(230): App\Models\Generaldb->deleteData('2024_anexos1a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postLimpiar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:23:26 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexos1b' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(251): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(230): App\Models\Generaldb->deleteData('2024_anexos1b', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postLimpiar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:24:11 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexos1a' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(251): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(230): App\Models\Generaldb->deleteData('2024_anexos1a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postLimpiar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:24:11 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexos1b' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(251): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(230): App\Models\Generaldb->deleteData('2024_anexos1b', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postLimpiar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-12-30 10:24:11 --> Undefined variable $anexo
+in APPPATH\Controllers\Anexos2024.php on line 232.
+ 1 APPPATH\Controllers\Anexos2024.php(232): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anexo', 'APPPATH\\Controllers\\Anexos2024.php', 232)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->postLimpiar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-12-30 10:24:43 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexos1a' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(251): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(230): App\Models\Generaldb->deleteData('2024_anexos1a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postLimpiar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:24:43 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexos1b' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(251): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(230): App\Models\Generaldb->deleteData('2024_anexos1b', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postLimpiar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:26:45 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexos1a' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(251): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(231): App\Models\Generaldb->deleteData('2024_anexos1a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postLimpiar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:27:28 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexos1a' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(251): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(231): App\Models\Generaldb->deleteData('2024_anexos1a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postLimpiar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:28:31 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexos1a' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(251): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(231): App\Models\Generaldb->deleteData('2024_anexos1a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postLimpiar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:28:31 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexos1b' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(251): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(231): App\Models\Generaldb->deleteData('2024_anexos1b', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postLimpiar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:30:39 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexos1a' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(251): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(231): App\Models\Generaldb->deleteData('2024_anexos1a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postLimpiar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:30:39 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexos1b' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(251): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(231): App\Models\Generaldb->deleteData('2024_anexos1b', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postLimpiar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:31:56 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexos1a' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(251): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(231): App\Models\Generaldb->deleteData('2024_anexos1a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postLimpiar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:31:56 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexos1b' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(251): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(231): App\Models\Generaldb->deleteData('2024_anexos1b', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postLimpiar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:32:28 --> mysqli_sql_exception: Unknown column 'ane7_iiee_ide' in 'where clause' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(251): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(231): App\Models\Generaldb->deleteData('2024_anexo1a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postLimpiar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:32:28 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexo1b' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(251): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(231): App\Models\Generaldb->deleteData('2024_anexo1b', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postLimpiar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:34:02 --> mysqli_sql_exception: Unknown column 'ane7_iiee_ide' in 'where clause' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(251): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(231): App\Models\Generaldb->deleteData('2024_anexo1a', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postLimpiar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-12-30 10:34:03 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexo1b' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(251): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024.php(231): App\Models\Generaldb->deleteData('2024_anexo1b', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024->postLimpiar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-12-30 19:30:13 --> Invalid file: .php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('D:\\wamp\\www\\monitoreo3', [], true)
+ 3 APPPATH\Controllers\Anexos2024.php(239): view('D:\\wamp\\www\\monitoreo3')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo2iga()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-30 19:30:37 --> Invalid file: anexos2024/anexo2_iga.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('anexos2024/anexo2_iga.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('anexos2024/anexo2_iga', [], true)
+ 3 APPPATH\Controllers\Anexos2024.php(239): view('anexos2024/anexo2_iga')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo2iga()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-30 19:30:41 --> Invalid file: anexos2024/anexo2_iga.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('anexos2024/anexo2_iga.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('anexos2024/anexo2_iga', [], true)
+ 3 APPPATH\Controllers\Anexos2024.php(239): view('anexos2024/anexo2_iga')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo2iga()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

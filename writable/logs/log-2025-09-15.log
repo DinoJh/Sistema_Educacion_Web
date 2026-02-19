@@ -1,0 +1,627 @@
+CRITICAL - 2025-09-15 07:44:17 --> Undefined property: App\Controllers\Eval1::$inst
+in APPPATH\Controllers\Eval1.php on line 83.
+ 1 APPPATH\Controllers\Eval1.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Eval1::$inst', 'APPPATH\\Controllers\\Eval1.php', 83)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->getRegEst()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 08:49:38 --> syntax error, unexpected variable "$form", expecting "," or ";"
+in APPPATH\Controllers\Eval1.php on line 85.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Eval1.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Eval1')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Eval1')
+ 4 SYSTEMPATH\Router\AutoRouterImproved.php(264): class_exists('App\\Controllers\\Eval1')
+ 5 SYSTEMPATH\Router\AutoRouterImproved.php(115): CodeIgniter\Router\AutoRouterImproved->scanControllers([...])
+ 6 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouterImproved->getRoute('eval1/regest')
+ 7 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('eval1/regest')
+ 8 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('eval1/regest')
+ 9 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 08:52:27 --> syntax error, unexpected double-quoted string "fas fa-check", expecting ")"
+in APPPATH\Controllers\Eval1.php on line 190.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Eval1.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Eval1')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Eval1')
+ 4 SYSTEMPATH\Router\AutoRouterImproved.php(264): class_exists('App\\Controllers\\Eval1')
+ 5 SYSTEMPATH\Router\AutoRouterImproved.php(115): CodeIgniter\Router\AutoRouterImproved->scanControllers([...])
+ 6 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouterImproved->getRoute('eval1/regest')
+ 7 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('eval1/regest')
+ 8 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('eval1/regest')
+ 9 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-15 09:21:55 --> mysqli_sql_exception: Unknown column 'usua_grado' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(229): App\Models\Generaldb->insertData('usuarios', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->postRegEstu()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-09-15 09:22:34 --> mysqli_sql_exception: Unknown column 'usua_grado' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(229): App\Models\Generaldb->insertData('usuarios', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->postRegEstu()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-09-15 09:22:59 --> mysqli_sql_exception: Unknown column 'usua_grado' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(229): App\Models\Generaldb->insertData('usuarios', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->postRegEstu()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-09-15 09:23:14 --> mysqli_sql_exception: Unknown column 'usua_grado' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(229): App\Models\Generaldb->insertData('usuarios', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->postRegEstu()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-09-15 09:23:47 --> mysqli_sql_exception: Unknown column 'usua_grado' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(229): App\Models\Generaldb->insertData('usuarios', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->postRegEstu()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-09-15 09:24:16 --> mysqli_sql_exception: Unknown column 'usua_grado' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(229): App\Models\Generaldb->insertData('usuarios', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->postRegEstu()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-09-15 09:25:00 --> mysqli_sql_exception: Unknown column 'usua_estado' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(229): App\Models\Generaldb->insertData('usuarios', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->postRegEstu()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-09-15 09:25:20 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`monitoreo_2025_09`.`usuarios`, CONSTRAINT `fk_usuarios_ugels1` FOREIGN KEY (`usua_ugel_ide`) REFERENCES `ugels` (`ugel_ide`)) in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(229): App\Models\Generaldb->insertData('usuarios', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->postRegEstu()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-09-15 09:27:49 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'monitoreo_2025_09ss' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'monitoreo_2025_...', 3306, '', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`mod...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\General.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Application.php(55): App\Models\General::getRoles('3')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Application->index()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'monitoreo_2025_09ss' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`mod...', Array, false)
+#3 D:\wamp\www\monitoreo3\app\Models\General.php(40): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\wamp\www\monitoreo3\app\Controllers\Application.php(55): App\Models\General::getRoles('3')
+#5 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Application->index()
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-09-15 09:27:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'monitoreo_2025_09ss'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`, `r`.`role_descripcion`, `m`.`modu_clase`
+FROM `accesos` `a`, `roles` `r`, `modulos` `m`, `perfiles` `p`
+WHERE `a`.`acce_perf_ide` = :a.acce_perf_ide:
+AND `a`.`acce_perf_ide` = `p`.`perf_ide`
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `r`.`role_esta_nombre` = \'ACTIVO\'
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`', [...], false)
+ 3 APPPATH\Models\General.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Application.php(55): App\Models\General::getRoles('3')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-15 10:25:57 --> mysqli_sql_exception: Unknown column 'eval_evaluacion' in 'order clause' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\General.php(82): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(90): App\Models\General::getData('*', 'eval2_evaluacio...', false, 'eval_evaluacion')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->getRegEst()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-09-15 10:25:57 --> Unknown column 'eval_evaluacion' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `eval2_evaluaciones`
+WHERE 0 IS NULL
+ORDER BY `eval_evaluacion`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `eval2_evaluaciones`
+WHERE 0 IS NULL
+ORDER BY `eval_evaluacion`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `eval2_evaluaciones`
+WHERE 0 IS NULL
+ORDER BY `eval_evaluacion`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `eval2_evaluaciones`
+WHERE 0 IS NULL
+ORDER BY `eval_evaluacion`', [], false)
+ 5 APPPATH\Models\General.php(82): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Eval1.php(90): App\Models\General::getData('*', 'eval2_evaluaciones', false, 'eval_evaluacion')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->getRegEst()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-15 10:26:11 --> mysqli_sql_exception: Unknown column 'eval_evaluacion' in 'order clause' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\General.php(82): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(90): App\Models\General::getData('*', 'eval2_evaluacio...', Array, 'eval_evaluacion')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->getRegEst()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-09-15 10:26:11 --> Unknown column 'eval_evaluacion' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `eval2_evaluaciones`
+ORDER BY `eval_evaluacion`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `eval2_evaluaciones`
+ORDER BY `eval_evaluacion`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `eval2_evaluaciones`
+ORDER BY `eval_evaluacion`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `eval2_evaluaciones`
+ORDER BY `eval_evaluacion`', [], false)
+ 5 APPPATH\Models\General.php(82): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Eval1.php(90): App\Models\General::getData('*', 'eval2_evaluaciones', [], 'eval_evaluacion')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->getRegEst()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 10:27:49 --> Class "App\Controllers\General" not found
+in APPPATH\Controllers\Eval1.php on line 238.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->getRegRes()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 10:28:25 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Eval1.php(246): CodeIgniter\Model->__call('getData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->getRegRes()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 10:28:45 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Eval1.php(245): CodeIgniter\Model->__call('getData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->getRegRes()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 10:29:05 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Eval1.php(245): CodeIgniter\Model->__call('getData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->getRegRes()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-15 10:30:04 --> mysqli_sql_exception: Unknown column 'eval_evaluacion' in 'order clause' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(245): App\Models\Generaldb->selectSomeData('*', 'eval2_evaluacio...', false, 'eval_evaluacion')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->getRegRes()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-09-15 10:30:04 --> Unknown column 'eval_evaluacion' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `eval2_evaluaciones`
+ORDER BY `eval_evaluacion`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `eval2_evaluaciones`
+ORDER BY `eval_evaluacion`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `eval2_evaluaciones`
+ORDER BY `eval_evaluacion`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `eval2_evaluaciones`
+ORDER BY `eval_evaluacion`', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Eval1.php(245): App\Models\Generaldb->selectSomeData('*', 'eval2_evaluaciones', false, 'eval_evaluacion')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->getRegRes()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-15 10:30:12 --> mysqli_sql_exception: Unknown column 'eval_evaluacion' in 'order clause' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(245): App\Models\Generaldb->selectSomeData('*', 'eval2_evaluacio...', false, 'eval_evaluacion')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->getRegRes()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-09-15 10:30:12 --> Unknown column 'eval_evaluacion' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `eval2_evaluaciones`
+ORDER BY `eval_evaluacion`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `eval2_evaluaciones`
+ORDER BY `eval_evaluacion`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `eval2_evaluaciones`
+ORDER BY `eval_evaluacion`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `eval2_evaluaciones`
+ORDER BY `eval_evaluacion`', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Eval1.php(245): App\Models\Generaldb->selectSomeData('*', 'eval2_evaluaciones', false, 'eval_evaluacion')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->getRegRes()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-15 10:30:26 --> mysqli_sql_exception: Unknown column 'eval2_evaluacion' in 'order clause' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(245): App\Models\Generaldb->selectSomeData('*', 'eval2_evaluacio...', false, 'eval2_evaluacio...')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->getRegRes()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-09-15 10:30:26 --> Unknown column 'eval2_evaluacion' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `eval2_evaluaciones`
+ORDER BY `eval2_evaluacion`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `eval2_evaluaciones`
+ORDER BY `eval2_evaluacion`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `eval2_evaluaciones`
+ORDER BY `eval2_evaluacion`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `eval2_evaluaciones`
+ORDER BY `eval2_evaluacion`', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Eval1.php(245): App\Models\Generaldb->selectSomeData('*', 'eval2_evaluaciones', false, 'eval2_evaluacion')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->getRegRes()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 10:32:15 --> Undefined array key "id"
+in APPPATH\Libraries\Componente.php on line 113.
+ 1 APPPATH\Libraries\Componente.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Libraries\\Componente.php', 113)
+ 2 APPPATH\Controllers\Eval1.php(255): App\Libraries\Componente::Select('eval', 'Evaluación', [...], 'primary', true, 'D:\\wamp\\www\\monitoreo3')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->getRegRes()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 10:33:11 --> Undefined array key "id"
+in APPPATH\Libraries\Componente.php on line 113.
+ 1 APPPATH\Libraries\Componente.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Libraries\\Componente.php', 113)
+ 2 APPPATH\Controllers\Eval1.php(258): App\Libraries\Componente::Select('eval', 'Evaluación', [...], 'primary', true, 'D:\\wamp\\www\\monitoreo3')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->getRegRes()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-15 10:37:34 --> mysqli_sql_exception: Unknown column 'usua_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `usua_id...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usua_id...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usua_id...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `usua_id...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(256): App\Models\Generaldb->selectSomeData('\r\n             ...', 'eval2_evaluacio...', false, 'eval2_nombre')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->getRegRes()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-09-15 10:37:34 --> Unknown column 'usua_ide' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `usua_ide` as `id`, `usua_paterno` as `nombre`
+FROM `eval2_evaluaciones`
+ORDER BY `eval2_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usua_ide` as `id`, `usua_paterno` as `nombre`
+FROM `eval2_evaluaciones`
+ORDER BY `eval2_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usua_ide` as `id`, `usua_paterno` as `nombre`
+FROM `eval2_evaluaciones`
+ORDER BY `eval2_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `usua_ide` as `id`, `usua_paterno` as `nombre`
+FROM `eval2_evaluaciones`
+ORDER BY `eval2_nombre`', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Eval1.php(256): App\Models\Generaldb->selectSomeData('
+                usua_ide as id,
+                usua_paterno as nombre
+            ', 'eval2_evaluaciones', false, 'eval2_nombre')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->getRegRes()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 10:37:51 --> Undefined variable $alum
+in APPPATH\Controllers\Eval1.php on line 275.
+ 1 APPPATH\Controllers\Eval1.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alum', 'APPPATH\\Controllers\\Eval1.php', 275)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->getRegRes()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 12:01:15 --> syntax error, unexpected token "echo", expecting "," or ";"
+in APPPATH\Controllers\Eval1.php on line 339.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Eval1.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Eval1')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Eval1')
+ 4 SYSTEMPATH\Router\AutoRouterImproved.php(264): class_exists('App\\Controllers\\Eval1')
+ 5 SYSTEMPATH\Router\AutoRouterImproved.php(115): CodeIgniter\Router\AutoRouterImproved->scanControllers([...])
+ 6 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouterImproved->getRoute('Eval1/verAlter')
+ 7 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Eval1/verAlter')
+ 8 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('Eval1/verAlter')
+ 9 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 12:01:23 --> Undefined property: stdClass::$eval2_num_preguntas
+in APPPATH\Controllers\Eval1.php on line 334.
+ 1 APPPATH\Controllers\Eval1.php(334): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$eval2_num_preguntas', 'APPPATH\\Controllers\\Eval1.php', 334)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerAlter()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 12:01:31 --> Undefined property: stdClass::$eval2_num_preguntas
+in APPPATH\Controllers\Eval1.php on line 334.
+ 1 APPPATH\Controllers\Eval1.php(334): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$eval2_num_preguntas', 'APPPATH\\Controllers\\Eval1.php', 334)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerAlter()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 12:03:38 --> Undefined array key "id"
+in APPPATH\Libraries\Componente.php on line 113.
+ 1 APPPATH\Libraries\Componente.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Libraries\\Componente.php', 113)
+ 2 APPPATH\Controllers\Eval1.php(356): App\Libraries\Componente::Select('preg_1', 'Pregunta 1', [...], 'primary', true, 'D:\\wamp\\www\\monitoreo3')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerAlter()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 12:04:43 --> Undefined array key "nombre"
+in APPPATH\Libraries\Componente.php on line 116.
+ 1 APPPATH\Libraries\Componente.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'APPPATH\\Libraries\\Componente.php', 116)
+ 2 APPPATH\Controllers\Eval1.php(356): App\Libraries\Componente::Select('preg_1', 'Pregunta 1', [...], 'primary', true, 'D:\\wamp\\www\\monitoreo3')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerAlter()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 12:04:51 --> Undefined array key "nombre"
+in APPPATH\Libraries\Componente.php on line 116.
+ 1 APPPATH\Libraries\Componente.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'APPPATH\\Libraries\\Componente.php', 116)
+ 2 APPPATH\Controllers\Eval1.php(356): App\Libraries\Componente::Select('preg_1', 'Pregunta 1', [...], 'primary', true, 'D:\\wamp\\www\\monitoreo3')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerAlter()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 17:15:47 --> Call to undefined function App\Libraries\char()
+in APPPATH\Libraries\Componente.php on line 441.
+ 1 APPPATH\Controllers\Eval1.php(345): App\Libraries\Componente::Alternativas('preg_1', 1, '3', 'primary')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerAlter()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 17:16:42 --> Call to undefined function App\Libraries\char()
+in APPPATH\Libraries\Componente.php on line 441.
+ 1 APPPATH\Controllers\Eval1.php(345): App\Libraries\Componente::Alternativas('preg_1', 1, '3', 'primary')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerAlter()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 17:35:06 --> Too few arguments to function App\Libraries\Componente::Alternativas(), 4 passed in D:\wamp\www\monitoreo3\app\Controllers\Eval1.php on line 345 and exactly 5 expected
+in APPPATH\Libraries\Componente.php on line 434.
+ 1 APPPATH\Controllers\Eval1.php(345): App\Libraries\Componente::Alternativas('preg_1', 1, '3', 'primary')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerAlter()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 17:48:10 --> Class "App\Controllers\Generaldb" not found
+in APPPATH\Controllers\Services.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postSetAlter()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 17:48:12 --> Class "App\Controllers\Generaldb" not found
+in APPPATH\Controllers\Services.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postSetAlter()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 17:48:13 --> Class "App\Controllers\Generaldb" not found
+in APPPATH\Controllers\Services.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postSetAlter()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 17:48:14 --> Class "App\Controllers\Generaldb" not found
+in APPPATH\Controllers\Services.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postSetAlter()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 17:48:15 --> Class "App\Controllers\Generaldb" not found
+in APPPATH\Controllers\Services.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postSetAlter()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 17:48:36 --> Class "App\Controllers\Generaldb" not found
+in APPPATH\Controllers\Services.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postSetAlter()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:02:28 --> Undefined array key 0
+in APPPATH\Controllers\Eval1.php on line 334.
+ 1 APPPATH\Controllers\Eval1.php(334): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Eval1.php', 334)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerAlter()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:07:30 --> Uninitialized string offset 40
+in APPPATH\Controllers\Eval1.php on line 355.
+ 1 APPPATH\Controllers\Eval1.php(355): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 40', 'APPPATH\\Controllers\\Eval1.php', 355)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerAlter()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:07:40 --> Uninitialized string offset 40
+in APPPATH\Controllers\Eval1.php on line 355.
+ 1 APPPATH\Controllers\Eval1.php(355): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 40', 'APPPATH\\Controllers\\Eval1.php', 355)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerAlter()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:08:09 --> Uninitialized string offset 40
+in APPPATH\Controllers\Eval1.php on line 355.
+ 1 APPPATH\Controllers\Eval1.php(355): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 40', 'APPPATH\\Controllers\\Eval1.php', 355)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerAlter()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:08:18 --> Uninitialized string offset 40
+in APPPATH\Controllers\Eval1.php on line 355.
+ 1 APPPATH\Controllers\Eval1.php(355): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Uninitialized string offset 40', 'APPPATH\\Controllers\\Eval1.php', 355)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerAlter()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:20:18 --> syntax error, unexpected variable "$where_marc", expecting "," or ";"
+in APPPATH\Controllers\Eval1.php on line 332.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Eval1.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Eval1')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Eval1')
+ 4 SYSTEMPATH\Router\AutoRouterImproved.php(264): class_exists('App\\Controllers\\Eval1')
+ 5 SYSTEMPATH\Router\AutoRouterImproved.php(115): CodeIgniter\Router\AutoRouterImproved->scanControllers([...])
+ 6 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouterImproved->getRoute('Eval1/verAlter')
+ 7 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Eval1/verAlter')
+ 8 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('Eval1/verAlter')
+ 9 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:20:27 --> Too few arguments to function App\Libraries\Componente::H3(), 1 passed in D:\wamp\www\monitoreo3\app\Controllers\Eval1.php on line 330 and exactly 2 expected
+in APPPATH\Libraries\Componente.php on line 206.
+ 1 APPPATH\Controllers\Eval1.php(330): App\Libraries\Componente::H3('MAMANI PARI, JUAN EDUARDO')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerAlter()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:22:11 --> Undefined property: stdClass::$iiee_cenedu
+in APPPATH\Controllers\Eval1.php on line 332.
+ 1 APPPATH\Controllers\Eval1.php(332): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$iiee_cenedu', 'APPPATH\\Controllers\\Eval1.php', 332)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerAlter()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:23:14 --> Undefined property: stdClass::$iiee_codmodular
+in APPPATH\Controllers\Eval1.php on line 332.
+ 1 APPPATH\Controllers\Eval1.php(332): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$iiee_codmodular', 'APPPATH\\Controllers\\Eval1.php', 332)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerAlter()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-15 19:59:22 --> Undefined array key 0
+in APPPATH\Controllers\Eval1.php on line 370.
+ 1 APPPATH\Controllers\Eval1.php(370): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Eval1.php', 370)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerAlter()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

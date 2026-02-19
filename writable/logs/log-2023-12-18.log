@@ -1,0 +1,757 @@
+CRITICAL - 2023-12-18 01:15:32 --> Call to undefined method App\Controllers\Compromisos::getVar()
+in APPPATH\Controllers\Compromisos.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compromisos->getCom1()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compromisos))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-18 01:15:43 --> Call to undefined method App\Controllers\Compromisos::getVar()
+in APPPATH\Controllers\Compromisos.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compromisos->getCom1()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compromisos))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-18 01:16:24 --> Invalid file: componentes/com1.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('componentes/com1.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/com1', [], true)
+ 3 APPPATH\Controllers\Compromisos.php(27): view('componentes/com1')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compromisos->getCom1()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compromisos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-18 01:17:17 --> Invalid file: componentes/com1.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('componentes/com1.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/com1', [], true)
+ 3 APPPATH\Controllers\Compromisos.php(27): view('componentes/com1')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compromisos->getCom1()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compromisos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-18 01:17:21 --> Invalid file: componentes/com1.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('componentes/com1.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/com1', [], true)
+ 3 APPPATH\Controllers\Compromisos.php(27): view('componentes/com1')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compromisos->getCom1()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compromisos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-18 01:25:43 --> Non-static method App\Libraries\Componente::Link() cannot be called statically
+in APPPATH\Views\compromisos\vcom1.php on line 7.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('compromisos/vcom1', [], true)
+ 4 APPPATH\Controllers\Compromisos.php(26): view('compromisos/vcom1')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compromisos->getCom1()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compromisos))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-18 01:27:31 --> Non-static method App\Libraries\Componente::Link() cannot be called statically
+in APPPATH\Views\compromisos\vcom1.php on line 7.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('compromisos/vcom1', [], true)
+ 4 APPPATH\Controllers\Compromisos.php(26): view('compromisos/vcom1')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compromisos->getCom1()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compromisos))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-18 01:43:51 --> Invalid file: compromisos/vcontruccion.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('compromisos/vcontruccion.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('compromisos/vcontruccion', [], true)
+ 3 APPPATH\Controllers\Compromisos.php(30): view('compromisos/vcontruccion')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compromisos->getCom2()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compromisos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-18 01:43:56 --> Invalid file: compromisos/vcontruccion.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('compromisos/vcontruccion.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('compromisos/vcontruccion', [], true)
+ 3 APPPATH\Controllers\Compromisos.php(30): view('compromisos/vcontruccion')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compromisos->getCom2()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compromisos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-18 01:44:16 --> Invalid file: compromisos/vcontruccion.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('compromisos/vcontruccion.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('compromisos/vcontruccion', [], true)
+ 3 APPPATH\Controllers\Compromisos.php(30): view('compromisos/vcontruccion')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compromisos->getCom2()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compromisos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-18 05:29:51 --> Undefined array key 0
+in APPPATH\Views\monitoreo\plan\asignar_muestra.php on line 54.
+ 1 APPPATH\Views\monitoreo\plan\asignar_muestra.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/asignar_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(422): view('monitoreo/plan/asignar_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVerPlan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-18 05:29:57 --> Undefined array key 0
+in APPPATH\Views\monitoreo\plan\asignar_muestra.php on line 54.
+ 1 APPPATH\Views\monitoreo\plan\asignar_muestra.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/asignar_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(422): view('monitoreo/plan/asignar_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVerPlan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-18 05:30:00 --> Undefined array key 0
+in APPPATH\Views\monitoreo\plan\asignar_muestra.php on line 54.
+ 1 APPPATH\Views\monitoreo\plan\asignar_muestra.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/asignar_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(422): view('monitoreo/plan/asignar_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVerPlan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 05:31:44 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_monitoreo_has_sd_muestra_programacion1` FOREIGN KEY (`pro_ide`) REFERENCES `sd_programacion` (`pro_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:31:44 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_monitoreo_has_sd_muestra_programacion1` FOREIGN KEY (`pro_ide`) REFERENCES `sd_programacion` (`pro_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:31:44 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_monitoreo_has_sd_muestra_programacion1` FOREIGN KEY (`pro_ide`) REFERENCES `sd_programacion` (`pro_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 05:31:44 --> Undefined variable $insertar
+in APPPATH\Views\monitoreo\plan\listar_muestras.php on line 4.
+ 1 APPPATH\Views\monitoreo\plan\listar_muestras.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insertar', 'APPPATH\\Views\\monitoreo\\plan\\listar_muestras.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\listar_muestras.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/listar_muestras', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(624): view('monitoreo/plan/listar_muestras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 05:31:45 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_monitoreo_has_sd_muestra_programacion1` FOREIGN KEY (`pro_ide`) REFERENCES `sd_programacion` (`pro_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:31:45 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_monitoreo_has_sd_muestra_programacion1` FOREIGN KEY (`pro_ide`) REFERENCES `sd_programacion` (`pro_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:31:45 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_monitoreo_has_sd_muestra_programacion1` FOREIGN KEY (`pro_ide`) REFERENCES `sd_programacion` (`pro_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 05:31:45 --> Undefined variable $insertar
+in APPPATH\Views\monitoreo\plan\listar_muestras.php on line 4.
+ 1 APPPATH\Views\monitoreo\plan\listar_muestras.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insertar', 'APPPATH\\Views\\monitoreo\\plan\\listar_muestras.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\listar_muestras.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/listar_muestras', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(624): view('monitoreo/plan/listar_muestras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 05:31:46 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_monitoreo_has_sd_muestra_programacion1` FOREIGN KEY (`pro_ide`) REFERENCES `sd_programacion` (`pro_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:31:46 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_monitoreo_has_sd_muestra_programacion1` FOREIGN KEY (`pro_ide`) REFERENCES `sd_programacion` (`pro_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:31:46 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_monitoreo_has_sd_muestra_programacion1` FOREIGN KEY (`pro_ide`) REFERENCES `sd_programacion` (`pro_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 05:31:46 --> Undefined variable $insertar
+in APPPATH\Views\monitoreo\plan\listar_muestras.php on line 4.
+ 1 APPPATH\Views\monitoreo\plan\listar_muestras.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insertar', 'APPPATH\\Views\\monitoreo\\plan\\listar_muestras.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\listar_muestras.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/listar_muestras', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(624): view('monitoreo/plan/listar_muestras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 05:31:46 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_monitoreo_has_sd_muestra_programacion1` FOREIGN KEY (`pro_ide`) REFERENCES `sd_programacion` (`pro_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:31:46 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_monitoreo_has_sd_muestra_programacion1` FOREIGN KEY (`pro_ide`) REFERENCES `sd_programacion` (`pro_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:31:46 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_monitoreo_has_sd_muestra_programacion1` FOREIGN KEY (`pro_ide`) REFERENCES `sd_programacion` (`pro_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 05:31:46 --> Undefined variable $insertar
+in APPPATH\Views\monitoreo\plan\listar_muestras.php on line 4.
+ 1 APPPATH\Views\monitoreo\plan\listar_muestras.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insertar', 'APPPATH\\Views\\monitoreo\\plan\\listar_muestras.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\listar_muestras.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/listar_muestras', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(624): view('monitoreo/plan/listar_muestras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 05:32:58 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:32:58 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:32:58 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:32:58 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 05:32:58 --> Undefined variable $insertar
+in APPPATH\Views\monitoreo\plan\listar_muestras.php on line 4.
+ 1 APPPATH\Views\monitoreo\plan\listar_muestras.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insertar', 'APPPATH\\Views\\monitoreo\\plan\\listar_muestras.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\listar_muestras.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/listar_muestras', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(624): view('monitoreo/plan/listar_muestras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 05:33:06 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:33:06 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:33:06 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:33:06 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-18 05:33:06 --> Undefined variable $insertar
+in APPPATH\Views\monitoreo\plan\listar_muestras.php on line 4.
+ 1 APPPATH\Views\monitoreo\plan\listar_muestras.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $insertar', 'APPPATH\\Views\\monitoreo\\plan\\listar_muestras.php', 4)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\listar_muestras.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/listar_muestras', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(624): view('monitoreo/plan/listar_muestras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-18 05:38:23 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:38:23 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:38:23 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:38:23 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:44:16 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:44:16 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:44:26 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:44:26 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:44:40 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:44:40 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:45:20 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:45:20 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:45:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:45:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:46:15 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:46:15 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:46:16 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:46:16 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:46:40 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:46:40 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:46:40 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:47:07 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:47:07 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-18 05:47:07 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep`.`sd_plan_muestra`, CONSTRAINT `fk_sd_plan_sd_muestra_sd_plan_sd_instrumento1` FOREIGN KEY (`pla_ide`, `ins_ide`) REFERENCES `sd_plan_instrumento` (`pla_ide`, `ins_ide`)) in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(581): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}

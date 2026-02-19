@@ -1,0 +1,800 @@
+ERROR - 2023-09-24 17:44:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND `docu_proc_ide` = proc_ide' at line 3 in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(287): App\Models\General::getData('*', 'documentos,proc...', 'docu_ide =  AND...', false)
+#6 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->postGuardarDocumento()
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-24 17:44:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND `docu_proc_ide` = proc_ide' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `documentos`, `procedimiento`
+WHERE `docu_ide` =  AND `docu_proc_ide` = proc_ide', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `documentos`, `procedimiento`
+WHERE `docu_ide` =  AND `docu_proc_ide` = proc_ide')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `documentos`, `procedimiento`
+WHERE `docu_ide` =  AND `docu_proc_ide` = proc_ide')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `documentos`, `procedimiento`
+WHERE `docu_ide` =  AND `docu_proc_ide` = proc_ide', [], false)
+ 5 APPPATH\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(287): App\Models\General::getData('*', 'documentos,procedimiento', 'docu_ide =  AND docu_proc_ide = proc_ide', false)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->postGuardarDocumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 18:36:53 --> Undefined index: unor_destino
+in APPPATH\Views\componente\tabla.php on line 28.
+ 1 APPPATH\Views\componente\tabla.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: unor_destino', 'APPPATH\\Views\\componente\\tabla.php', 28, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componente\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componente/tabla', [], true)
+ 5 APPPATH\Libraries\Componente.php(37): view('componente/tabla', [...])
+ 6 APPPATH\Controllers\Documento.php(1129): App\Libraries\Componente::Tabla('tabla_pendientes', [...], [...], 5, 'true', 'true', 'primary', [...], 'C:\\wamp64\\www\\plantillaciv4')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-24 18:41:54 --> mysqli_sql_exception: Column 'unor_nombre' in field list is ambiguous in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `docu_id...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docu_id...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docu_id...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `docu_id...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1115): App\Models\General::getData('docu_ide,docu_t...', 'documentos,movi...', '\r\n            m...', 'movi_registro D...')
+#6 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-24 18:41:54 --> Column 'unor_nombre' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_unor_origen` = unor_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_unor_origen` = unor_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_unor_origen` = unor_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_unor_origen` = unor_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC', [], false)
+ 5 APPPATH\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(1115): App\Models\General::getData('docu_ide,docu_titulo,unor_nombre,b.unor_nombre,esta_nombre,movi_registro', 'documentos,movimientos,estados,unidades_organicas,unidades_organicas b', '
+            movi_docu_ide = docu_ide AND
+            movi_enti_ide = \'1\' AND
+            movi_unor_origen = \'3\' AND
+            b.unor_ide = movi_unor_destino AND
+            movi_esta_ide = esta_ide AND
+            movi_unor_origen = unor_ide AND
+            movi_esta_ide = 3', 'movi_registro DESC')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-24 18:42:01 --> mysqli_sql_exception: Column 'unor_nombre' in field list is ambiguous in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `docu_id...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docu_id...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docu_id...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `docu_id...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1115): App\Models\General::getData('docu_ide,docu_t...', 'documentos,movi...', '\r\n            m...', 'movi_registro D...')
+#6 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-24 18:42:01 --> Column 'unor_nombre' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_unor_origen` = unor_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_unor_origen` = unor_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_unor_origen` = unor_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_unor_origen` = unor_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC', [], false)
+ 5 APPPATH\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(1115): App\Models\General::getData('docu_ide,docu_titulo,unor_nombre,b.unor_nombre,esta_nombre,movi_registro', 'documentos,movimientos,estados,unidades_organicas,unidades_organicas b', '
+            movi_docu_ide = docu_ide AND
+            movi_enti_ide = \'1\' AND
+            movi_unor_origen = \'3\' AND
+            b.unor_ide = movi_unor_destino AND
+            movi_esta_ide = esta_ide AND
+            movi_unor_origen = unor_ide AND
+            movi_esta_ide = 3', 'movi_registro DESC')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-24 18:42:33 --> mysqli_sql_exception: Column 'unor_nombre' in field list is ambiguous in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `docu_id...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docu_id...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docu_id...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `docu_id...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1115): App\Models\General::getData('docu_ide,docu_t...', 'documentos,movi...', '\r\n            m...', 'movi_registro D...')
+#6 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-24 18:42:33 --> Column 'unor_nombre' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_unor_origen` = unor_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_unor_origen` = unor_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_unor_origen` = unor_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_unor_origen` = unor_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC', [], false)
+ 5 APPPATH\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(1115): App\Models\General::getData('docu_ide,docu_titulo,unor_nombre,b.unor_nombre as destino,esta_nombre,movi_registro', 'documentos,movimientos,estados,unidades_organicas,unidades_organicas b', '
+            movi_docu_ide = docu_ide AND
+            movi_enti_ide = \'1\' AND
+            movi_unor_origen = \'3\' AND
+            b.unor_ide = movi_unor_destino AND
+            movi_esta_ide = esta_ide AND
+            movi_unor_origen = unor_ide AND
+            movi_esta_ide = 3', 'movi_registro DESC')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-24 18:42:37 --> mysqli_sql_exception: Column 'unor_nombre' in field list is ambiguous in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `docu_id...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docu_id...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docu_id...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `docu_id...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1115): App\Models\General::getData('docu_ide,docu_t...', 'documentos,movi...', '\r\n            m...', 'movi_registro D...')
+#6 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-24 18:42:37 --> Column 'unor_nombre' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_unor_origen` = unor_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_unor_origen` = unor_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_unor_origen` = unor_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_unor_origen` = unor_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC', [], false)
+ 5 APPPATH\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(1115): App\Models\General::getData('docu_ide,docu_titulo,unor_nombre,b.unor_nombre as destino,esta_nombre,movi_registro', 'documentos,movimientos,estados,unidades_organicas,unidades_organicas b', '
+            movi_docu_ide = docu_ide AND
+            movi_enti_ide = \'1\' AND
+            movi_unor_origen = \'3\' AND
+            b.unor_ide = movi_unor_destino AND
+            movi_esta_ide = esta_ide AND
+            movi_unor_origen = unor_ide AND
+            movi_esta_ide = 3', 'movi_registro DESC')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-24 18:42:49 --> mysqli_sql_exception: Column 'unor_nombre' in field list is ambiguous in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `docu_id...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docu_id...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docu_id...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `docu_id...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1115): App\Models\General::getData('docu_ide,docu_t...', 'documentos,movi...', '\r\n            m...', 'movi_registro D...')
+#6 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-24 18:42:49 --> Column 'unor_nombre' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_unor_origen` = unor_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_unor_origen` = unor_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_unor_origen` = unor_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_unor_origen` = unor_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC', [], false)
+ 5 APPPATH\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(1115): App\Models\General::getData('docu_ide,docu_titulo,unor_nombre,b.unor_nombre as destino,esta_nombre,movi_registro', 'documentos,movimientos,estados,unidades_organicas,unidades_organicas b', '
+            movi_docu_ide = docu_ide AND
+            movi_enti_ide = \'1\' AND
+            movi_unor_origen = \'3\' AND
+            b.unor_ide = movi_unor_destino AND
+            movi_esta_ide = esta_ide AND
+            movi_unor_origen = unor_ide AND
+            movi_esta_ide = 3', 'movi_registro DESC')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-24 18:44:05 --> mysqli_sql_exception: Column 'unor_nombre' in field list is ambiguous in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `docu_id...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docu_id...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docu_id...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `docu_id...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1115): App\Models\General::getData('docu_ide,docu_t...', 'documentos,movi...', '\r\n            m...', 'movi_registro D...')
+#6 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-24 18:44:05 --> Column 'unor_nombre' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas` `a`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = `a`.`unor_ide` AND
+            `a`.`unor_ide` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas` `a`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = `a`.`unor_ide` AND
+            `a`.`unor_ide` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas` `a`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = `a`.`unor_ide` AND
+            `a`.`unor_ide` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `docu_ide`, `docu_titulo`, `unor_nombre`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM `documentos`, `movimientos`, `estados`, `unidades_organicas` `a`, `unidades_organicas` `b`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `movi_enti_ide` = \'1\' AND
+            `movi_unor_origen` = `a`.`unor_ide` AND
+            `a`.`unor_ide` = \'3\' AND
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide AND
+            `movi_esta_ide` = 3
+ORDER BY `movi_registro` DESC', [], false)
+ 5 APPPATH\Models\General.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(1115): App\Models\General::getData('docu_ide,docu_titulo,unor_nombre,b.unor_nombre as destino,esta_nombre,movi_registro', 'documentos,movimientos,estados,unidades_organicas a,unidades_organicas b', '
+            movi_docu_ide = docu_ide AND
+            movi_enti_ide = \'1\' AND
+            movi_unor_origen = a.unor_ide AND
+            a.unor_ide = \'3\' AND
+            b.unor_ide = movi_unor_destino AND
+            movi_esta_ide = esta_ide AND
+            movi_esta_ide = 3', 'movi_registro DESC')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 18:44:34 --> Undefined index: b.unor_nombre
+in APPPATH\Views\componente\tabla.php on line 28.
+ 1 APPPATH\Views\componente\tabla.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: b.unor_nombre', 'APPPATH\\Views\\componente\\tabla.php', 28, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componente\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componente/tabla', [], true)
+ 5 APPPATH\Libraries\Componente.php(37): view('componente/tabla', [...])
+ 6 APPPATH\Controllers\Documento.php(1130): App\Libraries\Componente::Tabla('tabla_pendientes', [...], [...], 5, 'true', 'true', 'primary', [...], 'C:\\wamp64\\www\\plantillaciv4')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 18:44:54 --> Undefined index: b.unor_nombre
+in APPPATH\Views\componente\tabla.php on line 28.
+ 1 APPPATH\Views\componente\tabla.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: b.unor_nombre', 'APPPATH\\Views\\componente\\tabla.php', 28, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componente\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componente/tabla', [], true)
+ 5 APPPATH\Libraries\Componente.php(37): view('componente/tabla', [...])
+ 6 APPPATH\Controllers\Documento.php(1130): App\Libraries\Componente::Tabla('tabla_pendientes', [...], [...], 5, 'true', 'true', 'primary', [...], 'C:\\wamp64\\www\\plantillaciv4')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 18:44:56 --> Undefined index: b.unor_nombre
+in APPPATH\Views\componente\tabla.php on line 28.
+ 1 APPPATH\Views\componente\tabla.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: b.unor_nombre', 'APPPATH\\Views\\componente\\tabla.php', 28, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componente\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componente/tabla', [], true)
+ 5 APPPATH\Libraries\Componente.php(37): view('componente/tabla', [...])
+ 6 APPPATH\Controllers\Documento.php(1130): App\Libraries\Componente::Tabla('tabla_pendientes', [...], [...], 5, 'true', 'true', 'primary', [...], 'C:\\wamp64\\www\\plantillaciv4')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-24 18:59:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`DESC`
+ORDER BY `movi_ide`' at line 11 in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `docu_id...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docu_id...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docu_id...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `docu_id...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1117): App\Models\General::getData('docu_ide,docu_t...', 'documentos,movi...', '\r\n            m...', 'movi_ide', 'movi_registro D...', Array)
+#6 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-24 18:59:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`DESC`
+ORDER BY `movi_ide`' at line 11
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `docu_ide`, `docu_titulo`, `a`.`unor_nombre` as `origen`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM (`documentos`, `movimientos`, `estados`, `unidades_organicas` `a`)
+LEFT JOIN `unidades_organicas` `b` ON `b`.`unor_ide` = `movi_unor_destino`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `docu_unor_ide` = \'3\' AND
+            `movi_enti_ide` = \'1\' AND
+            
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide
+GROUP BY `movi_registro` `DESC`
+ORDER BY `movi_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docu_ide`, `docu_titulo`, `a`.`unor_nombre` as `origen`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM (`documentos`, `movimientos`, `estados`, `unidades_organicas` `a`)
+LEFT JOIN `unidades_organicas` `b` ON `b`.`unor_ide` = `movi_unor_destino`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `docu_unor_ide` = \'3\' AND
+            `movi_enti_ide` = \'1\' AND
+            
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide
+GROUP BY `movi_registro` `DESC`
+ORDER BY `movi_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docu_ide`, `docu_titulo`, `a`.`unor_nombre` as `origen`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM (`documentos`, `movimientos`, `estados`, `unidades_organicas` `a`)
+LEFT JOIN `unidades_organicas` `b` ON `b`.`unor_ide` = `movi_unor_destino`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `docu_unor_ide` = \'3\' AND
+            `movi_enti_ide` = \'1\' AND
+            
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide
+GROUP BY `movi_registro` `DESC`
+ORDER BY `movi_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `docu_ide`, `docu_titulo`, `a`.`unor_nombre` as `origen`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM (`documentos`, `movimientos`, `estados`, `unidades_organicas` `a`)
+LEFT JOIN `unidades_organicas` `b` ON `b`.`unor_ide` = `movi_unor_destino`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `docu_unor_ide` = \'3\' AND
+            `movi_enti_ide` = \'1\' AND
+            
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide
+GROUP BY `movi_registro` `DESC`
+ORDER BY `movi_ide`', [], false)
+ 5 APPPATH\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(1117): App\Models\General::getData('docu_ide,docu_titulo,a.unor_nombre as origen,b.unor_nombre as destino,esta_nombre,movi_registro', 'documentos,movimientos,estados,unidades_organicas a', '
+            movi_docu_ide = docu_ide AND
+            docu_unor_ide = \'3\' AND
+            movi_enti_ide = \'1\' AND
+            
+            b.unor_ide = movi_unor_destino AND
+            movi_esta_ide = esta_ide ', 'movi_ide', 'movi_registro DESC', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-24 18:59:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`DESC`
+ORDER BY `movi_ide`' at line 11 in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `docu_id...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docu_id...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docu_id...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `docu_id...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1117): App\Models\General::getData('docu_ide,docu_t...', 'documentos,movi...', '\r\n            m...', 'movi_ide', 'movi_registro D...', Array)
+#6 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-24 18:59:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`DESC`
+ORDER BY `movi_ide`' at line 11
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `docu_ide`, `docu_titulo`, `a`.`unor_nombre` as `origen`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM (`documentos`, `movimientos`, `estados`, `unidades_organicas` `a`)
+LEFT JOIN `unidades_organicas` `b` ON `b`.`unor_ide` = `movi_unor_destino`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `docu_unor_ide` = \'3\' AND
+            `movi_enti_ide` = \'1\' AND
+            
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide
+GROUP BY `movi_registro` `DESC`
+ORDER BY `movi_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docu_ide`, `docu_titulo`, `a`.`unor_nombre` as `origen`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM (`documentos`, `movimientos`, `estados`, `unidades_organicas` `a`)
+LEFT JOIN `unidades_organicas` `b` ON `b`.`unor_ide` = `movi_unor_destino`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `docu_unor_ide` = \'3\' AND
+            `movi_enti_ide` = \'1\' AND
+            
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide
+GROUP BY `movi_registro` `DESC`
+ORDER BY `movi_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docu_ide`, `docu_titulo`, `a`.`unor_nombre` as `origen`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM (`documentos`, `movimientos`, `estados`, `unidades_organicas` `a`)
+LEFT JOIN `unidades_organicas` `b` ON `b`.`unor_ide` = `movi_unor_destino`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `docu_unor_ide` = \'3\' AND
+            `movi_enti_ide` = \'1\' AND
+            
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide
+GROUP BY `movi_registro` `DESC`
+ORDER BY `movi_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `docu_ide`, `docu_titulo`, `a`.`unor_nombre` as `origen`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM (`documentos`, `movimientos`, `estados`, `unidades_organicas` `a`)
+LEFT JOIN `unidades_organicas` `b` ON `b`.`unor_ide` = `movi_unor_destino`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `docu_unor_ide` = \'3\' AND
+            `movi_enti_ide` = \'1\' AND
+            
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide
+GROUP BY `movi_registro` `DESC`
+ORDER BY `movi_ide`', [], false)
+ 5 APPPATH\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(1117): App\Models\General::getData('docu_ide,docu_titulo,a.unor_nombre as origen,b.unor_nombre as destino,esta_nombre,movi_registro', 'documentos,movimientos,estados,unidades_organicas a', '
+            movi_docu_ide = docu_ide AND
+            docu_unor_ide = \'3\' AND
+            movi_enti_ide = \'1\' AND
+            
+            b.unor_ide = movi_unor_destino AND
+            movi_esta_ide = esta_ide ', 'movi_ide', 'movi_registro DESC', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-24 18:59:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`DESC`
+ORDER BY `movi_ide`' at line 11 in C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `docu_id...', 0)
+#1 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docu_id...')
+#2 C:\wamp64\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docu_id...')
+#3 C:\wamp64\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `docu_id...', Array, false)
+#4 C:\wamp64\www\plantillaciv4\app\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\plantillaciv4\app\Controllers\Documento.php(1117): App\Models\General::getData('docu_ide,docu_t...', 'documentos,movi...', '\r\n            m...', 'movi_ide', 'movi_registro D...', Array)
+#6 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+#7 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 C:\wamp64\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-24 18:59:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`DESC`
+ORDER BY `movi_ide`' at line 11
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `docu_ide`, `docu_titulo`, `a`.`unor_nombre` as `origen`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM (`documentos`, `movimientos`, `estados`, `unidades_organicas` `a`)
+LEFT JOIN `unidades_organicas` `b` ON `b`.`unor_ide` = `movi_unor_destino`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `docu_unor_ide` = \'3\' AND
+            `movi_enti_ide` = \'1\' AND
+            
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide
+GROUP BY `movi_registro` `DESC`
+ORDER BY `movi_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `docu_ide`, `docu_titulo`, `a`.`unor_nombre` as `origen`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM (`documentos`, `movimientos`, `estados`, `unidades_organicas` `a`)
+LEFT JOIN `unidades_organicas` `b` ON `b`.`unor_ide` = `movi_unor_destino`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `docu_unor_ide` = \'3\' AND
+            `movi_enti_ide` = \'1\' AND
+            
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide
+GROUP BY `movi_registro` `DESC`
+ORDER BY `movi_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `docu_ide`, `docu_titulo`, `a`.`unor_nombre` as `origen`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM (`documentos`, `movimientos`, `estados`, `unidades_organicas` `a`)
+LEFT JOIN `unidades_organicas` `b` ON `b`.`unor_ide` = `movi_unor_destino`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `docu_unor_ide` = \'3\' AND
+            `movi_enti_ide` = \'1\' AND
+            
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide
+GROUP BY `movi_registro` `DESC`
+ORDER BY `movi_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `docu_ide`, `docu_titulo`, `a`.`unor_nombre` as `origen`, `b`.`unor_nombre` as `destino`, `esta_nombre`, `movi_registro`
+FROM (`documentos`, `movimientos`, `estados`, `unidades_organicas` `a`)
+LEFT JOIN `unidades_organicas` `b` ON `b`.`unor_ide` = `movi_unor_destino`
+WHERE 
+            movi_docu_ide = docu_ide AND
+            `docu_unor_ide` = \'3\' AND
+            `movi_enti_ide` = \'1\' AND
+            
+            `b`.`unor_ide` = movi_unor_destino AND
+            `movi_esta_ide` = esta_ide
+GROUP BY `movi_registro` `DESC`
+ORDER BY `movi_ide`', [], false)
+ 5 APPPATH\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(1117): App\Models\General::getData('docu_ide,docu_titulo,a.unor_nombre as origen,b.unor_nombre as destino,esta_nombre,movi_registro', 'documentos,movimientos,estados,unidades_organicas a', '
+            movi_docu_ide = docu_ide AND
+            docu_unor_ide = \'3\' AND
+            movi_enti_ide = \'1\' AND
+            
+            b.unor_ide = movi_unor_destino AND
+            movi_esta_ide = esta_ide ', 'movi_ide', 'movi_registro DESC', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosEnviados()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 19:14:14 --> Undefined index: origen
+in APPPATH\Views\componente\tabla.php on line 28.
+ 1 APPPATH\Views\componente\tabla.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: origen', 'APPPATH\\Views\\componente\\tabla.php', 28, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componente\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componente/tabla', [], true)
+ 5 APPPATH\Libraries\Componente.php(37): view('componente/tabla', [...])
+ 6 APPPATH\Controllers\Documento.php(1239): App\Libraries\Componente::Tabla('tabla_pendientes', [...], [...], 5, 'true', 'true', 'primary', [...], 'C:\\wamp64\\www\\plantillaciv4')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosHistorial()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 19:17:38 --> Undefined index: destino
+in APPPATH\Views\componente\tabla.php on line 28.
+ 1 APPPATH\Views\componente\tabla.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: destino', 'APPPATH\\Views\\componente\\tabla.php', 28, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componente\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componente/tabla', [], true)
+ 5 APPPATH\Libraries\Componente.php(37): view('componente/tabla', [...])
+ 6 APPPATH\Controllers\Documento.php(1242): App\Libraries\Componente::Tabla('tabla_pendientes', [...], [...], 5, 'true', 'true', 'primary', [...], 'C:\\wamp64\\www\\plantillaciv4')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosHistorial()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 19:17:42 --> Undefined index: destino
+in APPPATH\Views\componente\tabla.php on line 28.
+ 1 APPPATH\Views\componente\tabla.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: destino', 'APPPATH\\Views\\componente\\tabla.php', 28, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componente\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componente/tabla', [], true)
+ 5 APPPATH\Libraries\Componente.php(37): view('componente/tabla', [...])
+ 6 APPPATH\Controllers\Documento.php(1242): App\Libraries\Componente::Tabla('tabla_pendientes', [...], [...], 5, 'true', 'true', 'primary', [...], 'C:\\wamp64\\www\\plantillaciv4')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getDocumentosHistorial()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 21:03:34 --> Invalid file: vheader.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vheader.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vheader', [], true)
+ 3 APPPATH\Controllers\Documento.php(1642): view('vheader')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getRepositorio()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-24 21:03:53 --> Undefined variable: system_name
+in APPPATH\Views\sistema\vheader.php on line 9.
+ 1 APPPATH\Views\sistema\vheader.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: system_name', 'APPPATH\\Views\\sistema\\vheader.php', 9, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Documento.php(1642): view('sistema/vheader')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getRepositorio()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

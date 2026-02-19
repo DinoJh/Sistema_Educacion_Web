@@ -1,0 +1,421 @@
+ERROR - 2023-12-11 00:02:22 --> mysqli_sql_exception: Table 'simondrep2_temp.sd_item_alterantiva' doesn't exist in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(85): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(177): App\Models\Generaldb->insertData('sd_item_alteran...', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarItem()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-11 05:06:27 --> mysqli_sql_exception: Table 'simondrep2_temp.sd_item_alterantiva' doesn't exist in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(177): App\Models\Generaldb->insertData('sd_item_alteran...', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarItem()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-11 05:06:27 --> mysqli_sql_exception: Table 'simondrep2_temp.sd_item_alterantiva' doesn't exist in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(177): App\Models\Generaldb->insertData('sd_item_alteran...', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarItem()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-11 05:06:27 --> mysqli_sql_exception: Table 'simondrep2_temp.sd_item_alterantiva' doesn't exist in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(177): App\Models\Generaldb->insertData('sd_item_alteran...', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarItem()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-11 05:06:27 --> mysqli_sql_exception: Table 'simondrep2_temp.sd_item_alterantiva' doesn't exist in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(177): App\Models\Generaldb->insertData('sd_item_alteran...', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarItem()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-11 05:06:27 --> mysqli_sql_exception: Table 'simondrep2_temp.sd_item_alterantiva' doesn't exist in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(177): App\Models\Generaldb->insertData('sd_item_alteran...', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarItem()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-11 05:07:18 --> mysqli_sql_exception: Table 'simondrep2_temp.sd_item_alterantiva' doesn't exist in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(177): App\Models\Generaldb->insertData('sd_item_alteran...', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarItem()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-11 05:07:18 --> mysqli_sql_exception: Table 'simondrep2_temp.sd_item_alterantiva' doesn't exist in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(177): App\Models\Generaldb->insertData('sd_item_alteran...', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarItem()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-11 05:07:18 --> mysqli_sql_exception: Table 'simondrep2_temp.sd_item_alterantiva' doesn't exist in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(177): App\Models\Generaldb->insertData('sd_item_alteran...', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarItem()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-11 05:07:53 --> mysqli_sql_exception: Table 'simondrep2_temp.sd_item_alterantiva' doesn't exist in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(177): App\Models\Generaldb->insertData('sd_item_alteran...', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarItem()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-11 05:07:53 --> mysqli_sql_exception: Table 'simondrep2_temp.sd_item_alterantiva' doesn't exist in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(177): App\Models\Generaldb->insertData('sd_item_alteran...', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarItem()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-11 05:08:19 --> mysqli_sql_exception: Table 'simondrep2_temp.sd_item_alterantiva' doesn't exist in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(177): App\Models\Generaldb->insertData('sd_item_alteran...', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarItem()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-11 05:08:19 --> mysqli_sql_exception: Table 'simondrep2_temp.sd_item_alterantiva' doesn't exist in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(177): App\Models\Generaldb->insertData('sd_item_alteran...', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarItem()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-11 05:08:23 --> mysqli_sql_exception: Table 'simondrep2_temp.sd_isntrumento' doesn't exist in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(206): App\Models\Generaldb->selectSomeDataJoin('*', 'sd_isntrumento', 'sd_instrumento....', 'sd_item.ite_ide', false, false, Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-11 05:08:23 --> Table 'simondrep2_temp.sd_isntrumento' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `sd_isntrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`alt_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_instrumento`.`ins_ide` = 43
+ORDER BY `sd_item`.`ite_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `sd_isntrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`alt_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_instrumento`.`ins_ide` = 43
+ORDER BY `sd_item`.`ite_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `sd_isntrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`alt_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_instrumento`.`ins_ide` = 43
+ORDER BY `sd_item`.`ite_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `sd_isntrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`alt_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_instrumento`.`ins_ide` = 43
+ORDER BY `sd_item`.`ite_ide`', [], false)
+ 5 APPPATH\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoreo.php(206): App\Models\Generaldb->selectSomeDataJoin('*', 'sd_isntrumento', 'sd_instrumento.ins_ide = 43 ', 'sd_item.ite_ide', false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-11 05:08:28 --> mysqli_sql_exception: Table 'simondrep2_temp.sd_isntrumento' doesn't exist in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(206): App\Models\Generaldb->selectSomeDataJoin('*', 'sd_isntrumento', 'sd_instrumento....', 'sd_item.ite_ide', false, false, Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-11 05:08:28 --> Table 'simondrep2_temp.sd_isntrumento' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `sd_isntrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`alt_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_instrumento`.`ins_ide` = 43
+ORDER BY `sd_item`.`ite_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `sd_isntrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`alt_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_instrumento`.`ins_ide` = 43
+ORDER BY `sd_item`.`ite_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `sd_isntrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`alt_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_instrumento`.`ins_ide` = 43
+ORDER BY `sd_item`.`ite_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `sd_isntrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`alt_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+WHERE `sd_instrumento`.`ins_ide` = 43
+ORDER BY `sd_item`.`ite_ide`', [], false)
+ 5 APPPATH\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoreo.php(206): App\Models\Generaldb->selectSomeDataJoin('*', 'sd_isntrumento', 'sd_instrumento.ins_ide = 43 ', 'sd_item.ite_ide', false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-11 05:09:16 --> mysqli_sql_exception: Unknown column 'sd_item.ite_ide' in 'order clause' in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(206): App\Models\Generaldb->selectSomeDataJoin('*', 'sd_instrumento', 'sd_instrumento....', 'sd_item.ite_ide', false, false, Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-11 05:09:16 --> Unknown column 'sd_item.ite_ide' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `sd_instrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+WHERE `sd_instrumento`.`ins_ide` = 43
+ORDER BY `sd_item`.`ite_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `sd_instrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+WHERE `sd_instrumento`.`ins_ide` = 43
+ORDER BY `sd_item`.`ite_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `sd_instrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+WHERE `sd_instrumento`.`ins_ide` = 43
+ORDER BY `sd_item`.`ite_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `sd_instrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+WHERE `sd_instrumento`.`ins_ide` = 43
+ORDER BY `sd_item`.`ite_ide`', [], false)
+ 5 APPPATH\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoreo.php(206): App\Models\Generaldb->selectSomeDataJoin('*', 'sd_instrumento', 'sd_instrumento.ins_ide = 43 ', 'sd_item.ite_ide', false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-11 05:12:03 --> mysqli_sql_exception: Table 'simondrep2_temp.procedimiento' doesn't exist in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `proc_id...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `proc_id...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `proc_id...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `proc_id...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Documento.php(54): App\Models\General::getData('proc_ide as id,...', 'procedimiento,f...', 'proc_ide = fluj...', 'proc_nombre', 'proc_ide')
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-11 05:12:03 --> Table 'simondrep2_temp.procedimiento' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE `proc_ide` = fluj_proc_ide AND
+            `proc_enti_ide` = 1 AND 
+            `proc_unor_ide` = 1
+GROUP BY `proc_ide`
+ORDER BY `proc_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE `proc_ide` = fluj_proc_ide AND
+            `proc_enti_ide` = 1 AND 
+            `proc_unor_ide` = 1
+GROUP BY `proc_ide`
+ORDER BY `proc_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE `proc_ide` = fluj_proc_ide AND
+            `proc_enti_ide` = 1 AND 
+            `proc_unor_ide` = 1
+GROUP BY `proc_ide`
+ORDER BY `proc_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE `proc_ide` = fluj_proc_ide AND
+            `proc_enti_ide` = 1 AND 
+            `proc_unor_ide` = 1
+GROUP BY `proc_ide`
+ORDER BY `proc_nombre`', [], false)
+ 5 APPPATH\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(54): App\Models\General::getData('proc_ide as id,proc_nombre as nombre', 'procedimiento,flujos', 'proc_ide = fluj_proc_ide AND
+            proc_enti_ide = 1 AND 
+            proc_unor_ide = 1 ', 'proc_nombre', 'proc_ide')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 18:16:24 --> Cannot use object of type stdClass as array
+in APPPATH\Views\monitoreo\preview_herramienta.php on line 5.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/preview_herramienta', [], true)
+ 4 APPPATH\Controllers\Monitoreo.php(232): view('monitoreo/preview_herramienta', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 20:30:19 --> Undefined property: stdClass::$ite_ta_ide
+in APPPATH\Views\monitoreo\preview_herramienta.php on line 5.
+ 1 APPPATH\Views\monitoreo\preview_herramienta.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ite_ta_ide', 'APPPATH\\Views\\monitoreo\\preview_herramienta.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\preview_herramienta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/preview_herramienta', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(232): view('monitoreo/preview_herramienta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 20:30:54 --> Undefined property: stdClass::$ta_ide
+in APPPATH\Views\monitoreo\preview_herramienta.php on line 5.
+ 1 APPPATH\Views\monitoreo\preview_herramienta.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ta_ide', 'APPPATH\\Views\\monitoreo\\preview_herramienta.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\preview_herramienta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/preview_herramienta', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(232): view('monitoreo/preview_herramienta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 20:33:47 --> Undefined property: stdClass::$ta_ide
+in APPPATH\Views\monitoreo\preview_herramienta.php on line 14.
+ 1 APPPATH\Views\monitoreo\preview_herramienta.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ta_ide', 'APPPATH\\Views\\monitoreo\\preview_herramienta.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\preview_herramienta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/preview_herramienta', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(232): view('monitoreo/preview_herramienta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 20:34:00 --> Undefined property: stdClass::$ta_ide
+in APPPATH\Views\monitoreo\preview_herramienta.php on line 16.
+ 1 APPPATH\Views\monitoreo\preview_herramienta.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ta_ide', 'APPPATH\\Views\\monitoreo\\preview_herramienta.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\preview_herramienta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/preview_herramienta', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(232): view('monitoreo/preview_herramienta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,334 @@
+ERROR - 2023-12-04 15:12:14 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep2_temp`.`sd_instrumento`, CONSTRAINT `fk_sd_instrumento_estados1` FOREIGN KEY (`ins_esta_ide`) REFERENCES `estados` (`esta_ide`)) in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(61): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(48): App\Models\Generaldb->insertData('sd_instrumento', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-04 15:12:14 --> Cannot add or update a child row: a foreign key constraint fails (`simondrep2_temp`.`sd_instrumento`, CONSTRAINT `fk_sd_instrumento_estados1` FOREIGN KEY (`ins_esta_ide`) REFERENCES `estados` (`esta_ide`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd_instrumento` (`ins_nombre`, `ins_detalle`) VALUES (\'test1\', \'test2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd_instrumento` (`ins_nombre`, `ins_detalle`) VALUES (\'test1\', \'test2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd_instrumento` (`ins_nombre`, `ins_detalle`) VALUES (\'test1\', \'test2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd_instrumento` (`ins_nombre`, `ins_detalle`) VALUES (:ins_nombre:, :ins_detalle:)', [...], false)
+ 5 APPPATH\Models\Generaldb.php(61): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Monitoreo.php(48): App\Models\Generaldb->insertData('sd_instrumento', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-04 15:22:56 --> mysqli_sql_exception: Table 'simondrep2_temp.instrumetno' doesn't exist in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(42): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(51): App\Models\Generaldb->selectSomeData('*', 'instrumetno', Array, 'ins_ide DESC', false, 1)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-04 15:22:56 --> Table 'simondrep2_temp.instrumetno' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `instrumetno`
+WHERE `ins_nombre` = \'asd\'
+AND `ins_detalle` = \'asd\'
+AND `ins_esta_ide` = 1
+ORDER BY `ins_ide` DESC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `instrumetno`
+WHERE `ins_nombre` = \'asd\'
+AND `ins_detalle` = \'asd\'
+AND `ins_esta_ide` = 1
+ORDER BY `ins_ide` DESC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `instrumetno`
+WHERE `ins_nombre` = \'asd\'
+AND `ins_detalle` = \'asd\'
+AND `ins_esta_ide` = 1
+ORDER BY `ins_ide` DESC
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `instrumetno`
+WHERE `ins_nombre` = :ins_nombre:
+AND `ins_detalle` = :ins_detalle:
+AND `ins_esta_ide` = :ins_esta_ide:
+ORDER BY `ins_ide` DESC
+ LIMIT 1', [...], false)
+ 5 APPPATH\Models\Generaldb.php(42): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Controllers\Monitoreo.php(51): App\Models\Generaldb->selectSomeData('*', 'instrumetno', [...], 'ins_ide DESC', false, 1)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 15:44:10 --> Class "App\Models\Generaldb" not found
+in APPPATH\Controllers\Monitoreo.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-04 15:59:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== 1
+ORDER BY `ins_ide` DESC
+ LIMIT 1' at line 3 in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ins_ide...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ins_ide...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ins_ide...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ins_ide...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(34): App\Models\Generaldb->selectSomeData('ins_ide as next...', 'sd_instrumento', 'ins_esta_ide ==...', 'ins_ide DESC', false, 1)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoInstrumento()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-04 15:59:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== 1
+ORDER BY `ins_ide` DESC
+ LIMIT 1' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ins_ide` as `next_ide`
+FROM `sd_instrumento`
+WHERE `ins_esta_ide` = == 1
+ORDER BY `ins_ide` DESC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ins_ide` as `next_ide`
+FROM `sd_instrumento`
+WHERE `ins_esta_ide` = == 1
+ORDER BY `ins_ide` DESC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ins_ide` as `next_ide`
+FROM `sd_instrumento`
+WHERE `ins_esta_ide` = == 1
+ORDER BY `ins_ide` DESC
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ins_ide` as `next_ide`
+FROM `sd_instrumento`
+WHERE `ins_esta_ide` = == 1
+ORDER BY `ins_ide` DESC
+ LIMIT 1', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoreo.php(34): App\Models\Generaldb->selectSomeData('ins_ide as next_ide', 'sd_instrumento', 'ins_esta_ide === 1', 'ins_ide DESC', false, 1)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoInstrumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 18:07:59 --> Undefined variable $ins_ide
+in APPPATH\Views\monitoreo\aspectos.php on line 1.
+ 1 APPPATH\Views\monitoreo\aspectos.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ins_ide', 'APPPATH\\Views\\monitoreo\\aspectos.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\aspectos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/aspectos', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(67): view('monitoreo/aspectos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 18:12:36 --> Undefined variable $ins_ide
+in APPPATH\Views\monitoreo\aspectos.php on line 1.
+ 1 APPPATH\Views\monitoreo\aspectos.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ins_ide', 'APPPATH\\Views\\monitoreo\\aspectos.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\aspectos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/aspectos', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(67): view('monitoreo/aspectos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 18:14:16 --> Undefined array key "aspectos"
+in APPPATH\Controllers\Monitoreo.php on line 64.
+ 1 APPPATH\Controllers\Monitoreo.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "aspectos"', 'APPPATH\\Controllers\\Monitoreo.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 18:15:08 --> Attempt to read property "ide" on string
+in APPPATH\Views\monitoreo\aspectos.php on line 5.
+ 1 APPPATH\Views\monitoreo\aspectos.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "ide" on string', 'APPPATH\\Views\\monitoreo\\aspectos.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\aspectos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/aspectos', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(70): view('monitoreo/aspectos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 18:15:38 --> Attempt to read property "ide" on string
+in APPPATH\Views\monitoreo\aspectos.php on line 5.
+ 1 APPPATH\Views\monitoreo\aspectos.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "ide" on string', 'APPPATH\\Views\\monitoreo\\aspectos.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\aspectos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/aspectos', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(70): view('monitoreo/aspectos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 18:18:07 --> Attempt to read property "ide" on string
+in APPPATH\Views\monitoreo\aspectos.php on line 5.
+ 1 APPPATH\Views\monitoreo\aspectos.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "ide" on string', 'APPPATH\\Views\\monitoreo\\aspectos.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\aspectos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/aspectos', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(70): view('monitoreo/aspectos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 18:46:33 --> Attempt to read property "ide" on string
+in APPPATH\Views\monitoreo\aspectos.php on line 5.
+ 1 APPPATH\Views\monitoreo\aspectos.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "ide" on string', 'APPPATH\\Views\\monitoreo\\aspectos.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\aspectos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/aspectos', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(70): view('monitoreo/aspectos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 18:50:28 --> Attempt to read property "ide" on string
+in APPPATH\Views\monitoreo\aspectos.php on line 5.
+ 1 APPPATH\Views\monitoreo\aspectos.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "ide" on string', 'APPPATH\\Views\\monitoreo\\aspectos.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\aspectos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/aspectos', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(70): view('monitoreo/aspectos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 18:50:36 --> Attempt to read property "ide" on string
+in APPPATH\Views\monitoreo\aspectos.php on line 5.
+ 1 APPPATH\Views\monitoreo\aspectos.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "ide" on string', 'APPPATH\\Views\\monitoreo\\aspectos.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\aspectos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/aspectos', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(70): view('monitoreo/aspectos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 18:54:23 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Monitoreo.php(62): CodeIgniter\Model->__call('geinsertData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 18:54:37 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Monitoreo.php(62): CodeIgniter\Model->__call('geinsertData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 18:55:31 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Monitoreo.php(62): CodeIgniter\Model->__call('geinsertData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-04 18:57:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+ORDER BY `asp_nombre`' at line 3 in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `asp_ide...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `asp_ide...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `asp_ide...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `asp_ide...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(64): App\Models\Generaldb->selectSomeData('asp_ide as ide,...', 'sd_aspecto', 'asp_ide IN ()', 'asp_nombre')
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-04 18:57:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+ORDER BY `asp_nombre`' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `asp_ide` as `ide`, `asp_nombre` as `nombre`
+FROM `sd_aspecto`
+WHERE `asp_ide` IN ()
+ORDER BY `asp_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `asp_ide` as `ide`, `asp_nombre` as `nombre`
+FROM `sd_aspecto`
+WHERE `asp_ide` IN ()
+ORDER BY `asp_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `asp_ide` as `ide`, `asp_nombre` as `nombre`
+FROM `sd_aspecto`
+WHERE `asp_ide` IN ()
+ORDER BY `asp_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `asp_ide` as `ide`, `asp_nombre` as `nombre`
+FROM `sd_aspecto`
+WHERE `asp_ide` IN ()
+ORDER BY `asp_nombre`', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoreo.php(64): App\Models\Generaldb->selectSomeData('asp_ide as ide, asp_nombre as nombre', 'sd_aspecto', 'asp_ide IN ()', 'asp_nombre')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-04 19:56:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY `asp_nombre`' at line 4 in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `asp_ide...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `asp_ide...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `asp_ide...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `asp_ide...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(68): App\Models\Generaldb->selectSomeData('asp_ide as ide,...', 'sd_aspecto', '(asp_ide = 2 OR...', 'asp_nombre')
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-04 19:56:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY `asp_nombre`' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `asp_ide` as `ide`, `asp_nombre` as `nombre`
+FROM `sd_aspecto`
+WHERE (`asp_ide` = 2 OR `asp_ide` = 1 OR `asp_ide` = 3 OR  1 = 0
+ORDER BY `asp_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `asp_ide` as `ide`, `asp_nombre` as `nombre`
+FROM `sd_aspecto`
+WHERE (`asp_ide` = 2 OR `asp_ide` = 1 OR `asp_ide` = 3 OR  1 = 0
+ORDER BY `asp_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `asp_ide` as `ide`, `asp_nombre` as `nombre`
+FROM `sd_aspecto`
+WHERE (`asp_ide` = 2 OR `asp_ide` = 1 OR `asp_ide` = 3 OR  1 = 0
+ORDER BY `asp_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `asp_ide` as `ide`, `asp_nombre` as `nombre`
+FROM `sd_aspecto`
+WHERE (`asp_ide` = 2 OR `asp_ide` = 1 OR `asp_ide` = 3 OR  1 = 0
+ORDER BY `asp_nombre`', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoreo.php(68): App\Models\Generaldb->selectSomeData('asp_ide as ide, asp_nombre as nombre', 'sd_aspecto', '(asp_ide = 2 OR asp_ide = 1 OR asp_ide = 3 OR  1 = 0 ', 'asp_nombre')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-04 20:16:26 --> Undefined variable $inst_ide
+in APPPATH\Views\monitoreo\aspectos.php on line 13.
+ 1 APPPATH\Views\monitoreo\aspectos.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $inst_ide', 'APPPATH\\Views\\monitoreo\\aspectos.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\aspectos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/aspectos', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(79): view('monitoreo/aspectos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,7 @@
+CRITICAL - 2025-07-23 20:33:14 --> Undefined array key "usua_ide"
+in APPPATH/Controllers/EstadisticaController.php on line 122.
+ 1 APPPATH/Controllers/EstadisticaController.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usua_ide"', 'APPPATH/Controllers/EstadisticaController.php', 122)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\EstadisticaController->getData()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstadisticaController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

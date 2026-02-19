@@ -1,0 +1,11 @@
+CRITICAL - 2025-04-17 09:12:48 --> Undefined array key 0
+in APPPATH/Views/monitoreo/pdf/monitoreo.php on line 6.
+ 1 APPPATH/Views/monitoreo/pdf/monitoreo.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Views/monitoreo/pdf/monitoreo.php', 6)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/monitoreo/pdf/monitoreo.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('monitoreo/pdf/monitoreo', [], true)
+ 5 APPPATH/Controllers/Monitoreo.php(2760): view('monitoreo/pdf/monitoreo', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->getInstrumentoPdf()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

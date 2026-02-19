@@ -1,0 +1,595 @@
+CRITICAL - 2022-12-17 04:30:56 --> Undefined offset: 1
+in APPPATH\Views\sistema\vheader.php on line 1739.
+ 1 APPPATH\Views\sistema\vheader.php(1739): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Views\\sistema\\vheader.php', 1739, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(33): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 04:47:36 --> Undefined offset: 1
+in APPPATH\Views\sistema\vheader.php on line 1748.
+ 1 APPPATH\Views\sistema\vheader.php(1748): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Views\\sistema\\vheader.php', 1748, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(33): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 04:51:32 --> Undefined offset: 1
+in APPPATH\Views\sistema\vheader.php on line 1749.
+ 1 APPPATH\Views\sistema\vheader.php(1749): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Views\\sistema\\vheader.php', 1749, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(33): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 04:57:06 --> Undefined offset: 1
+in APPPATH\Views\sistema\vheader.php on line 1749.
+ 1 APPPATH\Views\sistema\vheader.php(1749): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Views\\sistema\\vheader.php', 1749, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(33): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:06:00 --> The route for "location" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('location')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Application.php(13): redirect('location', 'refresh')
+ 4 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Application->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:06:15 --> The route for "location" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('location')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Application.php(13): redirect('location', 'refresh')
+ 4 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Application->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:07:00 --> Cannot call constructor
+in APPPATH\Controllers\Application.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Application->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:15:36 --> Undefined offset: 1
+in APPPATH\Views\sistema\vheader.php on line 1749.
+ 1 APPPATH\Views\sistema\vheader.php(1749): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Views\\sistema\\vheader.php', 1749, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(35): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:18:26 --> Undefined offset: 1
+in APPPATH\Views\sistema\vheader.php on line 1748.
+ 1 APPPATH\Views\sistema\vheader.php(1748): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Views\\sistema\\vheader.php', 1748, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(35): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:19:24 --> Undefined offset: 1
+in APPPATH\Views\sistema\vheader.php on line 1748.
+ 1 APPPATH\Views\sistema\vheader.php(1748): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Views\\sistema\\vheader.php', 1748, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(35): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:19:56 --> Undefined offset: 1
+in APPPATH\Views\sistema\vheader.php on line 1748.
+ 1 APPPATH\Views\sistema\vheader.php(1748): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Views\\sistema\\vheader.php', 1748, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(35): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:20:10 --> Undefined offset: 1
+in APPPATH\Views\sistema\vheader.php on line 1748.
+ 1 APPPATH\Views\sistema\vheader.php(1748): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Views\\sistema\\vheader.php', 1748, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(36): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:20:27 --> Undefined offset: 1
+in APPPATH\Views\sistema\vheader.php on line 1748.
+ 1 APPPATH\Views\sistema\vheader.php(1748): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Views\\sistema\\vheader.php', 1748, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(36): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:22:39 --> Object of class CodeIgniter\HTTP\RedirectResponse could not be converted to string
+in APPPATH\Controllers\Application.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Application->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:23:00 --> Object of class CodeIgniter\HTTP\RedirectResponse could not be converted to string
+in APPPATH\Controllers\Application.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Application->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:24:34 --> Object of class CodeIgniter\HTTP\RedirectResponse could not be converted to string
+in APPPATH\Controllers\Application.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Application->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:24:49 --> Undefined offset: 1
+in APPPATH\Views\sistema\vheader.php on line 1748.
+ 1 APPPATH\Views\sistema\vheader.php(1748): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Views\\sistema\\vheader.php', 1748, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(39): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:25:05 --> Undefined offset: 1
+in APPPATH\Views\sistema\vheader.php on line 1748.
+ 1 APPPATH\Views\sistema\vheader.php(1748): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Views\\sistema\\vheader.php', 1748, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(39): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:26:09 --> Undefined offset: 1
+in APPPATH\Views\sistema\vheader.php on line 1748.
+ 1 APPPATH\Views\sistema\vheader.php(1748): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Views\\sistema\\vheader.php', 1748, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(32): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:44:52 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+in APPPATH\Controllers\Application.php on line 13.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Application.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Application')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Application')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Application')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Application', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:44:53 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+in APPPATH\Controllers\Application.php on line 13.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Application.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Application')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Application')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Application')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Application', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:45:27 --> unlink(D:\wamp\www\plantillaciv4\writable\debugbar/debugbar_1671276979.523507.json): No such file or directory
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(D:\\wamp\\www\\plantillaciv4\\writable\\debugbar/debugbar_1671276979.523507.json): No such file or directory', 'SYSTEMPATH\\Debug\\Toolbar\\Collectors\\History.php', 76, [...])
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(76): unlink('FCPATH\\writable\\debugbar/debugbar_1671276979.523507.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(500): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1671277524.858384', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(477): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(46): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(328): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:47:51 --> Call to undefined function App\Controllers\reditec()
+in APPPATH\Controllers\Application.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Application->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:48:06 --> Call to undefined function App\Controllers\reditec()
+in APPPATH\Controllers\Application.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Application->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:48:23 --> Call to undefined function App\Controllers\reditec()
+in APPPATH\Controllers\Application.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Application->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:48:25 --> Call to undefined function App\Controllers\reditec()
+in APPPATH\Controllers\Application.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Application->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:49:07 --> Call to undefined function App\Controllers\reditec()
+in APPPATH\Controllers\Application.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Application->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:49:09 --> Call to undefined function App\Controllers\reditec()
+in APPPATH\Controllers\Application.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Application->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:49:32 --> Call to undefined function App\Controllers\redirec()
+in APPPATH\Controllers\Application.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Application->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 05:49:39 --> Undefined offset: 1
+in APPPATH\Views\sistema\vheader.php on line 1750.
+ 1 APPPATH\Views\sistema\vheader.php(1750): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Views\\sistema\\vheader.php', 1750, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(36): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 06:32:04 --> syntax error, unexpected 'return' (T_RETURN)
+in APPPATH\Controllers\Application.php on line 42.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Application.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Application')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Application')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Application')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Application', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 06:32:19 --> syntax error, unexpected 'return' (T_RETURN)
+in APPPATH\Controllers\Application.php on line 42.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Application.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Application')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Application')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Application')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Application', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 06:32:34 --> syntax error, unexpected 'return' (T_RETURN)
+in APPPATH\Controllers\Application.php on line 42.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Application.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Application')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Application')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Application')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Application', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 06:32:36 --> syntax error, unexpected 'return' (T_RETURN)
+in APPPATH\Controllers\Application.php on line 42.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Application.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Application')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Application')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Application')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Application', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 06:33:01 --> Undefined variable: base
+in APPPATH\Views\sistema\vmenu.php on line 1282.
+ 1 APPPATH\Views\sistema\vmenu.php(1282): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: base', 'APPPATH\\Views\\sistema\\vmenu.php', 1282, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vmenu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vmenu', [], true)
+ 5 APPPATH\Controllers\Application.php(38): view('sistema/vmenu', [])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 06:35:45 --> Invalid argument supplied for foreach()
+in APPPATH\Views\sistema\vmenu.php on line 477.
+ 1 APPPATH\Views\sistema\vmenu.php(477): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\sistema\\vmenu.php', 477, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vmenu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vmenu', [], true)
+ 5 APPPATH\Controllers\Application.php(39): view('sistema/vmenu', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 06:37:13 --> Undefined variable: session
+in APPPATH\Views\sistema\vmenu.php on line 48.
+ 1 APPPATH\Views\sistema\vmenu.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH\\Views\\sistema\\vmenu.php', 48, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vmenu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vmenu', [], true)
+ 5 APPPATH\Controllers\Application.php(43): view('sistema/vmenu', [])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 06:37:31 --> Undefined variable: logo
+in APPPATH\Views\sistema\vmenu.php on line 330.
+ 1 APPPATH\Views\sistema\vmenu.php(330): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: logo', 'APPPATH\\Views\\sistema\\vmenu.php', 330, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vmenu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vmenu', [], true)
+ 5 APPPATH\Controllers\Application.php(44): view('sistema/vmenu', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 06:37:46 --> Undefined variable: roles
+in APPPATH\Views\sistema\vmenu.php on line 477.
+ 1 APPPATH\Views\sistema\vmenu.php(477): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: roles', 'APPPATH\\Views\\sistema\\vmenu.php', 477, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vmenu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vmenu', [], true)
+ 5 APPPATH\Controllers\Application.php(45): view('sistema/vmenu', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 06:37:57 --> Undefined variable: base
+in APPPATH\Views\sistema\vmenu.php on line 1282.
+ 1 APPPATH\Views\sistema\vmenu.php(1282): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: base', 'APPPATH\\Views\\sistema\\vmenu.php', 1282, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vmenu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vmenu', [], true)
+ 5 APPPATH\Controllers\Application.php(46): view('sistema/vmenu', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 06:38:10 --> Undefined variable: system_name
+in APPPATH\Views\sistema\vmenu.php on line 1536.
+ 1 APPPATH\Views\sistema\vmenu.php(1536): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: system_name', 'APPPATH\\Views\\sistema\\vmenu.php', 1536, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vmenu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vmenu', [], true)
+ 5 APPPATH\Controllers\Application.php(47): view('sistema/vmenu', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 06:38:25 --> Undefined variable: contacto_datos
+in APPPATH\Views\sistema\vmenu.php on line 1630.
+ 1 APPPATH\Views\sistema\vmenu.php(1630): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: contacto_datos', 'APPPATH\\Views\\sistema\\vmenu.php', 1630, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vmenu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vmenu', [], true)
+ 5 APPPATH\Controllers\Application.php(48): view('sistema/vmenu', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 06:39:29 --> Undefined variable: system_name
+in APPPATH\Views\sistema\vheader.php on line 9.
+ 1 APPPATH\Views\sistema\vheader.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: system_name', 'APPPATH\\Views\\sistema\\vheader.php', 9, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(47): view('sistema/vheader', [])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 06:39:55 --> Undefined variable: base
+in APPPATH\Views\sistema\vheader.php on line 20.
+ 1 APPPATH\Views\sistema\vheader.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: base', 'APPPATH\\Views\\sistema\\vheader.php', 20, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(47): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 08:28:23 --> Undefined variable: roles2
+in APPPATH\Views\sistema\vindex.php on line 3.
+ 1 APPPATH\Views\sistema\vindex.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: roles2', 'APPPATH\\Views\\sistema\\vindex.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vindex.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vindex', [], true)
+ 5 APPPATH\Controllers\Application.php(64): view('sistema/vindex')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 08:29:21 --> Undefined variable: roles2
+in APPPATH\Views\sistema\vindex.php on line 3.
+ 1 APPPATH\Views\sistema\vindex.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: roles2', 'APPPATH\\Views\\sistema\\vindex.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vindex.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vindex', [], true)
+ 5 APPPATH\Controllers\Application.php(78): view('sistema/vindex')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 08:34:28 --> Class 'Componente' not found
+in APPPATH\Views\sistema\vindex.php on line 6.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vindex', [], true)
+ 4 APPPATH\Controllers\Application.php(78): view('sistema/vindex')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-17 09:12:29 --> mysqli_sql_exception: Unknown column 'r.clase' in 'field list' in D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `m`.`mod...', 0)
+#1 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.`mod...')
+#2 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.`mod...')
+#3 D:\wamp\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`mod...', Array, false)
+#4 D:\wamp\www\plantillaciv4\app\Models\General.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\plantillaciv4\app\Controllers\Application.php(52): App\Models\General::getRoles('1')
+#6 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Application->index()
+#7 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+#8 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-17 09:12:29 --> Unknown column 'r.clase' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`, `r`.`role_descripcion`, `r`.`clase`
+FROM `accesos` `a`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_usua_ide` = \'1\'
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`, `r`.`role_descripcion`, `r`.`clase`
+FROM `accesos` `a`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_usua_ide` = \'1\'
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`, `r`.`role_descripcion`, `r`.`clase`
+FROM `accesos` `a`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_usua_ide` = \'1\'
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`, `r`.`role_descripcion`, `r`.`clase`
+FROM `accesos` `a`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_usua_ide` = :a.acce_usua_ide:
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`', [...], false)
+ 5 APPPATH\Models\General.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Application.php(52): App\Models\General::getRoles('1')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-17 09:13:17 --> mysqli_sql_exception: Unknown column 'r.modu_clase' in 'field list' in D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `m`.`mod...', 0)
+#1 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.`mod...')
+#2 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.`mod...')
+#3 D:\wamp\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`mod...', Array, false)
+#4 D:\wamp\www\plantillaciv4\app\Models\General.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\plantillaciv4\app\Controllers\Application.php(52): App\Models\General::getRoles('1')
+#6 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Application->index()
+#7 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+#8 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-17 09:13:17 --> Unknown column 'r.modu_clase' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`, `r`.`role_descripcion`, `r`.`modu_clase`
+FROM `accesos` `a`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_usua_ide` = \'1\'
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`, `r`.`role_descripcion`, `r`.`modu_clase`
+FROM `accesos` `a`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_usua_ide` = \'1\'
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`, `r`.`role_descripcion`, `r`.`modu_clase`
+FROM `accesos` `a`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_usua_ide` = \'1\'
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`, `r`.`role_descripcion`, `r`.`modu_clase`
+FROM `accesos` `a`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_usua_ide` = :a.acce_usua_ide:
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`', [...], false)
+ 5 APPPATH\Models\General.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Application.php(52): App\Models\General::getRoles('1')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 09:13:32 --> Undefined index: modulo
+in APPPATH\Views\sistema\vindex.php on line 17.
+ 1 APPPATH\Views\sistema\vindex.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: modulo', 'APPPATH\\Views\\sistema\\vindex.php', 17, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vindex.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vindex', [], true)
+ 5 APPPATH\Controllers\Application.php(79): view('sistema/vindex')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 09:24:34 --> Undefined variable: descripcion
+in APPPATH\Libraries\Componente.php on line 97.
+ 1 APPPATH\Libraries\Componente.php(97): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: descripcion', 'APPPATH\\Libraries\\Componente.php', 97, [...])
+ 2 APPPATH\Views\sistema\vindex.php(18): App\Libraries\Componente::Rol('Módulo 01', 'Opción 11', 'danger', 'ti-book', 'Módulo 01', '/opcion1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vindex.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vindex', [], true)
+ 6 APPPATH\Controllers\Application.php(79): view('sistema/vindex')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 09:35:35 --> syntax error, unexpected '}'
+in APPPATH\Libraries\Componente.php on line 109.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Libraries\\Componente.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\Componente')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\Componente')
+ 4 APPPATH\Controllers\Application.php(162): spl_autoload_call('App\\Libraries\\Componente')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 09:35:52 --> syntax error, unexpected '}'
+in APPPATH\Libraries\Componente.php on line 109.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Libraries\\Componente.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\Componente')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\Componente')
+ 4 APPPATH\Views\sistema\vindex.php(12): spl_autoload_call('App\\Libraries\\Componente')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vindex.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vindex', [], true)
+ 8 APPPATH\Controllers\Application.php(79): view('sistema/vindex')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,192 @@
+CRITICAL - 2022-12-11 09:32:26 --> Too few arguments to function App\Controllers\Login::index(), 0 passed in D:\wamp\www\plantillaciv4\system\CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH\Controllers\Login.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 09:40:47 --> Too few arguments to function App\Controllers\Login::index(), 1 passed in D:\wamp\www\plantillaciv4\system\CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH\Controllers\Login.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index('6')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 09:41:06 --> A non-numeric value encountered
+in APPPATH\Controllers\Login.php on line 9.
+ 1 APPPATH\Controllers\Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Controllers\\Login.php', 9, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index('1', 'D:\\wamp\\www\\plantillaciv4')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 09:41:11 --> A non-numeric value encountered
+in APPPATH\Controllers\Login.php on line 9.
+ 1 APPPATH\Controllers\Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Controllers\\Login.php', 9, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index('1', 'D:\\wamp\\www\\plantillaciv4')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 09:57:41 --> Invalid file: welcome_messagge.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('welcome_messagge.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('welcome_messagge', [], true)
+ 3 APPPATH\Controllers\Login.php(12): view('welcome_messagge')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->demo()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 10:41:08 --> Undefined property: App\Controllers\Login::$input
+in APPPATH\Controllers\Login.php on line 9.
+ 1 APPPATH\Controllers\Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Login::$input', 'APPPATH\\Controllers\\Login.php', 9, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index('5', '6')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 10:41:18 --> Undefined property: App\Controllers\Login::$input
+in APPPATH\Controllers\Login.php on line 9.
+ 1 APPPATH\Controllers\Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Login::$input', 'APPPATH\\Controllers\\Login.php', 9, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index('5', '6')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 10:41:24 --> Undefined property: App\Controllers\Login::$input
+in APPPATH\Controllers\Login.php on line 9.
+ 1 APPPATH\Controllers\Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Login::$input', 'APPPATH\\Controllers\\Login.php', 9, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index('5', '6')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 10:41:29 --> Undefined property: App\Controllers\Login::$input
+in APPPATH\Controllers\Login.php on line 9.
+ 1 APPPATH\Controllers\Login.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Login::$input', 'APPPATH\\Controllers\\Login.php', 9, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index('5', '6')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 10:41:38 --> Call to undefined method App\Controllers\Login::get()
+in APPPATH\Controllers\Login.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index('5', '6')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 10:41:42 --> Call to undefined function App\Controllers\get()
+in APPPATH\Controllers\Login.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index('5', '6')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 10:41:43 --> Call to undefined function App\Controllers\get()
+in APPPATH\Controllers\Login.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index('5', '6')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 17:11:24 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\General.php on line 7.
+ 1 APPPATH\Controllers\Login.php(22): App\Models\General->getData('*', 'usuarios', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 18:16:50 --> Undefined variable: objGeneral
+in APPPATH\Controllers\Login.php on line 18.
+ 1 APPPATH\Controllers\Login.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: objGeneral', 'APPPATH\\Controllers\\Login.php', 18, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-11 18:17:04 --> mysqli_sql_exception: No database selected in D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\plantillaciv4\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\plantillaciv4\system\BaseModel.php(524): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\wamp\www\plantillaciv4\app\Controllers\Login.php(18): CodeIgniter\BaseModel->find()
+#7 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Login->verificar()
+#8 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-11 18:17:04 --> No database selected
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usua_user` = \'alex\'
+AND `usuarios`.`usua_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usua_user` = \'alex\'
+AND `usuarios`.`usua_deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usua_user` = \'alex\'
+AND `usuarios`.`usua_deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usua_user` = :usua_user:
+AND `usuarios`.`usua_deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(524): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Controllers\Login.php(18): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-11 18:18:22 --> mysqli_sql_exception: No database selected in D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\plantillaciv4\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\plantillaciv4\system\BaseModel.php(524): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\wamp\www\plantillaciv4\app\Controllers\Login.php(18): CodeIgniter\BaseModel->find()
+#7 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Login->verificar()
+#8 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-11 18:18:22 --> No database selected
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuarios`.`usua_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuarios`.`usua_deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuarios`.`usua_deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuarios`.`usua_deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(524): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Controllers\Login.php(18): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 18:20:26 --> Class 'App\Controllers\General' not found
+in APPPATH\Controllers\Login.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 18:20:37 --> Undefined variable: login
+in APPPATH\Controllers\Login.php on line 23.
+ 1 APPPATH\Controllers\Login.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: login', 'APPPATH\\Controllers\\Login.php', 23, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-11 18:21:44 --> syntax error, unexpected ','
+in APPPATH\Controllers\Login.php on line 18.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Login.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Login')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Login')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Login')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Login', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

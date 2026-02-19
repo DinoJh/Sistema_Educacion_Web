@@ -1,0 +1,35 @@
+CRITICAL - 2025-01-31 11:28:22 --> Undefined array key 0
+in APPPATH/Controllers/Evaluacion.php on line 1559.
+ 1 APPPATH/Controllers/Evaluacion.php(1559): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Evaluacion.php', 1559)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Evaluacion->getListadoAvanceDrep()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-31 11:29:44 --> Undefined array key 0
+in APPPATH/Controllers/Evaluacion.php on line 1559.
+ 1 APPPATH/Controllers/Evaluacion.php(1559): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Evaluacion.php', 1559)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Evaluacion->getListadoAvanceDrep()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-31 11:31:04 --> Undefined array key 0
+in APPPATH/Controllers/Evaluacion.php on line 701.
+ 1 APPPATH/Controllers/Evaluacion.php(701): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Evaluacion.php', 701)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Evaluacion->getCuadroComparativo()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-31 11:32:21 --> Undefined array key 0
+in APPPATH/Controllers/Informes2.php on line 40.
+ 1 APPPATH/Controllers/Informes2.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Informes2.php', 40)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->getCumpleUgel()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-31 11:33:26 --> Undefined array key 0
+in APPPATH/Controllers/Evaluacion.php on line 1559.
+ 1 APPPATH/Controllers/Evaluacion.php(1559): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Evaluacion.php', 1559)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Evaluacion->getListadoAvanceDrep()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

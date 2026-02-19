@@ -1,0 +1,212 @@
+CRITICAL - 2023-12-02 15:07:28 --> Undefined property: stdClass::$ide
+in APPPATH\Libraries\Formulario.php on line 67.
+ 1 APPPATH\Libraries\Formulario.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ide', 'APPPATH\\Libraries\\Formulario.php', 67)
+ 2 APPPATH\Views\admin\formulario.php(22): App\Libraries\Formulario->crear([...], [...], [...], [...], [...])
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\formulario.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/formulario', [], true)
+ 6 APPPATH\Controllers\Administrador.php(190): view('admin/formulario', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Administrador->getAccesos()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administrador))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-02 15:07:35 --> Undefined property: stdClass::$ide
+in APPPATH\Libraries\Formulario.php on line 67.
+ 1 APPPATH\Libraries\Formulario.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ide', 'APPPATH\\Libraries\\Formulario.php', 67)
+ 2 APPPATH\Views\admin\formulario.php(22): App\Libraries\Formulario->crear([...], [...], [...], [...], [...])
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\formulario.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/formulario', [], true)
+ 6 APPPATH\Controllers\Administrador.php(190): view('admin/formulario', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Administrador->getAccesos()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administrador))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-02 15:27:34 --> mysqli_sql_exception: Table 'simondrep2_temp.procedimiento' doesn't exist in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `proc_id...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `proc_id...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `proc_id...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `proc_id...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Documento.php(54): App\Models\General::getData('proc_ide as id,...', 'procedimiento,f...', 'proc_ide = fluj...', 'proc_nombre', 'proc_ide')
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-02 15:27:34 --> Table 'simondrep2_temp.procedimiento' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE `proc_ide` = fluj_proc_ide AND
+            `proc_enti_ide` = 1 AND 
+            `proc_unor_ide` = 1
+GROUP BY `proc_ide`
+ORDER BY `proc_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE `proc_ide` = fluj_proc_ide AND
+            `proc_enti_ide` = 1 AND 
+            `proc_unor_ide` = 1
+GROUP BY `proc_ide`
+ORDER BY `proc_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE `proc_ide` = fluj_proc_ide AND
+            `proc_enti_ide` = 1 AND 
+            `proc_unor_ide` = 1
+GROUP BY `proc_ide`
+ORDER BY `proc_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE `proc_ide` = fluj_proc_ide AND
+            `proc_enti_ide` = 1 AND 
+            `proc_unor_ide` = 1
+GROUP BY `proc_ide`
+ORDER BY `proc_nombre`', [], false)
+ 5 APPPATH\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(54): App\Models\General::getData('proc_ide as id,proc_nombre as nombre', 'procedimiento,flujos', 'proc_ide = fluj_proc_ide AND
+            proc_enti_ide = 1 AND 
+            proc_unor_ide = 1 ', 'proc_nombre', 'proc_ide')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-02 16:36:01 --> Undefined variable $ide_inst
+in APPPATH\Views\monitoreo\nuevo_instrumento.php on line 6.
+ 1 APPPATH\Views\monitoreo\nuevo_instrumento.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ide_inst', 'APPPATH\\Views\\monitoreo\\nuevo_instrumento.php', 6)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\nuevo_instrumento.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/nuevo_instrumento', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(26): view('monitoreo/nuevo_instrumento')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-02 17:28:03 --> mysqli_sql_exception: Table 'simondrep2_temp.procedimiento' doesn't exist in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `proc_id...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `proc_id...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `proc_id...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `proc_id...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Documento.php(54): App\Models\General::getData('proc_ide as id,...', 'procedimiento,f...', 'proc_ide = fluj...', 'proc_nombre', 'proc_ide')
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-02 17:28:03 --> Table 'simondrep2_temp.procedimiento' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE `proc_ide` = fluj_proc_ide AND
+            `proc_enti_ide` = 1 AND 
+            `proc_unor_ide` = 1
+GROUP BY `proc_ide`
+ORDER BY `proc_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE `proc_ide` = fluj_proc_ide AND
+            `proc_enti_ide` = 1 AND 
+            `proc_unor_ide` = 1
+GROUP BY `proc_ide`
+ORDER BY `proc_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE `proc_ide` = fluj_proc_ide AND
+            `proc_enti_ide` = 1 AND 
+            `proc_unor_ide` = 1
+GROUP BY `proc_ide`
+ORDER BY `proc_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `proc_ide` as `id`, `proc_nombre` as `nombre`
+FROM `procedimiento`, `flujos`
+WHERE `proc_ide` = fluj_proc_ide AND
+            `proc_enti_ide` = 1 AND 
+            `proc_unor_ide` = 1
+GROUP BY `proc_ide`
+ORDER BY `proc_nombre`', [], false)
+ 5 APPPATH\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(54): App\Models\General::getData('proc_ide as id,proc_nombre as nombre', 'procedimiento,flujos', 'proc_ide = fluj_proc_ide AND
+            proc_enti_ide = 1 AND 
+            proc_unor_ide = 1 ', 'proc_nombre', 'proc_ide')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-02 17:50:19 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep2_temp`.`sd_instrumento`, CONSTRAINT `fk_sd_instrumento_estados1` FOREIGN KEY (`ins_esta_ide`) REFERENCES `estados` (`esta_ide`)) in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(61): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(48): App\Models\Generaldb->insertData('sd_instrumento', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-02 17:50:19 --> Cannot add or update a child row: a foreign key constraint fails (`simondrep2_temp`.`sd_instrumento`, CONSTRAINT `fk_sd_instrumento_estados1` FOREIGN KEY (`ins_esta_ide`) REFERENCES `estados` (`esta_ide`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd_instrumento` (`ins_nombre`, `ins_detalle`) VALUES (\'test\', \'asd\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd_instrumento` (`ins_nombre`, `ins_detalle`) VALUES (\'test\', \'asd\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd_instrumento` (`ins_nombre`, `ins_detalle`) VALUES (\'test\', \'asd\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd_instrumento` (`ins_nombre`, `ins_detalle`) VALUES (:ins_nombre:, :ins_detalle:)', [...], false)
+ 5 APPPATH\Models\Generaldb.php(61): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Monitoreo.php(48): App\Models\Generaldb->insertData('sd_instrumento', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-02 17:51:24 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep2_temp`.`sd_instrumento`, CONSTRAINT `fk_sd_instrumento_estados1` FOREIGN KEY (`ins_esta_ide`) REFERENCES `estados` (`esta_ide`)) in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(61): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(48): App\Models\Generaldb->insertData('sd_instrumento', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-02 17:51:24 --> Cannot add or update a child row: a foreign key constraint fails (`simondrep2_temp`.`sd_instrumento`, CONSTRAINT `fk_sd_instrumento_estados1` FOREIGN KEY (`ins_esta_ide`) REFERENCES `estados` (`esta_ide`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd_instrumento` (`ins_nombre`, `ins_detalle`) VALUES (\'test\', \'asd\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd_instrumento` (`ins_nombre`, `ins_detalle`) VALUES (\'test\', \'asd\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd_instrumento` (`ins_nombre`, `ins_detalle`) VALUES (\'test\', \'asd\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd_instrumento` (`ins_nombre`, `ins_detalle`) VALUES (:ins_nombre:, :ins_detalle:)', [...], false)
+ 5 APPPATH\Models\Generaldb.php(61): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Monitoreo.php(48): App\Models\Generaldb->insertData('sd_instrumento', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-02 17:51:44 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`simondrep2_temp`.`sd_instrumento`, CONSTRAINT `fk_sd_instrumento_estados1` FOREIGN KEY (`ins_esta_ide`) REFERENCES `estados` (`esta_ide`)) in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(61): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(48): App\Models\Generaldb->insertData('sd_instrumento', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-02 17:51:44 --> Cannot add or update a child row: a foreign key constraint fails (`simondrep2_temp`.`sd_instrumento`, CONSTRAINT `fk_sd_instrumento_estados1` FOREIGN KEY (`ins_esta_ide`) REFERENCES `estados` (`esta_ide`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd_instrumento` (`ins_nombre`, `ins_detalle`) VALUES (\'asd\', \'asd\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd_instrumento` (`ins_nombre`, `ins_detalle`) VALUES (\'asd\', \'asd\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd_instrumento` (`ins_nombre`, `ins_detalle`) VALUES (\'asd\', \'asd\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd_instrumento` (`ins_nombre`, `ins_detalle`) VALUES (:ins_nombre:, :ins_detalle:)', [...], false)
+ 5 APPPATH\Models\Generaldb.php(61): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Monitoreo.php(48): App\Models\Generaldb->insertData('sd_instrumento', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarInstrumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

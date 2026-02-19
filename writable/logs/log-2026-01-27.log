@@ -1,0 +1,9 @@
+CRITICAL - 2026-01-27 22:22:26 --> Invalid file: vistaprueba.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vistaprueba.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('vistaprueba', [], true)
+ 3 APPPATH\Controllers\Prueba.php(16): view('vistaprueba')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Prueba->getMiPrueba()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prueba))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

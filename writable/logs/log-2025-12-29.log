@@ -1,0 +1,1034 @@
+ERROR - 2025-12-29 14:30:47 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexo2b_normalizado' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `a`.`gra...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`gra...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`gra...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`gra...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Mreportes2024.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Reportes2024.php(262): App\Models\Mreportes2024->anexo2b('1', '210001', 'TODOS', 'TODOS', 'TODOS', 'TODOS')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Reportes2024->postGrafico()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-29 14:30:47 --> Table 'drepuno_monitoreo_regional_2025.2024_anexo2b_normalizado' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'1\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'1\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'1\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = :a.comp_ide:
+AND `i`.`iiee_ugel_ide` = :i.iiee_ugel_ide:
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`', [...], false)
+ 5 APPPATH\Models\Mreportes2024.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Reportes2024.php(262): App\Models\Mreportes2024->anexo2b('1', '210001', 'TODOS', 'TODOS', 'TODOS', 'TODOS')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Reportes2024->postGrafico()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes2024))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 14:32:45 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexo2b_normalizado' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `a`.`gra...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`gra...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`gra...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`gra...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Mreportes2024.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Reportes2024.php(262): App\Models\Mreportes2024->anexo2b('1', '210001', 'TODOS', 'TODOS', 'TODOS', 'TODOS')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Reportes2024->postGrafico()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-29 14:32:45 --> Table 'drepuno_monitoreo_regional_2025.2024_anexo2b_normalizado' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'1\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'1\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'1\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = :a.comp_ide:
+AND `i`.`iiee_ugel_ide` = :i.iiee_ugel_ide:
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`', [...], false)
+ 5 APPPATH\Models\Mreportes2024.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Reportes2024.php(262): App\Models\Mreportes2024->anexo2b('1', '210001', 'TODOS', 'TODOS', 'TODOS', 'TODOS')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Reportes2024->postGrafico()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes2024))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 14:32:52 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexo2b_normalizado' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `a`.`gra...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`gra...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`gra...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`gra...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Mreportes2024.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Reportes2024.php(262): App\Models\Mreportes2024->anexo2b('2', '210001', 'TODOS', 'TODOS', 'TODOS', 'TODOS')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Reportes2024->postGrafico()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-29 14:32:52 --> Table 'drepuno_monitoreo_regional_2025.2024_anexo2b_normalizado' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'2\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'2\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'2\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = :a.comp_ide:
+AND `i`.`iiee_ugel_ide` = :i.iiee_ugel_ide:
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`', [...], false)
+ 5 APPPATH\Models\Mreportes2024.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Reportes2024.php(262): App\Models\Mreportes2024->anexo2b('2', '210001', 'TODOS', 'TODOS', 'TODOS', 'TODOS')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Reportes2024->postGrafico()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes2024))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-29 15:27:38 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Anexos2025r.php on line 66.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Anexos2025r.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Anexos2025r')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Anexos2025r')
+ 4 SYSTEMPATH\Router\AutoRouterImproved.php(264): class_exists('App\\Controllers\\Anexos2025r')
+ 5 SYSTEMPATH\Router\AutoRouterImproved.php(115): CodeIgniter\Router\AutoRouterImproved->scanControllers([...])
+ 6 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouterImproved->getRoute('anexos2025r/anexos')
+ 7 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('anexos2025r/anexos')
+ 8 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('anexos2025r/anexos')
+ 9 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 15:47:20 --> mysqli_sql_exception: Unknown column 'iiee_nombre' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_no...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_no...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_no...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_no...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\General.php(98): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Services.php(53): App\Models\General::getData2('iiee_nombre', 'iiee', '', Array, 'iiee_nombre')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-29 15:47:20 --> Unknown column 'iiee_nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_nombre`
+FROM `iiee`
+WHERE `iiee_nombre` like \'%gl%\'
+ORDER BY `iiee_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_nombre`
+FROM `iiee`
+WHERE `iiee_nombre` like \'%gl%\'
+ORDER BY `iiee_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_nombre`
+FROM `iiee`
+WHERE `iiee_nombre` like \'%gl%\'
+ORDER BY `iiee_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_nombre`
+FROM `iiee`
+WHERE `iiee_nombre` like \'%gl%\'
+ORDER BY `iiee_nombre`', [], false)
+ 5 APPPATH\Models\General.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Services.php(53): App\Models\General::getData2('iiee_nombre', 'iiee', 'D:\\wamp\\www\\monitoreo3', [...], 'iiee_nombre')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 15:47:21 --> mysqli_sql_exception: Unknown column 'iiee_nombre' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_no...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_no...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_no...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_no...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\General.php(98): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Services.php(53): App\Models\General::getData2('iiee_nombre', 'iiee', '', Array, 'iiee_nombre')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-29 15:47:21 --> Unknown column 'iiee_nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_nombre`
+FROM `iiee`
+WHERE `iiee_nombre` like \'%glo%\'
+ORDER BY `iiee_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_nombre`
+FROM `iiee`
+WHERE `iiee_nombre` like \'%glo%\'
+ORDER BY `iiee_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_nombre`
+FROM `iiee`
+WHERE `iiee_nombre` like \'%glo%\'
+ORDER BY `iiee_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_nombre`
+FROM `iiee`
+WHERE `iiee_nombre` like \'%glo%\'
+ORDER BY `iiee_nombre`', [], false)
+ 5 APPPATH\Models\General.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Services.php(53): App\Models\General::getData2('iiee_nombre', 'iiee', 'D:\\wamp\\www\\monitoreo3', [...], 'iiee_nombre')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 15:47:28 --> mysqli_sql_exception: Unknown column 'iiee_nombre' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_no...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_no...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_no...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_no...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\General.php(98): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Services.php(53): App\Models\General::getData2('iiee_nombre', 'iiee', '', Array, 'iiee_nombre')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-29 15:47:28 --> Unknown column 'iiee_nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_nombre`
+FROM `iiee`
+WHERE `iiee_nombre` like \'%glor%\'
+ORDER BY `iiee_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_nombre`
+FROM `iiee`
+WHERE `iiee_nombre` like \'%glor%\'
+ORDER BY `iiee_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_nombre`
+FROM `iiee`
+WHERE `iiee_nombre` like \'%glor%\'
+ORDER BY `iiee_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_nombre`
+FROM `iiee`
+WHERE `iiee_nombre` like \'%glor%\'
+ORDER BY `iiee_nombre`', [], false)
+ 5 APPPATH\Models\General.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Services.php(53): App\Models\General::getData2('iiee_nombre', 'iiee', 'D:\\wamp\\www\\monitoreo3', [...], 'iiee_nombre')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 15:48:01 --> mysqli_sql_exception: Unknown column 'iiee_nombre' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_no...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_no...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_no...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_no...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\General.php(98): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Services.php(53): App\Models\General::getData2('iiee_nombre', 'iiee', '', Array, 'iiee_nombre')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-29 15:48:01 --> Unknown column 'iiee_nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_nombre`
+FROM `iiee`
+WHERE `iiee_nombre` like \'%glori%\'
+ORDER BY `iiee_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_nombre`
+FROM `iiee`
+WHERE `iiee_nombre` like \'%glori%\'
+ORDER BY `iiee_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_nombre`
+FROM `iiee`
+WHERE `iiee_nombre` like \'%glori%\'
+ORDER BY `iiee_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_nombre`
+FROM `iiee`
+WHERE `iiee_nombre` like \'%glori%\'
+ORDER BY `iiee_nombre`', [], false)
+ 5 APPPATH\Models\General.php(98): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Services.php(53): App\Models\General::getData2('iiee_nombre', 'iiee', 'D:\\wamp\\www\\monitoreo3', [...], 'iiee_nombre')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-29 16:02:33 --> [] operator not supported for strings
+in APPPATH\Controllers\Services.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-29 16:02:33 --> [] operator not supported for strings
+in APPPATH\Controllers\Services.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-29 16:02:39 --> [] operator not supported for strings
+in APPPATH\Controllers\Services.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 16:30:05 --> mysqli_sql_exception: Unknown column 'iiee_cod_mod' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_id...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_id...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_id...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_id...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Services.php(61): App\Models\Generaldb->selectSomeDataJoin('iiee_ide,ugel_n...', 'iiee,niveles,ug...', '(iiee_ide like ...', 'iiee_cen_edu')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-29 16:30:05 --> Unknown column 'iiee_cod_mod' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%gl%\' OR `ugel_nombre` like \'%gl%\' OR `iiee_cod_mod` like \'%gl%\' OR `iiee_cen_edu` like \'%gl%\' OR `nive_nombre` like \'%gl%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%gl%\' OR `ugel_nombre` like \'%gl%\' OR `iiee_cod_mod` like \'%gl%\' OR `iiee_cen_edu` like \'%gl%\' OR `nive_nombre` like \'%gl%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%gl%\' OR `ugel_nombre` like \'%gl%\' OR `iiee_cod_mod` like \'%gl%\' OR `iiee_cen_edu` like \'%gl%\' OR `nive_nombre` like \'%gl%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%gl%\' OR `ugel_nombre` like \'%gl%\' OR `iiee_cod_mod` like \'%gl%\' OR `iiee_cen_edu` like \'%gl%\' OR `nive_nombre` like \'%gl%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Services.php(61): App\Models\Generaldb->selectSomeDataJoin('iiee_ide,ugel_nombre,iiee_cod_mod,iiee_cen_edu,nive_nombre', 'iiee,niveles,ugels', '(iiee_ide like \'%gl%\' OR ugel_nombre like \'%gl%\' OR iiee_cod_mod like \'%gl%\' OR iiee_cen_edu like \'%gl%\' OR nive_nombre like \'%gl%\') AND iiee_nive_ide = nive_ide AND iiee_ugel_ide = ugel_ide', 'iiee_cen_edu')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 16:30:05 --> mysqli_sql_exception: Unknown column 'iiee_cod_mod' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_id...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_id...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_id...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_id...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Services.php(61): App\Models\Generaldb->selectSomeDataJoin('iiee_ide,ugel_n...', 'iiee,niveles,ug...', '(iiee_ide like ...', 'iiee_cen_edu')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-29 16:30:05 --> Unknown column 'iiee_cod_mod' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glo%\' OR `ugel_nombre` like \'%glo%\' OR `iiee_cod_mod` like \'%glo%\' OR `iiee_cen_edu` like \'%glo%\' OR `nive_nombre` like \'%glo%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glo%\' OR `ugel_nombre` like \'%glo%\' OR `iiee_cod_mod` like \'%glo%\' OR `iiee_cen_edu` like \'%glo%\' OR `nive_nombre` like \'%glo%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glo%\' OR `ugel_nombre` like \'%glo%\' OR `iiee_cod_mod` like \'%glo%\' OR `iiee_cen_edu` like \'%glo%\' OR `nive_nombre` like \'%glo%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glo%\' OR `ugel_nombre` like \'%glo%\' OR `iiee_cod_mod` like \'%glo%\' OR `iiee_cen_edu` like \'%glo%\' OR `nive_nombre` like \'%glo%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Services.php(61): App\Models\Generaldb->selectSomeDataJoin('iiee_ide,ugel_nombre,iiee_cod_mod,iiee_cen_edu,nive_nombre', 'iiee,niveles,ugels', '(iiee_ide like \'%glo%\' OR ugel_nombre like \'%glo%\' OR iiee_cod_mod like \'%glo%\' OR iiee_cen_edu like \'%glo%\' OR nive_nombre like \'%glo%\') AND iiee_nive_ide = nive_ide AND iiee_ugel_ide = ugel_ide', 'iiee_cen_edu')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 16:30:07 --> mysqli_sql_exception: Unknown column 'iiee_cod_mod' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_id...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_id...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_id...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_id...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Services.php(61): App\Models\Generaldb->selectSomeDataJoin('iiee_ide,ugel_n...', 'iiee,niveles,ug...', '(iiee_ide like ...', 'iiee_cen_edu')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-29 16:30:07 --> Unknown column 'iiee_cod_mod' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glor%\' OR `ugel_nombre` like \'%glor%\' OR `iiee_cod_mod` like \'%glor%\' OR `iiee_cen_edu` like \'%glor%\' OR `nive_nombre` like \'%glor%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glor%\' OR `ugel_nombre` like \'%glor%\' OR `iiee_cod_mod` like \'%glor%\' OR `iiee_cen_edu` like \'%glor%\' OR `nive_nombre` like \'%glor%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glor%\' OR `ugel_nombre` like \'%glor%\' OR `iiee_cod_mod` like \'%glor%\' OR `iiee_cen_edu` like \'%glor%\' OR `nive_nombre` like \'%glor%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glor%\' OR `ugel_nombre` like \'%glor%\' OR `iiee_cod_mod` like \'%glor%\' OR `iiee_cen_edu` like \'%glor%\' OR `nive_nombre` like \'%glor%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Services.php(61): App\Models\Generaldb->selectSomeDataJoin('iiee_ide,ugel_nombre,iiee_cod_mod,iiee_cen_edu,nive_nombre', 'iiee,niveles,ugels', '(iiee_ide like \'%glor%\' OR ugel_nombre like \'%glor%\' OR iiee_cod_mod like \'%glor%\' OR iiee_cen_edu like \'%glor%\' OR nive_nombre like \'%glor%\') AND iiee_nive_ide = nive_ide AND iiee_ugel_ide = ugel_ide', 'iiee_cen_edu')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 16:30:07 --> mysqli_sql_exception: Unknown column 'iiee_cod_mod' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_id...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_id...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_id...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_id...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Services.php(61): App\Models\Generaldb->selectSomeDataJoin('iiee_ide,ugel_n...', 'iiee,niveles,ug...', '(iiee_ide like ...', 'iiee_cen_edu')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-29 16:30:07 --> Unknown column 'iiee_cod_mod' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glori%\' OR `ugel_nombre` like \'%glori%\' OR `iiee_cod_mod` like \'%glori%\' OR `iiee_cen_edu` like \'%glori%\' OR `nive_nombre` like \'%glori%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glori%\' OR `ugel_nombre` like \'%glori%\' OR `iiee_cod_mod` like \'%glori%\' OR `iiee_cen_edu` like \'%glori%\' OR `nive_nombre` like \'%glori%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glori%\' OR `ugel_nombre` like \'%glori%\' OR `iiee_cod_mod` like \'%glori%\' OR `iiee_cen_edu` like \'%glori%\' OR `nive_nombre` like \'%glori%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glori%\' OR `ugel_nombre` like \'%glori%\' OR `iiee_cod_mod` like \'%glori%\' OR `iiee_cen_edu` like \'%glori%\' OR `nive_nombre` like \'%glori%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Services.php(61): App\Models\Generaldb->selectSomeDataJoin('iiee_ide,ugel_nombre,iiee_cod_mod,iiee_cen_edu,nive_nombre', 'iiee,niveles,ugels', '(iiee_ide like \'%glori%\' OR ugel_nombre like \'%glori%\' OR iiee_cod_mod like \'%glori%\' OR iiee_cen_edu like \'%glori%\' OR nive_nombre like \'%glori%\') AND iiee_nive_ide = nive_ide AND iiee_ugel_ide = ugel_ide', 'iiee_cen_edu')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 16:30:07 --> mysqli_sql_exception: Unknown column 'iiee_cod_mod' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_id...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_id...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_id...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_id...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Services.php(61): App\Models\Generaldb->selectSomeDataJoin('iiee_ide,ugel_n...', 'iiee,niveles,ug...', '(iiee_ide like ...', 'iiee_cen_edu')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-29 16:30:07 --> Unknown column 'iiee_cod_mod' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glorio%\' OR `ugel_nombre` like \'%glorio%\' OR `iiee_cod_mod` like \'%glorio%\' OR `iiee_cen_edu` like \'%glorio%\' OR `nive_nombre` like \'%glorio%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glorio%\' OR `ugel_nombre` like \'%glorio%\' OR `iiee_cod_mod` like \'%glorio%\' OR `iiee_cen_edu` like \'%glorio%\' OR `nive_nombre` like \'%glorio%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glorio%\' OR `ugel_nombre` like \'%glorio%\' OR `iiee_cod_mod` like \'%glorio%\' OR `iiee_cen_edu` like \'%glorio%\' OR `nive_nombre` like \'%glorio%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glorio%\' OR `ugel_nombre` like \'%glorio%\' OR `iiee_cod_mod` like \'%glorio%\' OR `iiee_cen_edu` like \'%glorio%\' OR `nive_nombre` like \'%glorio%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Services.php(61): App\Models\Generaldb->selectSomeDataJoin('iiee_ide,ugel_nombre,iiee_cod_mod,iiee_cen_edu,nive_nombre', 'iiee,niveles,ugels', '(iiee_ide like \'%glorio%\' OR ugel_nombre like \'%glorio%\' OR iiee_cod_mod like \'%glorio%\' OR iiee_cen_edu like \'%glorio%\' OR nive_nombre like \'%glorio%\') AND iiee_nive_ide = nive_ide AND iiee_ugel_ide = ugel_ide', 'iiee_cen_edu')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 16:30:07 --> mysqli_sql_exception: Unknown column 'iiee_cod_mod' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_id...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_id...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_id...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_id...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Services.php(61): App\Models\Generaldb->selectSomeDataJoin('iiee_ide,ugel_n...', 'iiee,niveles,ug...', '(iiee_ide like ...', 'iiee_cen_edu')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-29 16:30:07 --> Unknown column 'iiee_cod_mod' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glorios%\' OR `ugel_nombre` like \'%glorios%\' OR `iiee_cod_mod` like \'%glorios%\' OR `iiee_cen_edu` like \'%glorios%\' OR `nive_nombre` like \'%glorios%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glorios%\' OR `ugel_nombre` like \'%glorios%\' OR `iiee_cod_mod` like \'%glorios%\' OR `iiee_cen_edu` like \'%glorios%\' OR `nive_nombre` like \'%glorios%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glorios%\' OR `ugel_nombre` like \'%glorios%\' OR `iiee_cod_mod` like \'%glorios%\' OR `iiee_cen_edu` like \'%glorios%\' OR `nive_nombre` like \'%glorios%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glorios%\' OR `ugel_nombre` like \'%glorios%\' OR `iiee_cod_mod` like \'%glorios%\' OR `iiee_cen_edu` like \'%glorios%\' OR `nive_nombre` like \'%glorios%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Services.php(61): App\Models\Generaldb->selectSomeDataJoin('iiee_ide,ugel_nombre,iiee_cod_mod,iiee_cen_edu,nive_nombre', 'iiee,niveles,ugels', '(iiee_ide like \'%glorios%\' OR ugel_nombre like \'%glorios%\' OR iiee_cod_mod like \'%glorios%\' OR iiee_cen_edu like \'%glorios%\' OR nive_nombre like \'%glorios%\') AND iiee_nive_ide = nive_ide AND iiee_ugel_ide = ugel_ide', 'iiee_cen_edu')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 16:30:07 --> mysqli_sql_exception: Unknown column 'iiee_cod_mod' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_id...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_id...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_id...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_id...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Services.php(61): App\Models\Generaldb->selectSomeDataJoin('iiee_ide,ugel_n...', 'iiee,niveles,ug...', '(iiee_ide like ...', 'iiee_cen_edu')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-29 16:30:07 --> Unknown column 'iiee_cod_mod' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glorioso%\' OR `ugel_nombre` like \'%glorioso%\' OR `iiee_cod_mod` like \'%glorioso%\' OR `iiee_cen_edu` like \'%glorioso%\' OR `nive_nombre` like \'%glorioso%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glorioso%\' OR `ugel_nombre` like \'%glorioso%\' OR `iiee_cod_mod` like \'%glorioso%\' OR `iiee_cen_edu` like \'%glorioso%\' OR `nive_nombre` like \'%glorioso%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glorioso%\' OR `ugel_nombre` like \'%glorioso%\' OR `iiee_cod_mod` like \'%glorioso%\' OR `iiee_cen_edu` like \'%glorioso%\' OR `nive_nombre` like \'%glorioso%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glorioso%\' OR `ugel_nombre` like \'%glorioso%\' OR `iiee_cod_mod` like \'%glorioso%\' OR `iiee_cen_edu` like \'%glorioso%\' OR `nive_nombre` like \'%glorioso%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Services.php(61): App\Models\Generaldb->selectSomeDataJoin('iiee_ide,ugel_nombre,iiee_cod_mod,iiee_cen_edu,nive_nombre', 'iiee,niveles,ugels', '(iiee_ide like \'%glorioso%\' OR ugel_nombre like \'%glorioso%\' OR iiee_cod_mod like \'%glorioso%\' OR iiee_cen_edu like \'%glorioso%\' OR nive_nombre like \'%glorioso%\') AND iiee_nive_ide = nive_ide AND iiee_ugel_ide = ugel_ide', 'iiee_cen_edu')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 16:30:31 --> mysqli_sql_exception: Unknown column 'iiee_cod_mod' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_id...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_id...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_id...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_id...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Services.php(61): App\Models\Generaldb->selectSomeDataJoin('iiee_ide,ugel_n...', 'iiee,niveles,ug...', '(iiee_ide like ...', 'iiee_cen_edu')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-29 16:30:31 --> Unknown column 'iiee_cod_mod' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%gl%\' OR `ugel_nombre` like \'%gl%\' OR `iiee_cod_mod` like \'%gl%\' OR `iiee_cen_edu` like \'%gl%\' OR `nive_nombre` like \'%gl%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%gl%\' OR `ugel_nombre` like \'%gl%\' OR `iiee_cod_mod` like \'%gl%\' OR `iiee_cen_edu` like \'%gl%\' OR `nive_nombre` like \'%gl%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%gl%\' OR `ugel_nombre` like \'%gl%\' OR `iiee_cod_mod` like \'%gl%\' OR `iiee_cen_edu` like \'%gl%\' OR `nive_nombre` like \'%gl%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%gl%\' OR `ugel_nombre` like \'%gl%\' OR `iiee_cod_mod` like \'%gl%\' OR `iiee_cen_edu` like \'%gl%\' OR `nive_nombre` like \'%gl%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Services.php(61): App\Models\Generaldb->selectSomeDataJoin('iiee_ide,ugel_nombre,iiee_cod_mod,iiee_cen_edu,nive_nombre', 'iiee,niveles,ugels', '(iiee_ide like \'%gl%\' OR ugel_nombre like \'%gl%\' OR iiee_cod_mod like \'%gl%\' OR iiee_cen_edu like \'%gl%\' OR nive_nombre like \'%gl%\') AND iiee_nive_ide = nive_ide AND iiee_ugel_ide = ugel_ide', 'iiee_cen_edu')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 16:30:31 --> mysqli_sql_exception: Unknown column 'iiee_cod_mod' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_id...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_id...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_id...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_id...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Services.php(61): App\Models\Generaldb->selectSomeDataJoin('iiee_ide,ugel_n...', 'iiee,niveles,ug...', '(iiee_ide like ...', 'iiee_cen_edu')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-29 16:30:31 --> Unknown column 'iiee_cod_mod' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glo%\' OR `ugel_nombre` like \'%glo%\' OR `iiee_cod_mod` like \'%glo%\' OR `iiee_cen_edu` like \'%glo%\' OR `nive_nombre` like \'%glo%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glo%\' OR `ugel_nombre` like \'%glo%\' OR `iiee_cod_mod` like \'%glo%\' OR `iiee_cen_edu` like \'%glo%\' OR `nive_nombre` like \'%glo%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glo%\' OR `ugel_nombre` like \'%glo%\' OR `iiee_cod_mod` like \'%glo%\' OR `iiee_cen_edu` like \'%glo%\' OR `nive_nombre` like \'%glo%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `iiee_ide`, `ugel_nombre`, `iiee_cod_mod`, `iiee_cen_edu`, `nive_nombre`
+FROM `iiee`, `niveles`, `ugels`
+WHERE (`iiee_ide` like \'%glo%\' OR `ugel_nombre` like \'%glo%\' OR `iiee_cod_mod` like \'%glo%\' OR `iiee_cen_edu` like \'%glo%\' OR `nive_nombre` like \'%glo%\') AND `iiee_nive_ide` = nive_ide AND `iiee_ugel_ide` = ugel_ide
+ORDER BY `iiee_cen_edu`', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Services.php(61): App\Models\Generaldb->selectSomeDataJoin('iiee_ide,ugel_nombre,iiee_cod_mod,iiee_cen_edu,nive_nombre', 'iiee,niveles,ugels', '(iiee_ide like \'%glo%\' OR ugel_nombre like \'%glo%\' OR iiee_cod_mod like \'%glo%\' OR iiee_cen_edu like \'%glo%\' OR nive_nombre like \'%glo%\') AND iiee_nive_ide = nive_ide AND iiee_ugel_ide = ugel_ide', 'iiee_cen_edu')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Services->postAutocompletar()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 16:53:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND `d`.`a1ud_ugel_ide` = 210001
+ORDER BY `a1ud_a1us_ide`' at line 6 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025r.php(21): App\Models\Generaldb->selectSomeDataJoin('*', '2025_a1u_data d', 'd.a1ud_iiee_ide...', 'a1ud_a1us_ide', false, false, Array)
+#6 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025r.php(134): App\Controllers\Anexos2025r->reporteAnexo('2025_a1u_data d', 'a1ud_a1us_ide', 'd.a1ud_iiee_ide...', Array, Array)
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2025r->postAnexo1u()
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025r))
+#9 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-12-29 16:53:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND `d`.`a1ud_ugel_ide` = 210001
+ORDER BY `a1ud_a1us_ide`' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `2025_a1u_data` `d`
+RIGHT JOIN `2025_a1u_struct` `s` ON `d`.`a1ud_a1us_ide` = `s`.`a1us_ide`
+RIGHT JOIN `2025_a1u_modalidad` `m` ON `d`.`a1ud_a1um_ide` = `m`.`a1um_ide`
+RIGHT JOIN `2025_a1u_cronograma` `c` ON `d`.`a1ud_a1uc_ide` = `c`.`a1uc_ide`
+WHERE `d`.`a1ud_iiee_ide` =  AND `d`.`a1ud_ugel_ide` = 210001
+ORDER BY `a1ud_a1us_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2025_a1u_data` `d`
+RIGHT JOIN `2025_a1u_struct` `s` ON `d`.`a1ud_a1us_ide` = `s`.`a1us_ide`
+RIGHT JOIN `2025_a1u_modalidad` `m` ON `d`.`a1ud_a1um_ide` = `m`.`a1um_ide`
+RIGHT JOIN `2025_a1u_cronograma` `c` ON `d`.`a1ud_a1uc_ide` = `c`.`a1uc_ide`
+WHERE `d`.`a1ud_iiee_ide` =  AND `d`.`a1ud_ugel_ide` = 210001
+ORDER BY `a1ud_a1us_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2025_a1u_data` `d`
+RIGHT JOIN `2025_a1u_struct` `s` ON `d`.`a1ud_a1us_ide` = `s`.`a1us_ide`
+RIGHT JOIN `2025_a1u_modalidad` `m` ON `d`.`a1ud_a1um_ide` = `m`.`a1um_ide`
+RIGHT JOIN `2025_a1u_cronograma` `c` ON `d`.`a1ud_a1uc_ide` = `c`.`a1uc_ide`
+WHERE `d`.`a1ud_iiee_ide` =  AND `d`.`a1ud_ugel_ide` = 210001
+ORDER BY `a1ud_a1us_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2025_a1u_data` `d`
+RIGHT JOIN `2025_a1u_struct` `s` ON `d`.`a1ud_a1us_ide` = `s`.`a1us_ide`
+RIGHT JOIN `2025_a1u_modalidad` `m` ON `d`.`a1ud_a1um_ide` = `m`.`a1um_ide`
+RIGHT JOIN `2025_a1u_cronograma` `c` ON `d`.`a1ud_a1uc_ide` = `c`.`a1uc_ide`
+WHERE `d`.`a1ud_iiee_ide` =  AND `d`.`a1ud_ugel_ide` = 210001
+ORDER BY `a1ud_a1us_ide`', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2025r.php(21): App\Models\Generaldb->selectSomeDataJoin('*', '2025_a1u_data d', 'd.a1ud_iiee_ide =  AND d.a1ud_ugel_ide = 210001', 'a1ud_a1us_ide', false, false, [...])
+ 7 APPPATH\Controllers\Anexos2025r.php(134): App\Controllers\Anexos2025r->reporteAnexo('2025_a1u_data d', 'a1ud_a1us_ide', 'd.a1ud_iiee_ide =  AND d.a1ud_ugel_ide = 210001', [...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025r->postAnexo1u()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025r))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-29 17:16:54 --> Undefined array key "a2bd_grad_nombre"
+in APPPATH\Controllers\Anexos2025r.php on line 52.
+ 1 APPPATH\Controllers\Anexos2025r.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "a2bd_grad_nombre"', 'APPPATH\\Controllers\\Anexos2025r.php', 52)
+ 2 APPPATH\Controllers\Anexos2025r.php(187): App\Controllers\Anexos2025r->reporteAnexo('2025_a2b_data d', 'a2bd_grad_ide,a2bd_arcu_ide,a2bd_comp_ide', 'd.a2bd_iiee_ide = 10001 AND d.a2bd_ugel_ide = 210001', [...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025r->postAnexo2b()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025r))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-29 17:17:09 --> Undefined array key "a2bd_grad_nombre"
+in APPPATH\Controllers\Anexos2025r.php on line 52.
+ 1 APPPATH\Controllers\Anexos2025r.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "a2bd_grad_nombre"', 'APPPATH\\Controllers\\Anexos2025r.php', 52)
+ 2 APPPATH\Controllers\Anexos2025r.php(187): App\Controllers\Anexos2025r->reporteAnexo('2025_a2b_data d', 'a2bd_grad_ide,a2bd_arcu_ide,a2bd_comp_ide', 'd.a2bd_iiee_ide = 10001 AND d.a2bd_ugel_ide = 210001', [...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025r->postAnexo2b()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025r))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-29 17:17:22 --> Undefined array key "a2bd_logrado"
+in APPPATH\Controllers\Anexos2025r.php on line 52.
+ 1 APPPATH\Controllers\Anexos2025r.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "a2bd_logrado"', 'APPPATH\\Controllers\\Anexos2025r.php', 52)
+ 2 APPPATH\Controllers\Anexos2025r.php(187): App\Controllers\Anexos2025r->reporteAnexo('2025_a2b_data d', 'a2bd_grad_ide,a2bd_arcu_ide,a2bd_comp_ide', 'd.a2bd_iiee_ide = 10001 AND d.a2bd_ugel_ide = 210001', [...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025r->postAnexo2b()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025r))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 17:28:21 --> mysqli_sql_exception: Unknown column 'a3ad_3as_ide' in 'order clause' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025r.php(23): App\Models\Generaldb->selectSomeDataJoin('*', '2025_a3a_data d', 'd.a3ad_iiee_ide...', 'a3ad_3as_ide', false, false, Array)
+#6 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025r.php(207): App\Controllers\Anexos2025r->reporteAnexo('2025_a3a_data d', 'a3ad_3as_ide', 'd.a3ad_iiee_ide...', Array, Array)
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2025r->postAnexo3a()
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025r))
+#9 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-12-29 17:28:21 --> Unknown column 'a3ad_3as_ide' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `2025_a3a_data` `d`
+RIGHT JOIN `2025_a3a_struct` `s` ON `d`.`a3ad_a3as_ide` = `s`.`a3as_ide`
+WHERE `d`.`a3ad_iiee_ide` = 10001 AND `d`.`a3ad_ugel_ide` = 210001
+ORDER BY `a3ad_3as_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2025_a3a_data` `d`
+RIGHT JOIN `2025_a3a_struct` `s` ON `d`.`a3ad_a3as_ide` = `s`.`a3as_ide`
+WHERE `d`.`a3ad_iiee_ide` = 10001 AND `d`.`a3ad_ugel_ide` = 210001
+ORDER BY `a3ad_3as_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2025_a3a_data` `d`
+RIGHT JOIN `2025_a3a_struct` `s` ON `d`.`a3ad_a3as_ide` = `s`.`a3as_ide`
+WHERE `d`.`a3ad_iiee_ide` = 10001 AND `d`.`a3ad_ugel_ide` = 210001
+ORDER BY `a3ad_3as_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2025_a3a_data` `d`
+RIGHT JOIN `2025_a3a_struct` `s` ON `d`.`a3ad_a3as_ide` = `s`.`a3as_ide`
+WHERE `d`.`a3ad_iiee_ide` = 10001 AND `d`.`a3ad_ugel_ide` = 210001
+ORDER BY `a3ad_3as_ide`', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2025r.php(23): App\Models\Generaldb->selectSomeDataJoin('*', '2025_a3a_data d', 'd.a3ad_iiee_ide = 10001 AND d.a3ad_ugel_ide = 210001', 'a3ad_3as_ide', false, false, [...])
+ 7 APPPATH\Controllers\Anexos2025r.php(207): App\Controllers\Anexos2025r->reporteAnexo('2025_a3a_data d', 'a3ad_3as_ide', 'd.a3ad_iiee_ide = 10001 AND d.a3ad_ugel_ide = 210001', [...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025r->postAnexo3a()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025r))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 17:28:28 --> mysqli_sql_exception: Unknown column 'a3ad_3as_ide' in 'order clause' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025r.php(23): App\Models\Generaldb->selectSomeDataJoin('*', '2025_a3a_data d', 'd.a3ad_iiee_ide...', 'a3ad_3as_ide', false, false, Array)
+#6 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025r.php(207): App\Controllers\Anexos2025r->reporteAnexo('2025_a3a_data d', 'a3ad_3as_ide', 'd.a3ad_iiee_ide...', Array, Array)
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2025r->postAnexo3a()
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025r))
+#9 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-12-29 17:28:28 --> Unknown column 'a3ad_3as_ide' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `2025_a3a_data` `d`
+RIGHT JOIN `2025_a3a_struct` `s` ON `d`.`a3ad_a3as_ide` = `s`.`a3as_ide`
+WHERE `d`.`a3ad_iiee_ide` = 10001 AND `d`.`a3ad_ugel_ide` = 210001
+ORDER BY `a3ad_3as_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2025_a3a_data` `d`
+RIGHT JOIN `2025_a3a_struct` `s` ON `d`.`a3ad_a3as_ide` = `s`.`a3as_ide`
+WHERE `d`.`a3ad_iiee_ide` = 10001 AND `d`.`a3ad_ugel_ide` = 210001
+ORDER BY `a3ad_3as_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2025_a3a_data` `d`
+RIGHT JOIN `2025_a3a_struct` `s` ON `d`.`a3ad_a3as_ide` = `s`.`a3as_ide`
+WHERE `d`.`a3ad_iiee_ide` = 10001 AND `d`.`a3ad_ugel_ide` = 210001
+ORDER BY `a3ad_3as_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2025_a3a_data` `d`
+RIGHT JOIN `2025_a3a_struct` `s` ON `d`.`a3ad_a3as_ide` = `s`.`a3as_ide`
+WHERE `d`.`a3ad_iiee_ide` = 10001 AND `d`.`a3ad_ugel_ide` = 210001
+ORDER BY `a3ad_3as_ide`', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2025r.php(23): App\Models\Generaldb->selectSomeDataJoin('*', '2025_a3a_data d', 'd.a3ad_iiee_ide = 10001 AND d.a3ad_ugel_ide = 210001', 'a3ad_3as_ide', false, false, [...])
+ 7 APPPATH\Controllers\Anexos2025r.php(207): App\Controllers\Anexos2025r->reporteAnexo('2025_a3a_data d', 'a3ad_3as_ide', 'd.a3ad_iiee_ide = 10001 AND d.a3ad_ugel_ide = 210001', [...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025r->postAnexo3a()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025r))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-29 17:29:00 --> Undefined array key "a3ad_rubrica"
+in APPPATH\Controllers\Anexos2025r.php on line 52.
+ 1 APPPATH\Controllers\Anexos2025r.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "a3ad_rubrica"', 'APPPATH\\Controllers\\Anexos2025r.php', 52)
+ 2 APPPATH\Controllers\Anexos2025r.php(207): App\Controllers\Anexos2025r->reporteAnexo('2025_a3a_data d', 'a3ad_a3as_ide', 'd.a3ad_iiee_ide = 10001 AND d.a3ad_ugel_ide = 210001', [...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025r->postAnexo3a()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025r))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-29 22:14:38 --> Undefined array key "a5ud_no_matriculados"
+in APPPATH\Controllers\Anexos2025r.php on line 52.
+ 1 APPPATH\Controllers\Anexos2025r.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "a5ud_no_matriculados"', 'APPPATH\\Controllers\\Anexos2025r.php', 52)
+ 2 APPPATH\Controllers\Anexos2025r.php(266): App\Controllers\Anexos2025r->reporteAnexo('2025_a5u_data d', 'a5ud_grad_ide', 'd.a5ud_iiee_ide = 10001 AND d.a5ud_ugel_ide = 210001', [...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025r->postAnexo5u()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025r))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-29 22:29:34 --> Cannot redeclare App\Controllers\Anexos2025r::postAnexo6u()
+in APPPATH\Controllers\Anexos2025r.php on line 285.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-12-29 22:29:41 --> Cannot redeclare App\Controllers\Anexos2025r::postAnexo6u()
+in APPPATH\Controllers\Anexos2025r.php on line 285.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-12-29 22:29:56 --> Cannot redeclare App\Controllers\Anexos2025r::postAnexo6u()
+in APPPATH\Controllers\Anexos2025r.php on line 285.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-12-29 22:30:04 --> Cannot redeclare App\Controllers\Anexos2025r::postAnexo6u()
+in APPPATH\Controllers\Anexos2025r.php on line 285.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2025-12-29 22:35:44 --> mysqli_sql_exception: Unknown column 'a7ad_grad_ide' in 'order clause' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025r.php(23): App\Models\Generaldb->selectSomeDataJoin('*', '2025_a7a_data d', 'd.a7ad_iiee_ide...', 'a7ad_grad_ide', false, false, Array)
+#6 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025r.php(302): App\Controllers\Anexos2025r->reporteAnexo('2025_a7a_data d', 'a7ad_grad_ide', 'd.a7ad_iiee_ide...', Array, Array)
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2025r->postAnexo7a()
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025r))
+#9 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-12-29 22:35:44 --> Unknown column 'a7ad_grad_ide' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `2025_a7a_data` `d`
+RIGHT JOIN `2025_a7a_condiciones` `c` ON `d`.`a7ad_a7ac_ide` = `c`.`a7ac_ide`
+WHERE `d`.`a7ad_iiee_ide` = 10001 AND `d`.`a7ad_ugel_ide` = 210001
+ORDER BY `a7ad_grad_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2025_a7a_data` `d`
+RIGHT JOIN `2025_a7a_condiciones` `c` ON `d`.`a7ad_a7ac_ide` = `c`.`a7ac_ide`
+WHERE `d`.`a7ad_iiee_ide` = 10001 AND `d`.`a7ad_ugel_ide` = 210001
+ORDER BY `a7ad_grad_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2025_a7a_data` `d`
+RIGHT JOIN `2025_a7a_condiciones` `c` ON `d`.`a7ad_a7ac_ide` = `c`.`a7ac_ide`
+WHERE `d`.`a7ad_iiee_ide` = 10001 AND `d`.`a7ad_ugel_ide` = 210001
+ORDER BY `a7ad_grad_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2025_a7a_data` `d`
+RIGHT JOIN `2025_a7a_condiciones` `c` ON `d`.`a7ad_a7ac_ide` = `c`.`a7ac_ide`
+WHERE `d`.`a7ad_iiee_ide` = 10001 AND `d`.`a7ad_ugel_ide` = 210001
+ORDER BY `a7ad_grad_ide`', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2025r.php(23): App\Models\Generaldb->selectSomeDataJoin('*', '2025_a7a_data d', 'd.a7ad_iiee_ide = 10001 AND d.a7ad_ugel_ide = 210001', 'a7ad_grad_ide', false, false, [...])
+ 7 APPPATH\Controllers\Anexos2025r.php(302): App\Controllers\Anexos2025r->reporteAnexo('2025_a7a_data d', 'a7ad_grad_ide', 'd.a7ad_iiee_ide = 10001 AND d.a7ad_ugel_ide = 210001', [...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025r->postAnexo7a()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025r))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 22:37:54 --> mysqli_sql_exception: Unknown column 'a7ad_grad_ide' in 'order clause' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025r.php(23): App\Models\Generaldb->selectSomeDataJoin('*', '2025_a7a_data d', 'd.a7ad_a7ac_ide...', 'a7ad_grad_ide', false, false, Array)
+#6 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025r.php(302): App\Controllers\Anexos2025r->reporteAnexo('2025_a7a_data d', 'a7ad_grad_ide', 'd.a7ad_a7ac_ide...', Array, Array)
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2025r->postAnexo7a()
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025r))
+#9 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-12-29 22:37:54 --> Unknown column 'a7ad_grad_ide' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `2025_a7a_data` `d`
+RIGHT JOIN `2025_a7a_condiciones` `c` ON `d`.`a7ad_a7ac_ide` = `c`.`a7ac_ide`
+WHERE `d`.`a7ad_a7ac_ide` = 10001 AND `d`.`a7ad_ugel_ide` = 210001
+ORDER BY `a7ad_grad_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2025_a7a_data` `d`
+RIGHT JOIN `2025_a7a_condiciones` `c` ON `d`.`a7ad_a7ac_ide` = `c`.`a7ac_ide`
+WHERE `d`.`a7ad_a7ac_ide` = 10001 AND `d`.`a7ad_ugel_ide` = 210001
+ORDER BY `a7ad_grad_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2025_a7a_data` `d`
+RIGHT JOIN `2025_a7a_condiciones` `c` ON `d`.`a7ad_a7ac_ide` = `c`.`a7ac_ide`
+WHERE `d`.`a7ad_a7ac_ide` = 10001 AND `d`.`a7ad_ugel_ide` = 210001
+ORDER BY `a7ad_grad_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2025_a7a_data` `d`
+RIGHT JOIN `2025_a7a_condiciones` `c` ON `d`.`a7ad_a7ac_ide` = `c`.`a7ac_ide`
+WHERE `d`.`a7ad_a7ac_ide` = 10001 AND `d`.`a7ad_ugel_ide` = 210001
+ORDER BY `a7ad_grad_ide`', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2025r.php(23): App\Models\Generaldb->selectSomeDataJoin('*', '2025_a7a_data d', 'd.a7ad_a7ac_ide = 10001 AND d.a7ad_ugel_ide = 210001', 'a7ad_grad_ide', false, false, [...])
+ 7 APPPATH\Controllers\Anexos2025r.php(302): App\Controllers\Anexos2025r->reporteAnexo('2025_a7a_data d', 'a7ad_grad_ide', 'd.a7ad_a7ac_ide = 10001 AND d.a7ad_ugel_ide = 210001', [...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025r->postAnexo7a()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025r))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 22:38:34 --> mysqli_sql_exception: Unknown column 'a7ad_grad_ide' in 'order clause' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025r.php(23): App\Models\Generaldb->selectSomeDataJoin('*', '2025_a7a_data d', 'd.a7ad_a7ac_ide...', 'a7ad_grad_ide', false, false, Array)
+#6 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025r.php(302): App\Controllers\Anexos2025r->reporteAnexo('2025_a7a_data d', 'a7ad_grad_ide', 'd.a7ad_a7ac_ide...', Array, Array)
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2025r->postAnexo7a()
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025r))
+#9 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-12-29 22:38:34 --> Unknown column 'a7ad_grad_ide' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `2025_a7a_data` `d`
+RIGHT JOIN `2025_a7a_condiciones` `c` ON `d`.`a7ad_a7ac_ide` = `c`.`a7ac_ide`
+WHERE `d`.`a7ad_a7ac_ide` = 10001 AND `d`.`a7ad_ugel_ide` = 210001
+ORDER BY `a7ad_grad_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2025_a7a_data` `d`
+RIGHT JOIN `2025_a7a_condiciones` `c` ON `d`.`a7ad_a7ac_ide` = `c`.`a7ac_ide`
+WHERE `d`.`a7ad_a7ac_ide` = 10001 AND `d`.`a7ad_ugel_ide` = 210001
+ORDER BY `a7ad_grad_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2025_a7a_data` `d`
+RIGHT JOIN `2025_a7a_condiciones` `c` ON `d`.`a7ad_a7ac_ide` = `c`.`a7ac_ide`
+WHERE `d`.`a7ad_a7ac_ide` = 10001 AND `d`.`a7ad_ugel_ide` = 210001
+ORDER BY `a7ad_grad_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2025_a7a_data` `d`
+RIGHT JOIN `2025_a7a_condiciones` `c` ON `d`.`a7ad_a7ac_ide` = `c`.`a7ac_ide`
+WHERE `d`.`a7ad_a7ac_ide` = 10001 AND `d`.`a7ad_ugel_ide` = 210001
+ORDER BY `a7ad_grad_ide`', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2025r.php(23): App\Models\Generaldb->selectSomeDataJoin('*', '2025_a7a_data d', 'd.a7ad_a7ac_ide = 10001 AND d.a7ad_ugel_ide = 210001', 'a7ad_grad_ide', false, false, [...])
+ 7 APPPATH\Controllers\Anexos2025r.php(302): App\Controllers\Anexos2025r->reporteAnexo('2025_a7a_data d', 'a7ad_grad_ide', 'd.a7ad_a7ac_ide = 10001 AND d.a7ad_ugel_ide = 210001', [...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025r->postAnexo7a()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025r))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-29 22:38:38 --> mysqli_sql_exception: Unknown column 'a7ad_grad_ide' in 'order clause' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025r.php(23): App\Models\Generaldb->selectSomeDataJoin('*', '2025_a7a_data d', 'd.a7ad_a7ac_ide...', 'a7ad_grad_ide', false, false, Array)
+#6 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025r.php(302): App\Controllers\Anexos2025r->reporteAnexo('2025_a7a_data d', 'a7ad_grad_ide', 'd.a7ad_a7ac_ide...', Array, Array)
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2025r->postAnexo7a()
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025r))
+#9 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-12-29 22:38:38 --> Unknown column 'a7ad_grad_ide' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `2025_a7a_data` `d`
+RIGHT JOIN `2025_a7a_condiciones` `c` ON `d`.`a7ad_a7ac_ide` = `c`.`a7ac_ide`
+WHERE `d`.`a7ad_a7ac_ide` = 10001 AND `d`.`a7ad_ugel_ide` = 210001
+ORDER BY `a7ad_grad_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2025_a7a_data` `d`
+RIGHT JOIN `2025_a7a_condiciones` `c` ON `d`.`a7ad_a7ac_ide` = `c`.`a7ac_ide`
+WHERE `d`.`a7ad_a7ac_ide` = 10001 AND `d`.`a7ad_ugel_ide` = 210001
+ORDER BY `a7ad_grad_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2025_a7a_data` `d`
+RIGHT JOIN `2025_a7a_condiciones` `c` ON `d`.`a7ad_a7ac_ide` = `c`.`a7ac_ide`
+WHERE `d`.`a7ad_a7ac_ide` = 10001 AND `d`.`a7ad_ugel_ide` = 210001
+ORDER BY `a7ad_grad_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2025_a7a_data` `d`
+RIGHT JOIN `2025_a7a_condiciones` `c` ON `d`.`a7ad_a7ac_ide` = `c`.`a7ac_ide`
+WHERE `d`.`a7ad_a7ac_ide` = 10001 AND `d`.`a7ad_ugel_ide` = 210001
+ORDER BY `a7ad_grad_ide`', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2025r.php(23): App\Models\Generaldb->selectSomeDataJoin('*', '2025_a7a_data d', 'd.a7ad_a7ac_ide = 10001 AND d.a7ad_ugel_ide = 210001', 'a7ad_grad_ide', false, false, [...])
+ 7 APPPATH\Controllers\Anexos2025r.php(302): App\Controllers\Anexos2025r->reporteAnexo('2025_a7a_data d', 'a7ad_grad_ide', 'd.a7ad_a7ac_ide = 10001 AND d.a7ad_ugel_ide = 210001', [...], [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025r->postAnexo7a()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025r))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

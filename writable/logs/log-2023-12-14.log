@@ -1,0 +1,316 @@
+CRITICAL - 2023-12-14 18:54:34 --> Undefined variable $ite
+in APPPATH\Views\monitoreo\preview_herramienta.php on line 15.
+ 1 APPPATH\Views\monitoreo\preview_herramienta.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ite', 'APPPATH\\Views\\monitoreo\\preview_herramienta.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\preview_herramienta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/preview_herramienta', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(232): view('monitoreo/preview_herramienta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 18:54:40 --> Undefined variable $ite
+in APPPATH\Views\monitoreo\preview_herramienta.php on line 15.
+ 1 APPPATH\Views\monitoreo\preview_herramienta.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ite', 'APPPATH\\Views\\monitoreo\\preview_herramienta.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\preview_herramienta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/preview_herramienta', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(232): view('monitoreo/preview_herramienta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 18:54:54 --> Undefined property: stdClass::$asp_nombre
+in APPPATH\Views\monitoreo\preview_herramienta.php on line 15.
+ 1 APPPATH\Views\monitoreo\preview_herramienta.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$asp_nombre', 'APPPATH\\Views\\monitoreo\\preview_herramienta.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\preview_herramienta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/preview_herramienta', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(232): view('monitoreo/preview_herramienta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 18:56:05 --> Undefined variable $print_r
+in APPPATH\Views\monitoreo\preview_herramienta.php on line 11.
+ 1 APPPATH\Views\monitoreo\preview_herramienta.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $print_r', 'APPPATH\\Views\\monitoreo\\preview_herramienta.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\preview_herramienta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/preview_herramienta', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(232): view('monitoreo/preview_herramienta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 18:56:25 --> Undefined property: stdClass::$asp_nombre
+in APPPATH\Views\monitoreo\preview_herramienta.php on line 15.
+ 1 APPPATH\Views\monitoreo\preview_herramienta.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$asp_nombre', 'APPPATH\\Views\\monitoreo\\preview_herramienta.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\preview_herramienta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/preview_herramienta', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(232): view('monitoreo/preview_herramienta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 19:31:45 --> Undefined variable $tem
+in APPPATH\Views\monitoreo\preview_herramienta.php on line 40.
+ 1 APPPATH\Views\monitoreo\preview_herramienta.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tem', 'APPPATH\\Views\\monitoreo\\preview_herramienta.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\preview_herramienta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/preview_herramienta', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(237): view('monitoreo/preview_herramienta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 19:31:51 --> Undefined variable $tem
+in APPPATH\Views\monitoreo\preview_herramienta.php on line 40.
+ 1 APPPATH\Views\monitoreo\preview_herramienta.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tem', 'APPPATH\\Views\\monitoreo\\preview_herramienta.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\preview_herramienta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/preview_herramienta', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(237): view('monitoreo/preview_herramienta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 19:52:14 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\preview_herramienta.php on line 76.
+ 1 APPPATH\Views\monitoreo\preview_herramienta.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\preview_herramienta.php', 76)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\preview_herramienta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/preview_herramienta', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(237): view('monitoreo/preview_herramienta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-14 19:54:05 --> mysqli_sql_exception: Unknown column 'item_ide' in 'order clause' in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(206): App\Models\Generaldb->selectSomeDataJoin('*', 'sd_instrumento', 'sd_instrumento....', 'asp_ide,alt_ord...', false, false, Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-14 19:54:05 --> Unknown column 'item_ide' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `sd_instrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+JOIN `sd_aspecto` ON `sd_item`.`ite_asp_ide` = `sd_aspecto`.`asp_ide`
+WHERE `sd_instrumento`.`ins_ide` = 66
+ORDER BY `asp_ide`, `alt_orden`, `item_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `sd_instrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+JOIN `sd_aspecto` ON `sd_item`.`ite_asp_ide` = `sd_aspecto`.`asp_ide`
+WHERE `sd_instrumento`.`ins_ide` = 66
+ORDER BY `asp_ide`, `alt_orden`, `item_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `sd_instrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+JOIN `sd_aspecto` ON `sd_item`.`ite_asp_ide` = `sd_aspecto`.`asp_ide`
+WHERE `sd_instrumento`.`ins_ide` = 66
+ORDER BY `asp_ide`, `alt_orden`, `item_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `sd_instrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+JOIN `sd_aspecto` ON `sd_item`.`ite_asp_ide` = `sd_aspecto`.`asp_ide`
+WHERE `sd_instrumento`.`ins_ide` = 66
+ORDER BY `asp_ide`, `alt_orden`, `item_ide`', [], false)
+ 5 APPPATH\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoreo.php(206): App\Models\Generaldb->selectSomeDataJoin('*', 'sd_instrumento', 'sd_instrumento.ins_ide = 66 ', 'asp_ide,alt_orden,item_ide', false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-14 19:54:14 --> mysqli_sql_exception: Column 'ite_ide' in order clause is ambiguous in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(206): App\Models\Generaldb->selectSomeDataJoin('*', 'sd_instrumento', 'sd_instrumento....', 'asp_ide,alt_ord...', false, false, Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-14 19:54:14 --> Column 'ite_ide' in order clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `sd_instrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+JOIN `sd_aspecto` ON `sd_item`.`ite_asp_ide` = `sd_aspecto`.`asp_ide`
+WHERE `sd_instrumento`.`ins_ide` = 66
+ORDER BY `asp_ide`, `alt_orden`, `ite_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `sd_instrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+JOIN `sd_aspecto` ON `sd_item`.`ite_asp_ide` = `sd_aspecto`.`asp_ide`
+WHERE `sd_instrumento`.`ins_ide` = 66
+ORDER BY `asp_ide`, `alt_orden`, `ite_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `sd_instrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+JOIN `sd_aspecto` ON `sd_item`.`ite_asp_ide` = `sd_aspecto`.`asp_ide`
+WHERE `sd_instrumento`.`ins_ide` = 66
+ORDER BY `asp_ide`, `alt_orden`, `ite_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `sd_instrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+JOIN `sd_aspecto` ON `sd_item`.`ite_asp_ide` = `sd_aspecto`.`asp_ide`
+WHERE `sd_instrumento`.`ins_ide` = 66
+ORDER BY `asp_ide`, `alt_orden`, `ite_ide`', [], false)
+ 5 APPPATH\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoreo.php(206): App\Models\Generaldb->selectSomeDataJoin('*', 'sd_instrumento', 'sd_instrumento.ins_ide = 66 ', 'asp_ide,alt_orden,ite_ide', false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-14 19:54:37 --> mysqli_sql_exception: Unknown column 'ite_num_ide' in 'order clause' in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(206): App\Models\Generaldb->selectSomeDataJoin('*', 'sd_instrumento', 'sd_instrumento....', 'asp_ide,alt_ord...', false, false, Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-14 19:54:37 --> Unknown column 'ite_num_ide' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `sd_instrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+JOIN `sd_aspecto` ON `sd_item`.`ite_asp_ide` = `sd_aspecto`.`asp_ide`
+WHERE `sd_instrumento`.`ins_ide` = 66
+ORDER BY `asp_ide`, `alt_orden`, `ite_num_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `sd_instrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+JOIN `sd_aspecto` ON `sd_item`.`ite_asp_ide` = `sd_aspecto`.`asp_ide`
+WHERE `sd_instrumento`.`ins_ide` = 66
+ORDER BY `asp_ide`, `alt_orden`, `ite_num_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `sd_instrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+JOIN `sd_aspecto` ON `sd_item`.`ite_asp_ide` = `sd_aspecto`.`asp_ide`
+WHERE `sd_instrumento`.`ins_ide` = 66
+ORDER BY `asp_ide`, `alt_orden`, `ite_num_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `sd_instrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+JOIN `sd_aspecto` ON `sd_item`.`ite_asp_ide` = `sd_aspecto`.`asp_ide`
+WHERE `sd_instrumento`.`ins_ide` = 66
+ORDER BY `asp_ide`, `alt_orden`, `ite_num_ide`', [], false)
+ 5 APPPATH\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoreo.php(206): App\Models\Generaldb->selectSomeDataJoin('*', 'sd_instrumento', 'sd_instrumento.ins_ide = 66 ', 'asp_ide,alt_orden,ite_num_ide', false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-14 19:56:21 --> mysqli_sql_exception: Unknown column 'sd_item.ide_asp_ide' in 'order clause' in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(206): App\Models\Generaldb->selectSomeDataJoin('*', 'sd_instrumento', 'sd_instrumento....', 'alt_orden,sd_it...', false, false, Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-14 19:56:21 --> Unknown column 'sd_item.ide_asp_ide' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `sd_instrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+JOIN `sd_aspecto` ON `sd_item`.`ite_asp_ide` = `sd_aspecto`.`asp_ide`
+WHERE `sd_instrumento`.`ins_ide` = 66
+ORDER BY `alt_orden`, `sd_item`.`ite_ide`, `sd_item`.`ide_asp_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `sd_instrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+JOIN `sd_aspecto` ON `sd_item`.`ite_asp_ide` = `sd_aspecto`.`asp_ide`
+WHERE `sd_instrumento`.`ins_ide` = 66
+ORDER BY `alt_orden`, `sd_item`.`ite_ide`, `sd_item`.`ide_asp_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `sd_instrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+JOIN `sd_aspecto` ON `sd_item`.`ite_asp_ide` = `sd_aspecto`.`asp_ide`
+WHERE `sd_instrumento`.`ins_ide` = 66
+ORDER BY `alt_orden`, `sd_item`.`ite_ide`, `sd_item`.`ide_asp_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `sd_instrumento`
+JOIN `sd_instrumento_item` ON `sd_instrumento`.`ins_ide` = `sd_instrumento_item`.`ins_ide`
+JOIN `sd_item` ON `sd_instrumento_item`.`ite_ide` = `sd_item`.`ite_ide`
+JOIN `sd_item_alternativa` ON `sd_item`.`ite_ide` = `sd_item_alternativa`.`ite_ide`
+JOIN `sd_alternativa` ON `sd_item_alternativa`.`alt_ide` = `sd_alternativa`.`alt_ide`
+JOIN `sd_aspecto` ON `sd_item`.`ite_asp_ide` = `sd_aspecto`.`asp_ide`
+WHERE `sd_instrumento`.`ins_ide` = 66
+ORDER BY `alt_orden`, `sd_item`.`ite_ide`, `sd_item`.`ide_asp_ide`', [], false)
+ 5 APPPATH\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoreo.php(206): App\Models\Generaldb->selectSomeDataJoin('*', 'sd_instrumento', 'sd_instrumento.ins_ide = 66 ', 'alt_orden,sd_item.ite_ide,sd_item.ide_asp_ide', false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

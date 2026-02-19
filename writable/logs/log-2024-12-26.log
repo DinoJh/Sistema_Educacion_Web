@@ -1,0 +1,211 @@
+CRITICAL - 2024-12-26 05:12:07 --> Array to string conversion
+in APPPATH\Views\anexos2024\anexos.php on line 16.
+ 1 APPPATH\Views\anexos2024\anexos.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\anexos2024\\anexos.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\anexos2024\\anexos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('anexos2024/anexos', [], true)
+ 5 APPPATH\Controllers\Anexos2024.php(38): view('anexos2024/anexos', [...])
+ 6 APPPATH\Controllers\Anexos2024.php(43): App\Controllers\Anexos2024->anexos(2024, 1, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-26 05:12:19 --> Array to string conversion
+in APPPATH\Views\anexos2024\anexos.php on line 16.
+ 1 APPPATH\Views\anexos2024\anexos.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\anexos2024\\anexos.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\anexos2024\\anexos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('anexos2024/anexos', [], true)
+ 5 APPPATH\Controllers\Anexos2024.php(38): view('anexos2024/anexos', [...])
+ 6 APPPATH\Controllers\Anexos2024.php(43): App\Controllers\Anexos2024->anexos(2024, 1, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-26 05:12:31 --> Array to string conversion
+in APPPATH\Views\anexos2024\anexos.php on line 16.
+ 1 APPPATH\Views\anexos2024\anexos.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\anexos2024\\anexos.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\anexos2024\\anexos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('anexos2024/anexos', [], true)
+ 5 APPPATH\Controllers\Anexos2024.php(38): view('anexos2024/anexos', [...])
+ 6 APPPATH\Controllers\Anexos2024.php(43): App\Controllers\Anexos2024->anexos(2024, 1, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-26 05:13:00 --> Array to string conversion
+in APPPATH\Views\anexos2024\anexos.php on line 16.
+ 1 APPPATH\Views\anexos2024\anexos.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\anexos2024\\anexos.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\anexos2024\\anexos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('anexos2024/anexos', [], true)
+ 5 APPPATH\Controllers\Anexos2024.php(38): view('anexos2024/anexos', [...])
+ 6 APPPATH\Controllers\Anexos2024.php(43): App\Controllers\Anexos2024->anexos(2024, 1, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-26 05:13:32 --> Array to string conversion
+in APPPATH\Views\anexos2024\anexos.php on line 32.
+ 1 APPPATH\Views\anexos2024\anexos.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\anexos2024\\anexos.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\anexos2024\\anexos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('anexos2024/anexos', [], true)
+ 5 APPPATH\Controllers\Anexos2024.php(38): view('anexos2024/anexos', [...])
+ 6 APPPATH\Controllers\Anexos2024.php(43): App\Controllers\Anexos2024->anexos(2024, 1, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-26 05:14:50 --> Undefined variable $hojas
+in APPPATH\Views\anexos2024\anexos.php on line 17.
+ 1 APPPATH\Views\anexos2024\anexos.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hojas', 'APPPATH\\Views\\anexos2024\\anexos.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\anexos2024\\anexos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('anexos2024/anexos', [], true)
+ 5 APPPATH\Controllers\Anexos2024.php(38): view('anexos2024/anexos', [...])
+ 6 APPPATH\Controllers\Anexos2024.php(43): App\Controllers\Anexos2024->anexos(2024, 1, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-26 05:15:09 --> Undefined variable $hojas
+in APPPATH\Views\anexos2024\anexos.php on line 17.
+ 1 APPPATH\Views\anexos2024\anexos.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hojas', 'APPPATH\\Views\\anexos2024\\anexos.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\anexos2024\\anexos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('anexos2024/anexos', [], true)
+ 5 APPPATH\Controllers\Anexos2024.php(38): view('anexos2024/anexos', [...])
+ 6 APPPATH\Controllers\Anexos2024.php(43): App\Controllers\Anexos2024->anexos(2024, 1, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-26 05:15:10 --> Undefined variable $hojas
+in APPPATH\Views\anexos2024\anexos.php on line 17.
+ 1 APPPATH\Views\anexos2024\anexos.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hojas', 'APPPATH\\Views\\anexos2024\\anexos.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\anexos2024\\anexos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('anexos2024/anexos', [], true)
+ 5 APPPATH\Controllers\Anexos2024.php(38): view('anexos2024/anexos', [...])
+ 6 APPPATH\Controllers\Anexos2024.php(43): App\Controllers\Anexos2024->anexos(2024, 1, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-26 20:32:59 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Anexos2024.php on line 74.
+ 1 APPPATH\Controllers\Anexos2024.php(53): App\Controllers\Anexos2024->uploadFile('FCPATH\\archivos', 'derivar_doc1')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-26 20:54:38 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Anexos2024.php on line 74.
+ 1 APPPATH\Controllers\Anexos2024.php(53): App\Controllers\Anexos2024->uploadFile('FCPATH\\anexos2024', 'excel')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-26 20:54:49 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Anexos2024.php on line 74.
+ 1 APPPATH\Controllers\Anexos2024.php(53): App\Controllers\Anexos2024->uploadFile('FCPATH\\anexos2024', 'excel')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-26 20:58:58 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Anexos2024.php on line 74.
+ 1 APPPATH\Controllers\Anexos2024.php(53): App\Controllers\Anexos2024->uploadFile('FCPATH\\anexos2024', 'excel')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-26 20:59:40 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Anexos2024.php on line 74.
+ 1 APPPATH\Controllers\Anexos2024.php(53): App\Controllers\Anexos2024->uploadFile('FCPATH\\anexos2024', 'excel')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-26 21:06:35 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Anexos2024.php on line 74.
+ 1 APPPATH\Controllers\Anexos2024.php(53): App\Controllers\Anexos2024->uploadFile('FCPATH\\anexos2024', 'excel')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-26 21:06:44 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\Anexos2024.php on line 74.
+ 1 APPPATH\Controllers\Anexos2024.php(53): App\Controllers\Anexos2024->uploadFile('FCPATH\\anexos2024', 'excel')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-26 21:43:56 --> syntax error, unexpected token ","
+in APPPATH\Controllers\Anexos2024.php on line 48.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Anexos2024.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Anexos2024')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Anexos2024')
+ 4 SYSTEMPATH\Router\AutoRouterImproved.php(264): class_exists('App\\Controllers\\Anexos2024')
+ 5 SYSTEMPATH\Router\AutoRouterImproved.php(115): CodeIgniter\Router\AutoRouterImproved->scanControllers([...])
+ 6 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouterImproved->getRoute('anexos2024/anexo1')
+ 7 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('anexos2024/anexo1')
+ 8 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('anexos2024/anexo1')
+ 9 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-26 21:44:01 --> syntax error, unexpected token ","
+in APPPATH\Controllers\Anexos2024.php on line 48.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Anexos2024.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Anexos2024')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Anexos2024')
+ 4 SYSTEMPATH\Router\AutoRouterImproved.php(264): class_exists('App\\Controllers\\Anexos2024')
+ 5 SYSTEMPATH\Router\AutoRouterImproved.php(115): CodeIgniter\Router\AutoRouterImproved->scanControllers([...])
+ 6 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouterImproved->getRoute('anexos2024/anexo1')
+ 7 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('anexos2024/anexo1')
+ 8 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('anexos2024/anexo1')
+ 9 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-26 21:44:33 --> syntax error, unexpected token ","
+in APPPATH\Controllers\Anexos2024.php on line 48.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Anexos2024.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Anexos2024')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Anexos2024')
+ 4 SYSTEMPATH\Router\AutoRouterImproved.php(264): class_exists('App\\Controllers\\Anexos2024')
+ 5 SYSTEMPATH\Router\AutoRouterImproved.php(115): CodeIgniter\Router\AutoRouterImproved->scanControllers([...])
+ 6 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouterImproved->getRoute('anexos2024/anexo1')
+ 7 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('anexos2024/anexo1')
+ 8 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('anexos2024/anexo1')
+ 9 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-26 21:45:43 --> syntax error, unexpected token ","
+in APPPATH\Controllers\Anexos2024.php on line 48.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Anexos2024.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Anexos2024')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Anexos2024')
+ 4 SYSTEMPATH\Router\AutoRouterImproved.php(264): class_exists('App\\Controllers\\Anexos2024')
+ 5 SYSTEMPATH\Router\AutoRouterImproved.php(115): CodeIgniter\Router\AutoRouterImproved->scanControllers([...])
+ 6 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouterImproved->getRoute('anexos2024/anexo1')
+ 7 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('anexos2024/anexo1')
+ 8 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('anexos2024/anexo1')
+ 9 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-26 21:58:32 --> Undefined array key 0
+in APPPATH\Controllers\Anexos2024.php on line 50.
+ 1 APPPATH\Controllers\Anexos2024.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Anexos2024.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-12-26 21:59:03 --> Undefined array key 0
+in APPPATH\Controllers\Anexos2024.php on line 50.
+ 1 APPPATH\Controllers\Anexos2024.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Anexos2024.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->postGuardar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,573 @@
+CRITICAL - 2025-02-06 06:47:25 --> Undefined variable $ugels
+in APPPATH/Controllers/Anexos2024repo.php on line 39.
+ 1 APPPATH/Controllers/Anexos2024repo.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ugels', 'APPPATH/Controllers/Anexos2024repo.php', 39)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getVali()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 07:19:38 --> Undefined variable $ugel_ide
+in APPPATH/Controllers/Anexos2024i.php on line 368.
+ 1 APPPATH/Controllers/Anexos2024i.php(368): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ugel_ide', 'APPPATH/Controllers/Anexos2024i.php', 368)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024i->postUbig()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 07:20:21 --> Undefined variable $ugel_ide
+in APPPATH/Controllers/Anexos2024i.php on line 368.
+ 1 APPPATH/Controllers/Anexos2024i.php(368): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ugel_ide', 'APPPATH/Controllers/Anexos2024i.php', 368)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024i->postUbig()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 07:23:26 --> Undefined variable $ugel_ide
+in APPPATH/Controllers/Anexos2024i.php on line 368.
+ 1 APPPATH/Controllers/Anexos2024i.php(368): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ugel_ide', 'APPPATH/Controllers/Anexos2024i.php', 368)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024i->postUbig()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 07:25:24 --> Undefined variable $ugel_ide
+in APPPATH/Controllers/Anexos2024i.php on line 281.
+ 1 APPPATH/Controllers/Anexos2024i.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ugel_ide', 'APPPATH/Controllers/Anexos2024i.php', 281)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024i->postAnexosEnviados()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 07:25:38 --> Undefined variable $ugel_ide
+in APPPATH/Controllers/Anexos2024i.php on line 281.
+ 1 APPPATH/Controllers/Anexos2024i.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ugel_ide', 'APPPATH/Controllers/Anexos2024i.php', 281)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024i->postAnexosEnviados()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 07:50:52 --> Invalid file: anexos/valiconso.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('anexos/valiconso.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos/valiconso', [], true)
+ 3 APPPATH/Controllers/Anexos2024repo.php(88): view('anexos/valiconso', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getValiConso()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 07:51:09 --> Invalid file: anexos/valiconso.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('anexos/valiconso.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos/valiconso', [], true)
+ 3 APPPATH/Controllers/Anexos2024repo.php(88): view('anexos/valiconso', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getValiConso()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 07:52:10 --> Invalid file: anexos/valiconso.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('anexos/valiconso.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos/valiconso', [], true)
+ 3 APPPATH/Controllers/Anexos2024repo.php(88): view('anexos/valiconso', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getValiConso()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 08:23:19 --> Undefined variable $iiee
+in APPPATH/Views/anexos2024repo/valiconso.php on line 16.
+ 1 APPPATH/Views/anexos2024repo/valiconso.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $iiee', 'APPPATH/Views/anexos2024repo/valiconso.php', 16)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/anexos2024repo/valiconso.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos2024repo/valiconso', [], true)
+ 5 APPPATH/Controllers/Anexos2024repo.php(111): view('anexos2024repo/valiconso', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getValiConso()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 08:23:32 --> Undefined variable $iiee
+in APPPATH/Views/anexos2024repo/valiconso.php on line 16.
+ 1 APPPATH/Views/anexos2024repo/valiconso.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $iiee', 'APPPATH/Views/anexos2024repo/valiconso.php', 16)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/anexos2024repo/valiconso.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos2024repo/valiconso', [], true)
+ 5 APPPATH/Controllers/Anexos2024repo.php(111): view('anexos2024repo/valiconso', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getValiConso()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 08:24:11 --> Undefined array key "ugel"
+in APPPATH/Views/anexos2024repo/valiconso.php on line 19.
+ 1 APPPATH/Views/anexos2024repo/valiconso.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ugel"', 'APPPATH/Views/anexos2024repo/valiconso.php', 19)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/anexos2024repo/valiconso.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos2024repo/valiconso', [], true)
+ 5 APPPATH/Controllers/Anexos2024repo.php(111): view('anexos2024repo/valiconso', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getValiConso()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 08:27:11 --> Undefined array key "ugel"
+in APPPATH/Views/anexos2024repo/valiconso.php on line 19.
+ 1 APPPATH/Views/anexos2024repo/valiconso.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ugel"', 'APPPATH/Views/anexos2024repo/valiconso.php', 19)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/anexos2024repo/valiconso.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos2024repo/valiconso', [], true)
+ 5 APPPATH/Controllers/Anexos2024repo.php(111): view('anexos2024repo/valiconso', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getValiConso()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 08:28:38 --> Undefined array key "ugel"
+in APPPATH/Views/anexos2024repo/valiconso.php on line 19.
+ 1 APPPATH/Views/anexos2024repo/valiconso.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ugel"', 'APPPATH/Views/anexos2024repo/valiconso.php', 19)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/anexos2024repo/valiconso.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos2024repo/valiconso', [], true)
+ 5 APPPATH/Controllers/Anexos2024repo.php(111): view('anexos2024repo/valiconso', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getValiConso()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 08:28:52 --> Undefined array key "ugel"
+in APPPATH/Views/anexos2024repo/valiconso.php on line 19.
+ 1 APPPATH/Views/anexos2024repo/valiconso.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ugel"', 'APPPATH/Views/anexos2024repo/valiconso.php', 19)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/anexos2024repo/valiconso.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos2024repo/valiconso', [], true)
+ 5 APPPATH/Controllers/Anexos2024repo.php(111): view('anexos2024repo/valiconso', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getValiConso()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 08:30:25 --> Undefined array key "ugel"
+in APPPATH/Views/anexos2024repo/valiconso.php on line 20.
+ 1 APPPATH/Views/anexos2024repo/valiconso.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ugel"', 'APPPATH/Views/anexos2024repo/valiconso.php', 20)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/anexos2024repo/valiconso.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos2024repo/valiconso', [], true)
+ 5 APPPATH/Controllers/Anexos2024repo.php(111): view('anexos2024repo/valiconso', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getValiConso()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 08:30:52 --> Undefined array key "ugel"
+in APPPATH/Views/anexos2024repo/valiconso.php on line 20.
+ 1 APPPATH/Views/anexos2024repo/valiconso.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ugel"', 'APPPATH/Views/anexos2024repo/valiconso.php', 20)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/anexos2024repo/valiconso.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos2024repo/valiconso', [], true)
+ 5 APPPATH/Controllers/Anexos2024repo.php(111): view('anexos2024repo/valiconso', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getValiConso()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 08:31:00 --> Undefined array key "ugel"
+in APPPATH/Views/anexos2024repo/valiconso.php on line 20.
+ 1 APPPATH/Views/anexos2024repo/valiconso.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ugel"', 'APPPATH/Views/anexos2024repo/valiconso.php', 20)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/anexos2024repo/valiconso.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos2024repo/valiconso', [], true)
+ 5 APPPATH/Controllers/Anexos2024repo.php(111): view('anexos2024repo/valiconso', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getValiConso()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 08:43:53 --> Undefined property: App\Controllers\Anexos2024repo::$input
+in APPPATH/Controllers/Anexos2024repo.php on line 46.
+ 1 APPPATH/Controllers/Anexos2024repo.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Anexos2024repo::$input', 'APPPATH/Controllers/Anexos2024repo.php', 46)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getValiConso()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-06 08:44:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and
+                    `a`.`arch_esta_ide` = `e`.`esta_ide`
+                 ' at line 7 in /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.`arc...', 0)
+#1 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`arc...')
+#2 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`arc...')
+#3 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`arc...', Array, false)
+#4 /home/customer/www/xurainc.com/public_html/monitoreo/app/Models/Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Anexos2024repo.php(86): App\Models\Generaldb->selectSomeData('\r\n             ...', '\r\n             ...', '\r\n             ...', '\r\n             ...', '\r\n             ...')
+#6 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getValiConso()
+#7 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+#8 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/customer/www/xurainc.com/public_html/monitoreo/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-02-06 08:44:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and
+                    `a`.`arch_esta_ide` = `e`.`esta_ide`
+                 ' at line 7
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.`arch_anexo`, `u`.`ugel_ide`, `u`.`ugel_nombre`, `n`.`nive_ide`, `n`.`nive_nombre`, `e`.`esta_ide`, `e`.`esta_nombre`, `e`.`esta_clase`, COUNT(*) AS cont
+FROM `2024_archivos` `a`, `iiee` `i`, `niveles` `n`, `ugels` `u`, `estados` `e`
+WHERE 
+                    a.arch_anexo = 1
+                    and
+                    `u`.`ugel_ide` = 
+                    and
+                    `a`.`arch_esta_ide` = `e`.`esta_ide`
+                    and
+                    `a`.`arch_iiee_ide` = `i`.`iiee_ide`
+                    and
+                    `i`.`iiee_nive_ide` = `n`.`nive_ide`
+                    and
+                    i.iiee_ugel_ide = u.ugel_ide
+                
+GROUP BY `u`.`ugel_ide`, `n`.`nive_ide`, `a`.`arch_esta_ide`
+ORDER BY `u`.`ugel_ide`, `n`.`nive_ide`, `a`.`arch_esta_ide`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`arch_anexo`, `u`.`ugel_ide`, `u`.`ugel_nombre`, `n`.`nive_ide`, `n`.`nive_nombre`, `e`.`esta_ide`, `e`.`esta_nombre`, `e`.`esta_clase`, COUNT(*) AS cont
+FROM `2024_archivos` `a`, `iiee` `i`, `niveles` `n`, `ugels` `u`, `estados` `e`
+WHERE 
+                    a.arch_anexo = 1
+                    and
+                    `u`.`ugel_ide` = 
+                    and
+                    `a`.`arch_esta_ide` = `e`.`esta_ide`
+                    and
+                    `a`.`arch_iiee_ide` = `i`.`iiee_ide`
+                    and
+                    `i`.`iiee_nive_ide` = `n`.`nive_ide`
+                    and
+                    i.iiee_ugel_ide = u.ugel_ide
+                
+GROUP BY `u`.`ugel_ide`, `n`.`nive_ide`, `a`.`arch_esta_ide`
+ORDER BY `u`.`ugel_ide`, `n`.`nive_ide`, `a`.`arch_esta_ide`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`arch_anexo`, `u`.`ugel_ide`, `u`.`ugel_nombre`, `n`.`nive_ide`, `n`.`nive_nombre`, `e`.`esta_ide`, `e`.`esta_nombre`, `e`.`esta_clase`, COUNT(*) AS cont
+FROM `2024_archivos` `a`, `iiee` `i`, `niveles` `n`, `ugels` `u`, `estados` `e`
+WHERE 
+                    a.arch_anexo = 1
+                    and
+                    `u`.`ugel_ide` = 
+                    and
+                    `a`.`arch_esta_ide` = `e`.`esta_ide`
+                    and
+                    `a`.`arch_iiee_ide` = `i`.`iiee_ide`
+                    and
+                    `i`.`iiee_nive_ide` = `n`.`nive_ide`
+                    and
+                    i.iiee_ugel_ide = u.ugel_ide
+                
+GROUP BY `u`.`ugel_ide`, `n`.`nive_ide`, `a`.`arch_esta_ide`
+ORDER BY `u`.`ugel_ide`, `n`.`nive_ide`, `a`.`arch_esta_ide`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`arch_anexo`, `u`.`ugel_ide`, `u`.`ugel_nombre`, `n`.`nive_ide`, `n`.`nive_nombre`, `e`.`esta_ide`, `e`.`esta_nombre`, `e`.`esta_clase`, COUNT(*) AS cont
+FROM `2024_archivos` `a`, `iiee` `i`, `niveles` `n`, `ugels` `u`, `estados` `e`
+WHERE 
+                    a.arch_anexo = 1
+                    and
+                    `u`.`ugel_ide` = 
+                    and
+                    `a`.`arch_esta_ide` = `e`.`esta_ide`
+                    and
+                    `a`.`arch_iiee_ide` = `i`.`iiee_ide`
+                    and
+                    `i`.`iiee_nive_ide` = `n`.`nive_ide`
+                    and
+                    i.iiee_ugel_ide = u.ugel_ide
+                
+GROUP BY `u`.`ugel_ide`, `n`.`nive_ide`, `a`.`arch_esta_ide`
+ORDER BY `u`.`ugel_ide`, `n`.`nive_ide`, `a`.`arch_esta_ide`', [], false)
+ 5 APPPATH/Models/Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Anexos2024repo.php(86): App\Models\Generaldb->selectSomeData('
+                    a.arch_anexo,
+                    u.ugel_ide,
+                    u.ugel_nombre,
+                    n.nive_ide,
+                    n.nive_nombre,
+                    e.esta_ide,
+                    e.esta_nombre,
+                    e.esta_clase,
+                    COUNT(*) AS cont
+                ', '
+                    2024_archivos a,
+                    iiee i,
+                    niveles n,
+                    ugels u,
+                    estados e
+                ', '
+                    a.arch_anexo = 1
+                    and
+                    u.ugel_ide = 
+                    and
+                    a.arch_esta_ide = e.esta_ide
+                    and
+                    a.arch_iiee_ide = i.iiee_ide
+                    and
+                    i.iiee_nive_ide = n.nive_ide
+                    and
+                    i.iiee_ugel_ide = u.ugel_ide
+                ', '
+                    u.ugel_ide, n.nive_ide, a.arch_esta_ide
+                ', '
+                    u.ugel_ide, n.nive_ide, a.arch_esta_ide
+                ')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getValiConso()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-06 08:44:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and
+                    `a`.`arch_esta_ide` = `e`.`esta_ide`
+                 ' at line 7 in /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.`arc...', 0)
+#1 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`arc...')
+#2 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`arc...')
+#3 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`arc...', Array, false)
+#4 /home/customer/www/xurainc.com/public_html/monitoreo/app/Models/Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Anexos2024repo.php(86): App\Models\Generaldb->selectSomeData('\r\n             ...', '\r\n             ...', '\r\n             ...', '\r\n             ...', '\r\n             ...')
+#6 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getValiConso()
+#7 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+#8 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/customer/www/xurainc.com/public_html/monitoreo/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-02-06 08:44:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and
+                    `a`.`arch_esta_ide` = `e`.`esta_ide`
+                 ' at line 7
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.`arch_anexo`, `u`.`ugel_ide`, `u`.`ugel_nombre`, `n`.`nive_ide`, `n`.`nive_nombre`, `e`.`esta_ide`, `e`.`esta_nombre`, `e`.`esta_clase`, COUNT(*) AS cont
+FROM `2024_archivos` `a`, `iiee` `i`, `niveles` `n`, `ugels` `u`, `estados` `e`
+WHERE 
+                    a.arch_anexo = 1
+                    and
+                    `u`.`ugel_ide` = 
+                    and
+                    `a`.`arch_esta_ide` = `e`.`esta_ide`
+                    and
+                    `a`.`arch_iiee_ide` = `i`.`iiee_ide`
+                    and
+                    `i`.`iiee_nive_ide` = `n`.`nive_ide`
+                    and
+                    i.iiee_ugel_ide = u.ugel_ide
+                
+GROUP BY `u`.`ugel_ide`, `n`.`nive_ide`, `a`.`arch_esta_ide`
+ORDER BY `u`.`ugel_ide`, `n`.`nive_ide`, `a`.`arch_esta_ide`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`arch_anexo`, `u`.`ugel_ide`, `u`.`ugel_nombre`, `n`.`nive_ide`, `n`.`nive_nombre`, `e`.`esta_ide`, `e`.`esta_nombre`, `e`.`esta_clase`, COUNT(*) AS cont
+FROM `2024_archivos` `a`, `iiee` `i`, `niveles` `n`, `ugels` `u`, `estados` `e`
+WHERE 
+                    a.arch_anexo = 1
+                    and
+                    `u`.`ugel_ide` = 
+                    and
+                    `a`.`arch_esta_ide` = `e`.`esta_ide`
+                    and
+                    `a`.`arch_iiee_ide` = `i`.`iiee_ide`
+                    and
+                    `i`.`iiee_nive_ide` = `n`.`nive_ide`
+                    and
+                    i.iiee_ugel_ide = u.ugel_ide
+                
+GROUP BY `u`.`ugel_ide`, `n`.`nive_ide`, `a`.`arch_esta_ide`
+ORDER BY `u`.`ugel_ide`, `n`.`nive_ide`, `a`.`arch_esta_ide`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`arch_anexo`, `u`.`ugel_ide`, `u`.`ugel_nombre`, `n`.`nive_ide`, `n`.`nive_nombre`, `e`.`esta_ide`, `e`.`esta_nombre`, `e`.`esta_clase`, COUNT(*) AS cont
+FROM `2024_archivos` `a`, `iiee` `i`, `niveles` `n`, `ugels` `u`, `estados` `e`
+WHERE 
+                    a.arch_anexo = 1
+                    and
+                    `u`.`ugel_ide` = 
+                    and
+                    `a`.`arch_esta_ide` = `e`.`esta_ide`
+                    and
+                    `a`.`arch_iiee_ide` = `i`.`iiee_ide`
+                    and
+                    `i`.`iiee_nive_ide` = `n`.`nive_ide`
+                    and
+                    i.iiee_ugel_ide = u.ugel_ide
+                
+GROUP BY `u`.`ugel_ide`, `n`.`nive_ide`, `a`.`arch_esta_ide`
+ORDER BY `u`.`ugel_ide`, `n`.`nive_ide`, `a`.`arch_esta_ide`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`arch_anexo`, `u`.`ugel_ide`, `u`.`ugel_nombre`, `n`.`nive_ide`, `n`.`nive_nombre`, `e`.`esta_ide`, `e`.`esta_nombre`, `e`.`esta_clase`, COUNT(*) AS cont
+FROM `2024_archivos` `a`, `iiee` `i`, `niveles` `n`, `ugels` `u`, `estados` `e`
+WHERE 
+                    a.arch_anexo = 1
+                    and
+                    `u`.`ugel_ide` = 
+                    and
+                    `a`.`arch_esta_ide` = `e`.`esta_ide`
+                    and
+                    `a`.`arch_iiee_ide` = `i`.`iiee_ide`
+                    and
+                    `i`.`iiee_nive_ide` = `n`.`nive_ide`
+                    and
+                    i.iiee_ugel_ide = u.ugel_ide
+                
+GROUP BY `u`.`ugel_ide`, `n`.`nive_ide`, `a`.`arch_esta_ide`
+ORDER BY `u`.`ugel_ide`, `n`.`nive_ide`, `a`.`arch_esta_ide`', [], false)
+ 5 APPPATH/Models/Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Anexos2024repo.php(86): App\Models\Generaldb->selectSomeData('
+                    a.arch_anexo,
+                    u.ugel_ide,
+                    u.ugel_nombre,
+                    n.nive_ide,
+                    n.nive_nombre,
+                    e.esta_ide,
+                    e.esta_nombre,
+                    e.esta_clase,
+                    COUNT(*) AS cont
+                ', '
+                    2024_archivos a,
+                    iiee i,
+                    niveles n,
+                    ugels u,
+                    estados e
+                ', '
+                    a.arch_anexo = 1
+                    and
+                    u.ugel_ide = 
+                    and
+                    a.arch_esta_ide = e.esta_ide
+                    and
+                    a.arch_iiee_ide = i.iiee_ide
+                    and
+                    i.iiee_nive_ide = n.nive_ide
+                    and
+                    i.iiee_ugel_ide = u.ugel_ide
+                ', '
+                    u.ugel_ide, n.nive_ide, a.arch_esta_ide
+                ', '
+                    u.ugel_ide, n.nive_ide, a.arch_esta_ide
+                ')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getValiConso()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 08:57:21 --> Invalid file: anexos/vc.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('anexos/vc.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos/vc', [], true)
+ 3 APPPATH/Controllers/Anexos2024repo.php(66): view('anexos/vc', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getValiConso()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 08:57:35 --> Invalid file: anexos/vc.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('anexos/vc.php')
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos/vc', [], true)
+ 3 APPPATH/Controllers/Anexos2024repo.php(66): view('anexos/vc', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getValiConso()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 08:58:21 --> Undefined variable $compo
+in APPPATH/Views/anexos2024repo/vc.php on line 4.
+ 1 APPPATH/Views/anexos2024repo/vc.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compo', 'APPPATH/Views/anexos2024repo/vc.php', 4)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/anexos2024repo/vc.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos2024repo/vc', [], true)
+ 5 APPPATH/Controllers/Anexos2024repo.php(66): view('anexos2024repo/vc', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->getValiConso()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 09:17:46 --> Undefined variable $general
+in APPPATH/Controllers/Anexos2024repo.php on line 170.
+ 1 APPPATH/Controllers/Anexos2024repo.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $general', 'APPPATH/Controllers/Anexos2024repo.php', 170)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->postCoberDetalle()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 09:17:53 --> Undefined variable $general
+in APPPATH/Controllers/Anexos2024repo.php on line 170.
+ 1 APPPATH/Controllers/Anexos2024repo.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $general', 'APPPATH/Controllers/Anexos2024repo.php', 170)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->postCoberDetalle()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 09:18:16 --> Cannot use object of type stdClass as array
+in APPPATH/Views/anexos2024repo/valiconso.php on line 20.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos2024repo/valiconso', [], true)
+ 4 APPPATH/Controllers/Anexos2024repo.php(258): view('anexos2024repo/valiconso', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->postCoberDetalle()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 09:25:06 --> Undefined property: stdClass::$arch_anexo
+in APPPATH/Controllers/Anexos2024repo.php on line 236.
+ 1 APPPATH/Controllers/Anexos2024repo.php(236): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$arch_anexo', 'APPPATH/Controllers/Anexos2024repo.php', 236)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->postCoberDetalle()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 09:49:22 --> Undefined array key "faltantes"
+in APPPATH/Views/anexos2024repo/coberdeta.php on line 40.
+ 1 APPPATH/Views/anexos2024repo/coberdeta.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "faltantes"', 'APPPATH/Views/anexos2024repo/coberdeta.php', 40)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/anexos2024repo/coberdeta.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos2024repo/coberdeta', [], true)
+ 5 APPPATH/Controllers/Anexos2024repo.php(251): view('anexos2024repo/coberdeta', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->postCoberDetalle()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 09:49:53 --> Undefined array key "faltantes"
+in APPPATH/Views/anexos2024repo/coberdeta.php on line 40.
+ 1 APPPATH/Views/anexos2024repo/coberdeta.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "faltantes"', 'APPPATH/Views/anexos2024repo/coberdeta.php', 40)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/anexos2024repo/coberdeta.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos2024repo/coberdeta', [], true)
+ 5 APPPATH/Controllers/Anexos2024repo.php(251): view('anexos2024repo/coberdeta', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->postCoberDetalle()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 09:50:00 --> Undefined array key "faltantes"
+in APPPATH/Views/anexos2024repo/coberdeta.php on line 40.
+ 1 APPPATH/Views/anexos2024repo/coberdeta.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "faltantes"', 'APPPATH/Views/anexos2024repo/coberdeta.php', 40)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/anexos2024repo/coberdeta.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos2024repo/coberdeta', [], true)
+ 5 APPPATH/Controllers/Anexos2024repo.php(251): view('anexos2024repo/coberdeta', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->postCoberDetalle()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 09:51:23 --> Undefined array key "faltantes"
+in APPPATH/Views/anexos2024repo/coberdeta.php on line 40.
+ 1 APPPATH/Views/anexos2024repo/coberdeta.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "faltantes"', 'APPPATH/Views/anexos2024repo/coberdeta.php', 40)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/anexos2024repo/coberdeta.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos2024repo/coberdeta', [], true)
+ 5 APPPATH/Controllers/Anexos2024repo.php(251): view('anexos2024repo/coberdeta', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->postCoberDetalle()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 09:51:46 --> Undefined array key "faltantes"
+in APPPATH/Views/anexos2024repo/coberdeta.php on line 40.
+ 1 APPPATH/Views/anexos2024repo/coberdeta.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "faltantes"', 'APPPATH/Views/anexos2024repo/coberdeta.php', 40)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/anexos2024repo/coberdeta.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos2024repo/coberdeta', [], true)
+ 5 APPPATH/Controllers/Anexos2024repo.php(252): view('anexos2024repo/coberdeta', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->postCoberDetalle()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 09:53:37 --> Undefined array key "falta"
+in APPPATH/Views/anexos2024repo/coberdeta.php on line 40.
+ 1 APPPATH/Views/anexos2024repo/coberdeta.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "falta"', 'APPPATH/Views/anexos2024repo/coberdeta.php', 40)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/anexos2024repo/coberdeta.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos2024repo/coberdeta', [], true)
+ 5 APPPATH/Controllers/Anexos2024repo.php(252): view('anexos2024repo/coberdeta', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->postCoberDetalle()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 09:53:51 --> Undefined array key "falta"
+in APPPATH/Views/anexos2024repo/coberdeta.php on line 40.
+ 1 APPPATH/Views/anexos2024repo/coberdeta.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "falta"', 'APPPATH/Views/anexos2024repo/coberdeta.php', 40)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/anexos2024repo/coberdeta.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos2024repo/coberdeta', [], true)
+ 5 APPPATH/Controllers/Anexos2024repo.php(252): view('anexos2024repo/coberdeta', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->postCoberDetalle()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-06 09:55:02 --> Undefined array key "falta"
+in APPPATH/Views/anexos2024repo/coberdeta.php on line 40.
+ 1 APPPATH/Views/anexos2024repo/coberdeta.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "falta"', 'APPPATH/Views/anexos2024repo/coberdeta.php', 40)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/anexos2024repo/coberdeta.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('anexos2024repo/coberdeta', [], true)
+ 5 APPPATH/Controllers/Anexos2024repo.php(252): view('anexos2024repo/coberdeta', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024repo->postCoberDetalle()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024repo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

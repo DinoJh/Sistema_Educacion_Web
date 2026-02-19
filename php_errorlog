@@ -1,0 +1,2 @@
+[04-Mar-2025 07:26:06 America/Chicago] PHP Fatal error:  Allowed memory size of 805306368 bytes exhausted (tried to allocate 20480 bytes) in /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Result.php on line 148
+[04-Mar-2025 08:03:00 America/Chicago] PHP Fatal error:  Allowed memory size of 805306368 bytes exhausted (tried to allocate 20480 bytes) in /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Reportes.php on line 33

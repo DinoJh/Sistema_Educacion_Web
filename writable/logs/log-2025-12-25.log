@@ -1,0 +1,212 @@
+ERROR - 2025-12-25 09:31:59 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexo2b_normalizado' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `a`.`gra...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`gra...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`gra...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`gra...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Mreportes2024.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Reportes2024.php(262): App\Models\Mreportes2024->anexo2b('1', '210001', 'TODOS', 'TODOS', 'TODOS', 'TODOS')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Reportes2024->postGrafico()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-25 09:31:59 --> Table 'drepuno_monitoreo_regional_2025.2024_anexo2b_normalizado' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'1\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'1\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'1\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = :a.comp_ide:
+AND `i`.`iiee_ugel_ide` = :i.iiee_ugel_ide:
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`', [...], false)
+ 5 APPPATH\Models\Mreportes2024.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Reportes2024.php(262): App\Models\Mreportes2024->anexo2b('1', '210001', 'TODOS', 'TODOS', 'TODOS', 'TODOS')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Reportes2024->postGrafico()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes2024))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-25 09:32:10 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexo2b_normalizado' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `a`.`gra...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`gra...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`gra...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`gra...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Mreportes2024.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Reportes2024.php(262): App\Models\Mreportes2024->anexo2b('1', '210001', 'TODOS', 'TODOS', 'TODOS', 'TODOS')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Reportes2024->postGrafico()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-25 09:32:10 --> Table 'drepuno_monitoreo_regional_2025.2024_anexo2b_normalizado' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'1\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'1\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'1\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = :a.comp_ide:
+AND `i`.`iiee_ugel_ide` = :i.iiee_ugel_ide:
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`', [...], false)
+ 5 APPPATH\Models\Mreportes2024.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Reportes2024.php(262): App\Models\Mreportes2024->anexo2b('1', '210001', 'TODOS', 'TODOS', 'TODOS', 'TODOS')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Reportes2024->postGrafico()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes2024))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-25 09:32:13 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexo2b_normalizado' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `a`.`gra...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`gra...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`gra...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`gra...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Mreportes2024.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Reportes2024.php(262): App\Models\Mreportes2024->anexo2b('1', '210001', 'TODOS', 'TODOS', 'TODOS', 'TODOS')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Reportes2024->postGrafico()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-25 09:32:13 --> Table 'drepuno_monitoreo_regional_2025.2024_anexo2b_normalizado' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'1\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'1\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'1\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = :a.comp_ide:
+AND `i`.`iiee_ugel_ide` = :i.iiee_ugel_ide:
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`', [...], false)
+ 5 APPPATH\Models\Mreportes2024.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Reportes2024.php(262): App\Models\Mreportes2024->anexo2b('1', '210001', 'TODOS', 'TODOS', 'TODOS', 'TODOS')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Reportes2024->postGrafico()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes2024))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-25 09:32:16 --> mysqli_sql_exception: Table 'drepuno_monitoreo_regional_2025.2024_anexo2b_normalizado' doesn't exist in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `a`.`gra...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`gra...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`gra...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`gra...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Mreportes2024.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Reportes2024.php(262): App\Models\Mreportes2024->anexo2b('2', '210001', 'TODOS', 'TODOS', 'TODOS', 'TODOS')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Reportes2024->postGrafico()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes2024))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-25 09:32:16 --> Table 'drepuno_monitoreo_regional_2025.2024_anexo2b_normalizado' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'2\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'2\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = \'2\'
+AND `i`.`iiee_ugel_ide` = \'210001\'
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`grado` AS `ejex`, `a`.`area`, `c`.`comp_nombre`, ROUND(IF(AVG(NULLIF(a.en_inicio, 0)) IS NULL, 0, AVG(NULLIF(a.en_inicio, 0))), 2) AS en_inicio, ROUND(IF(AVG(NULLIF(a.en_proceso, 0)) IS NULL, 0, AVG(NULLIF(a.en_proceso, 0))), 2) AS en_proceso, ROUND(IF(AVG(NULLIF(a.logro_esperado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_esperado, 0))), 2) AS logro_esperado, ROUND(IF(AVG(NULLIF(a.logro_destacado, 0)) IS NULL, 0, AVG(NULLIF(a.logro_destacado, 0))), 2) AS logro_destacado
+FROM `2024_anexo2b_normalizado` `a`
+INNER JOIN `iiee` `i` ON `a`.`ane2_iiee_ide` = `i`.`iiee_ide`
+INNER JOIN `2024_a2_componentes` `c` ON `a`.`comp_ide` = `c`.`comp_codigo`
+WHERE `a`.`comp_ide` = :a.comp_ide:
+AND `i`.`iiee_ugel_ide` = :i.iiee_ugel_ide:
+GROUP BY `a`.`grado`
+ORDER BY `a`.`grado`', [...], false)
+ 5 APPPATH\Models\Mreportes2024.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Reportes2024.php(262): App\Models\Mreportes2024->anexo2b('2', '210001', 'TODOS', 'TODOS', 'TODOS', 'TODOS')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Reportes2024->postGrafico()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes2024))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

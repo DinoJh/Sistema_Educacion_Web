@@ -1,0 +1,23 @@
+CRITICAL - 2026-02-10 20:48:42 --> Class "App\Libraries\SuperComponente" not found
+in APPPATH\Views\login\vlogin.php on line 116.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login/vlogin', [], true)
+ 4 APPPATH\Controllers\Login.php(21): view('login/vlogin', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-02-10 22:19:47 --> Undefined property: stdClass::$usua_iiee_ide
+in APPPATH\Controllers\Login.php on line 39.
+ 1 APPPATH\Controllers\Login.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$usua_iiee_ide', 'APPPATH\\Controllers\\Login.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-02-10 21:21:13 --> Class "App\Models\General" not found
+in APPPATH\Controllers\Application.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

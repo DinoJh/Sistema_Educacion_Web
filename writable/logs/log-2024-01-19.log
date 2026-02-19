@@ -1,0 +1,14 @@
+CRITICAL - 2024-01-19 07:17:55 --> Undefined variable $filename
+in APPPATH\Controllers\Formatos.php on line 139.
+ 1 APPPATH\Controllers\Formatos.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $filename', 'APPPATH\\Controllers\\Formatos.php', 139)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Formatos->getDescargar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 07:18:05 --> Undefined variable $filename
+in APPPATH\Controllers\Formatos.php on line 139.
+ 1 APPPATH\Controllers\Formatos.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $filename', 'APPPATH\\Controllers\\Formatos.php', 139)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Formatos->getDescargar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

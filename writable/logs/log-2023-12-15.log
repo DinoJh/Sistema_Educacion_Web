@@ -1,0 +1,290 @@
+ERROR - 2023-12-15 01:40:11 --> mysqli_sql_exception: Unknown column 'inst_titulo' in 'field list' in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `inst_ti...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `inst_ti...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `inst_ti...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `inst_ti...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(269): App\Models\Generaldb->selectSomeData('inst_titulo as ...', 'sd_instrumento', 'ins_esta_ide = ...', 'ins_titulo ASC')
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoPlan()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-15 01:40:11 --> Unknown column 'inst_titulo' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `inst_titulo` as `nombre`, `ins_ide` as `ide`
+FROM `sd_instrumento`
+WHERE `ins_esta_ide` = 1
+ORDER BY `ins_titulo` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `inst_titulo` as `nombre`, `ins_ide` as `ide`
+FROM `sd_instrumento`
+WHERE `ins_esta_ide` = 1
+ORDER BY `ins_titulo` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `inst_titulo` as `nombre`, `ins_ide` as `ide`
+FROM `sd_instrumento`
+WHERE `ins_esta_ide` = 1
+ORDER BY `ins_titulo` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `inst_titulo` as `nombre`, `ins_ide` as `ide`
+FROM `sd_instrumento`
+WHERE `ins_esta_ide` = 1
+ORDER BY `ins_titulo` ASC', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoreo.php(269): App\Models\Generaldb->selectSomeData('inst_titulo as nombre, ins_ide as ide', 'sd_instrumento', 'ins_esta_ide = 1', 'ins_titulo ASC')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoPlan()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-15 01:40:25 --> mysqli_sql_exception: Unknown column 'ins_titulo' in 'field list' in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ins_tit...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ins_tit...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ins_tit...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ins_tit...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(269): App\Models\Generaldb->selectSomeData('ins_titulo as n...', 'sd_instrumento', 'ins_esta_ide = ...', 'ins_titulo ASC')
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoPlan()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-15 01:40:25 --> Unknown column 'ins_titulo' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ins_titulo` as `nombre`, `ins_ide` as `ide`
+FROM `sd_instrumento`
+WHERE `ins_esta_ide` = 1
+ORDER BY `ins_titulo` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ins_titulo` as `nombre`, `ins_ide` as `ide`
+FROM `sd_instrumento`
+WHERE `ins_esta_ide` = 1
+ORDER BY `ins_titulo` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ins_titulo` as `nombre`, `ins_ide` as `ide`
+FROM `sd_instrumento`
+WHERE `ins_esta_ide` = 1
+ORDER BY `ins_titulo` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ins_titulo` as `nombre`, `ins_ide` as `ide`
+FROM `sd_instrumento`
+WHERE `ins_esta_ide` = 1
+ORDER BY `ins_titulo` ASC', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoreo.php(269): App\Models\Generaldb->selectSomeData('ins_titulo as nombre, ins_ide as ide', 'sd_instrumento', 'ins_esta_ide = 1', 'ins_titulo ASC')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoPlan()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-15 03:57:20 --> mysqli_sql_exception: Unknown column 'plan_ide' in 'field list' in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `plan_id...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `plan_id...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `plan_id...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `plan_id...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(260): App\Models\Generaldb->selectSomeData('plan_ide as nex...', 'sd_plan', 'pla_esta_ide = ...', 'pla_ide DESC', false, 1)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoPlan()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-15 03:57:20 --> Unknown column 'plan_ide' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `plan_ide` as `next_ide`
+FROM `sd_plan`
+WHERE `pla_esta_ide` = 1
+ORDER BY `pla_ide` DESC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `plan_ide` as `next_ide`
+FROM `sd_plan`
+WHERE `pla_esta_ide` = 1
+ORDER BY `pla_ide` DESC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `plan_ide` as `next_ide`
+FROM `sd_plan`
+WHERE `pla_esta_ide` = 1
+ORDER BY `pla_ide` DESC
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `plan_ide` as `next_ide`
+FROM `sd_plan`
+WHERE `pla_esta_ide` = 1
+ORDER BY `pla_ide` DESC
+ LIMIT 1', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoreo.php(260): App\Models\Generaldb->selectSomeData('plan_ide as next_ide', 'sd_plan', 'pla_esta_ide = 1', 'pla_ide DESC', false, 1)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoPlan()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 04:18:05 --> Undefined array key "tramos"
+in APPPATH\Controllers\Monitoreo.php on line 290.
+ 1 APPPATH\Controllers\Monitoreo.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tramos"', 'APPPATH\\Controllers\\Monitoreo.php', 290)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 04:18:50 --> array_push(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\Monitoreo.php on line 303.
+ 1 APPPATH\Controllers\Monitoreo.php(303): array_push(null, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarPlan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-15 04:19:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0) VALUES (:0:)' at line 1 in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(308): App\Models\Generaldb->insertData('sd_instrumento', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarPlan()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-15 04:19:24 --> Invalid file: monitoreo/instrumentos.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoreo/instrumentos.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/instrumentos', [], true)
+ 3 APPPATH\Controllers\Monitoreo.php(322): view('monitoreo/instrumentos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarPlan()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-15 04:22:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0) VALUES (:0:)' at line 1 in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(308): App\Models\Generaldb->insertData('sd_instrumento', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarPlan()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-15 04:22:20 --> Invalid file: monitoreo/instrumentos.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoreo/instrumentos.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/instrumentos', [], true)
+ 3 APPPATH\Controllers\Monitoreo.php(322): view('monitoreo/instrumentos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarPlan()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-15 04:24:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0) VALUES (:0:)' at line 1 in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(308): App\Models\Generaldb->insertData('sd_instrumento', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarPlan()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-15 04:24:56 --> Invalid file: monitoreo/instrumentos.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoreo/instrumentos.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/instrumentos', [], true)
+ 3 APPPATH\Controllers\Monitoreo.php(322): view('monitoreo/instrumentos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarPlan()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-15 04:27:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0) VALUES (:0:)' at line 1 in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(308): App\Models\Generaldb->insertData('sd_plan_instrum...', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarPlan()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-15 04:50:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0, 1) VALUES (:0:, :1:)' at line 1 in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(308): App\Models\Generaldb->insertData('sd_plan_instrum...', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarPlan()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-15 04:53:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0, 1) VALUES (:0:, :1:)' at line 1 in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(308): App\Models\Generaldb->insertData('sd_plan_instrum...', Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarPlan()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-15 05:54:40 --> mysqli_sql_exception: Unknown column 'sd_instrumento.ite_asp_ide' in 'order clause' in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(371): App\Models\Generaldb->selectSomeDataJoin('*', 'sd_plan', 'sd_plan.pla_ide...', 'sd_instrumento....', false, false, Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->getVerPlan()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-15 05:54:40 --> Unknown column 'sd_instrumento.ite_asp_ide' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `sd_plan`
+JOIN `sd_plan_instrumento` ON `sd_plan_instrumento`.`pla_ide` = `sd_plan`.`pla_ide`
+JOIN `sd_instrumento` ON `sd_instrumento`.`ins_ide` = `sd_plan_instrumento`.`ins_ide`
+WHERE `sd_plan`.`pla_ide` = 7
+ORDER BY `sd_instrumento`.`ite_asp_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `sd_plan`
+JOIN `sd_plan_instrumento` ON `sd_plan_instrumento`.`pla_ide` = `sd_plan`.`pla_ide`
+JOIN `sd_instrumento` ON `sd_instrumento`.`ins_ide` = `sd_plan_instrumento`.`ins_ide`
+WHERE `sd_plan`.`pla_ide` = 7
+ORDER BY `sd_instrumento`.`ite_asp_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `sd_plan`
+JOIN `sd_plan_instrumento` ON `sd_plan_instrumento`.`pla_ide` = `sd_plan`.`pla_ide`
+JOIN `sd_instrumento` ON `sd_instrumento`.`ins_ide` = `sd_plan_instrumento`.`ins_ide`
+WHERE `sd_plan`.`pla_ide` = 7
+ORDER BY `sd_instrumento`.`ite_asp_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `sd_plan`
+JOIN `sd_plan_instrumento` ON `sd_plan_instrumento`.`pla_ide` = `sd_plan`.`pla_ide`
+JOIN `sd_instrumento` ON `sd_instrumento`.`ins_ide` = `sd_plan_instrumento`.`ins_ide`
+WHERE `sd_plan`.`pla_ide` = 7
+ORDER BY `sd_instrumento`.`ite_asp_ide`', [], false)
+ 5 APPPATH\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoreo.php(371): App\Models\Generaldb->selectSomeDataJoin('*', 'sd_plan', 'sd_plan.pla_ide = 7 ', 'sd_instrumento.ite_asp_ide', false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVerPlan()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-15 05:55:39 --> Undefined array key 0
+in APPPATH\Views\monitoreo\plan\asignar_muestra.php on line 7.
+ 1 APPPATH\Views\monitoreo\plan\asignar_muestra.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/asignar_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(391): view('monitoreo/plan/asignar_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVerPlan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

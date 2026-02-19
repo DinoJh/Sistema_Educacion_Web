@@ -1,0 +1,981 @@
+CRITICAL - 2024-01-05 05:37:32 --> File "05featuredemo.xlsx" does not exist.
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('05featuredemo.xlsx')
+ 2 APPPATH\Controllers\Informes2.php(280): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('05featuredemo.xlsx')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 05:38:46 --> File "05featuredemo.xlsx" does not exist.
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('05featuredemo.xlsx')
+ 2 APPPATH\Controllers\Informes2.php(281): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('05featuredemo.xlsx')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 05:39:15 --> File "05featuredemo.xlsx" does not exist.
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('05featuredemo.xlsx')
+ 2 APPPATH\Controllers\Informes2.php(280): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('05featuredemo.xlsx')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 05:42:41 --> File "05featuredemo.xlsx" does not exist.
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('05featuredemo.xlsx')
+ 2 APPPATH\Controllers\Informes2.php(281): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('05featuredemo.xlsx')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 05:42:43 --> File "05featuredemo.xlsx" does not exist.
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('05featuredemo.xlsx')
+ 2 APPPATH\Controllers\Informes2.php(281): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('05featuredemo.xlsx')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 05:42:57 --> Your requested sheet index: 1 is out of bounds. The actual number of sheets is 1.
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php on line 698.
+ 1 APPPATH\Controllers\Informes2.php(285): PhpOffice\PhpSpreadsheet\Spreadsheet->getSheet(1)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 06:05:17 --> No writer found for type Excel2007
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php on line 63.
+ 1 APPPATH\Controllers\Informes2.php(342): PhpOffice\PhpSpreadsheet\IOFactory::createWriter(Object(PhpOffice\PhpSpreadsheet\Spreadsheet), 'Excel2007')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer2()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 06:05:18 --> No writer found for type Excel2007
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php on line 63.
+ 1 APPPATH\Controllers\Informes2.php(342): PhpOffice\PhpSpreadsheet\IOFactory::createWriter(Object(PhpOffice\PhpSpreadsheet\Spreadsheet), 'Excel2007')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer2()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 06:05:21 --> No writer found for type Excel2007
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php on line 63.
+ 1 APPPATH\Controllers\Informes2.php(342): PhpOffice\PhpSpreadsheet\IOFactory::createWriter(Object(PhpOffice\PhpSpreadsheet\Spreadsheet), 'Excel2007')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer2()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 06:05:22 --> No writer found for type Excel2007
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php on line 63.
+ 1 APPPATH\Controllers\Informes2.php(342): PhpOffice\PhpSpreadsheet\IOFactory::createWriter(Object(PhpOffice\PhpSpreadsheet\Spreadsheet), 'Excel2007')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer2()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 06:05:27 --> No writer found for type Excel2007
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php on line 63.
+ 1 APPPATH\Controllers\Informes2.php(342): PhpOffice\PhpSpreadsheet\IOFactory::createWriter(Object(PhpOffice\PhpSpreadsheet\Spreadsheet), 'Excel2007')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer2()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 06:05:31 --> No writer found for type xls
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php on line 63.
+ 1 APPPATH\Controllers\Informes2.php(342): PhpOffice\PhpSpreadsheet\IOFactory::createWriter(Object(PhpOffice\PhpSpreadsheet\Spreadsheet), 'xls')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer2()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 06:05:32 --> No writer found for type xls
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php on line 63.
+ 1 APPPATH\Controllers\Informes2.php(342): PhpOffice\PhpSpreadsheet\IOFactory::createWriter(Object(PhpOffice\PhpSpreadsheet\Spreadsheet), 'xls')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer2()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 06:05:36 --> No writer found for type xls
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php on line 63.
+ 1 APPPATH\Controllers\Informes2.php(342): PhpOffice\PhpSpreadsheet\IOFactory::createWriter(Object(PhpOffice\PhpSpreadsheet\Spreadsheet), 'xls')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer2()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 06:05:37 --> No writer found for type xls
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php on line 63.
+ 1 APPPATH\Controllers\Informes2.php(342): PhpOffice\PhpSpreadsheet\IOFactory::createWriter(Object(PhpOffice\PhpSpreadsheet\Spreadsheet), 'xls')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer2()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 06:05:42 --> No writer found for type xls
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php on line 63.
+ 1 APPPATH\Controllers\Informes2.php(342): PhpOffice\PhpSpreadsheet\IOFactory::createWriter(Object(PhpOffice\PhpSpreadsheet\Spreadsheet), 'xls')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer2()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 06:36:27 --> fopen(D:\wamp\www\simondrep\writable\formatos/Aprendizaje_2023_Inicial.xlsx): Failed to open stream: No such file or directory
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(D:\\wamp\\www\\simondrep\\writable\\formatos/Aprendizaje_2023_Inicial.xlsx): Failed to open stream: No such file or directory', 'FCPATH\\vendor\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Writer\\BaseWriter.php', 128)
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php(128): fopen('FCPATH\\writable\\formatos/Aprendizaje_2023_Inicial.xlsx', 'wb')
+ 3 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(546): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('FCPATH\\writable\\formatos/Aprendizaje_2023_Inicial.xlsx')
+ 4 APPPATH\Controllers\Informes2.php(385): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('FCPATH\\writable\\formatos/Aprendizaje_2023_Inicial.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getGenerarExcel()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 06:38:51 --> fopen(hola2.xlsx): Failed to open stream: Resource temporarily unavailable
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(hola2.xlsx): Failed to open stream: Resource temporarily unavailable', 'FCPATH\\vendor\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Writer\\BaseWriter.php', 128)
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php(128): fopen('FCPATH\\hola2.xlsx', 'wb')
+ 3 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(546): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('FCPATH\\hola2.xlsx')
+ 4 APPPATH\Controllers\Informes2.php(361): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('FCPATH\\hola2.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer3()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 06:45:13 --> fopen(hola3.xlsx): Failed to open stream: Resource temporarily unavailable
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(hola3.xlsx): Failed to open stream: Resource temporarily unavailable', 'FCPATH\\vendor\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Writer\\BaseWriter.php', 128)
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php(128): fopen('FCPATH\\hola3.xlsx', 'wb')
+ 3 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(546): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('FCPATH\\hola3.xlsx')
+ 4 APPPATH\Controllers\Informes2.php(362): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('FCPATH\\hola3.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer3()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 07:02:50 --> File "./public/formatos/informes/aprendizajes_2023_inicial.xlsx" does not exist.
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('./public/formatos/informes/aprendizajes_2023_inicial.xlsx')
+ 2 APPPATH\Controllers\Informes2.php(351): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('./public/formatos/informes/aprendizajes_2023_inicial.xlsx')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer3()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 07:03:29 --> File "./public/formatos/informes/aprendizajes_2023_inicial.xlsx" does not exist.
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('./public/formatos/informes/aprendizajes_2023_inicial.xlsx')
+ 2 APPPATH\Controllers\Informes2.php(351): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('./public/formatos/informes/aprendizajes_2023_inicial.xlsx')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer3()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 07:03:32 --> File "./public/formatos/informes/aprendizajes_2023_inicial.xlsx" does not exist.
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php(135): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('./public/formatos/informes/aprendizajes_2023_inicial.xlsx')
+ 2 APPPATH\Controllers\Informes2.php(351): PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile('./public/formatos/informes/aprendizajes_2023_inicial.xlsx')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer3()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-05 10:02:59 --> mysqli_sql_exception: Unknown column '_ide' in 'on clause' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Controllers\Formatos.php(29): App\Models\Generaldb->selectSomeDataJoin('*', 'iiee', '\r\n             ...', false, false, false, Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Formatos->getInicial()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-05 10:02:59 --> Unknown column '_ide' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `iiee`
+JOIN `areas` ON `_ide` = `iiee__ide`
+JOIN `caracteristicas` ON `_ide` = `iiee__ide`
+JOIN `ccpp` ON `_ide` = `iiee__ide`
+JOIN `dres` ON `dres_ide` = `iiee_dres_ide`
+JOIN `estados` ON `esta_ide` = `iiee_esta_ide`
+JOIN `formas` ON `form_ide` = `iiee_form_ide`
+JOIN `genero_alumnos` ON `_ide` = `iiee__ide`
+JOIN `gestion` ON `gest_ide` = `iiee_gest_ide`
+JOIN `gestion_dependencia` ON `_ide` = `iiee__ide`
+JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+JOIN `tipos_programas` ON `_ide` = `iiee__ide`
+JOIN `turnos` ON `turn_ide` = `iiee_turn_ide`
+JOIN `ubigeos` ON `_ide` = `iiee__ide`
+JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+WHERE 
+                iiee_ide=13685
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `iiee`
+JOIN `areas` ON `_ide` = `iiee__ide`
+JOIN `caracteristicas` ON `_ide` = `iiee__ide`
+JOIN `ccpp` ON `_ide` = `iiee__ide`
+JOIN `dres` ON `dres_ide` = `iiee_dres_ide`
+JOIN `estados` ON `esta_ide` = `iiee_esta_ide`
+JOIN `formas` ON `form_ide` = `iiee_form_ide`
+JOIN `genero_alumnos` ON `_ide` = `iiee__ide`
+JOIN `gestion` ON `gest_ide` = `iiee_gest_ide`
+JOIN `gestion_dependencia` ON `_ide` = `iiee__ide`
+JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+JOIN `tipos_programas` ON `_ide` = `iiee__ide`
+JOIN `turnos` ON `turn_ide` = `iiee_turn_ide`
+JOIN `ubigeos` ON `_ide` = `iiee__ide`
+JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+WHERE 
+                iiee_ide=13685
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `iiee`
+JOIN `areas` ON `_ide` = `iiee__ide`
+JOIN `caracteristicas` ON `_ide` = `iiee__ide`
+JOIN `ccpp` ON `_ide` = `iiee__ide`
+JOIN `dres` ON `dres_ide` = `iiee_dres_ide`
+JOIN `estados` ON `esta_ide` = `iiee_esta_ide`
+JOIN `formas` ON `form_ide` = `iiee_form_ide`
+JOIN `genero_alumnos` ON `_ide` = `iiee__ide`
+JOIN `gestion` ON `gest_ide` = `iiee_gest_ide`
+JOIN `gestion_dependencia` ON `_ide` = `iiee__ide`
+JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+JOIN `tipos_programas` ON `_ide` = `iiee__ide`
+JOIN `turnos` ON `turn_ide` = `iiee_turn_ide`
+JOIN `ubigeos` ON `_ide` = `iiee__ide`
+JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+WHERE 
+                iiee_ide=13685
+            ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `iiee`
+JOIN `areas` ON `_ide` = `iiee__ide`
+JOIN `caracteristicas` ON `_ide` = `iiee__ide`
+JOIN `ccpp` ON `_ide` = `iiee__ide`
+JOIN `dres` ON `dres_ide` = `iiee_dres_ide`
+JOIN `estados` ON `esta_ide` = `iiee_esta_ide`
+JOIN `formas` ON `form_ide` = `iiee_form_ide`
+JOIN `genero_alumnos` ON `_ide` = `iiee__ide`
+JOIN `gestion` ON `gest_ide` = `iiee_gest_ide`
+JOIN `gestion_dependencia` ON `_ide` = `iiee__ide`
+JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+JOIN `tipos_programas` ON `_ide` = `iiee__ide`
+JOIN `turnos` ON `turn_ide` = `iiee_turn_ide`
+JOIN `ubigeos` ON `_ide` = `iiee__ide`
+JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+WHERE 
+                iiee_ide=13685
+            ', [], false)
+ 5 APPPATH\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Formatos.php(29): App\Models\Generaldb->selectSomeDataJoin('*', 'iiee', '
+                iiee_ide=13685
+            ', false, false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Formatos->getInicial()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 10:28:07 --> filesize(): stat failed for nombre.xlsx
+in APPPATH\Controllers\Formatos.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for nombre.xlsx', 'APPPATH\\Controllers\\Formatos.php', 42)
+ 2 APPPATH\Controllers\Formatos.php(42): filesize('nombre.xlsx')
+ 3 APPPATH\Controllers\Formatos.php(101): App\Controllers\Formatos->cabecera('nombre.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Formatos->getInicial()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 10:28:11 --> filesize(): stat failed for nombre.xlsx
+in APPPATH\Controllers\Formatos.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for nombre.xlsx', 'APPPATH\\Controllers\\Formatos.php', 42)
+ 2 APPPATH\Controllers\Formatos.php(42): filesize('nombre.xlsx')
+ 3 APPPATH\Controllers\Formatos.php(101): App\Controllers\Formatos->cabecera('nombre.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Formatos->getInicial()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 10:28:19 --> filesize(): stat failed for nombre.xlsx
+in APPPATH\Controllers\Formatos.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for nombre.xlsx', 'APPPATH\\Controllers\\Formatos.php', 42)
+ 2 APPPATH\Controllers\Formatos.php(42): filesize('nombre.xlsx')
+ 3 APPPATH\Controllers\Formatos.php(101): App\Controllers\Formatos->cabecera('nombre.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Formatos->getInicial()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 10:28:20 --> filesize(): stat failed for nombre.xlsx
+in APPPATH\Controllers\Formatos.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for nombre.xlsx', 'APPPATH\\Controllers\\Formatos.php', 42)
+ 2 APPPATH\Controllers\Formatos.php(42): filesize('nombre.xlsx')
+ 3 APPPATH\Controllers\Formatos.php(101): App\Controllers\Formatos->cabecera('nombre.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Formatos->getInicial()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 10:28:24 --> filesize(): stat failed for nombre.xlsx
+in APPPATH\Controllers\Formatos.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for nombre.xlsx', 'APPPATH\\Controllers\\Formatos.php', 42)
+ 2 APPPATH\Controllers\Formatos.php(42): filesize('nombre.xlsx')
+ 3 APPPATH\Controllers\Formatos.php(101): App\Controllers\Formatos->cabecera('nombre.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Formatos->getInicial()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 10:28:32 --> filesize(): stat failed for nombre.xlsx
+in APPPATH\Controllers\Formatos.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for nombre.xlsx', 'APPPATH\\Controllers\\Formatos.php', 42)
+ 2 APPPATH\Controllers\Formatos.php(42): filesize('nombre.xlsx')
+ 3 APPPATH\Controllers\Formatos.php(101): App\Controllers\Formatos->cabecera('nombre.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Formatos->getInicial()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 10:29:05 --> filesize(): stat failed for nombre.xlsx
+in APPPATH\Controllers\Formatos.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for nombre.xlsx', 'APPPATH\\Controllers\\Formatos.php', 42)
+ 2 APPPATH\Controllers\Formatos.php(42): filesize('nombre.xlsx')
+ 3 APPPATH\Controllers\Formatos.php(101): App\Controllers\Formatos->cabecera('nombre.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Formatos->getInicial()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 10:31:03 --> filesize(): stat failed for nombre.xlsx
+in APPPATH\Controllers\Formatos.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for nombre.xlsx', 'APPPATH\\Controllers\\Formatos.php', 42)
+ 2 APPPATH\Controllers\Formatos.php(42): filesize('nombre.xlsx')
+ 3 APPPATH\Controllers\Formatos.php(101): App\Controllers\Formatos->cabecera('nombre.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Formatos->getInicial()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 10:32:05 --> filesize(): stat failed for nombre.xlsx
+in APPPATH\Controllers\Formatos.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filesize(): stat failed for nombre.xlsx', 'APPPATH\\Controllers\\Formatos.php', 42)
+ 2 APPPATH\Controllers\Formatos.php(42): filesize('nombre.xlsx')
+ 3 APPPATH\Controllers\Formatos.php(101): App\Controllers\Formatos->cabecera('nombre.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Formatos->getInicial()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 10:45:37 --> Undefined variable $nuevoArchivoPath
+in APPPATH\Controllers\Formatos.php on line 110.
+ 1 APPPATH\Controllers\Formatos.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nuevoArchivoPath', 'APPPATH\\Controllers\\Formatos.php', 110)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Formatos->getInicial()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 10:58:22 --> fopen(./public/formatos/informes/descargas/16inicial_2023.xlsx): Failed to open stream: No such file or directory
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(./public/formatos/informes/descargas/16inicial_2023.xlsx): Failed to open stream: No such file or directory', 'FCPATH\\vendor\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Writer\\BaseWriter.php', 128)
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php(128): fopen('./public/formatos/informes/descargas/16inicial_2023.xlsx', 'wb')
+ 3 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(546): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('./public/formatos/informes/descargas/16inicial_2023.xlsx')
+ 4 APPPATH\Controllers\Formatos.php(109): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('./public/formatos/informes/descargas/16inicial_2023.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Formatos->getInicial()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 11:40:27 --> Undefined property: stdClass::$turno_nombre
+in APPPATH\Controllers\Formatos.php on line 64.
+ 1 APPPATH\Controllers\Formatos.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$turno_nombre', 'APPPATH\\Controllers\\Formatos.php', 64)
+ 2 APPPATH\Controllers\Formatos.php(134): App\Controllers\Formatos->datosBase(Object(PhpOffice\PhpSpreadsheet\Spreadsheet), Object(stdClass), Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Formatos->getInicial()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 11:40:28 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 50335744 bytes)
+in APPPATH\Views\errors\html\error_exception.php on line 96.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-05 11:40:56 --> Undefined property: stdClass::$turno_nombre
+in APPPATH\Controllers\Formatos.php on line 64.
+ 1 APPPATH\Controllers\Formatos.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$turno_nombre', 'APPPATH\\Controllers\\Formatos.php', 64)
+ 2 APPPATH\Controllers\Formatos.php(134): App\Controllers\Formatos->datosBase(Object(PhpOffice\PhpSpreadsheet\Spreadsheet), Object(stdClass), Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Formatos->getInicial()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 11:40:56 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 50335744 bytes)
+in APPPATH\Views\errors\html\error_exception.php on line 96.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-05 11:41:15 --> Undefined property: stdClass::$turno_nombre
+in APPPATH\Controllers\Formatos.php on line 64.
+ 1 APPPATH\Controllers\Formatos.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$turno_nombre', 'APPPATH\\Controllers\\Formatos.php', 64)
+ 2 APPPATH\Controllers\Formatos.php(134): App\Controllers\Formatos->datosBase(Object(PhpOffice\PhpSpreadsheet\Spreadsheet), Object(stdClass), Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Formatos->getInicial()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 11:41:15 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 50335744 bytes)
+in APPPATH\Views\errors\html\error_exception.php on line 96.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-05 11:42:23 --> Undefined property: stdClass::$turno_nombre
+in APPPATH\Controllers\Formatos.php on line 64.
+ 1 APPPATH\Controllers\Formatos.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$turno_nombre', 'APPPATH\\Controllers\\Formatos.php', 64)
+ 2 APPPATH\Controllers\Formatos.php(134): App\Controllers\Formatos->datosBase(Object(PhpOffice\PhpSpreadsheet\Spreadsheet), Object(stdClass), Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Formatos->getInicial()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 11:42:24 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 50335744 bytes)
+in APPPATH\Views\errors\html\error_exception.php on line 96.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-05 11:42:45 --> Undefined property: stdClass::$turno_nombre
+in APPPATH\Controllers\Formatos.php on line 64.
+ 1 APPPATH\Controllers\Formatos.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$turno_nombre', 'APPPATH\\Controllers\\Formatos.php', 64)
+ 2 APPPATH\Controllers\Formatos.php(134): App\Controllers\Formatos->datosBase(Object(PhpOffice\PhpSpreadsheet\Spreadsheet), Object(stdClass), Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Formatos->getInicial()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 11:43:13 --> Undefined property: stdClass::$inter_prog
+in APPPATH\Controllers\Formatos.php on line 82.
+ 1 APPPATH\Controllers\Formatos.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$inter_prog', 'APPPATH\\Controllers\\Formatos.php', 82)
+ 2 APPPATH\Controllers\Formatos.php(134): App\Controllers\Formatos->datosBase(Object(PhpOffice\PhpSpreadsheet\Spreadsheet), Object(stdClass), Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Formatos->getInicial()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formatos))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 13:04:06 --> Undefined array key 0
+in APPPATH\Controllers\Informes2.php on line 285.
+ 1 APPPATH\Controllers\Informes2.php(285): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Informes2.php', 285)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 13:04:12 --> Undefined array key 0
+in APPPATH\Controllers\Informes2.php on line 285.
+ 1 APPPATH\Controllers\Informes2.php(285): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Informes2.php', 285)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 13:05:00 --> Undefined array key 0
+in APPPATH\Controllers\Informes2.php on line 285.
+ 1 APPPATH\Controllers\Informes2.php(285): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Informes2.php', 285)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 13:05:06 --> Undefined array key 0
+in APPPATH\Controllers\Informes2.php on line 285.
+ 1 APPPATH\Controllers\Informes2.php(285): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Informes2.php', 285)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 13:06:25 --> Undefined variable $nivel
+in APPPATH\Views\informes2\vcumple.php on line 31.
+ 1 APPPATH\Views\informes2\vcumple.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nivel', 'APPPATH\\Views\\informes2\\vcumple.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\informes2\\vcumple.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('informes2/vcumple', [], true)
+ 5 APPPATH\Controllers\Informes2.php(289): view('informes2/vcumple')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 13:06:47 --> Undefined variable $nivel
+in APPPATH\Views\informes2\vcumple.php on line 31.
+ 1 APPPATH\Views\informes2\vcumple.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nivel', 'APPPATH\\Views\\informes2\\vcumple.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\informes2\\vcumple.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('informes2/vcumple', [], true)
+ 5 APPPATH\Controllers\Informes2.php(289): view('informes2/vcumple', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 13:08:29 --> Undefined variable $nivel
+in APPPATH\Views\informes2\vcumple.php on line 38.
+ 1 APPPATH\Views\informes2\vcumple.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nivel', 'APPPATH\\Views\\informes2\\vcumple.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\informes2\\vcumple.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('informes2/vcumple', [], true)
+ 5 APPPATH\Controllers\Informes2.php(289): view('informes2/vcumple', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 13:08:32 --> Undefined variable $nivel
+in APPPATH\Views\informes2\vcumple.php on line 38.
+ 1 APPPATH\Views\informes2\vcumple.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nivel', 'APPPATH\\Views\\informes2\\vcumple.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\informes2\\vcumple.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('informes2/vcumple', [], true)
+ 5 APPPATH\Controllers\Informes2.php(289): view('informes2/vcumple', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-05 13:21:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'info_anio = 2023' at line 6 in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `info_id...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `info_id...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `info_id...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `info_id...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Controllers\Informes2.php(323): App\Models\Generaldb->selectSomeDataJoin('\r\n             ...', 'com_informes', '\r\n             ...')
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Informes2->postInformesNivelAnio()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-05 13:21:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'info_anio = 2023' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `info_ide` as `id`, concat(info_nombre, \' (\', `info_alias`, \')\') as nombre
+FROM `com_informes`
+WHERE 
+                info_nive_ide = 11 AND
+                info_cate_ide = 1
+                info_anio = 2023
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `info_ide` as `id`, concat(info_nombre, \' (\', `info_alias`, \')\') as nombre
+FROM `com_informes`
+WHERE 
+                info_nive_ide = 11 AND
+                info_cate_ide = 1
+                info_anio = 2023
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `info_ide` as `id`, concat(info_nombre, \' (\', `info_alias`, \')\') as nombre
+FROM `com_informes`
+WHERE 
+                info_nive_ide = 11 AND
+                info_cate_ide = 1
+                info_anio = 2023
+            ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `info_ide` as `id`, concat(info_nombre, \' (\', `info_alias`, \')\') as nombre
+FROM `com_informes`
+WHERE 
+                info_nive_ide = 11 AND
+                info_cate_ide = 1
+                info_anio = 2023
+            ', [], false)
+ 5 APPPATH\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Informes2.php(323): App\Models\Generaldb->selectSomeDataJoin('
+                info_ide as id,
+                concat(info_nombre,\' (\',info_alias,\')\') as nombre
+
+            ', 'com_informes', '
+                info_nive_ide = 11 AND
+                info_cate_ide = 1
+                info_anio = 2023
+            ')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->postInformesNivelAnio()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-05 13:22:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'info_anio = 2023' at line 6 in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `info_id...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `info_id...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `info_id...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `info_id...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Controllers\Informes2.php(323): App\Models\Generaldb->selectSomeDataJoin('\r\n             ...', 'com_informes', '\r\n             ...')
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Informes2->postInformesNivelAnio()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-05 13:22:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'info_anio = 2023' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `info_ide` as `id`, concat(info_nombre, \' (\', `info_alias`, \')\') as nombre
+FROM `com_informes`
+WHERE 
+                info_nive_ide = 11 AND
+                info_cate_ide = 1
+                info_anio = 2023
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `info_ide` as `id`, concat(info_nombre, \' (\', `info_alias`, \')\') as nombre
+FROM `com_informes`
+WHERE 
+                info_nive_ide = 11 AND
+                info_cate_ide = 1
+                info_anio = 2023
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `info_ide` as `id`, concat(info_nombre, \' (\', `info_alias`, \')\') as nombre
+FROM `com_informes`
+WHERE 
+                info_nive_ide = 11 AND
+                info_cate_ide = 1
+                info_anio = 2023
+            ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `info_ide` as `id`, concat(info_nombre, \' (\', `info_alias`, \')\') as nombre
+FROM `com_informes`
+WHERE 
+                info_nive_ide = 11 AND
+                info_cate_ide = 1
+                info_anio = 2023
+            ', [], false)
+ 5 APPPATH\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Informes2.php(323): App\Models\Generaldb->selectSomeDataJoin('
+                info_ide as id,
+                concat(info_nombre,\' (\',info_alias,\')\') as nombre
+
+            ', 'com_informes', '
+                info_nive_ide = 11 AND
+                info_cate_ide = 1
+                info_anio = 2023
+            ')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->postInformesNivelAnio()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-05 13:22:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'info_anio IS NULL' at line 6 in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `info_id...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `info_id...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `info_id...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `info_id...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Controllers\Informes2.php(323): App\Models\Generaldb->selectSomeDataJoin('\r\n             ...', 'com_informes', '\r\n             ...')
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Informes2->postInformesNivelAnio()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-05 13:22:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'info_anio IS NULL' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `info_ide` as `id`, concat(info_nombre, \' (\', `info_alias`, \')\') as nombre
+FROM `com_informes`
+WHERE 
+                info_nive_ide = 11 AND
+                info_cate_ide = 1
+                info_anio IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `info_ide` as `id`, concat(info_nombre, \' (\', `info_alias`, \')\') as nombre
+FROM `com_informes`
+WHERE 
+                info_nive_ide = 11 AND
+                info_cate_ide = 1
+                info_anio IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `info_ide` as `id`, concat(info_nombre, \' (\', `info_alias`, \')\') as nombre
+FROM `com_informes`
+WHERE 
+                info_nive_ide = 11 AND
+                info_cate_ide = 1
+                info_anio IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `info_ide` as `id`, concat(info_nombre, \' (\', `info_alias`, \')\') as nombre
+FROM `com_informes`
+WHERE 
+                info_nive_ide = 11 AND
+                info_cate_ide = 1
+                info_anio IS NULL', [], false)
+ 5 APPPATH\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Informes2.php(323): App\Models\Generaldb->selectSomeDataJoin('
+                info_ide as id,
+                concat(info_nombre,\' (\',info_alias,\')\') as nombre
+
+            ', 'com_informes', '
+                info_nive_ide = 11 AND
+                info_cate_ide = 1
+                info_anio = 
+            ')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->postInformesNivelAnio()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-05 13:23:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'info_anio = 2023' at line 6 in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `info_id...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `info_id...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `info_id...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `info_id...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Controllers\Informes2.php(323): App\Models\Generaldb->selectSomeDataJoin('\r\n             ...', 'com_informes', '\r\n             ...')
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Informes2->postInformesNivelAnio()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-05 13:23:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'info_anio = 2023' at line 6
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `info_ide` as `id`, concat(info_nombre, \' (\', `info_alias`, \')\') as nombre
+FROM `com_informes`
+WHERE 
+                info_nive_ide = 11 AND
+                info_cate_ide = 1
+                info_anio = 2023
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `info_ide` as `id`, concat(info_nombre, \' (\', `info_alias`, \')\') as nombre
+FROM `com_informes`
+WHERE 
+                info_nive_ide = 11 AND
+                info_cate_ide = 1
+                info_anio = 2023
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `info_ide` as `id`, concat(info_nombre, \' (\', `info_alias`, \')\') as nombre
+FROM `com_informes`
+WHERE 
+                info_nive_ide = 11 AND
+                info_cate_ide = 1
+                info_anio = 2023
+            ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `info_ide` as `id`, concat(info_nombre, \' (\', `info_alias`, \')\') as nombre
+FROM `com_informes`
+WHERE 
+                info_nive_ide = 11 AND
+                info_cate_ide = 1
+                info_anio = 2023
+            ', [], false)
+ 5 APPPATH\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Informes2.php(323): App\Models\Generaldb->selectSomeDataJoin('
+                info_ide as id,
+                concat(info_nombre,\' (\',info_alias,\')\') as nombre
+
+            ', 'com_informes', '
+                info_nive_ide = 11 AND
+                info_cate_ide = 1
+                info_anio = 2023
+            ')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->postInformesNivelAnio()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 13:29:30 --> Undefined variable $compo
+in APPPATH\Views\informes2\vcumple.php on line 15.
+ 1 APPPATH\Views\informes2\vcumple.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compo', 'APPPATH\\Views\\informes2\\vcumple.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\informes2\\vcumple.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('informes2/vcumple', [], true)
+ 5 APPPATH\Controllers\Informes2.php(305): view('informes2/vcumple', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 13:29:33 --> Undefined variable $compo
+in APPPATH\Views\informes2\vcumple.php on line 15.
+ 1 APPPATH\Views\informes2\vcumple.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compo', 'APPPATH\\Views\\informes2\\vcumple.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\informes2\\vcumple.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('informes2/vcumple', [], true)
+ 5 APPPATH\Controllers\Informes2.php(305): view('informes2/vcumple', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 13:30:17 --> Undefined variable $compo
+in APPPATH\Views\informes2\vcumple.php on line 15.
+ 1 APPPATH\Views\informes2\vcumple.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compo', 'APPPATH\\Views\\informes2\\vcumple.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\informes2\\vcumple.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('informes2/vcumple', [], true)
+ 5 APPPATH\Controllers\Informes2.php(305): view('informes2/vcumple', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 13:30:24 --> Undefined variable $compo
+in APPPATH\Views\informes2\vcumple.php on line 15.
+ 1 APPPATH\Views\informes2\vcumple.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $compo', 'APPPATH\\Views\\informes2\\vcumple.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\informes2\\vcumple.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('informes2/vcumple', [], true)
+ 5 APPPATH\Controllers\Informes2.php(305): view('informes2/vcumple', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-05 13:50:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive' at line 4 in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Mgrilla.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Libraries\Lgrilla.php(182): App\Models\Mgrilla::getTotal('com_subidos', Array, Array, '(subi_archivo l...')
+#6 D:\wamp\www\simondrep\app\Libraries\Lgrilla.php(249): App\Libraries\Lgrilla->getData(10, 0, '')
+#7 D:\wamp\www\simondrep\app\Controllers\Informes2.php(424): App\Libraries\Lgrilla->mostrarDataGrilla('10', '', '', 'grilla_informes')
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfo()
+#9 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+#10 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-05 13:50:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = \'210001\'
+AND `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 1
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = \'210001\'
+AND `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 1
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = \'210001\'
+AND `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 1
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = :iiee_ugel_ide:
+AND `iiee_nive_ide` = :iiee_nive_ide:
+AND `iiee_esta_ide` = :iiee_esta_ide:
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')', [...], false)
+ 5 APPPATH\Models\Mgrilla.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Lgrilla.php(182): App\Models\Mgrilla::getTotal('com_subidos', [...], [...], '(subi_archivo like \'%%\' OR subi_create_at like \'%%\' OR iiee_codmod like \'%%\' OR iiee_cen_edu like \'%%\' OR ugel_nombre like \'%%\' OR nive_nombre like \'%%\' OR ubig_dpto like \'%%\' OR ubig_prov like \'%%\' OR ubig_dist like \'%%\' OR ccpp_nombre like \'%%\')')
+ 7 APPPATH\Libraries\Lgrilla.php(249): App\Libraries\Lgrilla->getData(10, 0, 'D:\\wamp\\www\\simondrep')
+ 8 APPPATH\Controllers\Informes2.php(424): App\Libraries\Lgrilla->mostrarDataGrilla('10', 'D:\\wamp\\www\\simondrep', 'D:\\wamp\\www\\simondrep', 'grilla_informes')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfo()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-05 13:56:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive' at line 4 in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Mgrilla.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Libraries\Lgrilla.php(182): App\Models\Mgrilla::getTotal('com_subidos', Array, Array, '(subi_archivo l...')
+#6 D:\wamp\www\simondrep\app\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, '')
+#7 D:\wamp\www\simondrep\app\Controllers\Informes2.php(430): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfo()
+#9 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+#10 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-05 13:56:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = \'210001\'
+AND `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 1
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = \'210001\'
+AND `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 1
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = \'210001\'
+AND `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 1
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = :iiee_ugel_ide:
+AND `iiee_nive_ide` = :iiee_nive_ide:
+AND `iiee_esta_ide` = :iiee_esta_ide:
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')', [...], false)
+ 5 APPPATH\Models\Mgrilla.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Lgrilla.php(182): App\Models\Mgrilla::getTotal('com_subidos', [...], [...], '(subi_archivo like \'%%\' OR subi_create_at like \'%%\' OR iiee_codmod like \'%%\' OR iiee_cen_edu like \'%%\' OR ugel_nombre like \'%%\' OR nive_nombre like \'%%\' OR ubig_dpto like \'%%\' OR ubig_prov like \'%%\' OR ubig_dist like \'%%\' OR ccpp_nombre like \'%%\')')
+ 7 APPPATH\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, 'D:\\wamp\\www\\simondrep')
+ 8 APPPATH\Controllers\Informes2.php(430): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfo()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-05 13:56:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive' at line 4 in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Mgrilla.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Libraries\Lgrilla.php(182): App\Models\Mgrilla::getTotal('com_subidos', Array, Array, '(subi_archivo l...')
+#6 D:\wamp\www\simondrep\app\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, '')
+#7 D:\wamp\www\simondrep\app\Controllers\Informes2.php(430): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfo()
+#9 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+#10 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-05 13:56:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = \'210001\'
+AND `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 1
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = \'210001\'
+AND `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 1
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = \'210001\'
+AND `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 1
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide` and `subi_info_ide` = 
+INNER JOIN `ugels` ON `ugel_ide` = `iiee_ugel_ide`
+INNER JOIN `niveles` ON `nive_ide` = `iiee_nive_ide`
+INNER JOIN `ubigeos` ON `ubig_ide` = `iiee_ubig_ide`
+INNER JOIN `ccpp` ON `ccpp_ide` = `iiee_ccpp_ide`
+WHERE `iiee_ugel_ide` = :iiee_ugel_ide:
+AND `iiee_nive_ide` = :iiee_nive_ide:
+AND `iiee_esta_ide` = :iiee_esta_ide:
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\' OR `iiee_codmod` like \'%%\' OR `iiee_cen_edu` like \'%%\' OR `ugel_nombre` like \'%%\' OR `nive_nombre` like \'%%\' OR `ubig_dpto` like \'%%\' OR `ubig_prov` like \'%%\' OR `ubig_dist` like \'%%\' OR `ccpp_nombre` like \'%%\')', [...], false)
+ 5 APPPATH\Models\Mgrilla.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Lgrilla.php(182): App\Models\Mgrilla::getTotal('com_subidos', [...], [...], '(subi_archivo like \'%%\' OR subi_create_at like \'%%\' OR iiee_codmod like \'%%\' OR iiee_cen_edu like \'%%\' OR ugel_nombre like \'%%\' OR nive_nombre like \'%%\' OR ubig_dpto like \'%%\' OR ubig_prov like \'%%\' OR ubig_dist like \'%%\' OR ccpp_nombre like \'%%\')')
+ 7 APPPATH\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, 'D:\\wamp\\www\\simondrep')
+ 8 APPPATH\Controllers\Informes2.php(430): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfo()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

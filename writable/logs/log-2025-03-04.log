@@ -1,0 +1,123 @@
+CRITICAL - 2025-03-04 07:25:16 --> Undefined variable $general
+in APPPATH/Controllers/Reportes.php on line 20.
+ 1 APPPATH/Controllers/Reportes.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $general', 'APPPATH/Controllers/Reportes.php', 20)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reportes->getAnexo2b()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-04 07:25:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3 in /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/customer/www/xurainc.com/public_html/monitoreo/app/Models/Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Reportes.php(24): App\Models\Generaldb->selectSomeData('*', '2024_anexo2b', '\r\n             ...')
+#6 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(927): App\Controllers\Reportes->getAnexo2b()
+#7 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+#8 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/customer/www/xurainc.com/public_html/monitoreo/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-03-04 07:25:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `2024_anexo2b`
+WHERE  IS NULL', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2024_anexo2b`
+WHERE  IS NULL')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2024_anexo2b`
+WHERE  IS NULL')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2024_anexo2b`
+WHERE  IS NULL', [], false)
+ 5 APPPATH/Models/Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Reportes.php(24): App\Models\Generaldb->selectSomeData('*', '2024_anexo2b', '
+                
+            ')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reportes->getAnexo2b()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-04 07:26:06 --> Allowed memory size of 805306368 bytes exhausted (tried to allocate 20480 bytes)
+in SYSTEMPATH/Database/MySQLi/Result.php on line 148.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2025-03-04 07:29:38 --> mysqli_sql_exception: Unknown column 'a.ane2_valor' in 'where clause' in /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/customer/www/xurainc.com/public_html/monitoreo/app/Models/Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Reportes.php(24): App\Models\Generaldb->selectSomeData('*', '2024_anexo2b', '\r\n             ...')
+#6 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(927): App\Controllers\Reportes->getAnexo2b()
+#7 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+#8 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/customer/www/xurainc.com/public_html/monitoreo/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-03-04 07:29:38 --> Unknown column 'a.ane2_valor' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `2024_anexo2b`
+WHERE 
+                a.ane2_valor <> \'0\'
+                and
+                a.ane2_campo = \'grado\'   
+            ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2024_anexo2b`
+WHERE 
+                a.ane2_valor <> \'0\'
+                and
+                a.ane2_campo = \'grado\'   
+            ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2024_anexo2b`
+WHERE 
+                a.ane2_valor <> \'0\'
+                and
+                a.ane2_campo = \'grado\'   
+            ')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2024_anexo2b`
+WHERE 
+                a.ane2_valor <> \'0\'
+                and
+                a.ane2_campo = \'grado\'   
+            ', [], false)
+ 5 APPPATH/Models/Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Reportes.php(24): App\Models\Generaldb->selectSomeData('*', '2024_anexo2b', '
+                a.ane2_valor <> \'0\'
+                and
+                a.ane2_campo = \'grado\'   
+            ')
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reportes->getAnexo2b()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-04 07:48:52 --> foreach() argument must be of type array|object, null given
+in APPPATH/Controllers/Reportes.php on line 32.
+ 1 APPPATH/Controllers/Reportes.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH/Controllers/Reportes.php', 32)
+ 2 APPPATH/Controllers/Reportes.php(48): App\Controllers\Reportes->getConsolCampo('grado')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reportes->getAnexo2b()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-04 08:03:00 --> Allowed memory size of 805306368 bytes exhausted (tried to allocate 20480 bytes)
+in APPPATH/Controllers/Reportes.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-04 08:09:38 --> Undefined constant "App\Controllers\c1"
+in APPPATH/Controllers/Reportes.php on line 49.
+ 1 APPPATH/Controllers/Reportes.php(66): App\Controllers\Reportes->getConsolCampo('grado', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reportes->getAnexo2b()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-04 08:10:40 --> Undefined constant "App\Controllers\c1"
+in APPPATH/Controllers/Reportes.php on line 49.
+ 1 APPPATH/Controllers/Reportes.php(66): App\Controllers\Reportes->getConsolCampo('grado', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Reportes->getAnexo2b()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

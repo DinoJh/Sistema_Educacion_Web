@@ -1,0 +1,247 @@
+ERROR - 2023-12-06 18:22:31 --> mysqli_sql_exception: Unknown column 'alt_nombre' in 'field list' in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `alt_ide...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alt_ide...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alt_ide...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `alt_ide...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(101): App\Models\Generaldb->selectSomeData('alt_ide as ide,...', 'sd_alternativa', 'alt_esta_ide = ...', 'asp_nombre')
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoItem()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-06 18:22:31 --> Unknown column 'alt_nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `alt_ide` as `ide`, `alt_nombre` as `nombre`
+FROM `sd_alternativa`
+WHERE `alt_esta_ide` = 1
+ORDER BY `asp_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alt_ide` as `ide`, `alt_nombre` as `nombre`
+FROM `sd_alternativa`
+WHERE `alt_esta_ide` = 1
+ORDER BY `asp_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alt_ide` as `ide`, `alt_nombre` as `nombre`
+FROM `sd_alternativa`
+WHERE `alt_esta_ide` = 1
+ORDER BY `asp_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `alt_ide` as `ide`, `alt_nombre` as `nombre`
+FROM `sd_alternativa`
+WHERE `alt_esta_ide` = 1
+ORDER BY `asp_nombre`', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoreo.php(101): App\Models\Generaldb->selectSomeData('alt_ide as ide, alt_nombre as nombre', 'sd_alternativa', 'alt_esta_ide = 1 ', 'asp_nombre')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoItem()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 18:22:35 --> mysqli_sql_exception: Unknown column 'alt_nombre' in 'field list' in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `alt_ide...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alt_ide...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alt_ide...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `alt_ide...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(101): App\Models\Generaldb->selectSomeData('alt_ide as ide,...', 'sd_alternativa', 'alt_esta_ide = ...', 'asp_nombre')
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoItem()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-06 18:22:35 --> Unknown column 'alt_nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `alt_ide` as `ide`, `alt_nombre` as `nombre`
+FROM `sd_alternativa`
+WHERE `alt_esta_ide` = 1
+ORDER BY `asp_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alt_ide` as `ide`, `alt_nombre` as `nombre`
+FROM `sd_alternativa`
+WHERE `alt_esta_ide` = 1
+ORDER BY `asp_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alt_ide` as `ide`, `alt_nombre` as `nombre`
+FROM `sd_alternativa`
+WHERE `alt_esta_ide` = 1
+ORDER BY `asp_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `alt_ide` as `ide`, `alt_nombre` as `nombre`
+FROM `sd_alternativa`
+WHERE `alt_esta_ide` = 1
+ORDER BY `asp_nombre`', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoreo.php(101): App\Models\Generaldb->selectSomeData('alt_ide as ide, alt_nombre as nombre', 'sd_alternativa', 'alt_esta_ide = 1 ', 'asp_nombre')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoItem()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 18:22:43 --> mysqli_sql_exception: Unknown column 'alt_nombre' in 'field list' in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `alt_ide...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alt_ide...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alt_ide...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `alt_ide...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(101): App\Models\Generaldb->selectSomeData('alt_ide as ide,...', 'sd_alternativa', 'alt_esta_ide = ...', 'asp_nombre')
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoItem()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-06 18:22:43 --> Unknown column 'alt_nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `alt_ide` as `ide`, `alt_nombre` as `nombre`
+FROM `sd_alternativa`
+WHERE `alt_esta_ide` = 1
+ORDER BY `asp_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `alt_ide` as `ide`, `alt_nombre` as `nombre`
+FROM `sd_alternativa`
+WHERE `alt_esta_ide` = 1
+ORDER BY `asp_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `alt_ide` as `ide`, `alt_nombre` as `nombre`
+FROM `sd_alternativa`
+WHERE `alt_esta_ide` = 1
+ORDER BY `asp_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `alt_ide` as `ide`, `alt_nombre` as `nombre`
+FROM `sd_alternativa`
+WHERE `alt_esta_ide` = 1
+ORDER BY `asp_nombre`', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoreo.php(101): App\Models\Generaldb->selectSomeData('alt_ide as ide, alt_nombre as nombre', 'sd_alternativa', 'alt_esta_ide = 1 ', 'asp_nombre')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoItem()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 18:23:39 --> mysqli_sql_exception: Unknown column 'ta_esta_ide' in 'where clause' in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ta_ide`...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ta_ide`...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ta_ide`...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ta_ide`...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(101): App\Models\Generaldb->selectSomeData('ta_ide as ide, ...', 'sd_tipo_alterna...', 'ta_esta_ide = 1...', 'asp_nombre')
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoItem()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-06 18:23:39 --> Unknown column 'ta_esta_ide' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ta_ide` as `ide`, `ta_nombre` as `nombre`
+FROM `sd_tipo_alternativa`
+WHERE `ta_esta_ide` = 1
+ORDER BY `asp_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ta_ide` as `ide`, `ta_nombre` as `nombre`
+FROM `sd_tipo_alternativa`
+WHERE `ta_esta_ide` = 1
+ORDER BY `asp_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ta_ide` as `ide`, `ta_nombre` as `nombre`
+FROM `sd_tipo_alternativa`
+WHERE `ta_esta_ide` = 1
+ORDER BY `asp_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ta_ide` as `ide`, `ta_nombre` as `nombre`
+FROM `sd_tipo_alternativa`
+WHERE `ta_esta_ide` = 1
+ORDER BY `asp_nombre`', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoreo.php(101): App\Models\Generaldb->selectSomeData('ta_ide as ide, ta_nombre as nombre', 'sd_tipo_alternativa', 'ta_esta_ide = 1 ', 'asp_nombre')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoItem()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-06 18:50:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'USING ()
+WHERE `ta_esta_ide` = 1
+ORDER BY `asp_nombre`' at line 3 in C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\wamp64\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ta_ide`...', 0)
+#1 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ta_ide`...')
+#2 C:\wamp64\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ta_ide`...')
+#3 C:\wamp64\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ta_ide`...', Array, false)
+#4 C:\wamp64\www\simondrep\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\simondrep\app\Controllers\Monitoreo.php(102): App\Models\Generaldb->selectSomeData('ta_ide as ide, ...', 'sd_tipo_alterna...', 'ta_esta_ide = 1...', 'asp_nombre', false, false, Array)
+#6 C:\wamp64\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoItem()
+#7 C:\wamp64\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 C:\wamp64\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-06 18:50:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'USING ()
+WHERE `ta_esta_ide` = 1
+ORDER BY `asp_nombre`' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ta_ide` as `ide`, `ta_nombre` as `nombre`
+FROM `sd_tipo_alternativa`
+LEFT JOIN  USING ()
+WHERE `ta_esta_ide` = 1
+ORDER BY `asp_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ta_ide` as `ide`, `ta_nombre` as `nombre`
+FROM `sd_tipo_alternativa`
+LEFT JOIN  USING ()
+WHERE `ta_esta_ide` = 1
+ORDER BY `asp_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ta_ide` as `ide`, `ta_nombre` as `nombre`
+FROM `sd_tipo_alternativa`
+LEFT JOIN  USING ()
+WHERE `ta_esta_ide` = 1
+ORDER BY `asp_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ta_ide` as `ide`, `ta_nombre` as `nombre`
+FROM `sd_tipo_alternativa`
+LEFT JOIN  USING ()
+WHERE `ta_esta_ide` = 1
+ORDER BY `asp_nombre`', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Monitoreo.php(102): App\Models\Generaldb->selectSomeData('ta_ide as ide, ta_nombre as nombre', 'sd_tipo_alternativa', 'ta_esta_ide = 1 ', 'asp_nombre', false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoItem()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 19:12:54 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\monitoreo\item_form.php on line 42.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/item_form', [], true)
+ 4 APPPATH\Controllers\Monitoreo.php(114): view('monitoreo/item_form', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoItem()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 19:21:53 --> Attempt to read property "aspecto_ide" on array
+in APPPATH\Views\monitoreo\item_form.php on line 11.
+ 1 APPPATH\Views\monitoreo\item_form.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "aspecto_ide" on array', 'APPPATH\\Views\\monitoreo\\item_form.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\item_form.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/item_form', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(114): view('monitoreo/item_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoItem()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 19:22:30 --> Attempt to read property "aspecto_ide" on array
+in APPPATH\Views\monitoreo\item_form.php on line 12.
+ 1 APPPATH\Views\monitoreo\item_form.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "aspecto_ide" on array', 'APPPATH\\Views\\monitoreo\\item_form.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\item_form.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/item_form', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(114): view('monitoreo/item_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoItem()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 19:22:59 --> Attempt to read property "asp_ide" on array
+in APPPATH\Views\monitoreo\item_form.php on line 12.
+ 1 APPPATH\Views\monitoreo\item_form.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "asp_ide" on array', 'APPPATH\\Views\\monitoreo\\item_form.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\item_form.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/item_form', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(114): view('monitoreo/item_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoItem()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-06 19:23:21 --> Attempt to read property "asp_ide" on array
+in APPPATH\Views\monitoreo\item_form.php on line 12.
+ 1 APPPATH\Views\monitoreo\item_form.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "asp_ide" on array', 'APPPATH\\Views\\monitoreo\\item_form.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\item_form.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/item_form', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(114): view('monitoreo/item_form', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getNuevoItem()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

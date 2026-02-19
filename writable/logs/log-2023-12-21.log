@@ -1,0 +1,734 @@
+CRITICAL - 2023-12-21 04:22:35 --> Undefined variable $body_modal_prog
+in APPPATH\Views\monitoreo\plan\programacion_instrumento.php on line 114.
+ 1 APPPATH\Views\monitoreo\plan\programacion_instrumento.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $body_modal_prog', 'APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php', 114)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_instrumento', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(918): view('monitoreo/plan/programacion_instrumento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getProgramacionInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 04:22:42 --> Undefined variable $body_modal_prog
+in APPPATH\Views\monitoreo\plan\programacion_instrumento.php on line 114.
+ 1 APPPATH\Views\monitoreo\plan\programacion_instrumento.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $body_modal_prog', 'APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php', 114)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_instrumento', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(918): view('monitoreo/plan/programacion_instrumento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getProgramacionInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 04:22:44 --> Undefined variable $body_modal_prog
+in APPPATH\Views\monitoreo\plan\programacion_instrumento.php on line 114.
+ 1 APPPATH\Views\monitoreo\plan\programacion_instrumento.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $body_modal_prog', 'APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php', 114)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_instrumento', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(918): view('monitoreo/plan/programacion_instrumento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getProgramacionInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 04:22:45 --> Undefined variable $body_modal_prog
+in APPPATH\Views\monitoreo\plan\programacion_instrumento.php on line 114.
+ 1 APPPATH\Views\monitoreo\plan\programacion_instrumento.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $body_modal_prog', 'APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php', 114)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_instrumento', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(918): view('monitoreo/plan/programacion_instrumento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getProgramacionInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 04:23:13 --> Undefined variable $body_modal_prog
+in APPPATH\Views\monitoreo\plan\programacion_instrumento.php on line 114.
+ 1 APPPATH\Views\monitoreo\plan\programacion_instrumento.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $body_modal_prog', 'APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php', 114)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_instrumento', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(918): view('monitoreo/plan/programacion_instrumento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getProgramacionInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 04:23:19 --> Undefined variable $body_modal_prog
+in APPPATH\Views\monitoreo\plan\programacion_instrumento.php on line 114.
+ 1 APPPATH\Views\monitoreo\plan\programacion_instrumento.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $body_modal_prog', 'APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php', 114)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_instrumento', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(918): view('monitoreo/plan/programacion_instrumento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getProgramacionInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 04:23:20 --> Undefined variable $body_modal_prog
+in APPPATH\Views\monitoreo\plan\programacion_instrumento.php on line 114.
+ 1 APPPATH\Views\monitoreo\plan\programacion_instrumento.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $body_modal_prog', 'APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php', 114)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_instrumento', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(918): view('monitoreo/plan/programacion_instrumento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getProgramacionInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 04:23:34 --> Undefined variable $body_modal_prog
+in APPPATH\Views\monitoreo\plan\programacion_instrumento.php on line 114.
+ 1 APPPATH\Views\monitoreo\plan\programacion_instrumento.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $body_modal_prog', 'APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php', 114)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_instrumento', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(918): view('monitoreo/plan/programacion_instrumento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getProgramacionInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 04:23:39 --> Undefined variable $body_modal_prog
+in APPPATH\Views\monitoreo\plan\programacion_instrumento.php on line 114.
+ 1 APPPATH\Views\monitoreo\plan\programacion_instrumento.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $body_modal_prog', 'APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php', 114)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_instrumento', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(918): view('monitoreo/plan/programacion_instrumento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getProgramacionInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:59:28 --> Undefined variable $base_url
+in APPPATH\Views\monitoreo\plan\programacion_instrumento.php on line 147.
+ 1 APPPATH\Views\monitoreo\plan\programacion_instrumento.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base_url', 'APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php', 147)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_instrumento', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(918): view('monitoreo/plan/programacion_instrumento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getProgramacionInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:59:37 --> Undefined variable $base_url
+in APPPATH\Views\monitoreo\plan\programacion_instrumento.php on line 147.
+ 1 APPPATH\Views\monitoreo\plan\programacion_instrumento.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base_url', 'APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php', 147)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_instrumento', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(918): view('monitoreo/plan/programacion_instrumento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getProgramacionInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:59:38 --> Undefined variable $base_url
+in APPPATH\Views\monitoreo\plan\programacion_instrumento.php on line 147.
+ 1 APPPATH\Views\monitoreo\plan\programacion_instrumento.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base_url', 'APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php', 147)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_instrumento', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(918): view('monitoreo/plan/programacion_instrumento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getProgramacionInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 05:59:44 --> Undefined variable $base_url
+in APPPATH\Views\monitoreo\plan\programacion_instrumento.php on line 147.
+ 1 APPPATH\Views\monitoreo\plan\programacion_instrumento.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base_url', 'APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php', 147)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\programacion_instrumento.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_instrumento', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(918): view('monitoreo/plan/programacion_instrumento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getProgramacionInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 06:21:24 --> Undefined property: stdClass::$pro__hora_fin
+in APPPATH\Controllers\Monitoreo2.php on line 48.
+ 1 APPPATH\Controllers\Monitoreo2.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$pro__hora_fin', 'APPPATH\\Controllers\\Monitoreo2.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->postProgramacion()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 06:21:28 --> Undefined property: stdClass::$pro__hora_fin
+in APPPATH\Controllers\Monitoreo2.php on line 48.
+ 1 APPPATH\Controllers\Monitoreo2.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$pro__hora_fin', 'APPPATH\\Controllers\\Monitoreo2.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->postProgramacion()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 06:21:58 --> Undefined property: stdClass::$pro__hora_fin
+in APPPATH\Controllers\Monitoreo2.php on line 48.
+ 1 APPPATH\Controllers\Monitoreo2.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$pro__hora_fin', 'APPPATH\\Controllers\\Monitoreo2.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->postProgramacion()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-21 06:46:24 --> mysqli_sql_exception: Unknown column 'fecha' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo2.php(68): App\Models\Generaldb->insertData('sd_programacion', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo2->postGuardarProgramacion()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-21 06:46:51 --> mysqli_sql_exception: Unknown column 'fecha' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo2.php(68): App\Models\Generaldb->insertData('sd_programacion', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo2->postGuardarProgramacion()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-21 06:47:24 --> mysqli_sql_exception: Unknown column 'fecha' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo2.php(68): App\Models\Generaldb->insertData('sd_programacion', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo2->postGuardarProgramacion()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-21 06:47:42 --> mysqli_sql_exception: Unknown column 'fecha' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo2.php(68): App\Models\Generaldb->insertData('sd_programacion', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo2->postGuardarProgramacion()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-21 06:48:03 --> mysqli_sql_exception: Unknown column 'fecha' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo2.php(68): App\Models\Generaldb->insertData('sd_programacion', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo2->postGuardarProgramacion()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-21 07:19:05 --> Invalid file: monitoreo/plan/programacion.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoreo/plan/programacion.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion', [], true)
+ 3 APPPATH\Controllers\Monitoreo2.php(48): view('monitoreo/plan/programacion', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacion()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:19:20 --> Invalid file: monitoreo/plan/programacion_detalle.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoreo/plan/programacion_detalle.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_detalle', [], true)
+ 3 APPPATH\Controllers\Monitoreo2.php(102): view('monitoreo/plan/programacion_detalle', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionDetalle()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:19:21 --> Invalid file: monitoreo/plan/programacion_detalle.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoreo/plan/programacion_detalle.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_detalle', [], true)
+ 3 APPPATH\Controllers\Monitoreo2.php(102): view('monitoreo/plan/programacion_detalle', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionDetalle()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:19:22 --> Invalid file: monitoreo/plan/programacion_detalle.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoreo/plan/programacion_detalle.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_detalle', [], true)
+ 3 APPPATH\Controllers\Monitoreo2.php(102): view('monitoreo/plan/programacion_detalle', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionDetalle()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:19:22 --> Invalid file: monitoreo/plan/programacion_detalle.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoreo/plan/programacion_detalle.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_detalle', [], true)
+ 3 APPPATH\Controllers\Monitoreo2.php(102): view('monitoreo/plan/programacion_detalle', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionDetalle()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:19:22 --> Invalid file: monitoreo/plan/programacion_detalle.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoreo/plan/programacion_detalle.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_detalle', [], true)
+ 3 APPPATH\Controllers\Monitoreo2.php(102): view('monitoreo/plan/programacion_detalle', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionDetalle()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:19:24 --> Invalid file: monitoreo/plan/programacion_detalle.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoreo/plan/programacion_detalle.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_detalle', [], true)
+ 3 APPPATH\Controllers\Monitoreo2.php(102): view('monitoreo/plan/programacion_detalle', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionDetalle()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:19:32 --> Invalid file: monitoreo/plan/programacion_instrumento.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoreo/plan/programacion_instrumento.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_instrumento', [], true)
+ 3 APPPATH\Controllers\Monitoreo2.php(162): view('monitoreo/plan/programacion_instrumento', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionInstrumento()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:19:32 --> Invalid file: monitoreo/plan/programacion_instrumento.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoreo/plan/programacion_instrumento.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_instrumento', [], true)
+ 3 APPPATH\Controllers\Monitoreo2.php(162): view('monitoreo/plan/programacion_instrumento', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionInstrumento()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:19:32 --> Invalid file: monitoreo/plan/programacion_instrumento.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('monitoreo/plan/programacion_instrumento.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/programacion_instrumento', [], true)
+ 3 APPPATH\Controllers\Monitoreo2.php(162): view('monitoreo/plan/programacion_instrumento', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionInstrumento()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:46:41 --> Undefined variable $pla
+in APPPATH\Views\monitoreo2\plan\programacion_instrumento.php on line 48.
+ 1 APPPATH\Views\monitoreo2\plan\programacion_instrumento.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pla', 'APPPATH\\Views\\monitoreo2\\plan\\programacion_instrumento.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo2\\plan\\programacion_instrumento.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo2/plan/programacion_instrumento', [], true)
+ 5 APPPATH\Controllers\Monitoreo2.php(162): view('monitoreo2/plan/programacion_instrumento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:46:46 --> Undefined variable $pla
+in APPPATH\Views\monitoreo2\plan\programacion_instrumento.php on line 48.
+ 1 APPPATH\Views\monitoreo2\plan\programacion_instrumento.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pla', 'APPPATH\\Views\\monitoreo2\\plan\\programacion_instrumento.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo2\\plan\\programacion_instrumento.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo2/plan/programacion_instrumento', [], true)
+ 5 APPPATH\Controllers\Monitoreo2.php(162): view('monitoreo2/plan/programacion_instrumento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:46:47 --> Undefined variable $pla
+in APPPATH\Views\monitoreo2\plan\programacion_instrumento.php on line 48.
+ 1 APPPATH\Views\monitoreo2\plan\programacion_instrumento.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pla', 'APPPATH\\Views\\monitoreo2\\plan\\programacion_instrumento.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo2\\plan\\programacion_instrumento.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo2/plan/programacion_instrumento', [], true)
+ 5 APPPATH\Controllers\Monitoreo2.php(162): view('monitoreo2/plan/programacion_instrumento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:46:47 --> Undefined variable $pla
+in APPPATH\Views\monitoreo2\plan\programacion_instrumento.php on line 48.
+ 1 APPPATH\Views\monitoreo2\plan\programacion_instrumento.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pla', 'APPPATH\\Views\\monitoreo2\\plan\\programacion_instrumento.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo2\\plan\\programacion_instrumento.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo2/plan/programacion_instrumento', [], true)
+ 5 APPPATH\Controllers\Monitoreo2.php(162): view('monitoreo2/plan/programacion_instrumento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:59:13 --> Undefined array key "tramo"
+in APPPATH\Controllers\Monitoreo2.php on line 144.
+ 1 APPPATH\Controllers\Monitoreo2.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tramo"', 'APPPATH\\Controllers\\Monitoreo2.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionInstrumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:59:15 --> Undefined array key "tramo"
+in APPPATH\Controllers\Monitoreo2.php on line 144.
+ 1 APPPATH\Controllers\Monitoreo2.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tramo"', 'APPPATH\\Controllers\\Monitoreo2.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionInstrumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:59:15 --> Undefined array key "tramo"
+in APPPATH\Controllers\Monitoreo2.php on line 144.
+ 1 APPPATH\Controllers\Monitoreo2.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tramo"', 'APPPATH\\Controllers\\Monitoreo2.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionInstrumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:59:15 --> Undefined array key "tramo"
+in APPPATH\Controllers\Monitoreo2.php on line 144.
+ 1 APPPATH\Controllers\Monitoreo2.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tramo"', 'APPPATH\\Controllers\\Monitoreo2.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionInstrumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:59:16 --> Undefined array key "tramo"
+in APPPATH\Controllers\Monitoreo2.php on line 144.
+ 1 APPPATH\Controllers\Monitoreo2.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tramo"', 'APPPATH\\Controllers\\Monitoreo2.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionInstrumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:59:16 --> Undefined array key "tramo"
+in APPPATH\Controllers\Monitoreo2.php on line 144.
+ 1 APPPATH\Controllers\Monitoreo2.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tramo"', 'APPPATH\\Controllers\\Monitoreo2.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionInstrumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 07:59:19 --> Undefined array key "tramo"
+in APPPATH\Controllers\Monitoreo2.php on line 144.
+ 1 APPPATH\Controllers\Monitoreo2.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tramo"', 'APPPATH\\Controllers\\Monitoreo2.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionInstrumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:16:52 --> Undefined array key "orden"
+in APPPATH\Controllers\Monitoreo.php on line 254.
+ 1 APPPATH\Controllers\Monitoreo.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "orden"', 'APPPATH\\Controllers\\Monitoreo.php', 254)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postActualizarNumItem()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:17:29 --> Undefined array key "orden"
+in APPPATH\Controllers\Monitoreo.php on line 254.
+ 1 APPPATH\Controllers\Monitoreo.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "orden"', 'APPPATH\\Controllers\\Monitoreo.php', 254)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postActualizarNumItem()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:22:46 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\preview_herramienta.php on line 103.
+ 1 APPPATH\Views\monitoreo\preview_herramienta.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\preview_herramienta.php', 103)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\preview_herramienta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/preview_herramienta', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(320): view('monitoreo/preview_herramienta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:22:48 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\preview_herramienta.php on line 103.
+ 1 APPPATH\Views\monitoreo\preview_herramienta.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\preview_herramienta.php', 103)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\preview_herramienta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/preview_herramienta', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(320): view('monitoreo/preview_herramienta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:22:49 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\preview_herramienta.php on line 103.
+ 1 APPPATH\Views\monitoreo\preview_herramienta.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\preview_herramienta.php', 103)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\preview_herramienta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/preview_herramienta', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(320): view('monitoreo/preview_herramienta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:22:49 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\preview_herramienta.php on line 103.
+ 1 APPPATH\Views\monitoreo\preview_herramienta.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\preview_herramienta.php', 103)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\preview_herramienta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/preview_herramienta', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(320): view('monitoreo/preview_herramienta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:22:49 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\preview_herramienta.php on line 103.
+ 1 APPPATH\Views\monitoreo\preview_herramienta.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\preview_herramienta.php', 103)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\preview_herramienta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/preview_herramienta', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(320): view('monitoreo/preview_herramienta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:23:54 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\preview_herramienta.php on line 103.
+ 1 APPPATH\Views\monitoreo\preview_herramienta.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\preview_herramienta.php', 103)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\preview_herramienta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/preview_herramienta', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(320): view('monitoreo/preview_herramienta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:24:00 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\preview_herramienta.php on line 103.
+ 1 APPPATH\Views\monitoreo\preview_herramienta.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\preview_herramienta.php', 103)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\preview_herramienta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/preview_herramienta', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(320): view('monitoreo/preview_herramienta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVistaHerramienta()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:50:05 --> Undefined array key "tramo"
+in APPPATH\Controllers\Monitoreo2.php on line 144.
+ 1 APPPATH\Controllers\Monitoreo2.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tramo"', 'APPPATH\\Controllers\\Monitoreo2.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionInstrumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:50:09 --> Undefined array key "tramo"
+in APPPATH\Controllers\Monitoreo2.php on line 144.
+ 1 APPPATH\Controllers\Monitoreo2.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tramo"', 'APPPATH\\Controllers\\Monitoreo2.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionInstrumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:50:17 --> Undefined array key "tramo"
+in APPPATH\Controllers\Monitoreo2.php on line 144.
+ 1 APPPATH\Controllers\Monitoreo2.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tramo"', 'APPPATH\\Controllers\\Monitoreo2.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionInstrumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:50:40 --> Undefined array key "tramo"
+in APPPATH\Controllers\Monitoreo2.php on line 144.
+ 1 APPPATH\Controllers\Monitoreo2.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tramo"', 'APPPATH\\Controllers\\Monitoreo2.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionInstrumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:52:30 --> Undefined array key "tramo"
+in APPPATH\Controllers\Monitoreo2.php on line 144.
+ 1 APPPATH\Controllers\Monitoreo2.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tramo"', 'APPPATH\\Controllers\\Monitoreo2.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionInstrumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 08:53:14 --> Undefined array key "tramo"
+in APPPATH\Controllers\Monitoreo2.php on line 144.
+ 1 APPPATH\Controllers\Monitoreo2.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tramo"', 'APPPATH\\Controllers\\Monitoreo2.php', 144)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo2->getProgramacionInstrumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 09:53:50 --> Undefined array key "tramos"
+in APPPATH\Controllers\Monitoreo.php on line 676.
+ 1 APPPATH\Controllers\Monitoreo.php(676): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tramos"', 'APPPATH\\Controllers\\Monitoreo.php', 676)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarMuestraInstrumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:24:21 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\plan\ejecucion_muestra.php on line 136.
+ 1 APPPATH\Views\monitoreo\plan\ejecucion_muestra.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php', 136)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(1234): view('monitoreo/plan/ejecucion_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:24:23 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\plan\ejecucion_muestra.php on line 136.
+ 1 APPPATH\Views\monitoreo\plan\ejecucion_muestra.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php', 136)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(1234): view('monitoreo/plan/ejecucion_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:24:27 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\plan\ejecucion_muestra.php on line 136.
+ 1 APPPATH\Views\monitoreo\plan\ejecucion_muestra.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php', 136)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(1234): view('monitoreo/plan/ejecucion_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:24:33 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\plan\ejecucion_muestra.php on line 136.
+ 1 APPPATH\Views\monitoreo\plan\ejecucion_muestra.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php', 136)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(1234): view('monitoreo/plan/ejecucion_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:24:36 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\plan\ejecucion_muestra.php on line 136.
+ 1 APPPATH\Views\monitoreo\plan\ejecucion_muestra.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php', 136)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(1234): view('monitoreo/plan/ejecucion_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:24:58 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\plan\ejecucion_muestra.php on line 136.
+ 1 APPPATH\Views\monitoreo\plan\ejecucion_muestra.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php', 136)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(1234): view('monitoreo/plan/ejecucion_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:25:04 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\plan\ejecucion_muestra.php on line 136.
+ 1 APPPATH\Views\monitoreo\plan\ejecucion_muestra.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php', 136)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(1234): view('monitoreo/plan/ejecucion_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:25:11 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\plan\ejecucion_muestra.php on line 136.
+ 1 APPPATH\Views\monitoreo\plan\ejecucion_muestra.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php', 136)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(1234): view('monitoreo/plan/ejecucion_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:25:25 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\plan\ejecucion_muestra.php on line 136.
+ 1 APPPATH\Views\monitoreo\plan\ejecucion_muestra.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php', 136)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(1234): view('monitoreo/plan/ejecucion_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:30:41 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\plan\ejecucion_muestra.php on line 136.
+ 1 APPPATH\Views\monitoreo\plan\ejecucion_muestra.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php', 136)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(1234): view('monitoreo/plan/ejecucion_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:37:25 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\plan\ejecucion_muestra.php on line 2.
+ 1 APPPATH\Views\monitoreo\plan\ejecucion_muestra.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(1234): view('monitoreo/plan/ejecucion_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:39:37 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\plan\ejecucion_muestra.php on line 2.
+ 1 APPPATH\Views\monitoreo\plan\ejecucion_muestra.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(1234): view('monitoreo/plan/ejecucion_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:40:18 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\plan\ejecucion_muestra.php on line 137.
+ 1 APPPATH\Views\monitoreo\plan\ejecucion_muestra.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php', 137)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(1234): view('monitoreo/plan/ejecucion_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:40:31 --> Undefined variable $alt
+in APPPATH\Views\monitoreo\plan\ejecucion_muestra.php on line 137.
+ 1 APPPATH\Views\monitoreo\plan\ejecucion_muestra.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alt', 'APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php', 137)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\ejecucion_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(1234): view('monitoreo/plan/ejecucion_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumento()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:43:07 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Monitoreo.php on line 1257.
+ 1 APPPATH\Controllers\Monitoreo.php(1257): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Monitoreo.php', 1257)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarEjecucionInstrumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:43:09 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Monitoreo.php on line 1257.
+ 1 APPPATH\Controllers\Monitoreo.php(1257): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Monitoreo.php', 1257)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarEjecucionInstrumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:43:11 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Monitoreo.php on line 1257.
+ 1 APPPATH\Controllers\Monitoreo.php(1257): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Monitoreo.php', 1257)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarEjecucionInstrumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-21 12:43:14 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Monitoreo.php on line 1257.
+ 1 APPPATH\Controllers\Monitoreo.php(1257): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Monitoreo.php', 1257)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarEjecucionInstrumento()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

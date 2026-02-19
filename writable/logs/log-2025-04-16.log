@@ -1,0 +1,11 @@
+CRITICAL - 2025-04-16 05:26:00 --> Undefined array key 0
+in APPPATH/Views/informes2/vinformes.php on line 32.
+ 1 APPPATH/Views/informes2/vinformes.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Views/informes2/vinformes.php', 32)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/informes2/vinformes.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('informes2/vinformes', [], true)
+ 5 APPPATH/Controllers/Informes2.php(76): view('informes2/vinformes', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->getInformesUGEL()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

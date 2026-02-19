@@ -1,0 +1,22 @@
+CRITICAL - 2025-09-04 08:53:32 --> Undefined array key 0
+in APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php on line 87.
+ 1 APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php', 87)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra_resultados', [], true)
+ 5 APPPATH/Controllers/Monitoreo.php(2917): view('monitoreo/plan/ejecucion_muestra_resultados', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->getVerFichaLlenada()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-04 08:54:10 --> Undefined array key 0
+in APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php on line 87.
+ 1 APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php', 87)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra_resultados', [], true)
+ 5 APPPATH/Controllers/Monitoreo.php(2917): view('monitoreo/plan/ejecucion_muestra_resultados', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->getVerFichaLlenada()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

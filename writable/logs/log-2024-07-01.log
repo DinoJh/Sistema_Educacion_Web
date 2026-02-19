@@ -1,0 +1,13 @@
+ERROR - 2024-07-01 10:32:58 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`drepuno_monitoreo_regional`.`usuarios`, CONSTRAINT `fk_usuarios_iiee1` FOREIGN KEY (`usua_iiee_ide`) REFERENCES `iiee` (`iiee_ide`)) in /home/drepuno/public_html/monitoreo/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/drepuno/public_html/monitoreo/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `usuario...', 0)
+#1 /home/drepuno/public_html/monitoreo/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `usuario...')
+#2 /home/drepuno/public_html/monitoreo/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `usuario...')
+#3 /home/drepuno/public_html/monitoreo/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `usuario...', Array, false)
+#4 /home/drepuno/public_html/monitoreo/app/Models/Generaldb.php(230): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/drepuno/public_html/monitoreo/app/Controllers/Administrador.php(982): App\Models\Generaldb->updateData('usuarios', Array, Array)
+#6 /home/drepuno/public_html/monitoreo/system/CodeIgniter.php(927): App\Controllers\Administrador->postGuardarEdicionPerfil()
+#7 /home/drepuno/public_html/monitoreo/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Administrador))
+#8 /home/drepuno/public_html/monitoreo/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/drepuno/public_html/monitoreo/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}

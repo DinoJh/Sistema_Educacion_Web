@@ -1,0 +1,454 @@
+CRITICAL - 2024-01-03 00:30:31 --> Undefined array key 0
+in APPPATH\Controllers\Informes2.php on line 41.
+ 1 APPPATH\Controllers\Informes2.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Informes2.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getInformesUGEL()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-03 00:31:06 --> Undefined array key 0
+in APPPATH\Controllers\Informes2.php on line 41.
+ 1 APPPATH\Controllers\Informes2.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Informes2.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getInformesUGEL()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-03 00:31:12 --> Undefined array key 0
+in APPPATH\Controllers\Informes2.php on line 41.
+ 1 APPPATH\Controllers\Informes2.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Informes2.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getInformesUGEL()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-03 00:34:36 --> Undefined array key 0
+in APPPATH\Controllers\Informes2.php on line 62.
+ 1 APPPATH\Controllers\Informes2.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Informes2.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->postInformesDetalle()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-03 00:35:03 --> Undefined array key 0
+in APPPATH\Controllers\Informes2.php on line 62.
+ 1 APPPATH\Controllers\Informes2.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Informes2.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->postInformesDetalle()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-03 00:37:46 --> Undefined array key 0
+in APPPATH\Controllers\Informes2.php on line 65.
+ 1 APPPATH\Controllers\Informes2.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Informes2.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->postInformesDetalle()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-03 00:43:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                `subi_usua_ide` = 20135 AND
+                subi_info_ide ' at line 8 in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Controllers\Informes2.php(91): App\Models\Generaldb->selectSomeDataJoin('*', 'com_subidos', '\r\n             ...', false, false, false, Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Informes2->postArchivosEntregados()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 00:43:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                `subi_usua_ide` = 20135 AND
+                subi_info_ide ' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `com_subidos`
+JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide`
+JOIN `usuarios` ON `usua_ide` = `subi_usua_ide`
+JOIN `com_informes` ON `info_ide` = `subi_info_ide`
+JOIN `com_categorias` ON `cate_ide` = `info_cate_ide`
+WHERE 
+                subi_iiee_ide =  AND
+                `subi_usua_ide` = 20135 AND
+                subi_info_ide = 8
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `com_subidos`
+JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide`
+JOIN `usuarios` ON `usua_ide` = `subi_usua_ide`
+JOIN `com_informes` ON `info_ide` = `subi_info_ide`
+JOIN `com_categorias` ON `cate_ide` = `info_cate_ide`
+WHERE 
+                subi_iiee_ide =  AND
+                `subi_usua_ide` = 20135 AND
+                subi_info_ide = 8
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `com_subidos`
+JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide`
+JOIN `usuarios` ON `usua_ide` = `subi_usua_ide`
+JOIN `com_informes` ON `info_ide` = `subi_info_ide`
+JOIN `com_categorias` ON `cate_ide` = `info_cate_ide`
+WHERE 
+                subi_iiee_ide =  AND
+                `subi_usua_ide` = 20135 AND
+                subi_info_ide = 8
+            ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `com_subidos`
+JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide`
+JOIN `usuarios` ON `usua_ide` = `subi_usua_ide`
+JOIN `com_informes` ON `info_ide` = `subi_info_ide`
+JOIN `com_categorias` ON `cate_ide` = `info_cate_ide`
+WHERE 
+                subi_iiee_ide =  AND
+                `subi_usua_ide` = 20135 AND
+                subi_info_ide = 8
+            ', [], false)
+ 5 APPPATH\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Informes2.php(91): App\Models\Generaldb->selectSomeDataJoin('*', 'com_subidos', '
+                subi_iiee_ide =  AND
+                subi_usua_ide = 20135 AND
+                subi_info_ide = 8
+            ', false, false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->postArchivosEntregados()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-03 00:45:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                `subi_usua_ide` = 20135 AND
+                subi_info_ide ' at line 8 in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Controllers\Informes2.php(92): App\Models\Generaldb->selectSomeDataJoin('*', 'com_subidos', '\r\n             ...', false, false, false, Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Informes2->postArchivosEntregados()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 00:45:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                `subi_usua_ide` = 20135 AND
+                subi_info_ide ' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `com_subidos`
+JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide`
+JOIN `usuarios` ON `usua_ide` = `subi_usua_ide`
+JOIN `com_informes` ON `info_ide` = `subi_info_ide`
+JOIN `com_categorias` ON `cate_ide` = `info_cate_ide`
+WHERE 
+                subi_iiee_ide =  AND
+                `subi_usua_ide` = 20135 AND
+                subi_info_ide = 8
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `com_subidos`
+JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide`
+JOIN `usuarios` ON `usua_ide` = `subi_usua_ide`
+JOIN `com_informes` ON `info_ide` = `subi_info_ide`
+JOIN `com_categorias` ON `cate_ide` = `info_cate_ide`
+WHERE 
+                subi_iiee_ide =  AND
+                `subi_usua_ide` = 20135 AND
+                subi_info_ide = 8
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `com_subidos`
+JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide`
+JOIN `usuarios` ON `usua_ide` = `subi_usua_ide`
+JOIN `com_informes` ON `info_ide` = `subi_info_ide`
+JOIN `com_categorias` ON `cate_ide` = `info_cate_ide`
+WHERE 
+                subi_iiee_ide =  AND
+                `subi_usua_ide` = 20135 AND
+                subi_info_ide = 8
+            ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `com_subidos`
+JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide`
+JOIN `usuarios` ON `usua_ide` = `subi_usua_ide`
+JOIN `com_informes` ON `info_ide` = `subi_info_ide`
+JOIN `com_categorias` ON `cate_ide` = `info_cate_ide`
+WHERE 
+                subi_iiee_ide =  AND
+                `subi_usua_ide` = 20135 AND
+                subi_info_ide = 8
+            ', [], false)
+ 5 APPPATH\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Informes2.php(92): App\Models\Generaldb->selectSomeDataJoin('*', 'com_subidos', '
+                subi_iiee_ide =  AND
+                subi_usua_ide = 20135 AND
+                subi_info_ide = 8
+            ', false, false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->postArchivosEntregados()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-03 00:45:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                `subi_usua_ide` = 20135 AND
+                subi_info_ide ' at line 8 in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Controllers\Informes2.php(92): App\Models\Generaldb->selectSomeDataJoin('*', 'com_subidos', '\r\n             ...', false, false, false, Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Informes2->postArchivosEntregados()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 00:45:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                `subi_usua_ide` = 20135 AND
+                subi_info_ide ' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `com_subidos`
+JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide`
+JOIN `usuarios` ON `usua_ide` = `subi_usua_ide`
+JOIN `com_informes` ON `info_ide` = `subi_info_ide`
+JOIN `com_categorias` ON `cate_ide` = `info_cate_ide`
+WHERE 
+                subi_iiee_ide =  AND
+                `subi_usua_ide` = 20135 AND
+                subi_info_ide = 8
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `com_subidos`
+JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide`
+JOIN `usuarios` ON `usua_ide` = `subi_usua_ide`
+JOIN `com_informes` ON `info_ide` = `subi_info_ide`
+JOIN `com_categorias` ON `cate_ide` = `info_cate_ide`
+WHERE 
+                subi_iiee_ide =  AND
+                `subi_usua_ide` = 20135 AND
+                subi_info_ide = 8
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `com_subidos`
+JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide`
+JOIN `usuarios` ON `usua_ide` = `subi_usua_ide`
+JOIN `com_informes` ON `info_ide` = `subi_info_ide`
+JOIN `com_categorias` ON `cate_ide` = `info_cate_ide`
+WHERE 
+                subi_iiee_ide =  AND
+                `subi_usua_ide` = 20135 AND
+                subi_info_ide = 8
+            ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `com_subidos`
+JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide`
+JOIN `usuarios` ON `usua_ide` = `subi_usua_ide`
+JOIN `com_informes` ON `info_ide` = `subi_info_ide`
+JOIN `com_categorias` ON `cate_ide` = `info_cate_ide`
+WHERE 
+                subi_iiee_ide =  AND
+                `subi_usua_ide` = 20135 AND
+                subi_info_ide = 8
+            ', [], false)
+ 5 APPPATH\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Informes2.php(92): App\Models\Generaldb->selectSomeDataJoin('*', 'com_subidos', '
+                subi_iiee_ide =  AND
+                subi_usua_ide = 20135 AND
+                subi_info_ide = 8
+            ', false, false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->postArchivosEntregados()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-03 00:47:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                    `subi_usua_ide` = 20135 AND
+                    subi_i' at line 8 in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Controllers\Informes2.php(92): App\Models\Generaldb->selectSomeDataJoin('*', 'com_subidos', '\r\n             ...', false, false, false, Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Informes2->postArchivosEntregados()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 00:47:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                    `subi_usua_ide` = 20135 AND
+                    subi_i' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `com_subidos`
+JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide`
+JOIN `usuarios` ON `usua_ide` = `subi_usua_ide`
+JOIN `com_informes` ON `info_ide` = `subi_info_ide`
+JOIN `com_categorias` ON `cate_ide` = `info_cate_ide`
+WHERE 
+                    subi_iiee_ide =  AND
+                    `subi_usua_ide` = 20135 AND
+                    subi_info_ide = 8
+                ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `com_subidos`
+JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide`
+JOIN `usuarios` ON `usua_ide` = `subi_usua_ide`
+JOIN `com_informes` ON `info_ide` = `subi_info_ide`
+JOIN `com_categorias` ON `cate_ide` = `info_cate_ide`
+WHERE 
+                    subi_iiee_ide =  AND
+                    `subi_usua_ide` = 20135 AND
+                    subi_info_ide = 8
+                ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `com_subidos`
+JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide`
+JOIN `usuarios` ON `usua_ide` = `subi_usua_ide`
+JOIN `com_informes` ON `info_ide` = `subi_info_ide`
+JOIN `com_categorias` ON `cate_ide` = `info_cate_ide`
+WHERE 
+                    subi_iiee_ide =  AND
+                    `subi_usua_ide` = 20135 AND
+                    subi_info_ide = 8
+                ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `com_subidos`
+JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide`
+JOIN `usuarios` ON `usua_ide` = `subi_usua_ide`
+JOIN `com_informes` ON `info_ide` = `subi_info_ide`
+JOIN `com_categorias` ON `cate_ide` = `info_cate_ide`
+WHERE 
+                    subi_iiee_ide =  AND
+                    `subi_usua_ide` = 20135 AND
+                    subi_info_ide = 8
+                ', [], false)
+ 5 APPPATH\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Informes2.php(92): App\Models\Generaldb->selectSomeDataJoin('*', 'com_subidos', '
+                    subi_iiee_ide =  AND
+                    subi_usua_ide = 20135 AND
+                    subi_info_ide = 8
+                ', false, false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->postArchivosEntregados()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-03 00:47:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                    `subi_usua_ide` = 20135 AND
+                    subi_i' at line 8 in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Controllers\Informes2.php(92): App\Models\Generaldb->selectSomeDataJoin('*', 'com_subidos', '\r\n             ...', false, false, false, Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Informes2->postArchivosEntregados()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-03 00:47:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                    `subi_usua_ide` = 20135 AND
+                    subi_i' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `com_subidos`
+JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide`
+JOIN `usuarios` ON `usua_ide` = `subi_usua_ide`
+JOIN `com_informes` ON `info_ide` = `subi_info_ide`
+JOIN `com_categorias` ON `cate_ide` = `info_cate_ide`
+WHERE 
+                    subi_iiee_ide =  AND
+                    `subi_usua_ide` = 20135 AND
+                    subi_info_ide = 8
+                ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `com_subidos`
+JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide`
+JOIN `usuarios` ON `usua_ide` = `subi_usua_ide`
+JOIN `com_informes` ON `info_ide` = `subi_info_ide`
+JOIN `com_categorias` ON `cate_ide` = `info_cate_ide`
+WHERE 
+                    subi_iiee_ide =  AND
+                    `subi_usua_ide` = 20135 AND
+                    subi_info_ide = 8
+                ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `com_subidos`
+JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide`
+JOIN `usuarios` ON `usua_ide` = `subi_usua_ide`
+JOIN `com_informes` ON `info_ide` = `subi_info_ide`
+JOIN `com_categorias` ON `cate_ide` = `info_cate_ide`
+WHERE 
+                    subi_iiee_ide =  AND
+                    `subi_usua_ide` = 20135 AND
+                    subi_info_ide = 8
+                ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `com_subidos`
+JOIN `iiee` ON `iiee_ide` = `subi_iiee_ide`
+JOIN `usuarios` ON `usua_ide` = `subi_usua_ide`
+JOIN `com_informes` ON `info_ide` = `subi_info_ide`
+JOIN `com_categorias` ON `cate_ide` = `info_cate_ide`
+WHERE 
+                    subi_iiee_ide =  AND
+                    `subi_usua_ide` = 20135 AND
+                    subi_info_ide = 8
+                ', [], false)
+ 5 APPPATH\Models\Generaldb.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Informes2.php(92): App\Models\Generaldb->selectSomeDataJoin('*', 'com_subidos', '
+                    subi_iiee_ide =  AND
+                    subi_usua_ide = 20135 AND
+                    subi_info_ide = 8
+                ', false, false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->postArchivosEntregados()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-03 01:27:05 --> Undefined variable $base_url
+in APPPATH\Views\evaluacion\main_informe.php on line 97.
+ 1 APPPATH\Views\evaluacion\main_informe.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base_url', 'APPPATH\\Views\\evaluacion\\main_informe.php', 97)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\evaluacion\\main_informe.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('evaluacion/main_informe', [], true)
+ 5 APPPATH\Controllers\Evaluacion.php(152): view('evaluacion/main_informe', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Evaluacion->getVerInformeAnual()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-03 02:57:23 --> File "mi_archivo.xlsx" does not exist.
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(427): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('mi_archivo.xlsx', '_rels/.rels')
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(182): PhpOffice\PhpSpreadsheet\Reader\Xlsx->loadSpreadsheetFromFile('mi_archivo.xlsx')
+ 3 APPPATH\Controllers\Informes2.php(280): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('mi_archivo.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-03 02:59:32 --> File "/public/formatos/mi_archivo.xlsx" does not exist.
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(427): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('/public/formatos/mi_archivo.xlsx', '_rels/.rels')
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(182): PhpOffice\PhpSpreadsheet\Reader\Xlsx->loadSpreadsheetFromFile('/public/formatos/mi_archivo.xlsx')
+ 3 APPPATH\Controllers\Informes2.php(280): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('/public/formatos/mi_archivo.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-03 02:59:33 --> File "/public/formatos/mi_archivo.xlsx" does not exist.
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(427): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('/public/formatos/mi_archivo.xlsx', '_rels/.rels')
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(182): PhpOffice\PhpSpreadsheet\Reader\Xlsx->loadSpreadsheetFromFile('/public/formatos/mi_archivo.xlsx')
+ 3 APPPATH\Controllers\Informes2.php(280): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('/public/formatos/mi_archivo.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-03 03:00:25 --> File "/public/formatos/mi_archivo.xlsx" does not exist.
+in FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 149.
+ 1 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(427): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('/public/formatos/mi_archivo.xlsx', '_rels/.rels')
+ 2 FCPATH\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(182): PhpOffice\PhpSpreadsheet\Reader\Xlsx->loadSpreadsheetFromFile('/public/formatos/mi_archivo.xlsx')
+ 3 APPPATH\Controllers\Informes2.php(280): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('/public/formatos/mi_archivo.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getLeer()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

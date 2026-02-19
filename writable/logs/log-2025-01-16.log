@@ -1,0 +1,482 @@
+CRITICAL - 2025-01-16 07:37:09 --> Undefined array key 0
+in APPPATH/Controllers/Informes2.php on line 73.
+ 1 APPPATH/Controllers/Informes2.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Informes2.php', 73)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->getInformesUGEL()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-16 07:37:57 --> Undefined array key 0
+in APPPATH/Controllers/Informes2.php on line 73.
+ 1 APPPATH/Controllers/Informes2.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Informes2.php', 73)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->getInformesUGEL()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-16 08:18:10 --> Undefined array key 0
+in APPPATH/Controllers/Informes2.php on line 362.
+ 1 APPPATH/Controllers/Informes2.php(362): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Informes2.php', 362)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-16 08:20:57 --> Undefined array key 0
+in APPPATH/Controllers/Evaluacion.php on line 1194.
+ 1 APPPATH/Controllers/Evaluacion.php(1194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Evaluacion.php', 1194)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Evaluacion->getCuadroComparativoUgel()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-16 08:21:05 --> Undefined array key 0
+in APPPATH/Controllers/Informes2.php on line 73.
+ 1 APPPATH/Controllers/Informes2.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Informes2.php', 73)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->getInformesUGEL()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-16 09:37:37 --> Undefined array key 0
+in APPPATH/Controllers/Informes2.php on line 73.
+ 1 APPPATH/Controllers/Informes2.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Informes2.php', 73)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->getInformesUGEL()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-16 09:38:38 --> Undefined array key 0
+in APPPATH/Controllers/Informes2.php on line 73.
+ 1 APPPATH/Controllers/Informes2.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Informes2.php', 73)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->getInformesUGEL()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-16 09:39:33 --> Undefined array key 0
+in APPPATH/Controllers/Informes2.php on line 73.
+ 1 APPPATH/Controllers/Informes2.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Informes2.php', 73)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->getInformesUGEL()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-16 09:40:09 --> Undefined array key 0
+in APPPATH/Controllers/Informes2.php on line 362.
+ 1 APPPATH/Controllers/Informes2.php(362): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Informes2.php', 362)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->getCumple()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-16 09:46:17 --> Undefined variable $ugels
+in APPPATH/Controllers/Anexos2024i.php on line 244.
+ 1 APPPATH/Controllers/Anexos2024i.php(244): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ugels', 'APPPATH/Controllers/Anexos2024i.php', 244)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024i->getConsol()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-16 09:47:09 --> Undefined variable $ugels
+in APPPATH/Controllers/Anexos2024i.php on line 244.
+ 1 APPPATH/Controllers/Anexos2024i.php(244): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ugels', 'APPPATH/Controllers/Anexos2024i.php', 244)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024i->getConsol()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-16 09:47:27 --> Undefined variable $ugels
+in APPPATH/Controllers/Anexos2024i.php on line 244.
+ 1 APPPATH/Controllers/Anexos2024i.php(244): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ugels', 'APPPATH/Controllers/Anexos2024i.php', 244)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024i->getConsol()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-16 12:40:04 --> Undefined array key 0
+in APPPATH/Controllers/Evaluacion.php on line 1092.
+ 1 APPPATH/Controllers/Evaluacion.php(1092): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Evaluacion.php', 1092)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Evaluacion->getListadoAvanceUgel()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-16 12:40:32 --> Undefined array key 0
+in APPPATH/Controllers/Informes2.php on line 73.
+ 1 APPPATH/Controllers/Informes2.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Informes2.php', 73)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->getInformesUGEL()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-16 14:29:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 2' at line 5 in /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/customer/www/xurainc.com/public_html/monitoreo/app/Models/Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Anexos2024.php(29): App\Models\Generaldb->selectSomeData('*', '2024_archivos,e...', '\r\n             ...')
+#6 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Anexos2024.php(81): App\Controllers\Anexos2024->anexos(2024, 2, Array, '/anexos2024/ane...', Array)
+#7 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo2()
+#8 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#9 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/customer/www/xurainc.com/public_html/monitoreo/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-01-16 14:29:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 2' at line 5
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 2
+            ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 2
+            ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 2
+            ')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 2
+            ', [], false)
+ 5 APPPATH/Models/Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Anexos2024.php(29): App\Models\Generaldb->selectSomeData('*', '2024_archivos,estados e', '
+                arch_esta_ide = e.esta_ide AND
+                arch_iiee_ide =  AND
+                arch_anio = 2024 AND
+                arch_anexo = 2
+            ')
+ 7 APPPATH/Controllers/Anexos2024.php(81): App\Controllers\Anexos2024->anexos(2024, 2, [...], '/anexos2024/anexo2', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo2()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-16 14:30:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 7' at line 5 in /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/customer/www/xurainc.com/public_html/monitoreo/app/Models/Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Anexos2024.php(29): App\Models\Generaldb->selectSomeData('*', '2024_archivos,e...', '\r\n             ...')
+#6 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Anexos2024.php(131): App\Controllers\Anexos2024->anexos(2024, 7, Array, '/anexos2024/ane...', Array)
+#7 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo7()
+#8 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#9 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/customer/www/xurainc.com/public_html/monitoreo/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-01-16 14:30:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 7' at line 5
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 7
+            ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 7
+            ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 7
+            ')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 7
+            ', [], false)
+ 5 APPPATH/Models/Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Anexos2024.php(29): App\Models\Generaldb->selectSomeData('*', '2024_archivos,estados e', '
+                arch_esta_ide = e.esta_ide AND
+                arch_iiee_ide =  AND
+                arch_anio = 2024 AND
+                arch_anexo = 7
+            ')
+ 7 APPPATH/Controllers/Anexos2024.php(131): App\Controllers\Anexos2024->anexos(2024, 7, [...], '/anexos2024/anexo7', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo7()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-16 14:30:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 6' at line 5 in /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/customer/www/xurainc.com/public_html/monitoreo/app/Models/Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Anexos2024.php(29): App\Models\Generaldb->selectSomeData('*', '2024_archivos,e...', '\r\n             ...')
+#6 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Anexos2024.php(121): App\Controllers\Anexos2024->anexos(2024, 6, Array, '/anexos2024/ane...', Array)
+#7 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo6()
+#8 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#9 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/customer/www/xurainc.com/public_html/monitoreo/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-01-16 14:30:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 6' at line 5
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 6
+            ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 6
+            ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 6
+            ')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 6
+            ', [], false)
+ 5 APPPATH/Models/Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Anexos2024.php(29): App\Models\Generaldb->selectSomeData('*', '2024_archivos,estados e', '
+                arch_esta_ide = e.esta_ide AND
+                arch_iiee_ide =  AND
+                arch_anio = 2024 AND
+                arch_anexo = 6
+            ')
+ 7 APPPATH/Controllers/Anexos2024.php(121): App\Controllers\Anexos2024->anexos(2024, 6, [...], '/anexos2024/anexo6', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo6()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-16 14:32:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 2' at line 5 in /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/customer/www/xurainc.com/public_html/monitoreo/app/Models/Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Anexos2024.php(29): App\Models\Generaldb->selectSomeData('*', '2024_archivos,e...', '\r\n             ...')
+#6 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Anexos2024.php(81): App\Controllers\Anexos2024->anexos(2024, 2, Array, '/anexos2024/ane...', Array)
+#7 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo2()
+#8 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#9 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/customer/www/xurainc.com/public_html/monitoreo/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-01-16 14:32:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 2' at line 5
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 2
+            ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 2
+            ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 2
+            ')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 2
+            ', [], false)
+ 5 APPPATH/Models/Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Anexos2024.php(29): App\Models\Generaldb->selectSomeData('*', '2024_archivos,estados e', '
+                arch_esta_ide = e.esta_ide AND
+                arch_iiee_ide =  AND
+                arch_anio = 2024 AND
+                arch_anexo = 2
+            ')
+ 7 APPPATH/Controllers/Anexos2024.php(81): App\Controllers\Anexos2024->anexos(2024, 2, [...], '/anexos2024/anexo2', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo2()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-16 14:39:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1' at line 5 in /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/customer/www/xurainc.com/public_html/monitoreo/app/Models/Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Anexos2024.php(29): App\Models\Generaldb->selectSomeData('*', '2024_archivos,e...', '\r\n             ...')
+#6 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Anexos2024.php(71): App\Controllers\Anexos2024->anexos(2024, 1, Array, '/anexos2024/ane...', Array)
+#7 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+#8 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#9 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/customer/www/xurainc.com/public_html/monitoreo/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-01-16 14:39:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1' at line 5
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1
+            ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1
+            ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1
+            ')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1
+            ', [], false)
+ 5 APPPATH/Models/Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Anexos2024.php(29): App\Models\Generaldb->selectSomeData('*', '2024_archivos,estados e', '
+                arch_esta_ide = e.esta_ide AND
+                arch_iiee_ide =  AND
+                arch_anio = 2024 AND
+                arch_anexo = 1
+            ')
+ 7 APPPATH/Controllers/Anexos2024.php(71): App\Controllers\Anexos2024->anexos(2024, 1, [...], '/anexos2024/anexo1', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-16 14:44:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1' at line 5 in /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/customer/www/xurainc.com/public_html/monitoreo/app/Models/Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Anexos2024.php(29): App\Models\Generaldb->selectSomeData('*', '2024_archivos,e...', '\r\n             ...')
+#6 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Anexos2024.php(71): App\Controllers\Anexos2024->anexos(2024, 1, Array, '/anexos2024/ane...', Array)
+#7 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+#8 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+#9 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/customer/www/xurainc.com/public_html/monitoreo/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-01-16 14:44:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1' at line 5
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1
+            ', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1
+            ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1
+            ')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2024_archivos`, `estados` `e`
+WHERE 
+                arch_esta_ide = e.esta_ide AND
+                `arch_iiee_ide` =  AND
+                `arch_anio` = 2024 AND
+                arch_anexo = 1
+            ', [], false)
+ 5 APPPATH/Models/Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Anexos2024.php(29): App\Models\Generaldb->selectSomeData('*', '2024_archivos,estados e', '
+                arch_esta_ide = e.esta_ide AND
+                arch_iiee_ide =  AND
+                arch_anio = 2024 AND
+                arch_anexo = 1
+            ')
+ 7 APPPATH/Controllers/Anexos2024.php(71): App\Controllers\Anexos2024->anexos(2024, 1, [...], '/anexos2024/anexo1', [...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

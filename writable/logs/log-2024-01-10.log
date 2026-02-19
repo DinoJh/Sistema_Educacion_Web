@@ -1,0 +1,302 @@
+CRITICAL - 2024-01-10 04:43:54 --> Undefined array key "Field"
+in APPPATH\Libraries\Lgrilla.php on line 158.
+ 1 APPPATH\Libraries\Lgrilla.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Field"', 'APPPATH\\Libraries\\Lgrilla.php', 158)
+ 2 APPPATH\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, 'D:\\wamp\\www\\simondrep')
+ 3 APPPATH\Controllers\Informes2.php(588): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfoUgel()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 04:44:21 --> Undefined array key "Field"
+in APPPATH\Libraries\Lgrilla.php on line 158.
+ 1 APPPATH\Libraries\Lgrilla.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Field"', 'APPPATH\\Libraries\\Lgrilla.php', 158)
+ 2 APPPATH\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, 'D:\\wamp\\www\\simondrep')
+ 3 APPPATH\Controllers\Informes2.php(588): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfoUgel()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 04:46:24 --> Undefined array key "Field"
+in APPPATH\Libraries\Lgrilla.php on line 158.
+ 1 APPPATH\Libraries\Lgrilla.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Field"', 'APPPATH\\Libraries\\Lgrilla.php', 158)
+ 2 APPPATH\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, 'D:\\wamp\\www\\simondrep')
+ 3 APPPATH\Controllers\Informes2.php(590): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfoUgel()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-10 04:46:50 --> mysqli_sql_exception: Unknown column 'iiee_nive_ide' in 'where clause' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Mgrilla.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Libraries\Lgrilla.php(182): App\Models\Mgrilla::getTotal('com_subidos', Array, Array, '(subi_archivo l...')
+#6 D:\wamp\www\simondrep\app\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, '')
+#7 D:\wamp\www\simondrep\app\Controllers\Informes2.php(590): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfoUgel()
+#9 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+#10 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-10 04:46:50 --> Unknown column 'iiee_nive_ide' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `usuarios` ON `usua_ide` = `com_usua_ide` and `subi_info_ide` = 180
+WHERE `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 2
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `usuarios` ON `usua_ide` = `com_usua_ide` and `subi_info_ide` = 180
+WHERE `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 2
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `usuarios` ON `usua_ide` = `com_usua_ide` and `subi_info_ide` = 180
+WHERE `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 2
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `usuarios` ON `usua_ide` = `com_usua_ide` and `subi_info_ide` = 180
+WHERE `iiee_nive_ide` = :iiee_nive_ide:
+AND `iiee_esta_ide` = :iiee_esta_ide:
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\')', [...], false)
+ 5 APPPATH\Models\Mgrilla.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Lgrilla.php(182): App\Models\Mgrilla::getTotal('com_subidos', [...], [...], '(subi_archivo like \'%%\' OR subi_create_at like \'%%\')')
+ 7 APPPATH\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, 'D:\\wamp\\www\\simondrep')
+ 8 APPPATH\Controllers\Informes2.php(590): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfoUgel()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-10 04:47:19 --> mysqli_sql_exception: Unknown column 'iiee_nive_ide' in 'where clause' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Mgrilla.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Libraries\Lgrilla.php(182): App\Models\Mgrilla::getTotal('com_subidos', Array, Array, '(subi_archivo l...')
+#6 D:\wamp\www\simondrep\app\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, '')
+#7 D:\wamp\www\simondrep\app\Controllers\Informes2.php(590): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfoUgel()
+#9 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+#10 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-10 04:47:19 --> Unknown column 'iiee_nive_ide' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `usuarios` ON `usua_ide` = `com_usua_ide` and `subi_info_ide` = 160
+WHERE `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 2
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `usuarios` ON `usua_ide` = `com_usua_ide` and `subi_info_ide` = 160
+WHERE `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 2
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `usuarios` ON `usua_ide` = `com_usua_ide` and `subi_info_ide` = 160
+WHERE `iiee_nive_ide` = \'11\'
+AND `iiee_esta_ide` = 2
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `usuarios` ON `usua_ide` = `com_usua_ide` and `subi_info_ide` = 160
+WHERE `iiee_nive_ide` = :iiee_nive_ide:
+AND `iiee_esta_ide` = :iiee_esta_ide:
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\')', [...], false)
+ 5 APPPATH\Models\Mgrilla.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Lgrilla.php(182): App\Models\Mgrilla::getTotal('com_subidos', [...], [...], '(subi_archivo like \'%%\' OR subi_create_at like \'%%\')')
+ 7 APPPATH\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, 'D:\\wamp\\www\\simondrep')
+ 8 APPPATH\Controllers\Informes2.php(590): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfoUgel()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-10 04:47:45 --> mysqli_sql_exception: Unknown column 'iiee_esta_ide' in 'where clause' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(*)...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*)...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*)...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(*)...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Mgrilla.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Libraries\Lgrilla.php(182): App\Models\Mgrilla::getTotal('com_subidos', Array, Array, '(subi_archivo l...')
+#6 D:\wamp\www\simondrep\app\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, '')
+#7 D:\wamp\www\simondrep\app\Controllers\Informes2.php(590): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfoUgel()
+#9 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+#10 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-10 04:47:45 --> Unknown column 'iiee_esta_ide' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `usuarios` ON `usua_ide` = `com_usua_ide` and `subi_info_ide` = 180
+WHERE `iiee_esta_ide` = 2
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `usuarios` ON `usua_ide` = `com_usua_ide` and `subi_info_ide` = 180
+WHERE `iiee_esta_ide` = 2
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `usuarios` ON `usua_ide` = `com_usua_ide` and `subi_info_ide` = 180
+WHERE `iiee_esta_ide` = 2
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT count(*) as total
+FROM `com_subidos`
+RIGHT JOIN `usuarios` ON `usua_ide` = `com_usua_ide` and `subi_info_ide` = 180
+WHERE `iiee_esta_ide` = :iiee_esta_ide:
+AND (`subi_archivo` like \'%%\' OR `subi_create_at` like \'%%\')', [...], false)
+ 5 APPPATH\Models\Mgrilla.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Lgrilla.php(182): App\Models\Mgrilla::getTotal('com_subidos', [...], [...], '(subi_archivo like \'%%\' OR subi_create_at like \'%%\')')
+ 7 APPPATH\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, 'D:\\wamp\\www\\simondrep')
+ 8 APPPATH\Controllers\Informes2.php(590): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfoUgel()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 05:50:49 --> Undefined array key "Field"
+in APPPATH\Libraries\Lgrilla.php on line 158.
+ 1 APPPATH\Libraries\Lgrilla.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Field"', 'APPPATH\\Libraries\\Lgrilla.php', 158)
+ 2 APPPATH\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, 'D:\\wamp\\www\\simondrep')
+ 3 APPPATH\Controllers\Informes2.php(583): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfoUgel()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 05:51:05 --> Undefined array key "Field"
+in APPPATH\Libraries\Lgrilla.php on line 158.
+ 1 APPPATH\Libraries\Lgrilla.php(158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Field"', 'APPPATH\\Libraries\\Lgrilla.php', 158)
+ 2 APPPATH\Libraries\Lgrilla.php(239): App\Libraries\Lgrilla->getData(10, 1, 'D:\\wamp\\www\\simondrep')
+ 3 APPPATH\Controllers\Informes2.php(583): App\Libraries\Lgrilla->mostrarGrilla('grilla_informes')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Informes2->getCumpleInfoUgel()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 06:00:32 --> Undefined array key 0
+in APPPATH\Controllers\Evaluacion.php on line 1049.
+ 1 APPPATH\Controllers\Evaluacion.php(1049): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Evaluacion.php', 1049)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Evaluacion->getcomparativaiiee()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 06:01:48 --> Undefined array key 0
+in APPPATH\Controllers\Evaluacion.php on line 1049.
+ 1 APPPATH\Controllers\Evaluacion.php(1049): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Evaluacion.php', 1049)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Evaluacion->getcomparativaiiee()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 06:06:33 --> Undefined array key 0
+in APPPATH\Controllers\Evaluacion.php on line 1049.
+ 1 APPPATH\Controllers\Evaluacion.php(1049): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Evaluacion.php', 1049)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Evaluacion->getcomparativaiiee()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 06:06:43 --> Undefined array key 0
+in APPPATH\Controllers\Evaluacion.php on line 1049.
+ 1 APPPATH\Controllers\Evaluacion.php(1049): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Evaluacion.php', 1049)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Evaluacion->getcomparativaiiee()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 06:06:54 --> Undefined array key 0
+in APPPATH\Controllers\Evaluacion.php on line 1049.
+ 1 APPPATH\Controllers\Evaluacion.php(1049): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Evaluacion.php', 1049)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Evaluacion->getcomparativaiiee()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 06:43:20 --> Undefined variable $iiee
+in APPPATH\Views\evaluacion\progreso_grafico.php on line 38.
+ 1 APPPATH\Views\evaluacion\progreso_grafico.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $iiee', 'APPPATH\\Views\\evaluacion\\progreso_grafico.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\evaluacion\\progreso_grafico.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('evaluacion/progreso_grafico', [], true)
+ 5 APPPATH\Controllers\Evaluacion.php(527): view('evaluacion/progreso_grafico', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Evaluacion->getGraficoInforme()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 06:43:44 --> Undefined variable $iiee
+in APPPATH\Views\evaluacion\progreso_grafico.php on line 38.
+ 1 APPPATH\Views\evaluacion\progreso_grafico.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $iiee', 'APPPATH\\Views\\evaluacion\\progreso_grafico.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\evaluacion\\progreso_grafico.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('evaluacion/progreso_grafico', [], true)
+ 5 APPPATH\Controllers\Evaluacion.php(527): view('evaluacion/progreso_grafico', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Evaluacion->getGraficoInforme()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 06:47:05 --> Undefined property: stdClass::$nive_nombre
+in APPPATH\Views\evaluacion\progreso_grafico.php on line 38.
+ 1 APPPATH\Views\evaluacion\progreso_grafico.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nive_nombre', 'APPPATH\\Views\\evaluacion\\progreso_grafico.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\evaluacion\\progreso_grafico.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('evaluacion/progreso_grafico', [], true)
+ 5 APPPATH\Controllers\Evaluacion.php(535): view('evaluacion/progreso_grafico', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Evaluacion->getGraficoInforme()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 06:47:15 --> Undefined property: stdClass::$nive_nombre
+in APPPATH\Views\evaluacion\progreso_grafico.php on line 38.
+ 1 APPPATH\Views\evaluacion\progreso_grafico.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nive_nombre', 'APPPATH\\Views\\evaluacion\\progreso_grafico.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\evaluacion\\progreso_grafico.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('evaluacion/progreso_grafico', [], true)
+ 5 APPPATH\Controllers\Evaluacion.php(535): view('evaluacion/progreso_grafico', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Evaluacion->getGraficoInforme()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 06:55:17 --> Undefined array key 0
+in APPPATH\Controllers\Evaluacion.php on line 1114.
+ 1 APPPATH\Controllers\Evaluacion.php(1114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Evaluacion.php', 1114)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Evaluacion->getcomparativaiiee()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 06:55:38 --> Undefined array key 0
+in APPPATH\Controllers\Evaluacion.php on line 1114.
+ 1 APPPATH\Controllers\Evaluacion.php(1114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Evaluacion.php', 1114)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Evaluacion->getcomparativaiiee()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 06:59:48 --> Undefined array key 0
+in APPPATH\Controllers\Evaluacion.php on line 1114.
+ 1 APPPATH\Controllers\Evaluacion.php(1114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Evaluacion.php', 1114)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Evaluacion->getcomparativaiiee()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 07:00:28 --> Undefined array key 0
+in APPPATH\Controllers\Evaluacion.php on line 1158.
+ 1 APPPATH\Controllers\Evaluacion.php(1158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Evaluacion.php', 1158)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Evaluacion->getcomparativaiiee2()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-10 07:00:48 --> Undefined array key 0
+in APPPATH\Controllers\Evaluacion.php on line 1158.
+ 1 APPPATH\Controllers\Evaluacion.php(1158): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Evaluacion.php', 1158)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Evaluacion->getcomparativaiiee2()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Evaluacion))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

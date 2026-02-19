@@ -1,0 +1,12 @@
+CRITICAL - 2024-12-25 09:10:22 --> Undefined variable $prog_curricular
+in APPPATH\Views\anexos2024\anexos.php on line 24.
+ 1 APPPATH\Views\anexos2024\anexos.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $prog_curricular', 'APPPATH\\Views\\anexos2024\\anexos.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\anexos2024\\anexos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('anexos2024/anexos', [], true)
+ 5 APPPATH\Controllers\Anexos2024.php(33): view('anexos2024/anexos', [])
+ 6 APPPATH\Controllers\Anexos2024.php(38): App\Controllers\Anexos2024->anexos(2024, 1, 'D:\\wamp\\www\\monitoreo3')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024->getAnexo1()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

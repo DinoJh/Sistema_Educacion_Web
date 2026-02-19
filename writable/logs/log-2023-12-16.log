@@ -1,0 +1,551 @@
+ERROR - 2023-12-16 06:25:50 --> mysqli_sql_exception: Unknown column 'usuarios.usua_deleted_at' in 'where clause' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\simondrep\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\system\BaseModel.php(524): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\wamp\www\simondrep\app\Controllers\Login.php(24): CodeIgniter\BaseModel->find()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Login->verificar()
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-16 06:25:50 --> Unknown column 'usuarios.usua_deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usua_user` = \'monitoreo\'
+AND `usua_pass` = \'dr3p@mOnit0r30-2023\'
+AND `usua_esta_ide` = 1
+AND `usuarios`.`usua_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usua_user` = \'monitoreo\'
+AND `usua_pass` = \'dr3p@mOnit0r30-2023\'
+AND `usua_esta_ide` = 1
+AND `usuarios`.`usua_deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usua_user` = \'monitoreo\'
+AND `usua_pass` = \'dr3p@mOnit0r30-2023\'
+AND `usua_esta_ide` = 1
+AND `usuarios`.`usua_deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usua_user` = :usua_user:
+AND `usua_pass` = :usua_pass:
+AND `usua_esta_ide` = :usua_esta_ide:
+AND `usuarios`.`usua_deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(524): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Controllers\Login.php(24): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-16 06:30:38 --> mysqli_sql_exception: Unknown column 'usuarios.usua_deleted_at' in 'where clause' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\simondrep\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\system\BaseModel.php(524): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\wamp\www\simondrep\app\Controllers\Login.php(24): CodeIgniter\BaseModel->find()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Login->verificar()
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-16 06:30:38 --> Unknown column 'usuarios.usua_deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usua_user` = \'monitoreo\'
+AND `usua_pass` = \'dr3p@mOnit0r30-2023\'
+AND `usua_esta_ide` = 1
+AND `usuarios`.`usua_deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usua_user` = \'monitoreo\'
+AND `usua_pass` = \'dr3p@mOnit0r30-2023\'
+AND `usua_esta_ide` = 1
+AND `usuarios`.`usua_deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usua_user` = \'monitoreo\'
+AND `usua_pass` = \'dr3p@mOnit0r30-2023\'
+AND `usua_esta_ide` = 1
+AND `usuarios`.`usua_deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usua_user` = :usua_user:
+AND `usua_pass` = :usua_pass:
+AND `usua_esta_ide` = :usua_esta_ide:
+AND `usuarios`.`usua_deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(524): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Controllers\Login.php(24): CodeIgniter\BaseModel->find()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 07:31:15 --> Undefined property: stdClass::$usua_enti_ide
+in APPPATH\Controllers\Login.php on line 31.
+ 1 APPPATH\Controllers\Login.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$usua_enti_ide', 'APPPATH\\Controllers\\Login.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 07:34:24 --> Undefined property: stdClass::$usua_unor_ide
+in APPPATH\Controllers\Login.php on line 35.
+ 1 APPPATH\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$usua_unor_ide', 'APPPATH\\Controllers\\Login.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 07:34:40 --> Undefined property: stdClass::$usua_nombres
+in APPPATH\Controllers\Login.php on line 36.
+ 1 APPPATH\Controllers\Login.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$usua_nombres', 'APPPATH\\Controllers\\Login.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-16 06:42:43 --> mysqli_sql_exception: Table 'simondrep.entidades' doesn't exist in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `enti_id...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `enti_id...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `enti_id...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `enti_id...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Controllers\Documento.php(34): App\Models\General::getData('enti_ide as id,...', 'entidades', Array, 'enti_ide')
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-16 06:42:43 --> Table 'simondrep.entidades' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `enti_ide` as `id`, `enti_nombre` as `nombre`
+FROM `entidades`
+WHERE `enti_ide` IS NULL
+ORDER BY `enti_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `enti_ide` as `id`, `enti_nombre` as `nombre`
+FROM `entidades`
+WHERE `enti_ide` IS NULL
+ORDER BY `enti_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `enti_ide` as `id`, `enti_nombre` as `nombre`
+FROM `entidades`
+WHERE `enti_ide` IS NULL
+ORDER BY `enti_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `enti_ide` as `id`, `enti_nombre` as `nombre`
+FROM `entidades`
+WHERE `enti_ide` IS NULL
+ORDER BY `enti_ide`', [], false)
+ 5 APPPATH\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(34): App\Models\General::getData('enti_ide as id,enti_nombre as nombre', 'entidades', [...], 'enti_ide')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-16 06:52:27 --> mysqli_sql_exception: Table 'simondrep.entidades' doesn't exist in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `enti_id...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `enti_id...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `enti_id...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `enti_id...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Controllers\Documento.php(34): App\Models\General::getData('enti_ide as id,...', 'entidades', Array, 'enti_ide')
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-16 06:52:27 --> Table 'simondrep.entidades' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `enti_ide` as `id`, `enti_nombre` as `nombre`
+FROM `entidades`
+WHERE `enti_ide` IS NULL
+ORDER BY `enti_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `enti_ide` as `id`, `enti_nombre` as `nombre`
+FROM `entidades`
+WHERE `enti_ide` IS NULL
+ORDER BY `enti_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `enti_ide` as `id`, `enti_nombre` as `nombre`
+FROM `entidades`
+WHERE `enti_ide` IS NULL
+ORDER BY `enti_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `enti_ide` as `id`, `enti_nombre` as `nombre`
+FROM `entidades`
+WHERE `enti_ide` IS NULL
+ORDER BY `enti_ide`', [], false)
+ 5 APPPATH\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(34): App\Models\General::getData('enti_ide as id,enti_nombre as nombre', 'entidades', [...], 'enti_ide')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-16 07:32:11 --> mysqli_sql_exception: Table 'simondrep.entidades' doesn't exist in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `enti_id...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `enti_id...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `enti_id...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `enti_id...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Controllers\Documento.php(34): App\Models\General::getData('enti_ide as id,...', 'entidades', Array, 'enti_ide')
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-16 07:32:11 --> Table 'simondrep.entidades' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `enti_ide` as `id`, `enti_nombre` as `nombre`
+FROM `entidades`
+WHERE `enti_ide` IS NULL
+ORDER BY `enti_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `enti_ide` as `id`, `enti_nombre` as `nombre`
+FROM `entidades`
+WHERE `enti_ide` IS NULL
+ORDER BY `enti_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `enti_ide` as `id`, `enti_nombre` as `nombre`
+FROM `entidades`
+WHERE `enti_ide` IS NULL
+ORDER BY `enti_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `enti_ide` as `id`, `enti_nombre` as `nombre`
+FROM `entidades`
+WHERE `enti_ide` IS NULL
+ORDER BY `enti_ide`', [], false)
+ 5 APPPATH\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(34): App\Models\General::getData('enti_ide as id,enti_nombre as nombre', 'entidades', [...], 'enti_ide')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-16 07:34:01 --> mysqli_sql_exception: Table 'simondrep.entidades' doesn't exist in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `enti_id...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `enti_id...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `enti_id...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `enti_id...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Controllers\Documento.php(34): App\Models\General::getData('enti_ide as id,...', 'entidades', Array, 'enti_ide')
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-16 07:34:01 --> Table 'simondrep.entidades' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `enti_ide` as `id`, `enti_nombre` as `nombre`
+FROM `entidades`
+WHERE `enti_ide` IS NULL
+ORDER BY `enti_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `enti_ide` as `id`, `enti_nombre` as `nombre`
+FROM `entidades`
+WHERE `enti_ide` IS NULL
+ORDER BY `enti_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `enti_ide` as `id`, `enti_nombre` as `nombre`
+FROM `entidades`
+WHERE `enti_ide` IS NULL
+ORDER BY `enti_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `enti_ide` as `id`, `enti_nombre` as `nombre`
+FROM `entidades`
+WHERE `enti_ide` IS NULL
+ORDER BY `enti_ide`', [], false)
+ 5 APPPATH\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(34): App\Models\General::getData('enti_ide as id,enti_nombre as nombre', 'entidades', [...], 'enti_ide')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-16 07:36:37 --> mysqli_sql_exception: Table 'simondrep.entidades' doesn't exist in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `enti_id...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `enti_id...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `enti_id...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `enti_id...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\app\Controllers\Documento.php(34): App\Models\General::getData('enti_ide as id,...', 'entidades', Array, 'enti_ide')
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-16 07:36:37 --> Table 'simondrep.entidades' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `enti_ide` as `id`, `enti_nombre` as `nombre`
+FROM `entidades`
+WHERE `enti_ide` IS NULL
+ORDER BY `enti_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `enti_ide` as `id`, `enti_nombre` as `nombre`
+FROM `entidades`
+WHERE `enti_ide` IS NULL
+ORDER BY `enti_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `enti_ide` as `id`, `enti_nombre` as `nombre`
+FROM `entidades`
+WHERE `enti_ide` IS NULL
+ORDER BY `enti_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `enti_ide` as `id`, `enti_nombre` as `nombre`
+FROM `entidades`
+WHERE `enti_ide` IS NULL
+ORDER BY `enti_ide`', [], false)
+ 5 APPPATH\Models\General.php(75): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Documento.php(34): App\Models\General::getData('enti_ide as id,enti_nombre as nombre', 'entidades', [...], 'enti_ide')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Documento->getNuevoDocumento()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Documento))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 07:54:53 --> Undefined array key 0
+in APPPATH\Views\monitoreo\plan\asignar_muestra.php on line 8.
+ 1 APPPATH\Views\monitoreo\plan\asignar_muestra.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/asignar_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(391): view('monitoreo/plan/asignar_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVerPlan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 07:54:59 --> Undefined array key 0
+in APPPATH\Views\monitoreo\plan\asignar_muestra.php on line 8.
+ 1 APPPATH\Views\monitoreo\plan\asignar_muestra.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/asignar_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(391): view('monitoreo/plan/asignar_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVerPlan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 07:55:01 --> Undefined array key 0
+in APPPATH\Views\monitoreo\plan\asignar_muestra.php on line 8.
+ 1 APPPATH\Views\monitoreo\plan\asignar_muestra.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/asignar_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(391): view('monitoreo/plan/asignar_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVerPlan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 07:55:10 --> Undefined array key 0
+in APPPATH\Views\monitoreo\plan\asignar_muestra.php on line 8.
+ 1 APPPATH\Views\monitoreo\plan\asignar_muestra.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/asignar_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(391): view('monitoreo/plan/asignar_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVerPlan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 08:12:37 --> Undefined array key 0
+in APPPATH\Views\monitoreo\plan\asignar_muestra.php on line 8.
+ 1 APPPATH\Views\monitoreo\plan\asignar_muestra.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/asignar_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(391): view('monitoreo/plan/asignar_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVerPlan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 08:12:44 --> Undefined array key 0
+in APPPATH\Views\monitoreo\plan\asignar_muestra.php on line 8.
+ 1 APPPATH\Views\monitoreo\plan\asignar_muestra.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/asignar_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(391): view('monitoreo/plan/asignar_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVerPlan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 08:12:47 --> Undefined array key 0
+in APPPATH\Views\monitoreo\plan\asignar_muestra.php on line 8.
+ 1 APPPATH\Views\monitoreo\plan\asignar_muestra.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/asignar_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(391): view('monitoreo/plan/asignar_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVerPlan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 08:12:50 --> Undefined array key 0
+in APPPATH\Views\monitoreo\plan\asignar_muestra.php on line 8.
+ 1 APPPATH\Views\monitoreo\plan\asignar_muestra.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/asignar_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(391): view('monitoreo/plan/asignar_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVerPlan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 08:12:53 --> Undefined array key 0
+in APPPATH\Views\monitoreo\plan\asignar_muestra.php on line 8.
+ 1 APPPATH\Views\monitoreo\plan\asignar_muestra.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/asignar_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(391): view('monitoreo/plan/asignar_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVerPlan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 08:12:55 --> Undefined array key 0
+in APPPATH\Views\monitoreo\plan\asignar_muestra.php on line 8.
+ 1 APPPATH\Views\monitoreo\plan\asignar_muestra.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/asignar_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(391): view('monitoreo/plan/asignar_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVerPlan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 08:12:58 --> Undefined array key 0
+in APPPATH\Views\monitoreo\plan\asignar_muestra.php on line 8.
+ 1 APPPATH\Views\monitoreo\plan\asignar_muestra.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/asignar_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(391): view('monitoreo/plan/asignar_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVerPlan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 08:13:02 --> Undefined array key 0
+in APPPATH\Views\monitoreo\plan\asignar_muestra.php on line 8.
+ 1 APPPATH\Views\monitoreo\plan\asignar_muestra.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\monitoreo\\plan\\asignar_muestra.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/asignar_muestra', [], true)
+ 5 APPPATH\Controllers\Monitoreo.php(391): view('monitoreo/plan/asignar_muestra', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Monitoreo->getVerPlan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 08:17:16 --> Undefined variable $fondo
+in APPPATH\Views\login\vlogin.php on line 69.
+ 1 APPPATH\Views\login\vlogin.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fondo', 'APPPATH\\Views\\login\\vlogin.php', 69)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\login\\vlogin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login/vlogin', [], true)
+ 5 APPPATH\Controllers\Login.php(17): view('login/vlogin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 08:18:05 --> Class "App\Libraries\Componentes" not found
+in APPPATH\Views\login\vlogin.php on line 112.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login/vlogin', [], true)
+ 4 APPPATH\Controllers\Login.php(18): view('login/vlogin', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 08:18:23 --> Class "App\Libraries\Componentes" not found
+in APPPATH\Views\login\vlogin.php on line 112.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login/vlogin', [], true)
+ 4 APPPATH\Controllers\Login.php(19): view('login/vlogin', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 08:20:46 --> Undefined variable $sigla
+in APPPATH\Views\login\vlogin.php on line 115.
+ 1 APPPATH\Views\login\vlogin.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sigla', 'APPPATH\\Views\\login\\vlogin.php', 115)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\login\\vlogin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login/vlogin', [], true)
+ 5 APPPATH\Controllers\Login.php(19): view('login/vlogin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 08:22:03 --> Call to undefined method App\Libraries\Componente::Hidden()
+in APPPATH\Views\login\vlogin.php on line 126.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login/vlogin', [], true)
+ 4 APPPATH\Controllers\Login.php(20): view('login/vlogin', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 08:24:33 --> Undefined variable $inst_ide
+in APPPATH\Views\login\vlogin.php on line 126.
+ 1 APPPATH\Views\login\vlogin.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $inst_ide', 'APPPATH\\Views\\login\\vlogin.php', 126)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\login\\vlogin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login/vlogin', [], true)
+ 5 APPPATH\Controllers\Login.php(20): view('login/vlogin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-16 08:25:14 --> Undefined variable $ver
+in APPPATH\Views\login\vlogin.php on line 136.
+ 1 APPPATH\Views\login\vlogin.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ver', 'APPPATH\\Views\\login\\vlogin.php', 136)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\login\\vlogin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login/vlogin', [], true)
+ 5 APPPATH\Controllers\Login.php(20): view('login/vlogin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-16 09:27:33 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'simondrep' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'simondrep', 3306, '', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\simondrep\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\simondrep\system\BaseModel.php(524): CodeIgniter\Model->doFind(false, NULL)
+#6 D:\wamp\www\simondrep\app\Controllers\Login.php(30): CodeIgniter\BaseModel->find()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Login->verificar()
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'simondrep' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\wamp\www\simondrep\system\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\wamp\www\simondrep\system\BaseModel.php(524): CodeIgniter\Model->doFind(false, NULL)
+#5 D:\wamp\www\simondrep\app\Controllers\Login.php(30): CodeIgniter\BaseModel->find()
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Login->verificar()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-16 09:27:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'simondrep'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usua_user` = :usua_user:
+AND `usua_pass` = :usua_pass:
+AND `usua_esta_ide` = :usua_esta_ide:
+AND `usuarios`.`usua_deleted_at` IS NULL', [...], false)
+ 3 SYSTEMPATH\Model.php(185): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(524): CodeIgniter\Model->doFind(false, null)
+ 5 APPPATH\Controllers\Login.php(30): CodeIgniter\BaseModel->find()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,72 @@
+CRITICAL - 2022-12-16 07:43:48 --> syntax error, unexpected ','
+in APPPATH\Views\sistema\vheader.php on line 1709.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 3 APPPATH\Controllers\Application.php(30): view('sistema/vheader', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 09:24:50 --> Undefined variable: session
+in APPPATH\Controllers\Application.php on line 256.
+ 1 APPPATH\Controllers\Application.php(256): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH\\Controllers\\Application.php', 256, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->setpass()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 09:25:27 --> Undefined variable: session
+in APPPATH\Controllers\Application.php on line 256.
+ 1 APPPATH\Controllers\Application.php(256): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH\\Controllers\\Application.php', 256, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->setpass()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 09:26:03 --> Undefined variable: clase
+in APPPATH\Controllers\Application.php on line 272.
+ 1 APPPATH\Controllers\Application.php(272): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: clase', 'APPPATH\\Controllers\\Application.php', 272, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->setpass()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 09:27:02 --> Undefined variable: clase
+in APPPATH\Controllers\Application.php on line 272.
+ 1 APPPATH\Controllers\Application.php(272): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: clase', 'APPPATH\\Controllers\\Application.php', 272, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->setpass()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 09:30:40 --> syntax error, unexpected '}'
+in APPPATH\Controllers\Application.php on line 272.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Application.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Application')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Application')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Application')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Application', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 09:34:28 --> Undefined variable: nueva
+in APPPATH\Controllers\Application.php on line 270.
+ 1 APPPATH\Controllers\Application.php(270): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: nueva', 'APPPATH\\Controllers\\Application.php', 270, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->setpass()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 09:35:56 --> Undefined variable: nueva
+in APPPATH\Controllers\Application.php on line 270.
+ 1 APPPATH\Controllers\Application.php(270): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: nueva', 'APPPATH\\Controllers\\Application.php', 270, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->setpass()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 10:23:54 --> Undefined offset: 1
+in APPPATH\Views\sistema\vheader.php on line 1735.
+ 1 APPPATH\Views\sistema\vheader.php(1735): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Views\\sistema\\vheader.php', 1735, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(33): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

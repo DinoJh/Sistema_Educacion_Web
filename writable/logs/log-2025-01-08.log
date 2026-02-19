@@ -1,0 +1,465 @@
+CRITICAL - 2025-01-08 17:34:11 --> get_object_vars(): Argument #1 ($object) must be of type object, array given
+in APPPATH\Controllers\Anexos2024i.php on line 332.
+ 1 APPPATH\Controllers\Anexos2024i.php(332): get_object_vars([...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->postAnexosEnviados()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-08 17:45:10 --> mysqli_sql_exception: Unknown column 'i.arch_iiee_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `i`.`arc...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`arc...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`arc...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`arc...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024i.php(327): App\Models\Generaldb->selectSomeData('\r\n             ...', '\r\n             ...', '\r\n             ...')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024i->postAnexosEnviados()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-08 17:45:10 --> Unknown column 'i.arch_iiee_ide' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `i`.`arch_iiee_ide`, `a`.`arch_anexo`, `e`.`esta_clase`, `e`.`esta_nombre`, `i`.`iiee_ugel_ide`
+FROM `2024_archivos` `a`, `iiee` `i`, `estados` `e`
+WHERE 
+                a.arch_esta_ide = e.esta_ide
+                and
+                `a`.`arch_iiee_ide` = `i`.`iiee_ide` 
+                and
+                `i`.`iiee_dres_ide` = 1
+                and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+                `i`.`iiee_nive_ide` = 11
+                and
+                i.iiee_ubig_ide = 210102
+            ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `i`.`arch_iiee_ide`, `a`.`arch_anexo`, `e`.`esta_clase`, `e`.`esta_nombre`, `i`.`iiee_ugel_ide`
+FROM `2024_archivos` `a`, `iiee` `i`, `estados` `e`
+WHERE 
+                a.arch_esta_ide = e.esta_ide
+                and
+                `a`.`arch_iiee_ide` = `i`.`iiee_ide` 
+                and
+                `i`.`iiee_dres_ide` = 1
+                and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+                `i`.`iiee_nive_ide` = 11
+                and
+                i.iiee_ubig_ide = 210102
+            ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `i`.`arch_iiee_ide`, `a`.`arch_anexo`, `e`.`esta_clase`, `e`.`esta_nombre`, `i`.`iiee_ugel_ide`
+FROM `2024_archivos` `a`, `iiee` `i`, `estados` `e`
+WHERE 
+                a.arch_esta_ide = e.esta_ide
+                and
+                `a`.`arch_iiee_ide` = `i`.`iiee_ide` 
+                and
+                `i`.`iiee_dres_ide` = 1
+                and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+                `i`.`iiee_nive_ide` = 11
+                and
+                i.iiee_ubig_ide = 210102
+            ')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `i`.`arch_iiee_ide`, `a`.`arch_anexo`, `e`.`esta_clase`, `e`.`esta_nombre`, `i`.`iiee_ugel_ide`
+FROM `2024_archivos` `a`, `iiee` `i`, `estados` `e`
+WHERE 
+                a.arch_esta_ide = e.esta_ide
+                and
+                `a`.`arch_iiee_ide` = `i`.`iiee_ide` 
+                and
+                `i`.`iiee_dres_ide` = 1
+                and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+                `i`.`iiee_nive_ide` = 11
+                and
+                i.iiee_ubig_ide = 210102
+            ', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2024i.php(327): App\Models\Generaldb->selectSomeData('
+                i.arch_iiee_ide,
+                a.arch_anexo,
+                e.esta_clase,
+                e.esta_nombre,
+                i.iiee_ugel_ide
+            ', '
+                2024_archivos a,
+                iiee i,
+                estados e
+            ', '
+                a.arch_esta_ide = e.esta_ide
+                and
+                a.arch_iiee_ide = i.iiee_ide 
+                and
+                i.iiee_dres_ide = 1
+                and
+                i.iiee_ugel_ide = 210001
+                and
+                i.iiee_nive_ide = 11
+                and
+                i.iiee_ubig_ide = 210102
+            ')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->postAnexosEnviados()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-08 19:46:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`ii' at line 7 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `u`.`ubi...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`ubi...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`ubi...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`ubi...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024i.php(251): App\Models\Generaldb->selectSomeData('\r\n             ...', '\r\n             ...', '\r\n             ...', '\r\n             ...', '\r\n             ...')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024i->getConsol()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-08 19:46:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`ii' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 1
+                and
+                `i`.`iiee_ugel_ide` = 
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 1
+                and
+                `i`.`iiee_ugel_ide` = 
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 1
+                and
+                `i`.`iiee_ugel_ide` = 
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 1
+                and
+                `i`.`iiee_ugel_ide` = 
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2024i.php(251): App\Models\Generaldb->selectSomeData('
+                u.ubig_ide AS id,
+	            CONCAT(u.ubig_dist,\' - \',u.ubig_prov,\' - \',u.ubig_dpto) AS nombre
+            ', '
+                iiee i,
+	            ubigeos u
+            ', '
+                i.iiee_dres_ide = 1
+                and
+                i.iiee_ugel_ide = 
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            ', '
+                u.ubig_dpto, u.ubig_prov, u.ubig_dist
+            ', '
+                i.iiee_ubig_ide
+            ')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->getConsol()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-08 19:47:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`ii' at line 7 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `u`.`ubi...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`ubi...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`ubi...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`ubi...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024i.php(251): App\Models\Generaldb->selectSomeData('\r\n             ...', '\r\n             ...', '\r\n             ...', '\r\n             ...', '\r\n             ...')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024i->getConsol()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-08 19:47:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`ii' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 1
+                and
+                `i`.`iiee_ugel_ide` = 
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 1
+                and
+                `i`.`iiee_ugel_ide` = 
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 1
+                and
+                `i`.`iiee_ugel_ide` = 
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 1
+                and
+                `i`.`iiee_ugel_ide` = 
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2024i.php(251): App\Models\Generaldb->selectSomeData('
+                u.ubig_ide AS id,
+	            CONCAT(u.ubig_dist,\' - \',u.ubig_prov,\' - \',u.ubig_dpto) AS nombre
+            ', '
+                iiee i,
+	            ubigeos u
+            ', '
+                i.iiee_dres_ide = 1
+                and
+                i.iiee_ugel_ide = 
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            ', '
+                u.ubig_dpto, u.ubig_prov, u.ubig_dist
+            ', '
+                i.iiee_ubig_ide
+            ')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->getConsol()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-08 19:56:51 --> Undefined variable $dres_ide
+in APPPATH\Controllers\Anexos2024i.php on line 361.
+ 1 APPPATH\Controllers\Anexos2024i.php(361): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dres_ide', 'APPPATH\\Controllers\\Anexos2024i.php', 361)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->postUbig()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-08 19:57:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`ii' at line 7 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `u`.`ubi...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`ubi...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`ubi...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`ubi...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024i.php(375): App\Models\Generaldb->selectSomeData('\r\n             ...', '\r\n             ...', '\r\n             ...', '\r\n             ...', '\r\n             ...')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024i->postUbig()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-08 19:57:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`ii' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 1
+                and
+                `i`.`iiee_ugel_ide` = 
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 1
+                and
+                `i`.`iiee_ugel_ide` = 
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 1
+                and
+                `i`.`iiee_ugel_ide` = 
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 1
+                and
+                `i`.`iiee_ugel_ide` = 
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2024i.php(375): App\Models\Generaldb->selectSomeData('
+                u.ubig_ide AS id,
+	            CONCAT(u.ubig_dist,\' - \',u.ubig_prov,\' - \',u.ubig_dpto) AS nombre
+            ', '
+                iiee i,
+	            ubigeos u
+            ', '
+                i.iiee_dres_ide = 1
+                and
+                i.iiee_ugel_ide = 
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            ', '
+                u.ubig_dpto, u.ubig_prov, u.ubig_dist
+            ', '
+                i.iiee_ubig_ide
+            ')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->postUbig()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-08 19:57:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`ii' at line 7 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `u`.`ubi...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`ubi...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`ubi...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`ubi...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024i.php(375): App\Models\Generaldb->selectSomeData('\r\n             ...', '\r\n             ...', '\r\n             ...', '\r\n             ...', '\r\n             ...')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024i->postUbig()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-08 19:57:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`ii' at line 7
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 1
+                and
+                `i`.`iiee_ugel_ide` = 
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 1
+                and
+                `i`.`iiee_ugel_ide` = 
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 1
+                and
+                `i`.`iiee_ugel_ide` = 
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 1
+                and
+                `i`.`iiee_ugel_ide` = 
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2024i.php(375): App\Models\Generaldb->selectSomeData('
+                u.ubig_ide AS id,
+	            CONCAT(u.ubig_dist,\' - \',u.ubig_prov,\' - \',u.ubig_dpto) AS nombre
+            ', '
+                iiee i,
+	            ubigeos u
+            ', '
+                i.iiee_dres_ide = 1
+                and
+                i.iiee_ugel_ide = 
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            ', '
+                u.ubig_dpto, u.ubig_prov, u.ubig_dist
+            ', '
+                i.iiee_ubig_ide
+            ')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->postUbig()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

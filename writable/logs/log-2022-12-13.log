@@ -1,0 +1,150 @@
+CRITICAL - 2022-12-13 10:09:01 --> The route for "http://localhost/plantillaciv4/sistema" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/plantillaciv4/sistema')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Login.php(35): redirect('http://localhost/plantillaciv4/sistema')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 10:15:23 --> syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+in APPPATH\Controllers\Sistema.php on line 31.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Sistema.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Sistema')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Sistema')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Sistema')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Sistema', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 10:15:39 --> syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+in APPPATH\Controllers\Sistema.php on line 31.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Sistema.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Sistema')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Sistema')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Sistema')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Sistema', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 10:15:54 --> syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+in APPPATH\Controllers\Sistema.php on line 31.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Sistema.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Sistema')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Sistema')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Sistema')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Sistema', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 10:15:56 --> syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+in APPPATH\Controllers\Sistema.php on line 31.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Sistema.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Sistema')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Sistema')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Sistema')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Sistema', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 10:16:25 --> syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+in APPPATH\Controllers\Sistema.php on line 31.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Sistema.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Sistema')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Sistema')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Sistema')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Sistema', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 10:17:49 --> Cannot call constructor
+in APPPATH\Controllers\Sistema.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Sistema->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 10:20:41 --> Could not check compatibility between App\Controllers\Sistema::initController(App\Controllers\RequestInterface $request, App\Controllers\ResponseInterface $response, App\Controllers\LoggerInterface $logger) and App\Controllers\BaseController::initController(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, Psr\Log\LoggerInterface $logger), because class App\Controllers\LoggerInterface is not available
+in APPPATH\Controllers\Sistema.php on line 7.
+ 1 APPPATH\Controllers\Sistema.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Could not check compatibility between App\\Controllers\\Sistema::initController(App\\Controllers\\RequestInterface $request, App\\Controllers\\ResponseInterface $response, App\\Controllers\\LoggerInterface $logger) and App\\Controllers\\BaseController::initController(CodeIgniter\\HTTP\\RequestInterface $request, CodeIgniter\\HTTP\\ResponseInterface $response, Psr\\Log\\LoggerInterface $logger), because class App\\Controllers\\LoggerInterface is not available', 'APPPATH\\Controllers\\Sistema.php', 7, [...])
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once('APPPATH\\Controllers\\Sistema.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Sistema.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Sistema')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Sistema')
+ 6 [internal function]: spl_autoload_call('App\\Controllers\\Sistema')
+ 7 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Sistema', true)
+ 8 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 10:38:40 --> Could not check compatibility between App\Controllers\Sistema::initController(App\Controllers\RequestInterface $request, App\Controllers\ResponseInterface $response, App\Controllers\LoggerInterface $logger) and App\Controllers\BaseController::initController(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, Psr\Log\LoggerInterface $logger), because class App\Controllers\LoggerInterface is not available
+in APPPATH\Controllers\Sistema.php on line 7.
+ 1 APPPATH\Controllers\Sistema.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Could not check compatibility between App\\Controllers\\Sistema::initController(App\\Controllers\\RequestInterface $request, App\\Controllers\\ResponseInterface $response, App\\Controllers\\LoggerInterface $logger) and App\\Controllers\\BaseController::initController(CodeIgniter\\HTTP\\RequestInterface $request, CodeIgniter\\HTTP\\ResponseInterface $response, Psr\\Log\\LoggerInterface $logger), because class App\\Controllers\\LoggerInterface is not available', 'APPPATH\\Controllers\\Sistema.php', 7, [...])
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once('APPPATH\\Controllers\\Sistema.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Sistema.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Sistema')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Sistema')
+ 6 [internal function]: spl_autoload_call('App\\Controllers\\Sistema')
+ 7 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Sistema', true)
+ 8 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 10:50:45 --> Undefined variable: session
+in APPPATH\Controllers\Sistema.php on line 10.
+ 1 APPPATH\Controllers\Sistema.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH\\Controllers\\Sistema.php', 10, [])
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\Sistema->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 10:53:47 --> Constant expression contains invalid operations
+in APPPATH\Controllers\Sistema.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-13 10:54:47 --> Object of class CodeIgniter\Session\Session could not be converted to string
+in APPPATH\Controllers\Sistema.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sistema->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sistema))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 12:28:06 --> Undefined variable: data_menu
+in APPPATH\Controllers\Application.php on line 24.
+ 1 APPPATH\Controllers\Application.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data_menu', 'APPPATH\\Controllers\\Application.php', 24, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 20:02:28 --> Undefined variable: session
+in APPPATH\Views\sistema\vheader.php on line 412.
+ 1 APPPATH\Views\sistema\vheader.php(412): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH\\Views\\sistema\\vheader.php', 412, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(25): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 20:03:16 --> Undefined variable: session
+in APPPATH\Views\sistema\vheader.php on line 412.
+ 1 APPPATH\Views\sistema\vheader.php(412): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH\\Views\\sistema\\vheader.php', 412, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(27): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 23:43:01 --> Class 'App\Controllers\Funciones' not found
+in APPPATH\Controllers\Login.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 23:47:17 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+in APPPATH\Controllers\Login.php on line 35.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Login.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Login')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Login')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Login')
+ 5 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Login', true)
+ 6 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

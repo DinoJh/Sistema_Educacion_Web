@@ -1,0 +1,404 @@
+CRITICAL - 2023-12-20 05:56:05 --> Invalid file: compromisos/vcom1.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('compromisos/vcom1.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('compromisos/vcom1', [], true)
+ 3 APPPATH\Controllers\Compromisos.php(26): view('compromisos/vcom1')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compromisos->getCom1()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compromisos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 05:56:21 --> Invalid file: compromisos/vcontruccion.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('compromisos/vcontruccion.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('compromisos/vcontruccion', [], true)
+ 3 APPPATH\Controllers\Compromisos.php(33): view('compromisos/vcontruccion', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compromisos->getCom2()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compromisos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 05:56:45 --> Invalid file: compromisos/vcom1.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('compromisos/vcom1.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('compromisos/vcom1', [], true)
+ 3 APPPATH\Controllers\Compromisos.php(26): view('compromisos/vcom1')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compromisos->getCom1()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compromisos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-20 06:17:29 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:17:29 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:17:29 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:17:34 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:17:34 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:17:34 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:17:35 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:17:35 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:17:35 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:17:36 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:17:36 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:17:36 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:17:36 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:17:36 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:17:36 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:17:36 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:17:36 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:17:36 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:17:50 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:17:50 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:18:16 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:18:16 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:18:25 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:18:25 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:20:36 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:20:46 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(781): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:23:26 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(782): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:26:47 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(782): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-12-20 06:29:50 --> mysqli_sql_exception: Unknown column 'pm_estado' in 'field list' in D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\simondrep\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `sd...', 0)
+#1 D:\wamp\www\simondrep\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sd...')
+#2 D:\wamp\www\simondrep\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sd...')
+#3 D:\wamp\www\simondrep\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sd...', Array, false)
+#4 D:\wamp\www\simondrep\app\Models\Generaldb.php(127): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\simondrep\app\Controllers\Monitoreo.php(782): App\Models\Generaldb->insertData('sd_plan_muestra', Array)
+#6 D:\wamp\www\simondrep\system\CodeIgniter.php(927): App\Controllers\Monitoreo->postAgregarProgramacionInstrumento()
+#7 D:\wamp\www\simondrep\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 D:\wamp\www\simondrep\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\simondrep\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}

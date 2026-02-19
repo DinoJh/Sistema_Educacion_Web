@@ -1,0 +1,953 @@
+CRITICAL - 2022-12-14 00:00:14 --> Non-static method App\Libraries\Funciones::get_fecha_letras() should not be called statically
+in APPPATH\Controllers\Login.php on line 35.
+ 1 APPPATH\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Non-static method App\\Libraries\\Funciones::get_fecha_letras() should not be called statically', 'APPPATH\\Controllers\\Login.php', 35, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 00:01:27 --> Non-static method App\Libraries\Funciones::get_fecha_letras() should not be called statically
+in APPPATH\Controllers\Login.php on line 35.
+ 1 APPPATH\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Non-static method App\\Libraries\\Funciones::get_fecha_letras() should not be called statically', 'APPPATH\\Controllers\\Login.php', 35, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:02:29 --> Non-static method App\Libraries\Funciones::get_fecha_letras() should not be called statically
+in APPPATH\Controllers\Login.php on line 35.
+ 1 APPPATH\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Non-static method App\\Libraries\\Funciones::get_fecha_letras() should not be called statically', 'APPPATH\\Controllers\\Login.php', 35, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:03:10 --> Non-static method App\Libraries\Funciones::get_fecha_letras() should not be called statically
+in APPPATH\Controllers\Login.php on line 36.
+ 1 APPPATH\Controllers\Login.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Non-static method App\\Libraries\\Funciones::get_fecha_letras() should not be called statically', 'APPPATH\\Controllers\\Login.php', 36, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:03:57 --> Using $this when not in object context
+in APPPATH\Libraries\Funciones.php on line 30.
+ 1 APPPATH\Controllers\Login.php(36): App\Libraries\Funciones::get_fecha_letras('2022-12-14')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:04:39 --> Using $this when not in object context
+in APPPATH\Libraries\Funciones.php on line 30.
+ 1 APPPATH\Controllers\Login.php(36): App\Libraries\Funciones::get_fecha_letras('2022-12-14')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:04:56 --> Call to undefined function App\Libraries\get_mes()
+in APPPATH\Libraries\Funciones.php on line 30.
+ 1 APPPATH\Controllers\Login.php(36): App\Libraries\Funciones::get_fecha_letras('2022-12-14')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:05:31 --> Using $this when not in object context
+in APPPATH\Libraries\Funciones.php on line 30.
+ 1 APPPATH\Controllers\Login.php(36): App\Libraries\Funciones::get_fecha_letras('2022-12-14')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->verificar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 00:42:24 --> Undefined variable: f
+in APPPATH\Views\sistema\vheader.php on line 426.
+ 1 APPPATH\Views\sistema\vheader.php(426): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: f', 'APPPATH\\Views\\sistema\\vheader.php', 426, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(27): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:15:25 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\Usuarios.php on line 62.
+ 1 APPPATH\Controllers\Application.php(20): App\Models\Usuarios->getRoles(1)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:22:22 --> Non-static method App\Models\General::getRoles() should not be called statically
+in APPPATH\Controllers\Application.php on line 19.
+ 1 APPPATH\Controllers\Application.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Non-static method App\\Models\\General::getRoles() should not be called statically', 'APPPATH\\Controllers\\Application.php', 19, [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:22:39 --> Undefined variable: db
+in APPPATH\Models\General.php on line 7.
+ 1 APPPATH\Models\General.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: db', 'APPPATH\\Models\\General.php', 7, [...])
+ 2 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:24:44 --> Using $this when not in object context
+in APPPATH\Models\General.php on line 7.
+ 1 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:30:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+in APPPATH\Models\General.php on line 11.
+ 1 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:31:26 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$num_rows
+in APPPATH\Models\General.php on line 12.
+ 1 APPPATH\Models\General.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$num_rows', 'APPPATH\\Models\\General.php', 12, [...])
+ 2 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 01:42:04 --> mysqli_sql_exception: Not unique table/alias: 'a' in D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `m`.`mod...', 0)
+#1 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.`mod...')
+#2 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.`mod...')
+#3 D:\wamp\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`mod...', Array, false)
+#4 D:\wamp\www\plantillaciv4\app\Models\General.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\plantillaciv4\app\Controllers\Application.php(19): App\Models\General::getRoles(1)
+#6 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Application->index()
+#7 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+#8 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-14 01:42:04 --> Not unique table/alias: 'a'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`
+FROM `accesos` `a`, `accesos` `a`, `perfiles` `p`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_perf_ide` = 1
+AND `a`.`acce_perf_ide` = `p`.`perf_ide`
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`
+FROM `accesos` `a`, `accesos` `a`, `perfiles` `p`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_perf_ide` = 1
+AND `a`.`acce_perf_ide` = `p`.`perf_ide`
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`
+FROM `accesos` `a`, `accesos` `a`, `perfiles` `p`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_perf_ide` = 1
+AND `a`.`acce_perf_ide` = `p`.`perf_ide`
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`
+FROM `accesos` `a`, `accesos` `a`, `perfiles` `p`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_perf_ide` = :a.acce_perf_ide:
+AND `a`.`acce_perf_ide` = `p`.`perf_ide`
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`', [...], false)
+ 5 APPPATH\Models\General.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 01:42:20 --> mysqli_sql_exception: Table 'dbbase.perfiles' doesn't exist in D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `m`.`mod...', 0)
+#1 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.`mod...')
+#2 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.`mod...')
+#3 D:\wamp\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`mod...', Array, false)
+#4 D:\wamp\www\plantillaciv4\app\Models\General.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\plantillaciv4\app\Controllers\Application.php(19): App\Models\General::getRoles(1)
+#6 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Application->index()
+#7 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+#8 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-14 01:42:20 --> Table 'dbbase.perfiles' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`
+FROM `accesos` `a`, `perfiles` `p`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_perf_ide` = 1
+AND `a`.`acce_perf_ide` = `p`.`perf_ide`
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`
+FROM `accesos` `a`, `perfiles` `p`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_perf_ide` = 1
+AND `a`.`acce_perf_ide` = `p`.`perf_ide`
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`
+FROM `accesos` `a`, `perfiles` `p`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_perf_ide` = 1
+AND `a`.`acce_perf_ide` = `p`.`perf_ide`
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`
+FROM `accesos` `a`, `perfiles` `p`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_perf_ide` = :a.acce_perf_ide:
+AND `a`.`acce_perf_ide` = `p`.`perf_ide`
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`', [...], false)
+ 5 APPPATH\Models\General.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 01:42:57 --> mysqli_sql_exception: Unknown column 'a.acce_perf_ide' in 'where clause' in D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `m`.`mod...', 0)
+#1 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.`mod...')
+#2 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.`mod...')
+#3 D:\wamp\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`mod...', Array, false)
+#4 D:\wamp\www\plantillaciv4\app\Models\General.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\plantillaciv4\app\Controllers\Application.php(19): App\Models\General::getRoles(1)
+#6 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Application->index()
+#7 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+#8 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-14 01:42:57 --> Unknown column 'a.acce_perf_ide' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`
+FROM `accesos` `a`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_perf_ide` = 1
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`
+FROM `accesos` `a`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_perf_ide` = 1
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`
+FROM `accesos` `a`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_perf_ide` = 1
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`
+FROM `accesos` `a`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_perf_ide` = :a.acce_perf_ide:
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`', [...], false)
+ 5 APPPATH\Models\General.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 01:43:20 --> mysqli_sql_exception: Unknown column 'a.acce_esta_ide' in 'where clause' in D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `m`.`mod...', 0)
+#1 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.`mod...')
+#2 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.`mod...')
+#3 D:\wamp\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`mod...', Array, false)
+#4 D:\wamp\www\plantillaciv4\app\Models\General.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\plantillaciv4\app\Controllers\Application.php(19): App\Models\General::getRoles(1)
+#6 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Application->index()
+#7 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+#8 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-14 01:43:20 --> Unknown column 'a.acce_esta_ide' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`
+FROM `accesos` `a`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_usua_ide` = 1
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`
+FROM `accesos` `a`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_usua_ide` = 1
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`
+FROM `accesos` `a`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_usua_ide` = 1
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`
+FROM `accesos` `a`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_usua_ide` = :a.acce_usua_ide:
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`', [...], false)
+ 5 APPPATH\Models\General.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 01:45:25 --> mysqli_sql_exception: Not unique table/alias: 'a' in D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `m`.`mod...', 0)
+#1 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.`mod...')
+#2 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.`mod...')
+#3 D:\wamp\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`mod...', Array, false)
+#4 D:\wamp\www\plantillaciv4\app\Models\General.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\plantillaciv4\app\Controllers\Application.php(19): App\Models\General::getRoles(1)
+#6 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Application->index()
+#7 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+#8 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-14 01:45:25 --> Not unique table/alias: 'a'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`
+FROM `accesos` `a`, `accesos` `a`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_usua_ide` = 1
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`
+FROM `accesos` `a`, `accesos` `a`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_usua_ide` = 1
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`
+FROM `accesos` `a`, `accesos` `a`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_usua_ide` = 1
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`modu_ide`, `r`.`role_ide`, `m`.`modu_orden`, `r`.`role_orden`, `m`.`modu_icono`, `m`.`modu_nombre`, `r`.`role_nombre`, `r`.`role_url`
+FROM `accesos` `a`, `accesos` `a`, `roles` `r`, `modulos` `m`
+WHERE `a`.`acce_usua_ide` = :a.acce_usua_ide:
+AND `a`.`acce_role_ide` = `r`.`role_ide`
+AND `r`.`role_modu_ide` = `m`.`modu_ide`
+AND `a`.`acce_esta_ide` = 1
+ORDER BY `m`.`modu_orden`, `r`.`role_orden`', [...], false)
+ 5 APPPATH\Models\General.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:46:39 --> syntax error, unexpected '(', expecting variable (T_VARIABLE)
+in APPPATH\Models\General.php on line 7.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\General.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\General')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\General')
+ 4 APPPATH\Controllers\Application.php(19): spl_autoload_call('App\\Models\\General')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:46:50 --> Using $this when not in object context
+in APPPATH\Models\General.php on line 11.
+ 1 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:47:20 --> Using $this when not in object context
+in APPPATH\Models\General.php on line 11.
+ 1 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:48:19 --> Using $this when not in object context
+in APPPATH\Models\General.php on line 11.
+ 1 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:48:21 --> Using $this when not in object context
+in APPPATH\Models\General.php on line 11.
+ 1 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:48:29 --> Access to undeclared static property: App\Models\General::$db
+in APPPATH\Models\General.php on line 11.
+ 1 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:48:40 --> Non-static method App\Models\General::getRoles() should not be called statically
+in APPPATH\Controllers\Application.php on line 19.
+ 1 APPPATH\Controllers\Application.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Non-static method App\\Models\\General::getRoles() should not be called statically', 'APPPATH\\Controllers\\Application.php', 19, [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:48:45 --> Access to undeclared static property: App\Models\General::$db
+in APPPATH\Models\General.php on line 11.
+ 1 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:48:54 --> Access to undeclared static property: App\Models\General::$db
+in APPPATH\Models\General.php on line 11.
+ 1 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:49:03 --> Undefined variable: db
+in APPPATH\Models\General.php on line 11.
+ 1 APPPATH\Models\General.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: db', 'APPPATH\\Models\\General.php', 11, [...])
+ 2 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:49:18 --> Using $this when not in object context
+in APPPATH\Models\General.php on line 11.
+ 1 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:49:32 --> Using $this when not in object context
+in APPPATH\Models\General.php on line 11.
+ 1 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:49:41 --> Undefined variable: db
+in APPPATH\Models\General.php on line 11.
+ 1 APPPATH\Models\General.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: db', 'APPPATH\\Models\\General.php', 11, [...])
+ 2 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:51:24 --> Undefined variable: roles
+in APPPATH\Views\sistema\vheader.php on line 553.
+ 1 APPPATH\Views\sistema\vheader.php(553): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: roles', 'APPPATH\\Views\\sistema\\vheader.php', 553, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(29): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 01:57:01 --> Cannot use object of type stdClass as array
+in APPPATH\Views\sistema\vheader.php on line 572.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 4 APPPATH\Controllers\Application.php(29): view('sistema/vheader', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 15:56:02 --> Undefined property: stdClass::$role_descripcion
+in APPPATH\Views\sistema\vheader.php on line 606.
+ 1 APPPATH\Views\sistema\vheader.php(606): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$role_descripcion', 'APPPATH\\Views\\sistema\\vheader.php', 606, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vheader.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vheader', [], true)
+ 5 APPPATH\Controllers\Application.php(29): view('sistema/vheader', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 18:02:22 --> Too few arguments to function CodeIgniter\Database\BaseConnection::table(), 0 passed in D:\wamp\www\plantillaciv4\app\Models\General.php on line 8 and exactly 1 expected
+in SYSTEMPATH\Database\BaseConnection.php on line 842.
+ 1 APPPATH\Models\General.php(8): CodeIgniter\Database\BaseConnection->table()
+ 2 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 18:02:28 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 APPPATH\Models\General.php(8): CodeIgniter\Database\BaseConnection->table('D:\\wamp\\www\\plantillaciv4')
+ 2 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 18:02:32 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 APPPATH\Models\General.php(8): CodeIgniter\Database\BaseConnection->table('D:\\wamp\\www\\plantillaciv4')
+ 2 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 18:02:37 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\General.php on line 9.
+ 1 APPPATH\Controllers\Application.php(19): App\Models\General::getRoles(1)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 18:16:48 --> Non-static method App\Libraries\Componentes::Tabla() should not be called statically
+in APPPATH\Views\sistema\vaccesos.php on line 3.
+ 1 APPPATH\Views\sistema\vaccesos.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Non-static method App\\Libraries\\Componentes::Tabla() should not be called statically', 'APPPATH\\Views\\sistema\\vaccesos.php', 3, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+ 5 APPPATH\Controllers\Application.php(37): view('sistema/vaccesos')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 18:17:00 --> Non-static method App\Libraries\Componentes::Tabla() should not be called statically
+in APPPATH\Views\sistema\vaccesos.php on line 3.
+ 1 APPPATH\Views\sistema\vaccesos.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Non-static method App\\Libraries\\Componentes::Tabla() should not be called statically', 'APPPATH\\Views\\sistema\\vaccesos.php', 3, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+ 5 APPPATH\Controllers\Application.php(37): view('sistema/vaccesos')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 18:17:49 --> Invalid file: funciones/vtabla.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('funciones/vtabla.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('funciones/vtabla', [], true)
+ 3 APPPATH\Libraries\Componentes.php(9): view('funciones/vtabla')
+ 4 APPPATH\Views\sistema\vaccesos.php(3): App\Libraries\Componentes::Tabla('D:\\wamp\\www\\plantillaciv4', 'D:\\wamp\\www\\plantillaciv4', 'D:\\wamp\\www\\plantillaciv4')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+ 8 APPPATH\Controllers\Application.php(37): view('sistema/vaccesos')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 18:34:17 --> Undefined variable: head
+in APPPATH\Views\componentes\tabla.php on line 22.
+ 1 APPPATH\Views\componentes\tabla.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: head', 'APPPATH\\Views\\componentes\\tabla.php', 22, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componentes\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/tabla', [], true)
+ 5 APPPATH\Libraries\Componentes.php(9): view('componentes/tabla')
+ 6 APPPATH\Views\sistema\vaccesos.php(3): App\Libraries\Componentes::Tabla('D:\\wamp\\www\\plantillaciv4', 'D:\\wamp\\www\\plantillaciv4', 'D:\\wamp\\www\\plantillaciv4')
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+10 APPPATH\Controllers\Application.php(37): view('sistema/vaccesos')
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 18:35:56 --> Undefined variable: head
+in APPPATH\Views\componentes\tabla.php on line 22.
+ 1 APPPATH\Views\componentes\tabla.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: head', 'APPPATH\\Views\\componentes\\tabla.php', 22, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componentes\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/tabla', [], true)
+ 5 APPPATH\Libraries\Componentes.php(9): view('componentes/tabla')
+ 6 APPPATH\Views\sistema\vaccesos.php(3): App\Libraries\Componentes::Tabla('D:\\wamp\\www\\plantillaciv4', 'D:\\wamp\\www\\plantillaciv4', 'D:\\wamp\\www\\plantillaciv4')
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+10 APPPATH\Controllers\Application.php(37): view('sistema/vaccesos')
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 18:36:11 --> Undefined variable: head
+in APPPATH\Views\componentes\tabla.php on line 22.
+ 1 APPPATH\Views\componentes\tabla.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: head', 'APPPATH\\Views\\componentes\\tabla.php', 22, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componentes\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/tabla', [], true)
+ 5 APPPATH\Libraries\Componentes.php(9): view('componentes/tabla')
+ 6 APPPATH\Views\sistema\vaccesos.php(3): App\Libraries\Componentes::Tabla('D:\\wamp\\www\\plantillaciv4', 'D:\\wamp\\www\\plantillaciv4', 'D:\\wamp\\www\\plantillaciv4')
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+10 APPPATH\Controllers\Application.php(37): view('sistema/vaccesos')
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 18:36:59 --> Undefined variable: head
+in APPPATH\Views\componentes\tabla.php on line 22.
+ 1 APPPATH\Views\componentes\tabla.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: head', 'APPPATH\\Views\\componentes\\tabla.php', 22, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componentes\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/tabla', [], true)
+ 5 APPPATH\Libraries\Componentes.php(9): view('componentes/tabla')
+ 6 APPPATH\Views\sistema\vaccesos.php(3): App\Libraries\Componentes::Tabla('D:\\wamp\\www\\plantillaciv4', 'D:\\wamp\\www\\plantillaciv4', 'D:\\wamp\\www\\plantillaciv4')
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+10 APPPATH\Controllers\Application.php(37): view('sistema/vaccesos')
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 22:14:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+ORDER BY `usua_ide`' at line 3 in D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\plantillaciv4\app\Models\General.php(44): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\plantillaciv4\app\Controllers\Application.php(38): App\Models\General::getData('*', 'usuarios', false, Array, 'usua_ide')
+#6 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Application->accesos()
+#7 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+#8 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-14 22:14:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+ORDER BY `usua_ide`' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE 0 = :0:
+ORDER BY `usua_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE 0 = :0:
+ORDER BY `usua_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE 0 = :0:
+ORDER BY `usua_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE 0 = :0:
+ORDER BY `usua_ide`', [...], false)
+ 5 APPPATH\Models\General.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Application.php(38): App\Models\General::getData('*', 'usuarios', false, [...], 'usua_ide')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-14 22:15:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+ORDER BY `usua_ide`' at line 3 in D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\plantillaciv4\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\plantillaciv4\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\plantillaciv4\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\plantillaciv4\app\Models\General.php(44): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\plantillaciv4\app\Controllers\Application.php(38): App\Models\General::getData('*', 'usuarios', false, Array, 'usua_ide')
+#6 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(927): App\Controllers\Application->accesos()
+#7 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+#8 D:\wamp\www\plantillaciv4\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\plantillaciv4\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-14 22:15:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+ORDER BY `usua_ide`' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE 0 = :0:
+ORDER BY `usua_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE 0 = :0:
+ORDER BY `usua_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE 0 = :0:
+ORDER BY `usua_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE 0 = :0:
+ORDER BY `usua_ide`', [...], false)
+ 5 APPPATH\Models\General.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Application.php(38): App\Models\General::getData('*', 'usuarios', false, [...], 'usua_ide')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 23:21:38 --> Undefined variable: botones
+in APPPATH\Views\componentes\tabla.php on line 37.
+ 1 APPPATH\Views\componentes\tabla.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: botones', 'APPPATH\\Views\\componentes\\tabla.php', 37, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componentes\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/tabla', [], true)
+ 5 APPPATH\Libraries\Componentes.php(15): view('componentes/tabla', [...])
+ 6 APPPATH\Views\sistema\vaccesos.php(22): App\Libraries\Componentes::Tabla('tabla_usuarios', [...], [...], 'primary', [...])
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+10 APPPATH\Controllers\Application.php(40): view('sistema/vaccesos', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 23:22:14 --> Undefined variable: botones
+in APPPATH\Views\componentes\tabla.php on line 36.
+ 1 APPPATH\Views\componentes\tabla.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: botones', 'APPPATH\\Views\\componentes\\tabla.php', 36, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componentes\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/tabla', [], true)
+ 5 APPPATH\Libraries\Componentes.php(15): view('componentes/tabla', [...])
+ 6 APPPATH\Views\sistema\vaccesos.php(24): App\Libraries\Componentes::Tabla('tabla_usuarios', [...], [...], 'primary', [...])
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+10 APPPATH\Controllers\Application.php(40): view('sistema/vaccesos', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 23:24:16 --> Undefined variable: botones
+in APPPATH\Views\componentes\tabla.php on line 36.
+ 1 APPPATH\Views\componentes\tabla.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: botones', 'APPPATH\\Views\\componentes\\tabla.php', 36, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componentes\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/tabla', [], true)
+ 5 APPPATH\Libraries\Componentes.php(15): view('componentes/tabla', [...])
+ 6 APPPATH\Views\sistema\vaccesos.php(24): App\Libraries\Componentes::Tabla('tabla_usuarios', [...], [...], 'primary', [...])
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+10 APPPATH\Controllers\Application.php(40): view('sistema/vaccesos', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 23:24:37 --> Undefined variable: botones
+in APPPATH\Views\componentes\tabla.php on line 36.
+ 1 APPPATH\Views\componentes\tabla.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: botones', 'APPPATH\\Views\\componentes\\tabla.php', 36, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componentes\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/tabla', [], true)
+ 5 APPPATH\Libraries\Componentes.php(15): view('componentes/tabla', [...])
+ 6 APPPATH\Views\sistema\vaccesos.php(24): App\Libraries\Componentes::Tabla('tabla_usuarios', [...], [...], 'primary', [...])
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+10 APPPATH\Controllers\Application.php(40): view('sistema/vaccesos', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 23:31:29 --> syntax error, unexpected '}'
+in APPPATH\Views\componentes\tabla.php on line 22.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/tabla', [], true)
+ 3 APPPATH\Libraries\Componentes.php(16): view('componentes/tabla', [...])
+ 4 APPPATH\Views\sistema\vaccesos.php(24): App\Libraries\Componentes::Tabla('tabla_usuarios', [...], [...], 'primary', [...])
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+ 8 APPPATH\Controllers\Application.php(40): view('sistema/vaccesos', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 23:31:40 --> syntax error, unexpected '}'
+in APPPATH\Views\componentes\tabla.php on line 22.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/tabla', [], true)
+ 3 APPPATH\Libraries\Componentes.php(16): view('componentes/tabla', [...])
+ 4 APPPATH\Views\sistema\vaccesos.php(24): App\Libraries\Componentes::Tabla('tabla_usuarios', [...], [...], 'primary', [...])
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+ 8 APPPATH\Controllers\Application.php(40): view('sistema/vaccesos', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 23:32:49 --> syntax error, unexpected '}'
+in APPPATH\Views\componentes\tabla.php on line 22.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/tabla', [], true)
+ 3 APPPATH\Libraries\Componentes.php(16): view('componentes/tabla', [...])
+ 4 APPPATH\Views\sistema\vaccesos.php(24): App\Libraries\Componentes::Tabla('tabla_usuarios', [...], [...], 'primary', [...])
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+ 8 APPPATH\Controllers\Application.php(40): view('sistema/vaccesos', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 23:32:59 --> syntax error, unexpected '}'
+in APPPATH\Views\componentes\tabla.php on line 22.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/tabla', [], true)
+ 3 APPPATH\Libraries\Componentes.php(16): view('componentes/tabla', [...])
+ 4 APPPATH\Views\sistema\vaccesos.php(24): App\Libraries\Componentes::Tabla('tabla_usuarios', [...], [...], 'primary', [...])
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+ 8 APPPATH\Controllers\Application.php(40): view('sistema/vaccesos', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 23:33:15 --> Undefined index: usua_ide
+in APPPATH\Views\componentes\tabla.php on line 21.
+ 1 APPPATH\Views\componentes\tabla.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: usua_ide', 'APPPATH\\Views\\componentes\\tabla.php', 21, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componentes\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/tabla', [], true)
+ 5 APPPATH\Libraries\Componentes.php(16): view('componentes/tabla', [...])
+ 6 APPPATH\Views\sistema\vaccesos.php(24): App\Libraries\Componentes::Tabla('tabla_usuarios', [...], [...], 'primary', [...])
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+10 APPPATH\Controllers\Application.php(40): view('sistema/vaccesos', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 23:33:47 --> Undefined index: usua_ide
+in APPPATH\Views\componentes\tabla.php on line 21.
+ 1 APPPATH\Views\componentes\tabla.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: usua_ide', 'APPPATH\\Views\\componentes\\tabla.php', 21, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componentes\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/tabla', [], true)
+ 5 APPPATH\Libraries\Componentes.php(16): view('componentes/tabla', [...])
+ 6 APPPATH\Views\sistema\vaccesos.php(24): App\Libraries\Componentes::Tabla('tabla_usuarios', [...], [...], 'primary', [...])
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+10 APPPATH\Controllers\Application.php(40): view('sistema/vaccesos', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 23:35:32 --> Cannot use object of type stdClass as array
+in APPPATH\Views\componentes\tabla.php on line 22.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/tabla', [], true)
+ 4 APPPATH\Libraries\Componentes.php(16): view('componentes/tabla', [...])
+ 5 APPPATH\Views\sistema\vaccesos.php(24): App\Libraries\Componentes::Tabla('tabla_usuarios', [...], [...], 'primary', [...])
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+ 9 APPPATH\Controllers\Application.php(40): view('sistema/vaccesos', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 23:36:11 --> Cannot use object of type stdClass as array
+in APPPATH\Views\componentes\tabla.php on line 22.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/tabla', [], true)
+ 4 APPPATH\Libraries\Componentes.php(16): view('componentes/tabla', [...])
+ 5 APPPATH\Views\sistema\vaccesos.php(24): App\Libraries\Componentes::Tabla('tabla_usuarios', [...], [...], 'primary', [...])
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+ 9 APPPATH\Controllers\Application.php(40): view('sistema/vaccesos', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 23:36:54 --> Cannot use object of type stdClass as array
+in APPPATH\Views\componentes\tabla.php on line 22.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/tabla', [], true)
+ 4 APPPATH\Libraries\Componentes.php(16): view('componentes/tabla', [...])
+ 5 APPPATH\Views\sistema\vaccesos.php(24): App\Libraries\Componentes::Tabla('tabla_usuarios', [...], [...], 'primary', [...])
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+ 9 APPPATH\Controllers\Application.php(40): view('sistema/vaccesos', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 23:37:28 --> Cannot use object of type stdClass as array
+in APPPATH\Views\componentes\tabla.php on line 24.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/tabla', [], true)
+ 4 APPPATH\Libraries\Componentes.php(16): view('componentes/tabla', [...])
+ 5 APPPATH\Views\sistema\vaccesos.php(24): App\Libraries\Componentes::Tabla('tabla_usuarios', [...], [...], 'primary', [...])
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+ 9 APPPATH\Controllers\Application.php(40): view('sistema/vaccesos', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 23:56:15 --> Undefined variable: limit
+in APPPATH\Views\componentes\tabla.php on line 42.
+ 1 APPPATH\Views\componentes\tabla.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: limit', 'APPPATH\\Views\\componentes\\tabla.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componentes\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/tabla', [], true)
+ 5 APPPATH\Libraries\Componentes.php(16): view('componentes/tabla', [...])
+ 6 APPPATH\Views\sistema\vaccesos.php(24): App\Libraries\Componentes::Tabla('tabla_usuarios', [...], [...], 5, 'primary', [...])
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+10 APPPATH\Controllers\Application.php(40): view('sistema/vaccesos', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 23:56:26 --> Undefined variable: limit
+in APPPATH\Views\componentes\tabla.php on line 42.
+ 1 APPPATH\Views\componentes\tabla.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: limit', 'APPPATH\\Views\\componentes\\tabla.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\componentes\\tabla.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('componentes/tabla', [], true)
+ 5 APPPATH\Libraries\Componentes.php(16): view('componentes/tabla', [...])
+ 6 APPPATH\Views\sistema\vaccesos.php(24): App\Libraries\Componentes::Tabla('tabla_usuarios', [...], [...], 5, 'primary', [...])
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\sistema\\vaccesos.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('sistema/vaccesos', [], true)
+10 APPPATH\Controllers\Application.php(40): view('sistema/vaccesos', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Application->accesos()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Application))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

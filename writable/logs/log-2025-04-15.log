@@ -1,0 +1,405 @@
+CRITICAL - 2025-04-15 08:30:05 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 845.
+ 1 SYSTEMPATH/Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Monitoreo.php(1933): CodeIgniter\Model->__call('insertData2', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarEjecucionInstrumento()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 08:30:06 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 845.
+ 1 SYSTEMPATH/Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Monitoreo.php(1933): CodeIgniter\Model->__call('insertData2', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarEjecucionInstrumento()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 08:30:08 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 845.
+ 1 SYSTEMPATH/Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Monitoreo.php(1933): CodeIgniter\Model->__call('insertData2', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarEjecucionInstrumento()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 08:30:10 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 845.
+ 1 SYSTEMPATH/Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Monitoreo.php(1933): CodeIgniter\Model->__call('insertData2', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarEjecucionInstrumento()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 08:30:12 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 845.
+ 1 SYSTEMPATH/Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Monitoreo.php(1933): CodeIgniter\Model->__call('insertData2', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarEjecucionInstrumento()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 08:30:13 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 845.
+ 1 SYSTEMPATH/Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Monitoreo.php(1933): CodeIgniter\Model->__call('insertData2', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarEjecucionInstrumento()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 08:30:14 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 845.
+ 1 SYSTEMPATH/Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Monitoreo.php(1933): CodeIgniter\Model->__call('insertData2', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarEjecucionInstrumento()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 08:30:32 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 845.
+ 1 SYSTEMPATH/Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Monitoreo.php(1933): CodeIgniter\Model->__call('insertData2', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarEjecucionInstrumento()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 08:31:09 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 845.
+ 1 SYSTEMPATH/Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Monitoreo.php(1933): CodeIgniter\Model->__call('insertData2', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarEjecucionInstrumento()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-15 08:31:10 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2025-04-15 08:31:10 --> 
+CRITICAL - 2025-04-15 08:36:38 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 845.
+ 1 SYSTEMPATH/Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Monitoreo.php(1933): CodeIgniter\Model->__call('insertData2', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postGuardarEjecucionInstrumento()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-15 08:45:36 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2025-04-15 08:45:36 --> 
+CRITICAL - 2025-04-15 08:46:14 --> Class "Mpdf\Mpdf" not found
+in APPPATH/Libraries/Pdf.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Libraries/Pdf.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Libraries\\Pdf')
+ 4 APPPATH/Controllers/Monitoreo.php(2571): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Libraries\\Pdf')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->getInstrumentoPdf()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 08:46:19 --> Undefined array key 0
+in APPPATH/Views/monitoreo/pdf/monitoreo.php on line 6.
+ 1 APPPATH/Views/monitoreo/pdf/monitoreo.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Views/monitoreo/pdf/monitoreo.php', 6)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/monitoreo/pdf/monitoreo.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('monitoreo/pdf/monitoreo', [], true)
+ 5 APPPATH/Controllers/Monitoreo.php(2568): view('monitoreo/pdf/monitoreo', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->getInstrumentoPdf()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 09:12:11 --> Undefined property: stdClass::$pro_hora_inicio
+in APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php on line 195.
+ 1 APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$pro_hora_inicio', 'APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php', 195)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra_resultados', [], true)
+ 5 APPPATH/Controllers/Monitoreo.php(2267): view('monitoreo/plan/ejecucion_muestra_resultados', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumentoResultados()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-15 09:14:51 --> mysqli_sql_exception: Column 'pro_ide' in where clause is ambiguous in /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `sd_prog...', 0)
+#1 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sd_prog...')
+#2 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sd_prog...')
+#3 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `sd_prog...', Array, false)
+#4 /home/customer/www/xurainc.com/public_html/monitoreo/app/Models/Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Monitoreo.php(2188): App\Models\Generaldb->selectSomeDataJoin('sd_programacion...', 'sd_plan_muestra', 'ins_ide = '88' ...', 'pro_ide ASC', false, false, Array)
+#6 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumentoResultados()
+#7 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/customer/www/xurainc.com/public_html/monitoreo/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-15 09:14:51 --> Column 'pro_ide' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `sd_programacion`.*
+FROM `sd_plan_muestra`
+LEFT JOIN `sd_programacion` ON `sd_programacion`.`pro_ide` = `sd_plan_muestra`.`pro_ide`
+WHERE `ins_ide` = \'88\' AND
+                `pla_ide` = \'20\' AND
+                `mue_ide` = \'10678\' AND 
+                `pro_ide` is not null
+ORDER BY `pro_ide` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sd_programacion`.*
+FROM `sd_plan_muestra`
+LEFT JOIN `sd_programacion` ON `sd_programacion`.`pro_ide` = `sd_plan_muestra`.`pro_ide`
+WHERE `ins_ide` = \'88\' AND
+                `pla_ide` = \'20\' AND
+                `mue_ide` = \'10678\' AND 
+                `pro_ide` is not null
+ORDER BY `pro_ide` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sd_programacion`.*
+FROM `sd_plan_muestra`
+LEFT JOIN `sd_programacion` ON `sd_programacion`.`pro_ide` = `sd_plan_muestra`.`pro_ide`
+WHERE `ins_ide` = \'88\' AND
+                `pla_ide` = \'20\' AND
+                `mue_ide` = \'10678\' AND 
+                `pro_ide` is not null
+ORDER BY `pro_ide` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `sd_programacion`.*
+FROM `sd_plan_muestra`
+LEFT JOIN `sd_programacion` ON `sd_programacion`.`pro_ide` = `sd_plan_muestra`.`pro_ide`
+WHERE `ins_ide` = \'88\' AND
+                `pla_ide` = \'20\' AND
+                `mue_ide` = \'10678\' AND 
+                `pro_ide` is not null
+ORDER BY `pro_ide` ASC', [], false)
+ 5 APPPATH/Models/Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Monitoreo.php(2188): App\Models\Generaldb->selectSomeDataJoin('sd_programacion.*', 'sd_plan_muestra', 'ins_ide = \'88\' AND
+                pla_ide = \'20\' AND
+                mue_ide = \'10678\' AND 
+                pro_ide is not null', 'pro_ide ASC', false, false, [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumentoResultados()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-15 09:23:34 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2025-04-15 09:23:34 --> 
+ERROR - 2025-04-15 09:27:16 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2025-04-15 09:27:16 --> 
+ERROR - 2025-04-15 10:06:33 --> mysqli_sql_exception: Unknown column 'sd_plan_muestra.pm_moni_ide' in 'on clause' in /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `usuario...', 0)
+#1 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario...')
+#2 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario...')
+#3 /home/customer/www/xurainc.com/public_html/monitoreo/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `usuario...', Array, false)
+#4 /home/customer/www/xurainc.com/public_html/monitoreo/app/Models/Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/customer/www/xurainc.com/public_html/monitoreo/app/Controllers/Monitoreo.php(2171): App\Models\Generaldb->selectSomeDataJoin('usuarios.*,\n   ...', 'usuarios', 'usua_esta_ide =...', 'usua_ide', false, false, Array)
+#6 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumentoResultados()
+#7 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+#8 /home/customer/www/xurainc.com/public_html/monitoreo/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/customer/www/xurainc.com/public_html/monitoreo/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-04-15 10:06:33 --> Unknown column 'sd_plan_muestra.pm_moni_ide' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `usuarios`.*, `dres_nombre`, `ugel_nombre`, `iiee_cen_edu`, `perf_nombre`, `usua_dni`, CONCAT(usua_paterno, \' \', `usua_materno`, \' \', usua_nombres) as apellidos_nombres
+FROM `usuarios`
+LEFT JOIN `dres` ON `dres`.`dres_ide` = `usuarios`.`usua_dres_ide`
+LEFT JOIN `ugels` ON `ugels`.`ugel_ide` = `usuarios`.`usua_ugel_ide`
+LEFT JOIN `iiee` ON `iiee`.`iiee_ide` = `usuarios`.`usua_iiee_ide`
+LEFT JOIN `perfiles` ON `perfiles`.`perf_ide` = `usuarios`.`usua_perf_ide`
+LEFT JOIN `sd_respuesta` ON `sd_respuesta`.`res_mue_ide` = `usuarios`.`usua_ide` AND `sd_respuesta`.`res_pla_ide` = \'20\' AND `sd_respuesta`.`res_ins_ide` = \'88\' AND
+`sd_respuesta`.`res_mue_ide` = \'10681\'
+LEFT JOIN `sd_plan_muestra` ON `sd_plan_muestra`.`pm_moni_ide` = `usuarios`.`usua_ide` AND `sd_plan_muestra`.`pla_ide` = \'20\' AND `sd_plan_muestra`.`ins_ide` = \'88\'
+WHERE `usua_esta_ide` = 1
+ORDER BY `usua_ide`', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuarios`.*, `dres_nombre`, `ugel_nombre`, `iiee_cen_edu`, `perf_nombre`, `usua_dni`, CONCAT(usua_paterno, \' \', `usua_materno`, \' \', usua_nombres) as apellidos_nombres
+FROM `usuarios`
+LEFT JOIN `dres` ON `dres`.`dres_ide` = `usuarios`.`usua_dres_ide`
+LEFT JOIN `ugels` ON `ugels`.`ugel_ide` = `usuarios`.`usua_ugel_ide`
+LEFT JOIN `iiee` ON `iiee`.`iiee_ide` = `usuarios`.`usua_iiee_ide`
+LEFT JOIN `perfiles` ON `perfiles`.`perf_ide` = `usuarios`.`usua_perf_ide`
+LEFT JOIN `sd_respuesta` ON `sd_respuesta`.`res_mue_ide` = `usuarios`.`usua_ide` AND `sd_respuesta`.`res_pla_ide` = \'20\' AND `sd_respuesta`.`res_ins_ide` = \'88\' AND
+`sd_respuesta`.`res_mue_ide` = \'10681\'
+LEFT JOIN `sd_plan_muestra` ON `sd_plan_muestra`.`pm_moni_ide` = `usuarios`.`usua_ide` AND `sd_plan_muestra`.`pla_ide` = \'20\' AND `sd_plan_muestra`.`ins_ide` = \'88\'
+WHERE `usua_esta_ide` = 1
+ORDER BY `usua_ide`')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuarios`.*, `dres_nombre`, `ugel_nombre`, `iiee_cen_edu`, `perf_nombre`, `usua_dni`, CONCAT(usua_paterno, \' \', `usua_materno`, \' \', usua_nombres) as apellidos_nombres
+FROM `usuarios`
+LEFT JOIN `dres` ON `dres`.`dres_ide` = `usuarios`.`usua_dres_ide`
+LEFT JOIN `ugels` ON `ugels`.`ugel_ide` = `usuarios`.`usua_ugel_ide`
+LEFT JOIN `iiee` ON `iiee`.`iiee_ide` = `usuarios`.`usua_iiee_ide`
+LEFT JOIN `perfiles` ON `perfiles`.`perf_ide` = `usuarios`.`usua_perf_ide`
+LEFT JOIN `sd_respuesta` ON `sd_respuesta`.`res_mue_ide` = `usuarios`.`usua_ide` AND `sd_respuesta`.`res_pla_ide` = \'20\' AND `sd_respuesta`.`res_ins_ide` = \'88\' AND
+`sd_respuesta`.`res_mue_ide` = \'10681\'
+LEFT JOIN `sd_plan_muestra` ON `sd_plan_muestra`.`pm_moni_ide` = `usuarios`.`usua_ide` AND `sd_plan_muestra`.`pla_ide` = \'20\' AND `sd_plan_muestra`.`ins_ide` = \'88\'
+WHERE `usua_esta_ide` = 1
+ORDER BY `usua_ide`')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `usuarios`.*, `dres_nombre`, `ugel_nombre`, `iiee_cen_edu`, `perf_nombre`, `usua_dni`, CONCAT(usua_paterno, \' \', `usua_materno`, \' \', usua_nombres) as apellidos_nombres
+FROM `usuarios`
+LEFT JOIN `dres` ON `dres`.`dres_ide` = `usuarios`.`usua_dres_ide`
+LEFT JOIN `ugels` ON `ugels`.`ugel_ide` = `usuarios`.`usua_ugel_ide`
+LEFT JOIN `iiee` ON `iiee`.`iiee_ide` = `usuarios`.`usua_iiee_ide`
+LEFT JOIN `perfiles` ON `perfiles`.`perf_ide` = `usuarios`.`usua_perf_ide`
+LEFT JOIN `sd_respuesta` ON `sd_respuesta`.`res_mue_ide` = `usuarios`.`usua_ide` AND `sd_respuesta`.`res_pla_ide` = \'20\' AND `sd_respuesta`.`res_ins_ide` = \'88\' AND
+`sd_respuesta`.`res_mue_ide` = \'10681\'
+LEFT JOIN `sd_plan_muestra` ON `sd_plan_muestra`.`pm_moni_ide` = `usuarios`.`usua_ide` AND `sd_plan_muestra`.`pla_ide` = \'20\' AND `sd_plan_muestra`.`ins_ide` = \'88\'
+WHERE `usua_esta_ide` = 1
+ORDER BY `usua_ide`', [], false)
+ 5 APPPATH/Models/Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Monitoreo.php(2171): App\Models\Generaldb->selectSomeDataJoin('usuarios.*,
+            dres_nombre,
+            ugel_nombre,
+            iiee_cen_edu,
+            perf_nombre,
+            usua_dni,
+            CONCAT(usua_paterno,\' \',usua_materno,\' \',usua_nombres) as apellidos_nombres', 'usuarios', 'usua_esta_ide = 1 ', 'usua_ide', false, false, [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumentoResultados()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 10:10:20 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php on line 195.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php', 195)
+ 2 APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php(195): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra_resultados', [], true)
+ 6 APPPATH/Controllers/Monitoreo.php(2453): view('monitoreo/plan/ejecucion_muestra_resultados', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->getVerFichaLlenada()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 10:11:10 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php on line 195.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php', 195)
+ 2 APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php(195): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra_resultados', [], true)
+ 6 APPPATH/Controllers/Monitoreo.php(2280): view('monitoreo/plan/ejecucion_muestra_resultados', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumentoResultados()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 10:11:48 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php on line 195.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php', 195)
+ 2 APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php(195): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra_resultados', [], true)
+ 6 APPPATH/Controllers/Monitoreo.php(2280): view('monitoreo/plan/ejecucion_muestra_resultados', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumentoResultados()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 10:11:51 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php on line 195.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php', 195)
+ 2 APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php(195): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra_resultados', [], true)
+ 6 APPPATH/Controllers/Monitoreo.php(2280): view('monitoreo/plan/ejecucion_muestra_resultados', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumentoResultados()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 10:12:17 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php on line 195.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php', 195)
+ 2 APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php(195): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra_resultados', [], true)
+ 6 APPPATH/Controllers/Monitoreo.php(2280): view('monitoreo/plan/ejecucion_muestra_resultados', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->postEjecutarInstrumentoResultados()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 10:14:42 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php on line 195.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php', 195)
+ 2 APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php(195): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra_resultados', [], true)
+ 6 APPPATH/Controllers/Monitoreo.php(2453): view('monitoreo/plan/ejecucion_muestra_resultados', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->getVerFichaLlenada()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 10:15:51 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php on line 195.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php', 195)
+ 2 APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php(195): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra_resultados', [], true)
+ 6 APPPATH/Controllers/Monitoreo.php(2453): view('monitoreo/plan/ejecucion_muestra_resultados', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->getVerFichaLlenada()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 10:20:52 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php on line 195.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php', 195)
+ 2 APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php(195): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/monitoreo/plan/ejecucion_muestra_resultados.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('monitoreo/plan/ejecucion_muestra_resultados', [], true)
+ 6 APPPATH/Controllers/Monitoreo.php(2453): view('monitoreo/plan/ejecucion_muestra_resultados', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Monitoreo->getVerFichaLlenada()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Monitoreo))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 10:44:41 --> syntax error, unexpected single-quoted string "msg_mail", expecting ")"
+in APPPATH/Controllers/Monitoreo.php on line 2061.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Monitoreo.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Monitoreo')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Monitoreo')
+ 4 SYSTEMPATH/Router/AutoRouterImproved.php(264): class_exists('App\\Controllers\\Monitoreo')
+ 5 SYSTEMPATH/Router/AutoRouterImproved.php(115): CodeIgniter\Router\AutoRouterImproved->scanControllers([...])
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouterImproved->getRoute('monitoreo/ejecucioninstrumento')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('monitoreo/ejecucioninstrumento')
+ 8 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\Router->handle('monitoreo/ejecucioninstrumento')
+ 9 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 10:45:02 --> syntax error, unexpected single-quoted string "msg_mail", expecting ")"
+in APPPATH/Controllers/Monitoreo.php on line 2061.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Monitoreo.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Monitoreo')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Monitoreo')
+ 4 SYSTEMPATH/Router/AutoRouterImproved.php(264): class_exists('App\\Controllers\\Monitoreo')
+ 5 SYSTEMPATH/Router/AutoRouterImproved.php(115): CodeIgniter\Router\AutoRouterImproved->scanControllers([...])
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouterImproved->getRoute('monitoreo/ejecucioninstrumento')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('monitoreo/ejecucioninstrumento')
+ 8 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\Router->handle('monitoreo/ejecucioninstrumento')
+ 9 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 10:45:05 --> syntax error, unexpected single-quoted string "msg_mail", expecting ")"
+in APPPATH/Controllers/Monitoreo.php on line 2061.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Monitoreo.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Monitoreo')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Monitoreo')
+ 4 SYSTEMPATH/Router/AutoRouterImproved.php(264): class_exists('App\\Controllers\\Monitoreo')
+ 5 SYSTEMPATH/Router/AutoRouterImproved.php(115): CodeIgniter\Router\AutoRouterImproved->scanControllers([...])
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouterImproved->getRoute('monitoreo/ejecucioninstrumento')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('monitoreo/ejecucioninstrumento')
+ 8 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\Router->handle('monitoreo/ejecucioninstrumento')
+ 9 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-15 10:45:10 --> syntax error, unexpected single-quoted string "msg_mail", expecting ")"
+in APPPATH/Controllers/Monitoreo.php on line 2061.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Monitoreo.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Monitoreo')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Monitoreo')
+ 4 SYSTEMPATH/Router/AutoRouterImproved.php(264): class_exists('App\\Controllers\\Monitoreo')
+ 5 SYSTEMPATH/Router/AutoRouterImproved.php(115): CodeIgniter\Router\AutoRouterImproved->scanControllers([...])
+ 6 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouterImproved->getRoute('monitoreo/ejecucioninstrumento')
+ 7 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('monitoreo/ejecucioninstrumento')
+ 8 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\Router->handle('monitoreo/ejecucioninstrumento')
+ 9 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,399 @@
+CRITICAL - 2025-01-07 04:25:00 --> Too few arguments to function App\Controllers\Anexos2024i::getAnexos(), 0 passed in D:\wamp\www\monitoreo3\system\CodeIgniter.php on line 927 and at least 4 expected
+in APPPATH\Controllers\Anexos2024i.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->getAnexos()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-07 04:25:13 --> Too few arguments to function App\Controllers\Anexos2024i::getAnexos(), 0 passed in D:\wamp\www\monitoreo3\system\CodeIgniter.php on line 927 and at least 4 expected
+in APPPATH\Controllers\Anexos2024i.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->getAnexos()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-07 04:25:23 --> Too few arguments to function App\Controllers\Anexos2024i::getAnexos(), 0 passed in D:\wamp\www\monitoreo3\system\CodeIgniter.php on line 927 and at least 4 expected
+in APPPATH\Controllers\Anexos2024i.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->getAnexos()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-07 05:10:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+        ' at line 5 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `u`.`ubi...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`ubi...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`ubi...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`ubi...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024i.php(46): App\Models\Generaldb->selectSomeData('\r\n             ...', '\r\n             ...', '\r\n             ...', '\r\n             ...', '\r\n             ...')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024i->getAnexos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-07 05:10:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+        ' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 
+                and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 
+                and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 
+                and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 
+                and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2024i.php(46): App\Models\Generaldb->selectSomeData('
+                u.ubig_ide AS id,
+	            CONCAT(u.ubig_dist,\' - \',u.ubig_prov,\' - \',u.ubig_dpto) AS nombre
+            ', '
+                iiee i,
+	            ubigeos u
+            ', '
+                i.iiee_dres_ide = 
+                and
+                i.iiee_ugel_ide = 210001
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            ', '
+                u.ubig_dpto, u.ubig_prov, u.ubig_dist
+            ', '
+                i.iiee_ubig_ide
+            ')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->getAnexos()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-07 05:11:11 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+        ' at line 5 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `u`.`ubi...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`ubi...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`ubi...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`ubi...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024i.php(46): App\Models\Generaldb->selectSomeData('\r\n             ...', '\r\n             ...', '\r\n             ...', '\r\n             ...', '\r\n             ...')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024i->getAnexos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-07 05:11:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+        ' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 
+                and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 
+                and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 
+                and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 
+                and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2024i.php(46): App\Models\Generaldb->selectSomeData('
+                u.ubig_ide AS id,
+	            CONCAT(u.ubig_dist,\' - \',u.ubig_prov,\' - \',u.ubig_dpto) AS nombre
+            ', '
+                iiee i,
+	            ubigeos u
+            ', '
+                i.iiee_dres_ide = 
+                and
+                i.iiee_ugel_ide = 210001
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            ', '
+                u.ubig_dpto, u.ubig_prov, u.ubig_dist
+            ', '
+                i.iiee_ubig_ide
+            ')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->getAnexos()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-01-07 05:11:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+        ' at line 5 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `u`.`ubi...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`ubi...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`ubi...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`ubi...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2024i.php(46): App\Models\Generaldb->selectSomeData('\r\n             ...', '\r\n             ...', '\r\n             ...', '\r\n             ...', '\r\n             ...')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2024i->getAnexos()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-01-07 05:11:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+        ' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 
+                and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 
+                and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 
+                and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`ubig_ide` AS `id`, CONCAT(u.ubig_dist, \' - \', `u`.`ubig_prov`, \' - \', u.ubig_dpto) AS nombre
+FROM `iiee` `i`, `ubigeos` `u`
+WHERE 
+                i.iiee_dres_ide = 
+                and
+                `i`.`iiee_ugel_ide` = 210001
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            
+GROUP BY `i`.`iiee_ubig_ide`
+ORDER BY `u`.`ubig_dpto`, `u`.`ubig_prov`, `u`.`ubig_dist`', [], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2024i.php(46): App\Models\Generaldb->selectSomeData('
+                u.ubig_ide AS id,
+	            CONCAT(u.ubig_dist,\' - \',u.ubig_prov,\' - \',u.ubig_dpto) AS nombre
+            ', '
+                iiee i,
+	            ubigeos u
+            ', '
+                i.iiee_dres_ide = 
+                and
+                i.iiee_ugel_ide = 210001
+                and
+                i.iiee_ubig_ide = u.ubig_ide
+            ', '
+                u.ubig_dpto, u.ubig_prov, u.ubig_dist
+            ', '
+                i.iiee_ubig_ide
+            ')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->getAnexos()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-07 07:17:20 --> Array to string conversion
+in APPPATH\Controllers\Anexos2024i.php on line 163.
+ 1 APPPATH\Controllers\Anexos2024i.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Anexos2024i.php', 163)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->postMiAnexo()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-07 07:42:42 --> Array to string conversion
+in APPPATH\Views\anexos2024i\mianexo.php on line 16.
+ 1 APPPATH\Views\anexos2024i\mianexo.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\anexos2024i\\mianexo.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\anexos2024i\\mianexo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('anexos2024i/mianexo', [], true)
+ 5 APPPATH\Controllers\Anexos2024i.php(180): view('anexos2024i/mianexo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->postMiAnexo()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-07 07:43:26 --> Undefined array key 0
+in APPPATH\Views\anexos2024i\mianexo.php on line 16.
+ 1 APPPATH\Views\anexos2024i\mianexo.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\anexos2024i\\mianexo.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\anexos2024i\\mianexo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('anexos2024i/mianexo', [], true)
+ 5 APPPATH\Controllers\Anexos2024i.php(180): view('anexos2024i/mianexo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->postMiAnexo()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-07 07:43:42 --> Undefined array key 0
+in APPPATH\Views\anexos2024i\mianexo.php on line 16.
+ 1 APPPATH\Views\anexos2024i\mianexo.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\anexos2024i\\mianexo.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\anexos2024i\\mianexo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('anexos2024i/mianexo', [], true)
+ 5 APPPATH\Controllers\Anexos2024i.php(180): view('anexos2024i/mianexo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->postMiAnexo()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-07 07:45:22 --> Array to string conversion
+in APPPATH\Views\anexos2024i\mianexo.php on line 19.
+ 1 APPPATH\Views\anexos2024i\mianexo.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\anexos2024i\\mianexo.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\anexos2024i\\mianexo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('anexos2024i/mianexo', [], true)
+ 5 APPPATH\Controllers\Anexos2024i.php(180): view('anexos2024i/mianexo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->postMiAnexo()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-07 08:08:34 --> Object of class App\Libraries\Componente could not be converted to string
+in APPPATH\Libraries\Componente.php on line 145.
+ 1 APPPATH\Views\anexos2024i\mianexo.php(23): App\Libraries\Componente::Badge('primary', Object(App\Libraries\Componente))
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\anexos2024i\\mianexo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('anexos2024i/mianexo', [], true)
+ 5 APPPATH\Controllers\Anexos2024i.php(180): view('anexos2024i/mianexo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->postMiAnexo()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-07 08:08:43 --> Object of class App\Libraries\Componente could not be converted to string
+in APPPATH\Libraries\Componente.php on line 145.
+ 1 APPPATH\Views\anexos2024i\mianexo.php(23): App\Libraries\Componente::Badge('primary', Object(App\Libraries\Componente))
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\anexos2024i\\mianexo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('anexos2024i/mianexo', [], true)
+ 5 APPPATH\Controllers\Anexos2024i.php(180): view('anexos2024i/mianexo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->postMiAnexo()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-07 08:37:23 --> Undefined variable $cali_html
+in APPPATH\Views\anexos2024i\anexos_iiee.php on line 86.
+ 1 APPPATH\Views\anexos2024i\anexos_iiee.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cali_html', 'APPPATH\\Views\\anexos2024i\\anexos_iiee.php', 86)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\anexos2024i\\anexos_iiee.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('anexos2024i/anexos_iiee', [], true)
+ 5 APPPATH\Controllers\Anexos2024i.php(118): view('anexos2024i/anexos_iiee', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->postAnexosIIEE()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-07 09:38:21 --> syntax error, unexpected token "echo"
+in APPPATH\Controllers\Anexos2024i.php on line 185.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Anexos2024i.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Anexos2024i')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Anexos2024i')
+ 4 SYSTEMPATH\Router\AutoRouterImproved.php(264): class_exists('App\\Controllers\\Anexos2024i')
+ 5 SYSTEMPATH\Router\AutoRouterImproved.php(115): CodeIgniter\Router\AutoRouterImproved->scanControllers([...])
+ 6 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouterImproved->getRoute('anexos2024i/apro')
+ 7 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('anexos2024i/apro')
+ 8 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('anexos2024i/apro')
+ 9 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-07 10:54:57 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\anexos2024i\mianexo.php on line 15.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('anexos2024i/mianexo', [], true)
+ 4 APPPATH\Controllers\Anexos2024i.php(180): view('anexos2024i/mianexo', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2024i->postMiAnexo()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2024i))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-01-07 14:25:17 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Controllers\Anexos2024i.php on line 283.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Anexos2024i.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Anexos2024i')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Anexos2024i')
+ 4 SYSTEMPATH\Router\AutoRouterImproved.php(264): class_exists('App\\Controllers\\Anexos2024i')
+ 5 SYSTEMPATH\Router\AutoRouterImproved.php(115): CodeIgniter\Router\AutoRouterImproved->scanControllers([...])
+ 6 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouterImproved->getRoute('anexos2024i/anexosenviados')
+ 7 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('anexos2024i/anexosenviados')
+ 8 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('anexos2024i/anexosenviados')
+ 9 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

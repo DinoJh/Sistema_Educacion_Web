@@ -1,0 +1,442 @@
+CRITICAL - 2025-12-24 02:48:55 --> Too few arguments to function App\Controllers\Anexos2025::formulario(), 1 passed in D:\wamp\www\monitoreo3\app\Controllers\Anexos2025.php on line 1005 and exactly 3 expected
+in APPPATH\Controllers\Anexos2025.php on line 978.
+ 1 APPPATH\Controllers\Anexos2025.php(1005): App\Controllers\Anexos2025->formulario([...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->getAnexo2b()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 02:49:03 --> Too few arguments to function App\Controllers\Anexos2025::formulario(), 1 passed in D:\wamp\www\monitoreo3\app\Controllers\Anexos2025.php on line 1005 and exactly 3 expected
+in APPPATH\Controllers\Anexos2025.php on line 978.
+ 1 APPPATH\Controllers\Anexos2025.php(1005): App\Controllers\Anexos2025->formulario([...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->getAnexo2b()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 02:54:48 --> Illegal offset type
+in APPPATH\Controllers\Anexos2025.php on line 980.
+ 1 APPPATH\Controllers\Anexos2025.php(1008): App\Controllers\Anexos2025->formulario([...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->getAnexo2b()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 02:54:55 --> Illegal offset type
+in APPPATH\Controllers\Anexos2025.php on line 980.
+ 1 APPPATH\Controllers\Anexos2025.php(1008): App\Controllers\Anexos2025->formulario([...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->getAnexo2b()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 04:57:27 --> Undefined array key "campo"
+in APPPATH\Controllers\Anexos2025.php on line 1061.
+ 1 APPPATH\Controllers\Anexos2025.php(1061): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "campo"', 'APPPATH\\Controllers\\Anexos2025.php', 1061)
+ 2 APPPATH\Controllers\Anexos2025.php(1143): App\Controllers\Anexos2025->mostrarRegistros([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo2bData()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 04:57:33 --> Undefined array key "campo"
+in APPPATH\Controllers\Anexos2025.php on line 1061.
+ 1 APPPATH\Controllers\Anexos2025.php(1061): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "campo"', 'APPPATH\\Controllers\\Anexos2025.php', 1061)
+ 2 APPPATH\Controllers\Anexos2025.php(1143): App\Controllers\Anexos2025->mostrarRegistros([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo2bData()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 05:02:02 --> Undefined array key "clase"
+in APPPATH\Controllers\Anexos2025.php on line 1065.
+ 1 APPPATH\Controllers\Anexos2025.php(1065): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "clase"', 'APPPATH\\Controllers\\Anexos2025.php', 1065)
+ 2 APPPATH\Controllers\Anexos2025.php(1147): App\Controllers\Anexos2025->mostrarRegistros([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo2bData()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 05:10:03 --> Undefined variable $eliminar
+in APPPATH\Controllers\Anexos2025.php on line 1075.
+ 1 APPPATH\Controllers\Anexos2025.php(1075): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $eliminar', 'APPPATH\\Controllers\\Anexos2025.php', 1075)
+ 2 APPPATH\Controllers\Anexos2025.php(1154): App\Controllers\Anexos2025->mostrarRegistros([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo2bData()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 05:10:06 --> Undefined variable $eliminar
+in APPPATH\Controllers\Anexos2025.php on line 1075.
+ 1 APPPATH\Controllers\Anexos2025.php(1075): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $eliminar', 'APPPATH\\Controllers\\Anexos2025.php', 1075)
+ 2 APPPATH\Controllers\Anexos2025.php(1154): App\Controllers\Anexos2025->mostrarRegistros([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo2bData()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 05:10:41 --> Undefined variable $eliminar
+in APPPATH\Controllers\Anexos2025.php on line 1075.
+ 1 APPPATH\Controllers\Anexos2025.php(1075): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $eliminar', 'APPPATH\\Controllers\\Anexos2025.php', 1075)
+ 2 APPPATH\Controllers\Anexos2025.php(1154): App\Controllers\Anexos2025->mostrarRegistros([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo2bData()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 05:53:53 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Anexos2025.php on line 1105.
+ 1 APPPATH\Controllers\Anexos2025.php(1105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Controllers\\Anexos2025.php', 1105)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postGetData('2025_a2b_data', 'a2bd')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 05:54:51 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Anexos2025.php on line 1105.
+ 1 APPPATH\Controllers\Anexos2025.php(1105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Controllers\\Anexos2025.php', 1105)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postGetData('2025_a2b_data', 'a2bd')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 06:05:34 --> Call to undefined function App\Controllers\Div()
+in APPPATH\Controllers\Anexos2025.php on line 1029.
+ 1 APPPATH\Controllers\Anexos2025.php(1170): App\Controllers\Anexos2025->formulario('modalAnexo2b', 'Anexo 2B', 'modal-xl', [...], '2025_a2b_data', 'a2bd', 'getDataAnexo2b();')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->getAnexo2b()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 06:12:18 --> Undefined array key "a2bd_ide"
+in APPPATH\Controllers\Anexos2025.php on line 1121.
+ 1 APPPATH\Controllers\Anexos2025.php(1121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "a2bd_ide"', 'APPPATH\\Controllers\\Anexos2025.php', 1121)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postGetData('2025_a2b_data', 'a2bd')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 06:45:41 --> Cannot redeclare App\Controllers\Anexos2025::getAnexo2b()
+in APPPATH\Controllers\Anexos2025.php on line 1219.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-12-24 07:02:01 --> Undefined variable $arcus
+in APPPATH\Controllers\Anexos2025.php on line 1245.
+ 1 APPPATH\Controllers\Anexos2025.php(1245): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $arcus', 'APPPATH\\Controllers\\Anexos2025.php', 1245)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->getAnexo4()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-24 07:08:47 --> mysqli_sql_exception: Unknown column 'a4udi' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `a4udi` ...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a4udi` ...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a4udi` ...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a4udi` ...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025.php(1242): App\Models\Generaldb->selectSomeDataJoin('a4udi as id,a4u...', '2025_a4u_discap...', false, 'a4udi_nombre')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2025->getAnexo4()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-24 07:08:47 --> Unknown column 'a4udi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `a4udi` as `id`, `a4udi_nombre` as `nombre`
+FROM `2025_a4u_discapacidades`
+ORDER BY `a4udi_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a4udi` as `id`, `a4udi_nombre` as `nombre`
+FROM `2025_a4u_discapacidades`
+ORDER BY `a4udi_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a4udi` as `id`, `a4udi_nombre` as `nombre`
+FROM `2025_a4u_discapacidades`
+ORDER BY `a4udi_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a4udi` as `id`, `a4udi_nombre` as `nombre`
+FROM `2025_a4u_discapacidades`
+ORDER BY `a4udi_nombre`', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2025.php(1242): App\Models\Generaldb->selectSomeDataJoin('a4udi as id,a4udi_nombre as nombre', '2025_a4u_discapacidades', false, 'a4udi_nombre')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->getAnexo4()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-24 07:08:54 --> mysqli_sql_exception: Unknown column 'a4udi' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `a4udi` ...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a4udi` ...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a4udi` ...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a4udi` ...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025.php(1242): App\Models\Generaldb->selectSomeDataJoin('a4udi as id,a4u...', '2025_a4u_discap...', false, 'a4udi_nombre')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2025->getAnexo4()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-24 07:08:54 --> Unknown column 'a4udi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `a4udi` as `id`, `a4udi_nombre` as `nombre`
+FROM `2025_a4u_discapacidades`
+ORDER BY `a4udi_nombre`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a4udi` as `id`, `a4udi_nombre` as `nombre`
+FROM `2025_a4u_discapacidades`
+ORDER BY `a4udi_nombre`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a4udi` as `id`, `a4udi_nombre` as `nombre`
+FROM `2025_a4u_discapacidades`
+ORDER BY `a4udi_nombre`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a4udi` as `id`, `a4udi_nombre` as `nombre`
+FROM `2025_a4u_discapacidades`
+ORDER BY `a4udi_nombre`', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2025.php(1242): App\Models\Generaldb->selectSomeDataJoin('a4udi as id,a4udi_nombre as nombre', '2025_a4u_discapacidades', false, 'a4udi_nombre')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->getAnexo4()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-24 07:18:51 --> mysqli_sql_exception: Unknown column 'd.a2bd_grad_ide' in 'on clause' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025.php(1279): App\Models\Generaldb->selectSomeDataJoin('*', '2025_a4u_data d', false, 'd.a4ud_grad_ide', false, false, Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo4Data()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-24 07:18:51 --> Unknown column 'd.a2bd_grad_ide' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `2025_a4u_data` `d`
+LEFT JOIN `grados` `g` ON `d`.`a2bd_grad_ide` = `g`.`grad_ide`
+ORDER BY `d`.`a4ud_grad_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2025_a4u_data` `d`
+LEFT JOIN `grados` `g` ON `d`.`a2bd_grad_ide` = `g`.`grad_ide`
+ORDER BY `d`.`a4ud_grad_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2025_a4u_data` `d`
+LEFT JOIN `grados` `g` ON `d`.`a2bd_grad_ide` = `g`.`grad_ide`
+ORDER BY `d`.`a4ud_grad_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2025_a4u_data` `d`
+LEFT JOIN `grados` `g` ON `d`.`a2bd_grad_ide` = `g`.`grad_ide`
+ORDER BY `d`.`a4ud_grad_ide`', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2025.php(1279): App\Models\Generaldb->selectSomeDataJoin('*', '2025_a4u_data d', false, 'd.a4ud_grad_ide', false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo4Data()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-24 07:18:56 --> mysqli_sql_exception: Unknown column 'd.a2bd_grad_ide' in 'on clause' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025.php(1279): App\Models\Generaldb->selectSomeDataJoin('*', '2025_a4u_data d', false, 'd.a4ud_grad_ide', false, false, Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo4Data()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-24 07:18:56 --> Unknown column 'd.a2bd_grad_ide' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `2025_a4u_data` `d`
+LEFT JOIN `grados` `g` ON `d`.`a2bd_grad_ide` = `g`.`grad_ide`
+ORDER BY `d`.`a4ud_grad_ide`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `2025_a4u_data` `d`
+LEFT JOIN `grados` `g` ON `d`.`a2bd_grad_ide` = `g`.`grad_ide`
+ORDER BY `d`.`a4ud_grad_ide`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `2025_a4u_data` `d`
+LEFT JOIN `grados` `g` ON `d`.`a2bd_grad_ide` = `g`.`grad_ide`
+ORDER BY `d`.`a4ud_grad_ide`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `2025_a4u_data` `d`
+LEFT JOIN `grados` `g` ON `d`.`a2bd_grad_ide` = `g`.`grad_ide`
+ORDER BY `d`.`a4ud_grad_ide`', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Anexos2025.php(1279): App\Models\Generaldb->selectSomeDataJoin('*', '2025_a4u_data d', false, 'd.a4ud_grad_ide', false, false, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo4Data()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 07:19:41 --> Undefined array key "a4udi_nombre"
+in APPPATH\Controllers\Anexos2025.php on line 1086.
+ 1 APPPATH\Controllers\Anexos2025.php(1086): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "a4udi_nombre"', 'APPPATH\\Controllers\\Anexos2025.php', 1086)
+ 2 APPPATH\Controllers\Anexos2025.php(1293): App\Controllers\Anexos2025->mostrarRegistros([...], [...], 'modalAnexo4', '2025_a4u_data', 'a4ud')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo4Data()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 07:19:46 --> Undefined array key "a4udi_nombre"
+in APPPATH\Controllers\Anexos2025.php on line 1086.
+ 1 APPPATH\Controllers\Anexos2025.php(1086): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "a4udi_nombre"', 'APPPATH\\Controllers\\Anexos2025.php', 1086)
+ 2 APPPATH\Controllers\Anexos2025.php(1293): App\Controllers\Anexos2025->mostrarRegistros([...], [...], 'modalAnexo4', '2025_a4u_data', 'a4ud')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo4Data()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 07:19:48 --> Undefined array key "a4udi_nombre"
+in APPPATH\Controllers\Anexos2025.php on line 1086.
+ 1 APPPATH\Controllers\Anexos2025.php(1086): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "a4udi_nombre"', 'APPPATH\\Controllers\\Anexos2025.php', 1086)
+ 2 APPPATH\Controllers\Anexos2025.php(1293): App\Controllers\Anexos2025->mostrarRegistros([...], [...], 'modalAnexo4', '2025_a4u_data', 'a4ud')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo4Data()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 07:19:49 --> Undefined array key "a4udi_nombre"
+in APPPATH\Controllers\Anexos2025.php on line 1086.
+ 1 APPPATH\Controllers\Anexos2025.php(1086): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "a4udi_nombre"', 'APPPATH\\Controllers\\Anexos2025.php', 1086)
+ 2 APPPATH\Controllers\Anexos2025.php(1293): App\Controllers\Anexos2025->mostrarRegistros([...], [...], 'modalAnexo4', '2025_a4u_data', 'a4ud')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo4Data()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 07:19:56 --> Undefined array key "a4udi_nombre"
+in APPPATH\Controllers\Anexos2025.php on line 1086.
+ 1 APPPATH\Controllers\Anexos2025.php(1086): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "a4udi_nombre"', 'APPPATH\\Controllers\\Anexos2025.php', 1086)
+ 2 APPPATH\Controllers\Anexos2025.php(1293): App\Controllers\Anexos2025->mostrarRegistros([...], [...], 'modalAnexo4', '2025_a4u_data', 'a4ud')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo4Data()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 07:20:39 --> Undefined array key "a2bd_acciones"
+in APPPATH\Controllers\Anexos2025.php on line 1086.
+ 1 APPPATH\Controllers\Anexos2025.php(1086): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "a2bd_acciones"', 'APPPATH\\Controllers\\Anexos2025.php', 1086)
+ 2 APPPATH\Controllers\Anexos2025.php(1294): App\Controllers\Anexos2025->mostrarRegistros([...], [...], 'modalAnexo4', '2025_a4u_data', 'a4ud')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo4Data()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 07:31:15 --> Undefined variable $discapacidades
+in APPPATH\Controllers\Anexos2025.php on line 1319.
+ 1 APPPATH\Controllers\Anexos2025.php(1319): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $discapacidades', 'APPPATH\\Controllers\\Anexos2025.php', 1319)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->getAnexo5()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 07:31:21 --> Undefined variable $discapacidades
+in APPPATH\Controllers\Anexos2025.php on line 1319.
+ 1 APPPATH\Controllers\Anexos2025.php(1319): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $discapacidades', 'APPPATH\\Controllers\\Anexos2025.php', 1319)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->getAnexo5()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 07:35:58 --> Undefined array key "a5ud_grad_nombre"
+in APPPATH\Controllers\Anexos2025.php on line 1086.
+ 1 APPPATH\Controllers\Anexos2025.php(1086): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "a5ud_grad_nombre"', 'APPPATH\\Controllers\\Anexos2025.php', 1086)
+ 2 APPPATH\Controllers\Anexos2025.php(1362): App\Controllers\Anexos2025->mostrarRegistros([...], [...], 'modalAnexo5', '2025_a5u_data', 'a5ud')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo5Data()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 07:36:05 --> Undefined array key "a5ud_grad_nombre"
+in APPPATH\Controllers\Anexos2025.php on line 1086.
+ 1 APPPATH\Controllers\Anexos2025.php(1086): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "a5ud_grad_nombre"', 'APPPATH\\Controllers\\Anexos2025.php', 1086)
+ 2 APPPATH\Controllers\Anexos2025.php(1362): App\Controllers\Anexos2025->mostrarRegistros([...], [...], 'modalAnexo5', '2025_a5u_data', 'a5ud')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo5Data()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-24 08:48:01 --> mysqli_sql_exception: Unknown column 'a6ud_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025.php(989): App\Models\Generaldb->insertData('2025_a5u_data', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2025->postGuardarData('2025_a5u_data', 'a5ud')
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-24 07:51:52 --> Undefined array key "a5ud_matriculados"
+in APPPATH\Controllers\Anexos2025.php on line 1086.
+ 1 APPPATH\Controllers\Anexos2025.php(1086): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "a5ud_matriculados"', 'APPPATH\\Controllers\\Anexos2025.php', 1086)
+ 2 APPPATH\Controllers\Anexos2025.php(1431): App\Controllers\Anexos2025->mostrarRegistros([...], [...], 'modalAnexo6', '2025_a5u_data', 'a5ud')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo6Data()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-24 09:11:44 --> mysqli_sql_exception: Unknown column 'a7ud_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025.php(989): App\Models\Generaldb->insertData('2025_a7a_data', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2025->postGuardarData('2025_a7a_data', 'a7ad')
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-12-24 09:12:26 --> mysqli_sql_exception: Unknown column 'a7ud_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025.php(989): App\Models\Generaldb->insertData('2025_a7a_data', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2025->postGuardarData('2025_a7a_data', 'a7ad')
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-12-24 09:13:01 --> mysqli_sql_exception: Unknown column 'a7ud_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025.php(989): App\Models\Generaldb->insertData('2025_a7a_data', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2025->postGuardarData('2025_a7a_data', 'a7ad')
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-12-24 09:14:30 --> mysqli_sql_exception: Unknown column 'a7ud_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025.php(989): App\Models\Generaldb->insertData('2025_a7a_data', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2025->postGuardarData('2025_a7a_data', 'a7ad')
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-12-24 09:15:10 --> mysqli_sql_exception: Unknown column 'a7ud_ide' in 'field list' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `20...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `20...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `20...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `20...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(186): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\wamp\www\monitoreo3\app\Controllers\Anexos2025.php(989): App\Models\Generaldb->insertData('2025_a7a_data', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Anexos2025->postGuardarData('2025_a7a_data', 'a7ad')
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-24 08:20:14 --> Undefined array key "a7ad_a7ac_nombre"
+in APPPATH\Controllers\Anexos2025.php on line 1086.
+ 1 APPPATH\Controllers\Anexos2025.php(1086): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "a7ad_a7ac_nombre"', 'APPPATH\\Controllers\\Anexos2025.php', 1086)
+ 2 APPPATH\Controllers\Anexos2025.php(1497): App\Controllers\Anexos2025->mostrarRegistros([...], [...], 'modalAnexo7a', '2025_a7a_data', 'a7ad')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo7aData()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 08:20:20 --> Undefined array key "a7ad_a7ac_nombre"
+in APPPATH\Controllers\Anexos2025.php on line 1086.
+ 1 APPPATH\Controllers\Anexos2025.php(1086): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "a7ad_a7ac_nombre"', 'APPPATH\\Controllers\\Anexos2025.php', 1086)
+ 2 APPPATH\Controllers\Anexos2025.php(1497): App\Controllers\Anexos2025->mostrarRegistros([...], [...], 'modalAnexo7a', '2025_a7a_data', 'a7ad')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postAnexo7aData()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-24 09:01:12 --> explode(): Passing null to parameter #2 ($string) of type string is deprecated
+in APPPATH\Controllers\Anexos2025.php on line 1137.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'explode(): Passing null to parameter #2 ($string) of type string is deprecated', 'APPPATH\\Controllers\\Anexos2025.php', 1137)
+ 2 APPPATH\Controllers\Anexos2025.php(1137): explode(',', null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Anexos2025->postGetData('2025_a7a_data', 'a7ad')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anexos2025))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

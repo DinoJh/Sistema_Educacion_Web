@@ -1,0 +1,412 @@
+ERROR - 2025-09-26 06:11:44 --> mysqli_sql_exception: Unknown column 'nico_nivel2_ide' in 'where clause' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(780): App\Models\Generaldb->selectSomeData('*', 'eval2_nivel_com...', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->postSetAlter()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-09-26 06:11:44 --> Unknown column 'nico_nivel2_ide' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `eval2_nivel_comprension`
+WHERE `nico_usua_ide` = \'40022\'
+AND `nico_eval2_ide` = \'1\'
+AND `nico_nivel2_ide` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `eval2_nivel_comprension`
+WHERE `nico_usua_ide` = \'40022\'
+AND `nico_eval2_ide` = \'1\'
+AND `nico_nivel2_ide` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `eval2_nivel_comprension`
+WHERE `nico_usua_ide` = \'40022\'
+AND `nico_eval2_ide` = \'1\'
+AND `nico_nivel2_ide` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `eval2_nivel_comprension`
+WHERE `nico_usua_ide` = :nico_usua_ide:
+AND `nico_eval2_ide` = :nico_eval2_ide:
+AND `nico_nivel2_ide` = :nico_nivel2_ide:', [...], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Eval1.php(780): App\Models\Generaldb->selectSomeData('*', 'eval2_nivel_comprension', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postSetAlter()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-26 06:11:52 --> mysqli_sql_exception: Unknown column 'nico_nivel2_ide' in 'where clause' in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(780): App\Models\Generaldb->selectSomeData('*', 'eval2_nivel_com...', Array)
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->postSetAlter()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-09-26 06:11:52 --> Unknown column 'nico_nivel2_ide' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `eval2_nivel_comprension`
+WHERE `nico_usua_ide` = \'40022\'
+AND `nico_eval2_ide` = \'1\'
+AND `nico_nivel2_ide` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `eval2_nivel_comprension`
+WHERE `nico_usua_ide` = \'40022\'
+AND `nico_eval2_ide` = \'1\'
+AND `nico_nivel2_ide` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `eval2_nivel_comprension`
+WHERE `nico_usua_ide` = \'40022\'
+AND `nico_eval2_ide` = \'1\'
+AND `nico_nivel2_ide` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `eval2_nivel_comprension`
+WHERE `nico_usua_ide` = :nico_usua_ide:
+AND `nico_eval2_ide` = :nico_eval2_ide:
+AND `nico_nivel2_ide` = :nico_nivel2_ide:', [...], false)
+ 5 APPPATH\Models\Generaldb.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Eval1.php(780): App\Models\Generaldb->selectSomeData('*', 'eval2_nivel_comprension', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postSetAlter()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-26 08:40:26 --> Undefined property: stdClass::$iiee_codmod
+in APPPATH\Controllers\Eval1.php on line 1047.
+ 1 APPPATH\Controllers\Eval1.php(1047): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$iiee_codmod', 'APPPATH\\Controllers\\Eval1.php', 1047)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-26 08:40:34 --> Undefined property: stdClass::$iiee_codmod
+in APPPATH\Controllers\Eval1.php on line 1047.
+ 1 APPPATH\Controllers\Eval1.php(1047): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$iiee_codmod', 'APPPATH\\Controllers\\Eval1.php', 1047)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-26 08:42:13 --> Undefined property: stdClass::$iiee_codmod
+in APPPATH\Controllers\Eval1.php on line 1049.
+ 1 APPPATH\Controllers\Eval1.php(1049): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$iiee_codmod', 'APPPATH\\Controllers\\Eval1.php', 1049)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-26 08:42:36 --> Undefined property: stdClass::$usua_grado
+in APPPATH\Controllers\Eval1.php on line 1053.
+ 1 APPPATH\Controllers\Eval1.php(1053): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$usua_grado', 'APPPATH\\Controllers\\Eval1.php', 1053)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-26 08:42:44 --> Undefined property: stdClass::$usua_grado
+in APPPATH\Controllers\Eval1.php on line 1053.
+ 1 APPPATH\Controllers\Eval1.php(1053): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$usua_grado', 'APPPATH\\Controllers\\Eval1.php', 1053)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-26 08:43:30 --> Undefined property: stdClass::$modalidad
+in APPPATH\Controllers\Eval1.php on line 1057.
+ 1 APPPATH\Controllers\Eval1.php(1057): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$modalidad', 'APPPATH\\Controllers\\Eval1.php', 1057)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-26 08:44:04 --> Undefined property: stdClass::$usua_dni
+in APPPATH\Controllers\Eval1.php on line 1062.
+ 1 APPPATH\Controllers\Eval1.php(1062): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$usua_dni', 'APPPATH\\Controllers\\Eval1.php', 1062)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-26 08:59:46 --> Undefined property: stdClass::$ugel_nombre
+in APPPATH\Controllers\Eval1.php on line 1055.
+ 1 APPPATH\Controllers\Eval1.php(1055): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ugel_nombre', 'APPPATH\\Controllers\\Eval1.php', 1055)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-26 09:33:27 --> Undefined property: stdClass::$resp_alternativas
+in APPPATH\Controllers\Eval1.php on line 1063.
+ 1 APPPATH\Controllers\Eval1.php(1063): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$resp_alternativas', 'APPPATH\\Controllers\\Eval1.php', 1063)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-26 09:40:28 --> Array to string conversion
+in APPPATH\Controllers\Eval1.php on line 1115.
+ 1 APPPATH\Controllers\Eval1.php(1115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Eval1.php', 1115)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-26 12:43:43 --> Undefined property: stdClass::$nive_nombre
+in APPPATH\Controllers\Eval1.php on line 1156.
+ 1 APPPATH\Controllers\Eval1.php(1156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nive_nombre', 'APPPATH\\Controllers\\Eval1.php', 1156)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-26 12:44:15 --> Undefined property: stdClass::$nive_nombre
+in APPPATH\Controllers\Eval1.php on line 1156.
+ 1 APPPATH\Controllers\Eval1.php(1156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nive_nombre', 'APPPATH\\Controllers\\Eval1.php', 1156)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-26 12:44:24 --> Undefined property: stdClass::$nive_nombre
+in APPPATH\Controllers\Eval1.php on line 1156.
+ 1 APPPATH\Controllers\Eval1.php(1156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nive_nombre', 'APPPATH\\Controllers\\Eval1.php', 1156)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-26 13:37:36 --> Undefined array key "LITERAL"
+in APPPATH\Controllers\Eval1.php on line 1176.
+ 1 APPPATH\Controllers\Eval1.php(1176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "LITERAL"', 'APPPATH\\Controllers\\Eval1.php', 1176)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-26 13:43:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`asc`
+ORDER BY `ni`.`nive2_ide` asc' at line 16 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ni`.`ni...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ni`.`ni...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ni`.`ni...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ni`.`ni...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(1083): App\Models\Generaldb->selectSomeDataJoin('\r\n             ...', '\r\n             ...', '\r\n             ...', 'ni.nive2_ide as...', 'ni.nive2_ide as...')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-09-26 13:43:54 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`asc`
+ORDER BY `ni`.`nive2_ide` asc' at line 16
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ni`.`nive2_nombre`, `c`.`comp_nivel`
+FROM `eval2_nivel_comprension` `n`, `eval2_comprension` `c`, `eval2_niveles` `ni`
+WHERE 
+                n.nico_eval2_ide = 1
+                AND
+                `n`.`nico_nive2_ide` = `ni`.`nive2_ide`
+                AND 
+                `n`.`nico_nive2_ide` = `c`.`comp_nive2_ide`
+                and
+                `n`.`nico_eval2_ide` = `c`.`comp_eval2_ide`
+                and
+                `c`.`comp_min` <= `n`.`nico_respuestas`
+                and
+                n.nico_respuestas <= c.comp_max  
+            
+GROUP BY `ni`.`nive2_ide` `asc`
+ORDER BY `ni`.`nive2_ide` asc', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ni`.`nive2_nombre`, `c`.`comp_nivel`
+FROM `eval2_nivel_comprension` `n`, `eval2_comprension` `c`, `eval2_niveles` `ni`
+WHERE 
+                n.nico_eval2_ide = 1
+                AND
+                `n`.`nico_nive2_ide` = `ni`.`nive2_ide`
+                AND 
+                `n`.`nico_nive2_ide` = `c`.`comp_nive2_ide`
+                and
+                `n`.`nico_eval2_ide` = `c`.`comp_eval2_ide`
+                and
+                `c`.`comp_min` <= `n`.`nico_respuestas`
+                and
+                n.nico_respuestas <= c.comp_max  
+            
+GROUP BY `ni`.`nive2_ide` `asc`
+ORDER BY `ni`.`nive2_ide` asc')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ni`.`nive2_nombre`, `c`.`comp_nivel`
+FROM `eval2_nivel_comprension` `n`, `eval2_comprension` `c`, `eval2_niveles` `ni`
+WHERE 
+                n.nico_eval2_ide = 1
+                AND
+                `n`.`nico_nive2_ide` = `ni`.`nive2_ide`
+                AND 
+                `n`.`nico_nive2_ide` = `c`.`comp_nive2_ide`
+                and
+                `n`.`nico_eval2_ide` = `c`.`comp_eval2_ide`
+                and
+                `c`.`comp_min` <= `n`.`nico_respuestas`
+                and
+                n.nico_respuestas <= c.comp_max  
+            
+GROUP BY `ni`.`nive2_ide` `asc`
+ORDER BY `ni`.`nive2_ide` asc')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ni`.`nive2_nombre`, `c`.`comp_nivel`
+FROM `eval2_nivel_comprension` `n`, `eval2_comprension` `c`, `eval2_niveles` `ni`
+WHERE 
+                n.nico_eval2_ide = 1
+                AND
+                `n`.`nico_nive2_ide` = `ni`.`nive2_ide`
+                AND 
+                `n`.`nico_nive2_ide` = `c`.`comp_nive2_ide`
+                and
+                `n`.`nico_eval2_ide` = `c`.`comp_eval2_ide`
+                and
+                `c`.`comp_min` <= `n`.`nico_respuestas`
+                and
+                n.nico_respuestas <= c.comp_max  
+            
+GROUP BY `ni`.`nive2_ide` `asc`
+ORDER BY `ni`.`nive2_ide` asc', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Eval1.php(1083): App\Models\Generaldb->selectSomeDataJoin('
+                ni.nive2_nombre,c.comp_nivel
+            ', '
+                eval2_nivel_comprension n,
+                eval2_comprension c,
+                eval2_niveles ni
+            ', '
+                n.nico_eval2_ide = 1
+                AND
+                n.nico_nive2_ide = ni.nive2_ide
+                AND 
+                n.nico_nive2_ide = c.comp_nive2_ide
+                and
+                n.nico_eval2_ide = c.comp_eval2_ide
+                and
+                c.comp_min <= n.nico_respuestas
+                and
+                n.nico_respuestas <= c.comp_max  
+            ', 'ni.nive2_ide asc', 'ni.nive2_ide asc')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-09-26 13:44:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`asc`
+ORDER BY `ni`.`nive2_ide` asc' at line 16 in D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\wamp\www\monitoreo3\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ni`.`ni...', 0)
+#1 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ni`.`ni...')
+#2 D:\wamp\www\monitoreo3\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ni`.`ni...')
+#3 D:\wamp\www\monitoreo3\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ni`.`ni...', Array, false)
+#4 D:\wamp\www\monitoreo3\app\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp\www\monitoreo3\app\Controllers\Eval1.php(1083): App\Models\Generaldb->selectSomeDataJoin('\r\n             ...', '\r\n             ...', '\r\n             ...', 'ni.nive2_ide as...', 'ni.nive2_ide as...')
+#6 D:\wamp\www\monitoreo3\system\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+#7 D:\wamp\www\monitoreo3\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+#8 D:\wamp\www\monitoreo3\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp\www\monitoreo3\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-09-26 13:44:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`asc`
+ORDER BY `ni`.`nive2_ide` asc' at line 16
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ni`.`nive2_nombre`, `c`.`comp_nivel`
+FROM `eval2_nivel_comprension` `n`, `eval2_comprension` `c`, `eval2_niveles` `ni`
+WHERE 
+                n.nico_eval2_ide = 2
+                AND
+                `n`.`nico_nive2_ide` = `ni`.`nive2_ide`
+                AND 
+                `n`.`nico_nive2_ide` = `c`.`comp_nive2_ide`
+                and
+                `n`.`nico_eval2_ide` = `c`.`comp_eval2_ide`
+                and
+                `c`.`comp_min` <= `n`.`nico_respuestas`
+                and
+                n.nico_respuestas <= c.comp_max  
+            
+GROUP BY `ni`.`nive2_ide` `asc`
+ORDER BY `ni`.`nive2_ide` asc', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ni`.`nive2_nombre`, `c`.`comp_nivel`
+FROM `eval2_nivel_comprension` `n`, `eval2_comprension` `c`, `eval2_niveles` `ni`
+WHERE 
+                n.nico_eval2_ide = 2
+                AND
+                `n`.`nico_nive2_ide` = `ni`.`nive2_ide`
+                AND 
+                `n`.`nico_nive2_ide` = `c`.`comp_nive2_ide`
+                and
+                `n`.`nico_eval2_ide` = `c`.`comp_eval2_ide`
+                and
+                `c`.`comp_min` <= `n`.`nico_respuestas`
+                and
+                n.nico_respuestas <= c.comp_max  
+            
+GROUP BY `ni`.`nive2_ide` `asc`
+ORDER BY `ni`.`nive2_ide` asc')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ni`.`nive2_nombre`, `c`.`comp_nivel`
+FROM `eval2_nivel_comprension` `n`, `eval2_comprension` `c`, `eval2_niveles` `ni`
+WHERE 
+                n.nico_eval2_ide = 2
+                AND
+                `n`.`nico_nive2_ide` = `ni`.`nive2_ide`
+                AND 
+                `n`.`nico_nive2_ide` = `c`.`comp_nive2_ide`
+                and
+                `n`.`nico_eval2_ide` = `c`.`comp_eval2_ide`
+                and
+                `c`.`comp_min` <= `n`.`nico_respuestas`
+                and
+                n.nico_respuestas <= c.comp_max  
+            
+GROUP BY `ni`.`nive2_ide` `asc`
+ORDER BY `ni`.`nive2_ide` asc')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ni`.`nive2_nombre`, `c`.`comp_nivel`
+FROM `eval2_nivel_comprension` `n`, `eval2_comprension` `c`, `eval2_niveles` `ni`
+WHERE 
+                n.nico_eval2_ide = 2
+                AND
+                `n`.`nico_nive2_ide` = `ni`.`nive2_ide`
+                AND 
+                `n`.`nico_nive2_ide` = `c`.`comp_nive2_ide`
+                and
+                `n`.`nico_eval2_ide` = `c`.`comp_eval2_ide`
+                and
+                `c`.`comp_min` <= `n`.`nico_respuestas`
+                and
+                n.nico_respuestas <= c.comp_max  
+            
+GROUP BY `ni`.`nive2_ide` `asc`
+ORDER BY `ni`.`nive2_ide` asc', [], false)
+ 5 APPPATH\Models\Generaldb.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Eval1.php(1083): App\Models\Generaldb->selectSomeDataJoin('
+                ni.nive2_nombre,c.comp_nivel
+            ', '
+                eval2_nivel_comprension n,
+                eval2_comprension c,
+                eval2_niveles ni
+            ', '
+                n.nico_eval2_ide = 2
+                AND
+                n.nico_nive2_ide = ni.nive2_ide
+                AND 
+                n.nico_nive2_ide = c.comp_nive2_ide
+                and
+                n.nico_eval2_ide = c.comp_eval2_ide
+                and
+                c.comp_min <= n.nico_respuestas
+                and
+                n.nico_respuestas <= c.comp_max  
+            ', 'ni.nive2_ide asc', 'ni.nive2_ide asc')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-26 13:44:39 --> Undefined array key "LITERAL"
+in APPPATH\Controllers\Eval1.php on line 1177.
+ 1 APPPATH\Controllers\Eval1.php(1177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "LITERAL"', 'APPPATH\\Controllers\\Eval1.php', 1177)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-09-26 13:48:24 --> Undefined property: stdClass::$nive2_ide
+in APPPATH\Controllers\Eval1.php on line 1135.
+ 1 APPPATH\Controllers\Eval1.php(1135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nive2_ide', 'APPPATH\\Controllers\\Eval1.php', 1135)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Eval1->postVerRanking()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eval1))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

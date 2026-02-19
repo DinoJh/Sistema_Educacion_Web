@@ -1,0 +1,841 @@
+CRITICAL - 2024-04-25 02:42:45 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714030965_89cd6740785c9cd689dc.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 02:42:47 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714030967_45a6287c77702ed8adda.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 02:51:02 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714031462_4de924a6e646ac12fd5b.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 02:51:23 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714031483_5838834173d5e8af451b.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 04:52:57 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714038777_abf26cdabdc47287d9de.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 04:52:59 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714038779_d67b19d8cbb2acfdada3.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 04:52:59 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714038779_dff505b0c5981953e4af.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:16:30 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714050990_0d99461ee8b1e2bb9f65.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:17:12 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714051032_0239cf2f09b48e46cb77.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:35:25 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052125_b2a80a8f4880747d6cd5.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:35:36 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052136_5b728e6ee7b5c23820ea.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:36:11 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052171_283bc7ebbc5fc57e753f.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:36:11 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052171_1c2761b2b793e88d01e5.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:39:00 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052340_42eda1342fd1c1486bc9.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:40:54 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052454_2523702a505f504f37b3.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:41:02 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052462_b7c4dba738ce2a8e3f7e.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:41:04 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052464_7e7c3be7306610bc9c55.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:41:07 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052467_22055886a90a47b89edd.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:41:09 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052469_1daaaca33661bcc84cd8.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:41:23 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052483_83e4c046560a9549c034.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:44:42 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052682_d7c640e1263069653095.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:44:43 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052683_2ef3d43e83fa8e40e4aa.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:44:45 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052685_f1d7cae9150c7186cd46.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:44:47 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052687_2e96795fe44295bc3d36.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:44:47 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052687_b2ee2e36b6a0d9ffe364.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:44:47 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052687_dca5be2e3a235e8824f2.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:44:48 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052688_67e350e1e2a6635557e8.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:46:06 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052766_efa00e8764f8ec60b580.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:46:25 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052785_61f996abc589a40f04da.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 08:46:27 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714052787_574297700b52b1a7bfbd.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 09:19:07 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714054747_15564603bd9d42d73197.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 09:19:11 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714054751_055532d787076fb81817.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 09:23:22 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714055002_3d998204cff6c55cf2e0.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 09:23:26 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714055006_6daba3562e8bda395cff.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 09:24:08 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714055048_ffff583c407f0be59f72.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 09:55:55 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714056955_d7bf7b695c772b0d818c.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 09:55:57 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714056957_9425dbb797a6db0c8c21.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 09:55:59 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714056959_31aace7a939dd3053779.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 09:56:00 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714056960_0cf7b0f793ec7c594792.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 11:22:49 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714062169_49adab4562c874d95d5e.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 11:22:50 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714062170_d52a920f511450ba422c.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 11:22:58 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714062178_283cfc6acbb04105370c.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 11:23:01 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714062181_f7037d20fff207433c9e.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 11:53:51 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714064031_b7df60bbb30836acc788.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 11:54:52 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714064092_db3ddf2e9336f36cc51e.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 11:55:03 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714064103_033a9ef07d20bd80aa0a.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 11:55:06 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714064106_ff330be9c43bed8f3b2e.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 11:55:23 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714064123_95de4c7b7efd79f611b1.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 11:55:59 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714064159_eb08d95ecd176afdf2e2.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 11:56:39 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714064199_1ed4300d4dc5e74d9b9c.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 11:56:54 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714064214_873cf8a278920ba479aa.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 11:57:48 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714064268_eacd145e6046ca5198d1.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 11:58:24 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714064304_a870d127e12d8ff25b9b.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 11:59:51 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714064391_17d01f18a11ac3cc60e4.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 12:03:26 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714064606_daf0509eb8fdac25d409.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 12:03:30 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714064610_a501f48fe140da3cfc59.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 12:03:31 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714064611_88081727f4a4524fccfe.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 12:03:31 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714064611_19d16af8ded084c2a4d1.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 12:03:36 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714064616_01c8944a0619b4b08ed5.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 12:03:41 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714064621_5b383e3cc7469201722a.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 12:03:44 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714064624_9439088861bede55f875.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 12:04:17 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714064657_50b8314c20655f1b1dc8.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 15:09:55 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714075795_7ec9eb08046534119881.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 15:13:30 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714076010_604ce5609fbd73ce0f09.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 15:14:13 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714076053_42411830550a5d1c8015.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 15:14:38 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714076078_12a15229fc436bcfe8e9.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 17:09:35 --> Undefined array key "pdfDocumento"
+in APPPATH/Controllers/Informes2.php on line 262.
+ 1 APPPATH/Controllers/Informes2.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pdfDocumento"', 'APPPATH/Controllers/Informes2.php', 262)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 17:10:04 --> Undefined array key "pdfDocumento"
+in APPPATH/Controllers/Informes2.php on line 262.
+ 1 APPPATH/Controllers/Informes2.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pdfDocumento"', 'APPPATH/Controllers/Informes2.php', 262)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 17:10:23 --> Undefined array key "pdfDocumento"
+in APPPATH/Controllers/Informes2.php on line 262.
+ 1 APPPATH/Controllers/Informes2.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pdfDocumento"', 'APPPATH/Controllers/Informes2.php', 262)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 17:11:06 --> Undefined array key "pdfDocumento"
+in APPPATH/Controllers/Informes2.php on line 262.
+ 1 APPPATH/Controllers/Informes2.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pdfDocumento"', 'APPPATH/Controllers/Informes2.php', 262)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 17:11:35 --> Undefined array key "pdfDocumento"
+in APPPATH/Controllers/Informes2.php on line 262.
+ 1 APPPATH/Controllers/Informes2.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pdfDocumento"', 'APPPATH/Controllers/Informes2.php', 262)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 17:13:29 --> Undefined array key "pdfDocumento"
+in APPPATH/Controllers/Informes2.php on line 262.
+ 1 APPPATH/Controllers/Informes2.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pdfDocumento"', 'APPPATH/Controllers/Informes2.php', 262)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 17:13:58 --> Undefined array key "pdfDocumento"
+in APPPATH/Controllers/Informes2.php on line 262.
+ 1 APPPATH/Controllers/Informes2.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pdfDocumento"', 'APPPATH/Controllers/Informes2.php', 262)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 17:16:10 --> Undefined array key "pdfDocumento"
+in APPPATH/Controllers/Informes2.php on line 262.
+ 1 APPPATH/Controllers/Informes2.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pdfDocumento"', 'APPPATH/Controllers/Informes2.php', 262)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 19:56:11 --> Undefined array key "pdfDocumento"
+in APPPATH/Controllers/Informes2.php on line 262.
+ 1 APPPATH/Controllers/Informes2.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pdfDocumento"', 'APPPATH/Controllers/Informes2.php', 262)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 19:56:38 --> Undefined array key "pdfDocumento"
+in APPPATH/Controllers/Informes2.php on line 262.
+ 1 APPPATH/Controllers/Informes2.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pdfDocumento"', 'APPPATH/Controllers/Informes2.php', 262)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 19:56:54 --> Undefined array key "pdfDocumento"
+in APPPATH/Controllers/Informes2.php on line 262.
+ 1 APPPATH/Controllers/Informes2.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pdfDocumento"', 'APPPATH/Controllers/Informes2.php', 262)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 19:57:00 --> Undefined array key "pdfDocumento"
+in APPPATH/Controllers/Informes2.php on line 262.
+ 1 APPPATH/Controllers/Informes2.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pdfDocumento"', 'APPPATH/Controllers/Informes2.php', 262)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 19:57:14 --> Undefined array key "pdfDocumento"
+in APPPATH/Controllers/Informes2.php on line 262.
+ 1 APPPATH/Controllers/Informes2.php(262): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pdfDocumento"', 'APPPATH/Controllers/Informes2.php', 262)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 20:07:21 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714093641_4f7c652c627d050e2a10.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 20:07:27 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714093647_2bb5986464d85610c22a.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 20:10:23 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714093823_fcd3a10bb653b9b2ab00.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 20:10:33 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714093833_c1f456cc91fcb8744492.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 20:11:55 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714093915_ab811a4bcf11d915813a.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 20:12:30 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714093950_43d39b7c691cf84b8a62.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 20:13:20 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714094000_10c2521f18ec08ee3fae.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 20:13:29 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714094009_01cbe80bbed1f6f26617.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 20:15:41 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 SYSTEMPATH/HTTP/Files/UploadedFile.php(341): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/archivos', '1714094141_93a538e518431c9a2dc3.pdf')
+ 3 APPPATH/Controllers/Informes2.php(331): CodeIgniter\HTTP\Files\UploadedFile->store('../../archivos/')
+ 4 APPPATH/Controllers/Informes2.php(275): App\Controllers\Informes2->uploadFile('FCPATH/archivos', 'pdfDocumento')
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Informes2->postEntregarDoc()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Informes2))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
