@@ -71,7 +71,7 @@ class Application extends BaseController
 			);
 		}
 		$data = array(
-			"system_name" => "DRE PUNO",
+			"system_name" => "CODE PUNO",
 			"session" => $this->session,
 			"logo" => "drepuno.png",
 			"roles2" => $roles2,

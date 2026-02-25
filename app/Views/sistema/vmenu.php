@@ -18,7 +18,7 @@
                         </a>
 
                         <!-- Brand title -->
-                        <div class="brand-title">DRE Puno</div>
+                        <div class="brand-title">CODE PUNO</div>
 
                         <!-- You can also use IMG or SVG instead of a text element. -->
 
