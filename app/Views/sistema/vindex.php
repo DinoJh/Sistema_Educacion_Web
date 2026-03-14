@@ -1,35 +1,74 @@
 <div class="text-center py-5">
-    <div style="font-size:4rem;margin-bottom:1rem;">💻</div>
-    <h3 class="fw-bold mb-2">Bienvenido a <span class="text-accent">CodeLearn</span></h3>
-    <p class="text-cl-muted mb-4">Plataforma de cursos de programación</p>
-    <div class="row justify-content-center g-3 mt-2">
-        <?php if(isset($session) && $session->perf_ide==1): ?>
-        <div class="col-md-4"><div class="stat-card text-center" style="cursor:pointer;" onclick="cargarFuncion('/mi-panel/cursos','Mi Panel','Explorar Cursos','')">
-            <i class="ti-book fs-2 mb-2" style="color:var(--cl-accent2);"></i>
-            <h6 class="fw-bold">Explorar Cursos</h6><p class="text-cl-muted small mb-0">Descubre todos los cursos disponibles</p>
-        </div></div>
-        <div class="col-md-4"><div class="stat-card text-center" style="cursor:pointer;" onclick="cargarFuncion('/mi-panel/progreso','Mi Panel','Mi Progreso','')">
-            <i class="ti-stats-up fs-2 mb-2" style="color:#10b981;"></i>
-            <h6 class="fw-bold">Mi Progreso</h6><p class="text-cl-muted small mb-0">Revisa tu avance en los cursos</p>
-        </div></div>
-        <?php elseif(isset($session) && $session->perf_ide==2): ?>
-        <div class="col-md-4"><div class="stat-card text-center" style="cursor:pointer;" onclick="cargarFuncion('/cursos','Cursos','Mis Cursos','')">
-            <i class="ti-pencil fs-2 mb-2" style="color:var(--cl-accent2);"></i>
-            <h6 class="fw-bold">Mis Cursos</h6><p class="text-cl-muted small mb-0">Gestiona tus cursos y lecciones</p>
-        </div></div>
-        <?php else: ?>
-        <div class="col-md-3"><div class="stat-card text-center" style="cursor:pointer;" onclick="cargarFuncion('/usuarios/alumnos','Usuarios','Alumnos','')">
-            <i class="ti-user fs-2 mb-2" style="color:var(--cl-accent2);"></i>
-            <h6 class="fw-bold">Alumnos</h6><p class="text-cl-muted small mb-0">Gestionar alumnos</p>
-        </div></div>
-        <div class="col-md-3"><div class="stat-card text-center" style="cursor:pointer;" onclick="cargarFuncion('/cursos','Cursos','Todos los Cursos','')">
-            <i class="ti-book fs-2 mb-2" style="color:#10b981;"></i>
-            <h6 class="fw-bold">Cursos</h6><p class="text-cl-muted small mb-0">Ver todos los cursos</p>
-        </div></div>
-        <div class="col-md-3"><div class="stat-card text-center" style="cursor:pointer;" onclick="cargarFuncion('/reportes/progreso','Reportes','Progreso','')">
-            <i class="ti-bar-chart fs-2 mb-2" style="color:#f59e0b;"></i>
-            <h6 class="fw-bold">Reportes</h6><p class="text-cl-muted small mb-0">Estadísticas de la plataforma</p>
-        </div></div>
-        <?php endif; ?>
+    <div style="margin-bottom:1.5rem;">
+        <div style="display:inline-flex;align-items:center;justify-content:center;width:90px;height:90px;border-radius:24px;background:linear-gradient(135deg,#7c3aed,#06b6d4);font-size:2.8rem;box-shadow:0 8px 32px rgba(124,58,237,.4);">💻</div>
+    </div>
+    <h1 class="fw-bold mb-2" style="font-size:2.8rem;background:linear-gradient(135deg,#a78bfa,#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">CodePuno</h1>
+    <p class="mb-1" style="font-size:1.15rem;color:var(--cl-muted);">Plataforma de cursos de programación</p>
+    <p class="text-cl-muted small mb-5">Bienvenido, <strong style="color:var(--cl-accent2);"><?= ucwords(strtolower($session->datos ?? '')) ?></strong></p>
+
+    <div class="row justify-content-center g-3">
+    <?php if(isset($session) && $session->perf_ide == 1): // ALUMNO ?>
+        <div class="col-md-4 col-sm-6">
+            <div class="stat-card text-center" style="cursor:pointer;transition:transform .2s,box-shadow .2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(124,58,237,.25)'" onmouseout="this.style.transform='';this.style.boxShadow=''" onclick="cargarFuncion('/mi-panel/cursos','Mi Panel','Mis Cursos','Cursos en los que estás inscrito')">
+                <div style="width:52px;height:52px;border-radius:14px;background:rgba(124,58,237,.15);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 12px;">📚</div>
+                <h6 class="fw-bold mb-1">Mis Cursos</h6>
+                <p class="text-cl-muted small mb-0">Cursos en los que estás inscrito</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="stat-card text-center" style="cursor:pointer;transition:transform .2s,box-shadow .2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(6,182,212,.25)'" onmouseout="this.style.transform='';this.style.boxShadow=''" onclick="cargarFuncion('/mi-panel/catalogo','Mi Panel','Buscar Cursos','Explora todos los cursos disponibles')">
+                <div style="width:52px;height:52px;border-radius:14px;background:rgba(6,182,212,.15);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 12px;">🔍</div>
+                <h6 class="fw-bold mb-1">Buscar Cursos</h6>
+                <p class="text-cl-muted small mb-0">Explora y únete a nuevos cursos</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="stat-card text-center" style="cursor:pointer;transition:transform .2s,box-shadow .2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(16,185,129,.25)'" onmouseout="this.style.transform='';this.style.boxShadow=''" onclick="cargarFuncion('/mi-panel/progreso','Mi Panel','Mi Progreso','Tu avance en los cursos')">
+                <div style="width:52px;height:52px;border-radius:14px;background:rgba(16,185,129,.15);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 12px;">📈</div>
+                <h6 class="fw-bold mb-1">Mi Progreso</h6>
+                <p class="text-cl-muted small mb-0">Revisa tu avance en los cursos</p>
+            </div>
+        </div>
+    <?php elseif(isset($session) && $session->perf_ide == 2): // PROFESOR ?>
+        <div class="col-md-4 col-sm-6">
+            <div class="stat-card text-center" style="cursor:pointer;transition:transform .2s,box-shadow .2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(124,58,237,.25)'" onmouseout="this.style.transform='';this.style.boxShadow=''" onclick="cargarFuncion('/cursos','Cursos','Mis Cursos','Gestiona tus cursos y lecciones')">
+                <div style="width:52px;height:52px;border-radius:14px;background:rgba(124,58,237,.15);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 12px;">✏️</div>
+                <h6 class="fw-bold mb-1">Mis Cursos</h6>
+                <p class="text-cl-muted small mb-0">Crea y gestiona tus cursos</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="stat-card text-center" style="cursor:pointer;transition:transform .2s,box-shadow .2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(6,182,212,.25)'" onmouseout="this.style.transform='';this.style.boxShadow=''" onclick="cargarFuncion('/usuarios/misalumnos','Usuarios','Mis Alumnos','Alumnos inscritos en tus cursos')">
+                <div style="width:52px;height:52px;border-radius:14px;background:rgba(6,182,212,.15);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 12px;">👥</div>
+                <h6 class="fw-bold mb-1">Mis Alumnos</h6>
+                <p class="text-cl-muted small mb-0">Ve quiénes están en tus cursos</p>
+            </div>
+        </div>
+    <?php else: // ADMIN ?>
+        <div class="col-md-3 col-sm-6">
+            <div class="stat-card text-center" style="cursor:pointer;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform=''" onclick="cargarFuncion('/usuarios/alumnos','Usuarios','Alumnos','')">
+                <div style="width:52px;height:52px;border-radius:14px;background:rgba(124,58,237,.15);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 12px;">👥</div>
+                <h6 class="fw-bold mb-1">Alumnos</h6><p class="text-cl-muted small mb-0">Gestionar alumnos</p>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="stat-card text-center" style="cursor:pointer;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform=''" onclick="cargarFuncion('/usuarios/profesores','Usuarios','Profesores','')">
+                <div style="width:52px;height:52px;border-radius:14px;background:rgba(6,182,212,.15);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 12px;">🎓</div>
+                <h6 class="fw-bold mb-1">Profesores</h6><p class="text-cl-muted small mb-0">Gestionar profesores</p>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="stat-card text-center" style="cursor:pointer;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform=''" onclick="cargarFuncion('/cursos','Cursos','Todos los Cursos','')">
+                <div style="width:52px;height:52px;border-radius:14px;background:rgba(16,185,129,.15);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 12px;">📚</div>
+                <h6 class="fw-bold mb-1">Cursos</h6><p class="text-cl-muted small mb-0">Ver y gestionar cursos</p>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="stat-card text-center" style="cursor:pointer;transition:transform .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform=''" onclick="cargarFuncion('/reportes/progreso','Reportes','Estadísticas','')">
+                <div style="width:52px;height:52px;border-radius:14px;background:rgba(245,158,11,.15);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 12px;">📊</div>
+                <h6 class="fw-bold mb-1">Reportes</h6><p class="text-cl-muted small mb-0">Estadísticas de la plataforma</p>
+            </div>
+        </div>
+    <?php endif; ?>
     </div>
 </div>

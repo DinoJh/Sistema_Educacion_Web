@@ -24,7 +24,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://localhost/monitoreo3/';
+    public $baseURL = 'http://localhost/prueba/';
 
     /**
      * --------------------------------------------------------------------------

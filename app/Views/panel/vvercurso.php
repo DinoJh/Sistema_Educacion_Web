@@ -123,7 +123,7 @@ function reproducir(ide, tipo, url, titulo, desc) {
     } else if(tipo=='ARCHIVO' && url) {
         area.innerHTML = '<div class="p-4 text-center"><i class="ti-file fs-1 text-accent"></i><p class="mt-2">Archivo disponible</p><a href="'+url+'" target="_blank" class="btn btn-primary">Descargar / Ver</a></div>';
     } else {
-        area.innerHTML = '<div class="p-4 text-center"><i class="ti-check-box fs-1 text-accent"></i><p class="mt-2 text-cl-muted">Quiz - Funcionalidad disponible próximamente</p></div>';
+        area.innerHTML = '<div class="p-4 text-center"><i class="ti-file fs-1 text-accent"></i><p class="mt-2 text-cl-muted">Recurso no disponible para preview.</p></div>';
     }
     document.getElementById('leccTitulo').innerHTML = titulo;
     document.getElementById('leccDesc').innerHTML = desc;

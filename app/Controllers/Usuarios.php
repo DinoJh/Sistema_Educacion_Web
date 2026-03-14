@@ -83,3 +83,26 @@ class Usuarios extends BaseController
         echo json_encode(['ok'=>true,'msg'=>'Usuario creado exitosamente.']);
     }
 }
+
+    public function misAlumnos()
+    {
+        $db = \Config\Database::connect();
+        $prof = $db->table('profesores')->where('prof_usua_ide', $this->session->usua_ide)->get()->getRow();
+        if (!$prof) { echo view('usuarios/vmisalumnos', ['alumnos'=>[],'base'=>base_url('public')]); return; }
+
+        $alumnos = $db->table('matriculas m')
+            ->select('u.usua_ide, u.usua_nombres, u.usua_paterno, u.usua_materno, u.usua_email, u.usua_celular,
+                c.curs_nombre, c.curs_nivel, c.curs_ide,
+                m.matr_completado, m.matr_fecha,
+                (SELECT COUNT(*) FROM progreso pr JOIN lecciones ll ON ll.lecc_ide=pr.prog_lecc_ide WHERE pr.prog_usua_ide=u.usua_ide AND ll.lecc_curs_ide=c.curs_ide AND pr.prog_completado=1) as lecc_hechas,
+                (SELECT COUNT(*) FROM lecciones ll2 WHERE ll2.lecc_curs_ide=c.curs_ide AND ll2.lecc_esta_ide=1 AND ll2.lecc_tipo!="QUIZ") as total_lecc')
+            ->join('usuarios u','u.usua_ide=m.matr_usua_ide')
+            ->join('cursos c','c.curs_ide=m.matr_curs_ide')
+            ->where('c.curs_prof_ide', $prof->prof_ide)
+            ->where('m.matr_esta_ide', 1)
+            ->orderBy('u.usua_paterno, c.curs_nombre')
+            ->get()->getResult();
+
+        echo view('usuarios/vmisalumnos', ['alumnos'=>$alumnos,'base'=>base_url('public'),'session'=>$this->session]);
+    }
+}

@@ -63,3 +63,8 @@ $routes->post('/categorias/eliminar', 'Categorias::eliminar');
 if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
+
+// New routes added in v2
+$routes->get('/mi-panel/catalogo',    'Panel::catalogo');
+$routes->get('/usuarios/misalumnos',  'Usuarios::misAlumnos');
+$routes->post('/cursos/restaurar', 'Cursos::restaurar');

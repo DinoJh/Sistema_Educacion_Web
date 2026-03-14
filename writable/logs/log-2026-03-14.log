@@ -67,3 +67,554 @@ in APPPATH\Views\cursos\vvercurso.php on line 69.
  5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
  6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 12:00:48 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Views\cursos\vvercurso.php on line 69.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('cursos/vvercurso', [], true)
+ 3 APPPATH\Controllers\Cursos.php(142): view('cursos/vvercurso', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cursos->ver('4')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 12:02:33 --> Invalid file: cursos/vformcurso.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cursos/vformcurso.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('cursos/vformcurso', [], true)
+ 3 APPPATH\Controllers\Cursos.php(49): view('cursos/vformcurso', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cursos->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 12:02:38 --> Invalid file: lecciones/vlecciones.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('lecciones/vlecciones.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('lecciones/vlecciones', [], true)
+ 3 APPPATH\Controllers\Lecciones.php(20): view('lecciones/vlecciones', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Lecciones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 12:02:41 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::whereNull()
+in APPPATH\Controllers\Usuarios.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->alumnos()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 12:04:05 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::whereNull()
+in APPPATH\Controllers\Reportes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Reportes->progreso()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 12:08:50 --> Invalid file: cursos/vformcurso.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cursos/vformcurso.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('cursos/vformcurso', [], true)
+ 3 APPPATH\Controllers\Cursos.php(49): view('cursos/vformcurso', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cursos->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 12:09:31 --> Invalid file: lecciones/vlecciones.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('lecciones/vlecciones.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('lecciones/vlecciones', [], true)
+ 3 APPPATH\Controllers\Lecciones.php(20): view('lecciones/vlecciones', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Lecciones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 12:09:35 --> Invalid file: cursos/vformcurso.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cursos/vformcurso.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('cursos/vformcurso', [], true)
+ 3 APPPATH\Controllers\Cursos.php(49): view('cursos/vformcurso', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cursos->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 12:11:27 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Views\cursos\vvercurso.php on line 69.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('cursos/vvercurso', [], true)
+ 3 APPPATH\Controllers\Cursos.php(142): view('cursos/vvercurso', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cursos->ver('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 12:11:31 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Views\cursos\vvercurso.php on line 69.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('cursos/vvercurso', [], true)
+ 3 APPPATH\Controllers\Cursos.php(142): view('cursos/vvercurso', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cursos->ver('2')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 12:11:34 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Views\cursos\vvercurso.php on line 69.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('cursos/vvercurso', [], true)
+ 3 APPPATH\Controllers\Cursos.php(142): view('cursos/vvercurso', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cursos->ver('2')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 12:27:48 --> Invalid file: cursos/vformcurso.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cursos/vformcurso.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('cursos/vformcurso', [], true)
+ 3 APPPATH\Controllers\Cursos.php(49): view('cursos/vformcurso', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cursos->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 12:28:03 --> Invalid file: lecciones/vlecciones.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('lecciones/vlecciones.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('lecciones/vlecciones', [], true)
+ 3 APPPATH\Controllers\Lecciones.php(20): view('lecciones/vlecciones', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Lecciones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 12:29:20 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::whereNull()
+in APPPATH\Controllers\Usuarios.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->alumnos()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:02:24 --> Undefined property: stdClass::$total_lecc
+in APPPATH\Views\panel\vmiscursos.php on line 19.
+ 1 APPPATH\Views\panel\vmiscursos.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$total_lecc', 'APPPATH\\Views\\panel\\vmiscursos.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\panel\\vmiscursos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('panel/vmiscursos', [], true)
+ 5 APPPATH\Controllers\Panel.php(34): view('panel/vmiscursos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Panel->cursos()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:02:34 --> Undefined property: stdClass::$total_lecc
+in APPPATH\Views\panel\vmiscursos.php on line 19.
+ 1 APPPATH\Views\panel\vmiscursos.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$total_lecc', 'APPPATH\\Views\\panel\\vmiscursos.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\panel\\vmiscursos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('panel/vmiscursos', [], true)
+ 5 APPPATH\Controllers\Panel.php(34): view('panel/vmiscursos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Panel->cursos()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:02:42 --> Undefined property: stdClass::$total_lecc
+in APPPATH\Views\panel\vmiscursos.php on line 19.
+ 1 APPPATH\Views\panel\vmiscursos.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$total_lecc', 'APPPATH\\Views\\panel\\vmiscursos.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\panel\\vmiscursos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('panel/vmiscursos', [], true)
+ 5 APPPATH\Controllers\Panel.php(34): view('panel/vmiscursos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Panel->cursos()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:03:46 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Cursos.php on line 132.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Cursos.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Cursos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Cursos')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Cursos', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:03:51 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Cursos.php on line 132.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Cursos.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Cursos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Cursos')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Cursos', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:03:59 --> Invalid file: lecciones/vlecciones.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('lecciones/vlecciones.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('lecciones/vlecciones', [], true)
+ 3 APPPATH\Controllers\Lecciones.php(20): view('lecciones/vlecciones', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Lecciones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:04:04 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Usuarios.php on line 87.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Usuarios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Usuarios', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:04:36 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Usuarios.php on line 87.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Usuarios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Usuarios', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:04:39 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Cursos.php on line 132.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Cursos.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Cursos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Cursos')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Cursos', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:05:01 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Cursos.php on line 132.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Cursos.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Cursos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Cursos')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Cursos', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:05:04 --> Invalid file: lecciones/vlecciones.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('lecciones/vlecciones.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('lecciones/vlecciones', [], true)
+ 3 APPPATH\Controllers\Lecciones.php(20): view('lecciones/vlecciones', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Lecciones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:05:07 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Usuarios.php on line 87.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Usuarios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Usuarios', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:05:09 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Usuarios.php on line 87.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Usuarios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Usuarios', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:05:13 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::whereNull()
+in APPPATH\Controllers\Reportes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Reportes->progreso()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:05:39 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::whereNull()
+in APPPATH\Controllers\Reportes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Reportes->progreso()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:07:21 --> Undefined property: stdClass::$total_lecc
+in APPPATH\Views\panel\vmiscursos.php on line 19.
+ 1 APPPATH\Views\panel\vmiscursos.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$total_lecc', 'APPPATH\\Views\\panel\\vmiscursos.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\panel\\vmiscursos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('panel/vmiscursos', [], true)
+ 5 APPPATH\Controllers\Panel.php(34): view('panel/vmiscursos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Panel->cursos()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:07:25 --> Undefined property: stdClass::$total_lecc
+in APPPATH\Views\panel\vmiscursos.php on line 19.
+ 1 APPPATH\Views\panel\vmiscursos.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$total_lecc', 'APPPATH\\Views\\panel\\vmiscursos.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\panel\\vmiscursos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('panel/vmiscursos', [], true)
+ 5 APPPATH\Controllers\Panel.php(34): view('panel/vmiscursos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Panel->cursos()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:11:40 --> Undefined property: stdClass::$total_lecc
+in APPPATH\Views\panel\vmiscursos.php on line 19.
+ 1 APPPATH\Views\panel\vmiscursos.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$total_lecc', 'APPPATH\\Views\\panel\\vmiscursos.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\panel\\vmiscursos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('panel/vmiscursos', [], true)
+ 5 APPPATH\Controllers\Panel.php(34): view('panel/vmiscursos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Panel->cursos()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:12:07 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Cursos.php on line 132.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Cursos.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Cursos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Cursos')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Cursos', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:19:24 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Cursos.php on line 132.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Cursos.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Cursos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Cursos')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Cursos', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:19:26 --> Invalid file: lecciones/vlecciones.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('lecciones/vlecciones.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('lecciones/vlecciones', [], true)
+ 3 APPPATH\Controllers\Lecciones.php(20): view('lecciones/vlecciones', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Lecciones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:19:29 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Usuarios.php on line 87.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Usuarios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Usuarios', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:19:31 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Usuarios.php on line 87.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Usuarios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Usuarios', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:19:34 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Cursos.php on line 132.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Cursos.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Cursos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Cursos')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Cursos', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:19:37 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::whereNull()
+in APPPATH\Controllers\Reportes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Reportes->progreso()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:20:38 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::whereNull()
+in APPPATH\Controllers\Reportes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Reportes->progreso()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:20:42 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Usuarios.php on line 87.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Usuarios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Usuarios', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:20:56 --> Invalid file: lecciones/vlecciones.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('lecciones/vlecciones.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('lecciones/vlecciones', [], true)
+ 3 APPPATH\Controllers\Lecciones.php(20): view('lecciones/vlecciones', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Lecciones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:21:30 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Cursos.php on line 132.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Cursos.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Cursos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Cursos')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Cursos', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:21:32 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Cursos.php on line 132.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Cursos.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Cursos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Cursos')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Cursos', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:21:34 --> Invalid file: lecciones/vlecciones.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('lecciones/vlecciones.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('lecciones/vlecciones', [], true)
+ 3 APPPATH\Controllers\Lecciones.php(20): view('lecciones/vlecciones', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Lecciones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:21:36 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Usuarios.php on line 87.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Usuarios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Usuarios', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:22:10 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Usuarios.php on line 87.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Usuarios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Usuarios', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:22:34 --> Undefined property: stdClass::$total_lecc
+in APPPATH\Views\panel\vmiscursos.php on line 19.
+ 1 APPPATH\Views\panel\vmiscursos.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$total_lecc', 'APPPATH\\Views\\panel\\vmiscursos.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\panel\\vmiscursos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('panel/vmiscursos', [], true)
+ 5 APPPATH\Controllers\Panel.php(34): view('panel/vmiscursos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Panel->cursos()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:23:38 --> Undefined property: stdClass::$total_lecc
+in APPPATH\Views\panel\vmiscursos.php on line 19.
+ 1 APPPATH\Views\panel\vmiscursos.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$total_lecc', 'APPPATH\\Views\\panel\\vmiscursos.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\panel\\vmiscursos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('panel/vmiscursos', [], true)
+ 5 APPPATH\Controllers\Panel.php(34): view('panel/vmiscursos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Panel->cursos()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:35:21 --> Undefined property: stdClass::$total_lecc
+in APPPATH\Views\panel\vmiscursos.php on line 19.
+ 1 APPPATH\Views\panel\vmiscursos.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$total_lecc', 'APPPATH\\Views\\panel\\vmiscursos.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\panel\\vmiscursos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('panel/vmiscursos', [], true)
+ 5 APPPATH\Controllers\Panel.php(34): view('panel/vmiscursos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Panel->cursos()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:38:58 --> Undefined property: stdClass::$total_lecc
+in APPPATH\Views\panel\vmiscursos.php on line 19.
+ 1 APPPATH\Views\panel\vmiscursos.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$total_lecc', 'APPPATH\\Views\\panel\\vmiscursos.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\panel\\vmiscursos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('panel/vmiscursos', [], true)
+ 5 APPPATH\Controllers\Panel.php(34): view('panel/vmiscursos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Panel->cursos()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Panel))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:39:14 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Cursos.php on line 132.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Cursos.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Cursos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Cursos')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Cursos', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:39:19 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Cursos.php on line 132.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Cursos.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Cursos')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Cursos')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Cursos', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:45:19 --> Invalid file: lecciones/vlecciones.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('lecciones/vlecciones.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('lecciones/vlecciones', [], true)
+ 3 APPPATH\Controllers\Lecciones.php(20): view('lecciones/vlecciones', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Lecciones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:45:49 --> Invalid file: lecciones/vlecciones.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('lecciones/vlecciones.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('lecciones/vlecciones', [], true)
+ 3 APPPATH\Controllers\Lecciones.php(20): view('lecciones/vlecciones', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Lecciones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:46:00 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Usuarios.php on line 87.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Usuarios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Usuarios', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:46:33 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Usuarios.php on line 87.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Usuarios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Usuarios', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:47:08 --> Invalid file: lecciones/vlecciones.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('lecciones/vlecciones.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('lecciones/vlecciones', [], true)
+ 3 APPPATH\Controllers\Lecciones.php(20): view('lecciones/vlecciones', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Lecciones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:47:11 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Usuarios.php on line 87.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Usuarios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Usuarios', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:47:15 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\Usuarios.php on line 87.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Usuarios.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuarios')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuarios')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Usuarios', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:47:19 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::whereNull()
+in APPPATH\Controllers\Reportes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Reportes->progreso()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:47:50 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::whereNull()
+in APPPATH\Controllers\Reportes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Reportes->progreso()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

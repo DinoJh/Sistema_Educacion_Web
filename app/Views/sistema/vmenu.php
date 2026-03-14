@@ -14,11 +14,11 @@
 
                         <!-- Brand logo -->
                         <a href="#" class="brand-img stretched-link" target="_blank">
-                            <img src="<?php echo base_url('public/img/logo-code.svg') ?>" onerror="this.style.display='none'" alt="CodeLearn" width="40" height="40">
+                            <img src="<?php echo base_url('public/img/logo-code.svg') ?>" onerror="this.style.display='none'" alt="CodePuno" width="40" height="40">
                         </a>
 
                         <!-- Brand title -->
-                        <div class="brand-title">CodeLearn</div>
+                        <div class="brand-title">CodePuno</div>
 
                         <!-- You can also use IMG or SVG instead of a text element. -->
 
@@ -405,9 +405,9 @@
 
                         <div class="mt-2 d-mn-max"></div>
 
-                        <!-- Profile picture  -->
-                        <div class="mininav-toggle text-center py-2">
-                            <img class="mainnav__avatar img-md" src="<?= base_url("public/img/" . $logo); ?>" alt="Profile Picture" style="width: 6rem;height: 6rem;">
+                        <!-- Logo CodePuno -->
+                        <div class="mininav-toggle text-center py-3">
+                            <div style="width:64px;height:64px;border-radius:18px;background:linear-gradient(135deg,#7c3aed,#06b6d4);display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin:0 auto;box-shadow:0 4px 16px rgba(124,58,237,.4);">💻</div>
                         </div>
 
                         <div class="mininav-content collapse d-mn-max">
@@ -448,6 +448,17 @@
                     <!-- End - Profile widget -->
 
                     <!-- Navigation Category -->
+                    <!-- INICIO button always visible -->
+                    <div class="mainnav__categoriy py-1">
+                        <ul class="mainnav__menu nav flex-column">
+                            <li class="nav-item">
+                                <a href="<?php echo base_url('application'); ?>" class="nav-link">
+                                    <i class="ti-home fs-5 me-2"></i>
+                                    <span class="nav-label ms-1">Inicio</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                     <?php foreach ($roles2 as $reg) : ?>
                         <div class="mainnav__categoriy py-1">
                             <ul class="mainnav__menu nav flex-column">

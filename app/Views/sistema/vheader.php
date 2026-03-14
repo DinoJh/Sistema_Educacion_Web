@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CodeLearn - <?php echo $system_name ?? 'Plataforma'; ?></title>
+    <title>CodePuno - <?php echo $system_name ?? 'Plataforma'; ?></title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,7 +89,7 @@
                     <i class="ti-angle-right"></i>
                     <span id="nombreRol">Bienvenido</span>
                 </div>
-                <p id="descripcionRol" class="mb-0 mt-1" style="color:#a78bfa; font-size:.85rem;">Plataforma de cursos de programación</p>
+                <p id="descripcionRol" class="mb-0 mt-1" style="color:#a78bfa; font-size:.85rem;">Plataforma de cursos de programación · Puno</p>
             </div>
         </div>
         <div class="content__boxed">
@@ -102,7 +102,7 @@
         function cargarFuncion(url, modulo, nombre, descripcion) {
             openCargar();
             testing();
-            $.get("<?php echo base_url(); ?>" + url, function(data) {
+            $.get("<?php echo rtrim(base_url(),'/'); ?>" + url, function(data) {
                 $("#moduloRol").html(modulo);
                 $("#nombreRol").html(nombre);
                 $("#descripcionRol").html(descripcion);
@@ -123,11 +123,11 @@
         }
         function ajax(url, param, fn, open=true) {
             if(open) openCargar();
-            $.post("<?php echo base_url(); ?>" + url, param, function(data){ fn(data); });
+            $.post("<?php echo rtrim(base_url(),'/'); ?>" + url, param, function(data){ fn(data); });
         }
         function ajaxGet(url, param, fn, open=true) {
             if(open) openCargar();
-            $.get("<?php echo base_url(); ?>" + url, param, function(data){ fn(data); });
+            $.get("<?php echo rtrim(base_url(),'/'); ?>" + url, param, function(data){ fn(data); });
         }
         function cambiarClave() {
             openCargar("Cambiando clave…");

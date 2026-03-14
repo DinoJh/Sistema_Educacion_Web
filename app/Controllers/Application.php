@@ -7,354 +7,194 @@ use App\Libraries\Componente;
 
 class Application extends BaseController
 {
-	public $session;
-	public function __construct()
-	{
-		$this->session = \Config\Services::session();
-		//parent::__construct();
-		if ($this->session->login != md5("L0g¡NS!st3M4")) {
-			echo "inactivo";
-			exit(0);
-			return;
-		}
-	}
-	/************************************************************************
-	public function index()
+    public $session;
+    public function __construct()
     {
-    	$roles = General::getRoles($this->session->usua_ide);
-        $data_header=array(
-            "system_name"=>"NOMBRE DEL SISTEMA",
-            "base"=>base_url("public"),
-        );
-        $data_menu=array(
-        	"system_name"=>"NOMBRE DEL SISTEMA",
-        	"base"=>base_url("public"),
-        	"logo"=>"dota2.png",
-        	"roles"=>$roles,
-        	"session"=>$this->session,
-        	"contacto_datos"=>"Ing. Víctor Hugo BEJAR GONZALES",
-            "contacto_celular"=>"958273933",
-            "contacto_email"=>"victor.bejar.g@gmail.com",
-        );
-        $data_index=array();
-        $data_footer=array();
-        //$vistas = view('sistema/vheader',$data_header).
-        //		  view('sistema/vfooter',$data_footer).
-        //		  view('sistema/vmenu',$data_menu).
-        //		  view("sistema/vindex", ["session"=>$this->session]) .
-      	echo view('sistema/vheader',$data_header);
-        echo view('sistema/vfooter',$data_footer);
-        echo view('sistema/vmenu',$data_menu);
-        echo view("sistema/vindex", ["session"=>$this->session]) .
-
-        //return $vistas;
+        $this->session = \Config\Services::session();
+        if ($this->session->login != md5("L0g¡NS!st3M4")) {
+            echo "inactivo";
+            exit(0);
+        }
     }
-	 ************************************************************************/
-	public function index()
-	{
-		#echo $this->session->perf_ide ;
-		#print_r($this->session);
-		$roles = General::getRoles($this->session->perf_ide);
-		$roles2 = array();
-		$modulos = array();
-		foreach ($roles as $reg) {
-			$modulos[$reg->modu_ide] = $reg->modu_nombre;
-			$roles2[$reg->modu_ide][] = array(
-				"icono" => $reg->modu_icono,
-				"modulo" => $reg->modu_nombre,
-				"rol" => $reg->role_nombre,
-				"url" => $reg->role_url,
-				"ide" => $reg->role_ide,
-				"nombre" => $reg->role_nombre,
-				"descripcion" => $reg->role_descripcion,
-				"clase" => $reg->modu_clase,
-			);
-		}
-		$data = array(
-			"system_name" => "CodeLearn",
-			"session" => $this->session,
-			"logo" => "logo-code.svg",
-			"roles2" => $roles2,
-			"contacto_datos" => "Ing. Víctor Hugo BEJAR GONZALES",
-			"contacto_celular" => "958273933",
-			"contacto_email" => "victor.bejar.g@gmail.com",
-			"base" => base_url("public")
-		);
-		$vistas = view('sistema/vheader', $data) .
-			view("sistema/vindex", ["session"=>$this->session]) .
-			view('sistema/vfooter') .
-			view('sistema/vmenu');
-		return $vistas;
-	}
-	public function accesos()
-	{
-		$head = array(
-			array(
-				"name" => "ID",
-				"campo" => "usua_ide",
-				"formato" => "true",
-				"hidden" => "false",
-				"width" => "5%",
-			),
-			array(
-				"name" => "Ap.Paterno",
-				"campo" => "usua_paterno",
-				"formato" => "true",
-				"hidden" => "false",
-				"width" => "15%",
-			),
-			array(
-				"name" => "Ap.Materno",
-				"campo" => "usua_materno",
-				"formato" => "true",
-				"hidden" => "false",
-				"width" => "15%",
-			),
-			array(
-				"name" => "Nombres",
-				"campo" => "usua_nombres",
-				"formato" => "true",
-				"hidden" => "false",
-				"width" => "15%",
-			),
-			array(
-				"name" => "Usuario",
-				"campo" => "usua_user",
-				"formato" => "true",
-				"hidden" => "false",
-				"width" => "15%",
-			),
-			array(
-				"name" => "Password",
-				"campo" => "usua_pass",
-				"formato" => "true",
-				"hidden" => "false",
-				"width" => "15%",
-			),
-		);
-		$botonAsignaRol = "
-		{
-			name: 'Operaciones',
-			width: '20%',
-			formatter: (cell, row) => {
-			    return gridjs.h('button', {
-					className: 'btn btn-sm btn-primary',
-				    onClick: function(){
-				    	openCargar();
-				    	param={
-				    		ide:row.cells[0].data
-				    	};
-				    	$.post('" . base_url("/getroles") . "',param,function(data){
-				    		data=JSON.parse(data);
-				    		$('#modalAsignaRoles').modal('show');
-				    		$('#accesoGetRoles').html(data.tabla);
-				    		$('#accesoIdUsuario').val(data.usuaIde);
-				    		//$('#modalAsignaRoles').modal('show');
-				    		closeCargar();
-				    	});
-					}
-			  	}, 
-			  	'Asignar Roles');
-			}
-		},
-		";
-		$data = General::getData(
-			$campos = "*",
-			$tabla = "usuarios",
-			$where = array("usua_esta_ide" => 1),
-			$order = "usua_ide"
-		);
 
-		echo Componente::Tabla(
-			$id = "tabla_usuarios",
-			$head,
-			$data,
-			$l = 5,
-			$s = "true",
-			$p = "true",
-			$clase = "primary",
-			array($botonAsignaRol),
-			$js = ""
-		);
+    public function index()
+    {
+        $roles  = General::getRoles($this->session->perf_ide);
+        $roles2 = [];
+        $modulos = [];
 
-		$body = "<input type='hidden' id='accesoIdUsuario'><div id='accesoGetRoles'></div>";
-		echo Componente::Modal($id = "modalAsignaRoles", $titulo = "ASIGNAR ROLES", $body, $botonok = "", $size = "modal-xl");
-	}
+        // Siempre agregar Inicio como primer item especial
+        $inicio = ['icono'=>'ti-home','modulo'=>'Inicio','rol'=>'Inicio','url'=>'/application','ide'=>0,'nombre'=>'Inicio','descripcion'=>'Pantalla principal','clase'=>'primary'];
 
-	public function getroles()
-	{
-		$head = array(
-			array(
-				"name" => "ID",
-				"campo" => "role_ide",
-				"formato" => "true",
-				"hidden" => "false",
-				"width" => "5%",
-			),
-			array(
-				"name" => "Modulo",
-				"campo" => "modu_nombre",
-				"formato" => "true",
-				"hidden" => "false",
-				"width" => "15%",
-			),
-			array(
-				"name" => "Rol",
-				"campo" => "role_nombre",
-				"formato" => "true",
-				"hidden" => "false",
-				"width" => "15%",
-			),
-			array(
-				"name" => "Descripción",
-				"campo" => "role_descripcion",
-				"formato" => "true",
-				"hidden" => "false",
-				"width" => "40%",
-			),
-			array(
-				"name" => "Estado",
-				"campo" => "estado",
-				"formato" => "
-					function(cell){
-						return gridjs.html('<span class=\"badge bg-success\">'+cell+'</span>');
-					}
-				",
-				"hidden" => "false",
-				"width" => "10%",
-			)
-		);
-		$data = General::getRolesAsignados($this->request->getPost('ide'));
-		$botonAsignaRol = "
-		{
-			name: 'Operaciones',
-			width: '15%',
-			formatter: (cell, row) => {
-			    return gridjs.h('button', {
-					className: 'btn btn-sm btn-primary',
-				    onClick: function(){
-				    	openCargar();
-				    	//$('#modalAsignaRoles').modal('hide');
-				    	param={
-				    		usua_ide:$('#accesoIdUsuario').val(),
-				    		role_ide:row.cells[0].data	
-				    	};
-				    	$.post('" . base_url("/asignarol") . "',param,function(data){
-				    		param2={
-					    		ide:$('#accesoIdUsuario').val(),
-					    	};
-					    	$.post('" . base_url("/getroles") . "',param2,function(data){
-					    		data=JSON.parse(data);
-					    		$('#accesoGetRoles').html(data.tabla);
-					    		//$('#accesoIdUsuario').val(data.usuaIde);
-					    		//$('#modalAsignaRoles').modal('show');
-					    		closeCargar();
-					    	});
-				    	});
-					}
-			  	}, 
-				'Asignar/Quitar');
-			}
-		},
-		";
-		$result = array(
-			"tabla" => Componente::Tabla(
-				$id = "tabla_roles_asignados",
-				$head,
-				$data,
-				$l = 10,
-				$s = "false",
-				$p = "true",
-				$clase = "primary",
-				$botones = array($botonAsignaRol),
-				$js = ""
-			),
-			"usuaIde" => $this->request->getPost('ide')
-		);
-		echo json_encode($result);
-	}
-	public function asignarol()
-	{
-		$usua_ide = $this->request->getPost('usua_ide');
-		$role_ide = $this->request->getPost('role_ide');
-		$acceso = General::getData(
-			$campos = "*",
-			$tabla = "accesos a",
-			$where = array(
-				"a.acce_perf_ide" => $usua_ide,
-				"a.acce_role_ide" => $role_ide,
-				"a.acce_esta_ide" => 1,
-			),
-			$order = ""
-		);
-		if (count($acceso) == 1) {
-			$data = array(
-				"acce_esta_ide" => 2,
-			);
-			General::actualizar("accesos a", $where, $data);
-		} else {
-			$data = array(
-				"acce_perf_ide" => $usua_ide,
-				"acce_role_ide" => $role_ide,
-				"acce_esta_ide" => 1,
-			);
-			General::insertar("accesos", $data);
-		}
-	}
-	public function setpass()
-	{
-		$ante = $this->request->getPost('anterior');
-		$nueva = $this->request->getPost('nueva');
-		$repi = $this->request->getPost('repite');
-		$usua_ide = $this->session->usua_ide;
-		$usua_user = $this->session->usuario;
+        foreach ($roles as $reg) {
+            // Filtrar según perfil
+            if ($this->session->perf_ide == 3) { // ADMIN: sin Mi Panel ni Crear Curso
+                if (in_array($reg->role_url, ['/cursos/crear', '/mi-panel/cursos', '/mi-panel/progreso', '/application'])) continue;
+            }
+            if ($this->session->perf_ide == 2) { // PROFESOR: sin Mi Panel
+                if (in_array($reg->role_url, ['/mi-panel/cursos', '/mi-panel/progreso'])) continue;
+            }
+            if ($this->session->perf_ide == 1) { // ALUMNO: sin gestión
+                if (in_array($reg->role_url, ['/cursos/crear', '/lecciones', '/usuarios/alumnos', '/usuarios/profesores', '/reportes/progreso', '/categorias'])) continue;
+            }
+            if ($reg->role_url == '/application') continue; // Inicio se maneja aparte
 
-		if ($ante == "" or $nueva == "" or $repi == "") {
-			$clase = "alert alert-danger";
-			$icono = "ti-close";
-			$mensaje = "Complete todos los campos antes de continuar";
-		} else if ($nueva == $repi) {
-			$where = array(
-				"usua_ide" => $usua_ide,
-				"usua_user" => $usua_user,
-				"usua_pass" => $ante
-			);
-			$data = array(
-				"usua_pass" => $nueva
-			);
-			$r = General::actualizar("usuarios", $where, $data);
-			if ($r == 0) {
-				$clase = "alert alert-warning";
-				$icono = "ti-alert";
-				$mensaje = "No se pudo cambiar la clave, intentelo nuevamente";
-			} else {
-				$clase = "alert alert-success";
-				$icono = "ti-check";
-				$mensaje = "Se realizo el cambio de clave exitosamente";
-			}
-		} else {
-			$clase = "alert alert-danger";
-			$icono = "ti-alert";
-			$mensaje = "La nueva clave y la clave que se repite tienen que ser las mismas, verifique para continuar";
-		}
-		$result = array(
-			"clase" => $clase,
-			"mensaje" => $mensaje,
-			"icono" => $icono
-		);
-		echo json_encode($result);
-	}
-	public function salir()
-	{
-		$this->session->destroy();
-		return redirect()->to(base_url('/login'));
-	}
-	public function testing()
-	{
-	}
+            $modulos[$reg->modu_ide] = $reg->modu_nombre;
+            $roles2[$reg->modu_ide][] = [
+                'icono'       => $reg->modu_icono,
+                'modulo'      => $reg->modu_nombre,
+                'rol'         => $reg->role_nombre,
+                'url'         => $reg->role_url,
+                'ide'         => $reg->role_ide,
+                'nombre'      => $reg->role_nombre,
+                'descripcion' => $reg->role_descripcion,
+                'clase'       => $reg->modu_clase,
+            ];
+        }
 
-	public function nuevo()
-	{
-		echo 'asdasd';
-	}
+        $data = [
+            'system_name'     => 'CodePuno',
+            'session'         => $this->session,
+            'logo'            => 'logo-codepuno.svg',
+            'roles2'          => $roles2,
+            'contacto_datos'  => 'CodePuno',
+            'contacto_celular'=> '',
+            'contacto_email'  => 'contacto@codepuno.edu.pe',
+            'base'            => base_url('public'),
+        ];
+
+        return view('sistema/vheader', $data)
+             . view('sistema/vindex',  ['session' => $this->session])
+             . view('sistema/vfooter')
+             . view('sistema/vmenu',   $data);
+    }
+
+    public function accesos()
+    {
+        $head = [
+            ['name'=>'ID',          'campo'=>'usua_ide',    'formato'=>'true','hidden'=>'false','width'=>'5%'],
+            ['name'=>'Ap.Paterno',  'campo'=>'usua_paterno','formato'=>'true','hidden'=>'false','width'=>'15%'],
+            ['name'=>'Ap.Materno',  'campo'=>'usua_materno','formato'=>'true','hidden'=>'false','width'=>'15%'],
+            ['name'=>'Nombres',     'campo'=>'usua_nombres','formato'=>'true','hidden'=>'false','width'=>'15%'],
+            ['name'=>'Usuario',     'campo'=>'usua_user',   'formato'=>'true','hidden'=>'false','width'=>'15%'],
+            ['name'=>'Perfil',      'campo'=>'perf_nombre', 'formato'=>'true','hidden'=>'false','width'=>'15%'],
+        ];
+        $botonAsignaRol = "
+        {
+            name: 'Operaciones', width: '20%',
+            formatter: (cell, row) => {
+                return gridjs.h('button', {
+                    className: 'btn btn-sm btn-primary',
+                    onClick: function(){
+                        openCargar();
+                        param={ide:row.cells[0].data};
+                        $.post('".base_url('/getroles')."',param,function(data){
+                            data=JSON.parse(data);
+                            $('#modalAsignaRoles').modal('show');
+                            $('#accesoGetRoles').html(data.tabla);
+                            $('#accesoIdUsuario').val(data.usuaIde);
+                            closeCargar();
+                        });
+                    }
+                }, 'Asignar Roles');
+            }
+        },";
+
+        $db   = \Config\Database::connect();
+        $data = $db->table('usuarios u')
+            ->select('u.usua_ide, u.usua_paterno, u.usua_materno, u.usua_nombres, u.usua_user, p.perf_nombre')
+            ->join('perfiles p','p.perf_ide=u.usua_perf_ide','left')
+            ->where('u.usua_esta_ide',1)->whereNull('u.usua_deleted_at')
+            ->orderBy('u.usua_paterno')->get()->getResult();
+
+        echo Componente::Tabla('tabla_usuarios',$head,$data,5,'true','true','primary',[$botonAsignaRol],'');
+        $body = "<input type='hidden' id='accesoIdUsuario'><div id='accesoGetRoles'></div>";
+        echo Componente::Modal('modalAsignaRoles','ASIGNAR ROLES',$body,'','modal-xl');
+    }
+
+    public function getroles()
+    {
+        $head = [
+            ['name'=>'ID',         'campo'=>'role_ide',       'formato'=>'true','hidden'=>'false','width'=>'5%'],
+            ['name'=>'Modulo',     'campo'=>'modu_nombre',     'formato'=>'true','hidden'=>'false','width'=>'15%'],
+            ['name'=>'Rol',        'campo'=>'role_nombre',     'formato'=>'true','hidden'=>'false','width'=>'15%'],
+            ['name'=>'Descripción','campo'=>'role_descripcion','formato'=>'true','hidden'=>'false','width'=>'40%'],
+            ['name'=>'Estado',     'campo'=>'estado',          'formato'=>"function(cell){return gridjs.html('<span class=\"badge bg-success\">'+cell+'</span>');}",'hidden'=>'false','width'=>'10%'],
+        ];
+        $data = General::getRolesAsignados($this->request->getPost('ide'));
+        $boton = "
+        {
+            name:'Operaciones',width:'15%',
+            formatter:(cell,row)=>{
+                return gridjs.h('button',{
+                    className:'btn btn-sm btn-primary',
+                    onClick:function(){
+                        openCargar();
+                        param={usua_ide:$('#accesoIdUsuario').val(),role_ide:row.cells[0].data};
+                        $.post('".base_url('/asignarol')."',param,function(data){
+                            param2={ide:$('#accesoIdUsuario').val()};
+                            $.post('".base_url('/getroles')."',param2,function(data){
+                                data=JSON.parse(data);
+                                $('#accesoGetRoles').html(data.tabla);
+                                closeCargar();
+                            });
+                        });
+                    }
+                },'Asignar/Quitar');
+            }
+        },";
+        $result = [
+            'tabla'   => Componente::Tabla('tabla_roles_asignados',$head,$data,10,'false','true','primary',[$boton],''),
+            'usuaIde' => $this->request->getPost('ide'),
+        ];
+        echo json_encode($result);
+    }
+
+    public function asignarol()
+    {
+        $usua_ide = $this->request->getPost('usua_ide');
+        $role_ide = $this->request->getPost('role_ide');
+        $db = \Config\Database::connect();
+        // Obtener perf_ide del usuario
+        $user = $db->table('usuarios')->select('usua_perf_ide')->where('usua_ide',$usua_ide)->get()->getRow();
+        $perf_ide = $user ? $user->usua_perf_ide : $usua_ide;
+
+        $acceso = General::getData('*','accesos',['acce_perf_ide'=>$perf_ide,'acce_role_ide'=>$role_ide,'acce_esta_ide'=>1],'');
+        if (count($acceso) >= 1) {
+            General::actualizar('accesos',['acce_perf_ide'=>$perf_ide,'acce_role_ide'=>$role_ide],['acce_esta_ide'=>2]);
+        } else {
+            General::insertar('accesos',['acce_perf_ide'=>$perf_ide,'acce_role_ide'=>$role_ide,'acce_esta_ide'=>1]);
+        }
+    }
+
+    public function setpass()
+    {
+        $ante     = $this->request->getPost('anterior');
+        $nueva    = $this->request->getPost('nueva');
+        $repi     = $this->request->getPost('repite');
+        $usua_ide = $this->session->usua_ide;
+        $usua_user= $this->session->usuario;
+
+        if (!$ante || !$nueva || !$repi) {
+            $r = ['clase'=>'alert alert-danger','icono'=>'ti-close','mensaje'=>'Complete todos los campos.'];
+        } elseif ($nueva != $repi) {
+            $r = ['clase'=>'alert alert-danger','icono'=>'ti-alert','mensaje'=>'La nueva clave y la repetición no coinciden.'];
+        } else {
+            $res = General::actualizar('usuarios',['usua_ide'=>$usua_ide,'usua_user'=>$usua_user,'usua_pass'=>$ante],['usua_pass'=>$nueva]);
+            if ($res == 0) $r = ['clase'=>'alert alert-warning','icono'=>'ti-alert','mensaje'=>'Clave anterior incorrecta.'];
+            else $r = ['clase'=>'alert alert-success','icono'=>'ti-check','mensaje'=>'Clave cambiada exitosamente.'];
+        }
+        echo json_encode($r);
+    }
+
+    public function salir()
+    {
+        $this->session->destroy();
+        return redirect()->to(base_url('/login'));
+    }
+
+    public function testing()
+    {
+        // Keeps session alive
+    }
 }
