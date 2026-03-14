@@ -1,0 +1,69 @@
+CRITICAL - 2026-03-14 11:41:27 --> Invalid file: cursos/vformcurso.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cursos/vformcurso.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('cursos/vformcurso', [], true)
+ 3 APPPATH\Controllers\Cursos.php(49): view('cursos/vformcurso', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cursos->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 11:41:32 --> Invalid file: lecciones/vlecciones.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('lecciones/vlecciones.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('lecciones/vlecciones', [], true)
+ 3 APPPATH\Controllers\Lecciones.php(20): view('lecciones/vlecciones', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Lecciones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 11:43:18 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Views\cursos\vvercurso.php on line 69.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('cursos/vvercurso', [], true)
+ 3 APPPATH\Controllers\Cursos.php(142): view('cursos/vvercurso', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cursos->ver('2')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 11:43:26 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Views\cursos\vvercurso.php on line 69.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('cursos/vvercurso', [], true)
+ 3 APPPATH\Controllers\Cursos.php(142): view('cursos/vvercurso', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cursos->ver('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 11:45:18 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::whereNull()
+in APPPATH\Controllers\Usuarios.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->alumnos()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 11:45:25 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::whereNull()
+in APPPATH\Controllers\Usuarios.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->profesores()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 11:45:29 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::whereNull()
+in APPPATH\Controllers\Reportes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Reportes->progreso()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 11:45:58 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::whereNull()
+in APPPATH\Controllers\Reportes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Reportes->progreso()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 11:46:08 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Views\cursos\vvercurso.php on line 69.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('cursos/vvercurso', [], true)
+ 3 APPPATH\Controllers\Cursos.php(142): view('cursos/vvercurso', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cursos->ver('2')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

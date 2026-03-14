@@ -13,12 +13,12 @@
                     <div class="brand-wrap">
 
                         <!-- Brand logo -->
-                        <a href="http://drepuno.edu.pe" class="brand-img stretched-link" target="_blank">
-                            <img src="<?php echo base_url("public/img/dre-gore.png") ?>" alt="DRE-Puno" class="DRE-Puno" width="40" height="40">
+                        <a href="#" class="brand-img stretched-link" target="_blank">
+                            <img src="<?php echo base_url('public/img/logo-code.svg') ?>" onerror="this.style.display='none'" alt="CodeLearn" width="40" height="40">
                         </a>
 
                         <!-- Brand title -->
-                        <div class="brand-title">CODE PUNO</div>
+                        <div class="brand-title">CodeLearn</div>
 
                         <!-- You can also use IMG or SVG instead of a text element. -->
 

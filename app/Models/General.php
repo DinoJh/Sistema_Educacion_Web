@@ -49,14 +49,14 @@ class General extends Model
 			if(a.acce_ide is NULL,'','ASIGNADO') as estado,
 			a.acce_ide,
 			r.role_ide,
-			a.acce_usua_ide,
+			a.acce_perf_ide,
 			m.modu_nombre,
 			r.role_nombre,
 			r.role_descripcion
 		");
 		$builder->join(
 			"roles r",
-			"a.acce_role_ide = r.role_ide AND a.acce_usua_ide = $usua_ide  AND a.acce_esta_ide = 1",
+			"a.acce_role_ide = r.role_ide AND a.acce_perf_ide = $usua_ide AND a.acce_esta_ide = 1",
 			"right"
 		);
 		$builder->join("modulos m", "r.role_modu_ide = m.modu_ide", "right");

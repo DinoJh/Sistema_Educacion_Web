@@ -1,132 +1,108 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="es" data-bs-theme="dark">
 <head>
-    <meta name="generator" content="Hugo 0.87.0" />
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-    <meta name="description" content="Nifty is a responsive admin dashboard template based on Bootstrap 5 framework. There are a lot of useful components.">
-    <title>Web Application - <?php echo $system_name; ?></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CodeLearn - <?php echo $system_name ?? 'Plataforma'; ?></title>
 
-    <!-- STYLESHEETS -->
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--- -->
-
-    <!-- Fonts [ OPTIONAL ] -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS [ REQUIRED ] -->
     <link rel="stylesheet" href="<?php echo $base; ?>/assets/css/bootstrap.min.css">
-
-    <!-- Nifty CSS [ REQUIRED ] -->
     <link rel="stylesheet" href="<?php echo $base; ?>/assets/css/nifty.min.css">
-
-    <!-- Nifty Demo Icons [ OPTIONAL ] -->
     <link rel="stylesheet" href="<?php echo $base; ?>/assets/css/demo-purpose/demo-icons.min.css">
-
-    <!-- Demo purpose CSS [ DEMO ] -->
-    <link rel="stylesheet" href="<?php echo $base; ?>/assets/css/demo-purpose/demo-settings.min.css">
-
-    <!-- Demo tags[ DEMO ] -->
-    <link rel="stylesheet" href="<?= base_url('public/assets/vendors/bootstrap5-tags/bootstrap5-tags.min.css') ?>">
-
-    <script src="<?= base_url('public/assets/vendors/tagin/tagin.min.js') ?>" defer></script>
-
-    <!-- Bootstrap 5 tags and initialize [ SAMPLE ] -->
-    <script src="<?= base_url('public/assets/pages/forms-tags.js') ?>" defer></script>
-
-    <!-- Chart Js -->
-    <script src="<?= base_url('public/assets/vendors/chart.js/chart.min.js') ?>" defer></script>
-    <!-- SweetAlert -->
-
+    <link rel="stylesheet" href="<?php echo $base; ?>/assets/vendors/themify-icons/themify-icons.min.css">
+    <link rel="stylesheet" href="<?php echo $base; ?>/assets/vendors/gridjs/gridjs.min.css">
+    <script src="<?php echo $base; ?>/assets/vendors/gridjs/gridjs.umd.min.js" defer></script>
+    <script src="<?php echo $base; ?>/assets/vendors/chart.js/chart.min.js" defer></script>
 
     <style>
-        .hd--expanded .content__header.overlapping+.content__boxed {
-            z-index: auto !important;
+        :root {
+            --cl-bg-deep:    #0d0f18;
+            --cl-bg-card:    #161826;
+            --cl-bg-card2:   #1e2035;
+            --cl-accent:     #7c3aed;
+            --cl-accent2:    #a78bfa;
+            --cl-accent3:    #06b6d4;
+            --cl-success:    #10b981;
+            --cl-warning:    #f59e0b;
+            --cl-danger:     #ef4444;
+            --cl-text:       #e2e8f0;
+            --cl-muted:      #94a3b8;
+            --cl-border:     rgba(255,255,255,0.07);
         }
-
-        .bold {
-            font-weight: 500;
-            font-size: 13px;
-        }
-
-        .home {
-            text-decoration: none;
-            color: white
-        }
-
-        .home:hover {
-            text-decoration: underline;
-            color: white
-        }
-
-        /******************************/
-        /*.form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown){
-            padding: 0.7rem 0.5rem 0.3rem 0.5rem;
-        }
-        .form-floating>.form-control{
-            padding-top: 0px;
-        }
-        .form-floating>.form-control, .form-floating>.form-select {
-            height: auto;
-            line-height: 0px;
-        }
-        .form-floating>.form-control {
-            padding: 0.5rem 0.5rem;
-        }
-        .form-floating>label{
-            padding: 0px 10px 0px 10px;
-            height: auto;
-            transform: scale(1) translateY(0.5rem) translateX(0.75rem);
-            background-color: white;
-            color: #1f3c5a;
-            border-radius: 5px;
-        }
-        .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label{
-            opacity: 1;
-            transform: scale(1) translateY(-0.7rem) translateX(0.5rem);
-            background-color: #1f3c5a;
-            color: white;
-        }
-        /******************************/
+        body { font-family: 'Inter', sans-serif; background: var(--cl-bg-deep) !important; color: var(--cl-text) !important; }
+        .card { background: var(--cl-bg-card) !important; border: 1px solid var(--cl-border) !important; border-radius: 12px !important; }
+        .card-header { background: var(--cl-bg-card2) !important; border-bottom: 1px solid var(--cl-border) !important; }
+        .btn-primary, .bg-primary { background: var(--cl-accent) !important; border-color: var(--cl-accent) !important; }
+        .btn-primary:hover { background: #6d28d9 !important; border-color: #6d28d9 !important; }
+        .btn-outline-primary { border-color: var(--cl-accent) !important; color: var(--cl-accent2) !important; }
+        .btn-outline-primary:hover { background: var(--cl-accent) !important; color: #fff !important; }
+        .badge-nivel-BASICO     { background: #10b981 !important; }
+        .badge-nivel-INTERMEDIO { background: #f59e0b !important; color:#000!important; }
+        .badge-nivel-AVANZADO   { background: #ef4444 !important; }
+        .curso-card { transition: transform .2s, box-shadow .2s; cursor: pointer; }
+        .curso-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(124,58,237,.25) !important; }
+        .curso-card .card-img-top { height: 160px; object-fit: cover; border-radius: 12px 12px 0 0; background: linear-gradient(135deg, #1e2035 0%, #0d0f18 100%); }
+        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; background: #000; }
+        .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 12px; }
+        .leccion-item { transition: background .15s; cursor: pointer; border-left: 3px solid transparent; }
+        .leccion-item:hover { background: var(--cl-bg-card2) !important; border-left-color: var(--cl-accent); }
+        .leccion-item.activa { background: var(--cl-bg-card2) !important; border-left-color: var(--cl-accent); }
+        .leccion-item.completada { border-left-color: var(--cl-success); }
+        .progress { height: 6px !important; border-radius: 99px; background: var(--cl-bg-card2) !important; }
+        .progress-bar { background: linear-gradient(90deg, var(--cl-accent), var(--cl-accent3)) !important; }
+        .form-control, .form-select { background: var(--cl-bg-card2) !important; border-color: var(--cl-border) !important; color: var(--cl-text) !important; }
+        .form-control:focus, .form-select:focus { border-color: var(--cl-accent) !important; box-shadow: 0 0 0 3px rgba(124,58,237,.2) !important; }
+        .table { color: var(--cl-text) !important; }
+        .table thead th { background: var(--cl-bg-card2) !important; border-color: var(--cl-border) !important; color: var(--cl-muted); font-size: .75rem; letter-spacing: .05em; text-transform: uppercase; }
+        .table td { border-color: var(--cl-border) !important; vertical-align: middle; }
+        .table tbody tr:hover td { background: rgba(124,58,237,.06) !important; }
+        .seccion-header { background: var(--cl-bg-card2); border-radius: 8px; padding: 10px 14px; margin-bottom: 4px; cursor: pointer; }
+        .seccion-header:hover { background: rgba(124,58,237,.15); }
+        .stat-card { background: linear-gradient(135deg, var(--cl-bg-card2), var(--cl-bg-card)); border: 1px solid var(--cl-border); border-radius: 12px; padding: 20px; }
+        .stat-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; }
+        .text-accent { color: var(--cl-accent2) !important; }
+        .text-cl-muted { color: var(--cl-muted) !important; }
+        .home { text-decoration: none; color: #fff; }
+        .home:hover { text-decoration: underline; color: #fff; }
+        .bold { font-weight: 600; font-size: 13px; }
+        .tipo-badge { font-size: .65rem; font-weight: 600; letter-spacing: .06em; padding: 2px 8px; border-radius: 99px; }
+        .tipo-VIDEO   { background: rgba(6,182,212,.15); color: #06b6d4; }
+        .tipo-TEXTO   { background: rgba(16,185,129,.15); color: #10b981; }
+        .tipo-ARCHIVO { background: rgba(245,158,11,.15); color: #f59e0b; }
+        .tipo-QUIZ    { background: rgba(239,68,68,.15); color: #ef4444; }
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 6px; } ::-webkit-scrollbar-track { background: var(--cl-bg-deep); } ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
     </style>
-
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---
-
-    [ REQUIRED ]
-    You must include this category in your project.
-
-
-    [ OPTIONAL ]
-    This is an optional plugin. You may choose to include it in your project.
-
-
-    [ DEMO ]
-    Used for demonstration purposes only. This category should NOT be included in your project.
-
-
-    [ SAMPLE ]
-    Here's a sample script that explains how to initialize plugins and/or components: This category should NOT be included in your project.
-
-
-    Detailed information and more samples can be found in the documentation.
-
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--- -->
-    <link rel="stylesheet" href="<?php echo $base; ?>/assets/vendors/themify-icons/themify-icons.min.css">
-    <link rel="stylesheet" href="<?= $base; ?>/assets/vendors/gridjs/gridjs.min.css">
-
-
-    <script src="<?= $base; ?>/assets/vendors/gridjs/gridjs.umd.min.js" defer></script>
+</head>
+<body class="jumping">
+<div id="root" class="root mn--max hd--expanded">
+    <section id="content" class="content">
+        <div class="content__header content__boxed overlapping" style="background: linear-gradient(135deg, #1e1b4b 0%, #0d0f18 100%);">
+            <div class="content__wrap text-white">
+                <div class="fs-5">
+                    <a href="<?php echo base_url('application'); ?>" class="home"><i class="ti-home"></i> Inicio</a>
+                    <i class="ti-angle-right"></i>
+                    <span id="moduloRol">Dashboard</span>
+                    <i class="ti-angle-right"></i>
+                    <span id="nombreRol">Bienvenido</span>
+                </div>
+                <p id="descripcionRol" class="mb-0 mt-1" style="color:#a78bfa; font-size:.85rem;">Plataforma de cursos de programación</p>
+            </div>
+        </div>
+        <div class="content__boxed">
+            <div class="content__wrap">
+                <div class="card border-0">
+                    <div class="card-body" id="bodyApp">
 
     <script>
+        // ── Core AJAX helpers ──────────────────────────────────────
         function cargarFuncion(url, modulo, nombre, descripcion) {
             openCargar();
             testing();
-            param = {
-                url: url
-            };
-            $.get("<?php echo base_url(); ?>" + url, param, function(data) {
+            $.get("<?php echo base_url(); ?>" + url, function(data) {
                 $("#moduloRol").html(modulo);
                 $("#nombreRol").html(nombre);
                 $("#descripcionRol").html(descripcion);
@@ -134,120 +110,55 @@
                 closeCargar();
             });
         }
-
-        function openCargar(mensaje = "Estamos procesando su solicitud...") {
-            $("#openCargarMensaje").html(mensaje);
+        function openCargar(msg = "Procesando solicitud…") {
+            $("#openCargarMensaje").html(msg);
             $("#openCargar").modal("show");
         }
-
-        function closeCargar() {
-            setTimeout(function() {
-                $("#openCargar").modal("hide");
-            }, 500);
-        }
-
-        function alertar(mensaje, clase = "alert alert-success", icono = "") {
+        function closeCargar() { setTimeout(function(){ $("#openCargar").modal("hide"); }, 400); }
+        function alertar(msg, clase="alert alert-success", icono="") {
             $("#alertarAlert").attr("class", clase);
-            $("#alertarMensaje").html(mensaje);
+            $("#alertarMensaje").html(msg);
             $("#alertarIcono").attr("class", icono + " fs-5");
             $("#alertar").modal("show");
         }
-
-        function ajax(url, param, mifuncion, open = true) {
-            //closeCargar();
-            if (open) {
-                openCargar("Procesando su solicitud...");
-            }
-            $.post("<?php echo base_url(); ?>" + url, param, function(data) {
-                mifuncion(data);
-                //closeCargar();
-            });
+        function ajax(url, param, fn, open=true) {
+            if(open) openCargar();
+            $.post("<?php echo base_url(); ?>" + url, param, function(data){ fn(data); });
         }
-
-        function ajaxGet(url, param, mifuncion, open = true) {
-            //closeCargar();
-            if (open) {
-                openCargar("Procesando su solicitud...");
-            }
-            $.get("<?php echo base_url(); ?>" + url, param, function(data) {
-                mifuncion(data);
-                //closeCargar();
-            });
+        function ajaxGet(url, param, fn, open=true) {
+            if(open) openCargar();
+            $.get("<?php echo base_url(); ?>" + url, param, function(data){ fn(data); });
         }
-
-        function ajaxFile(url, form_ide, mifuncion) {
-            openCargar("Procesando su solicitud...");
-            var formData = new FormData($("#" + form_ide)[0]);
-            $.ajax({
-                url: "<?php echo base_url(); ?>" + url,
-                type: "POST",
-                data: formData,
-                cache: false,
-                contentType: false,
-                processData: false,
-                success: function(data) {
-                    mifuncion(data);
-                    //closeCargar();
-                }
-            });
-        }
-
         function cambiarClave() {
-            openCargar("Cambiando de clave...");
+            openCargar("Cambiando clave…");
             $("#cambiarClave").modal("hide");
-            param = {
-                anterior: $("#anterior").val(),
-                nueva: $("#nueva").val(),
-                repite: $("#repite").val(),
-            }
-            $.post("<?php echo base_url("/setpass") ?>", param, function(data) {
+            $.post("<?php echo base_url('/setpass'); ?>", {
+                anterior:$("#anterior").val(), nueva:$("#nueva").val(), repite:$("#repite").val()
+            }, function(data){
                 data = JSON.parse(data);
                 alertar(data.mensaje, data.clase, data.icono);
                 closeCargar();
-                $("#anterior").val("");
-                $("#nueva").val("");
-                $("#repite").val("");
+                $("#anterior,#nueva,#repite").val("");
             });
         }
-
         function testing() {
-            $.post("<?php echo site_url("testing"); ?>", function(data) {
-                if (data == "inactivo") {
-                    alert("Su sesion ha caducado, ingrese nuevamente");
-                    location.href = "<?php echo base_url("login"); ?>";
-                }
+            $.post("<?php echo site_url('testing'); ?>", function(data){
+                if(data=="inactivo"){ alert("Sesión expirada."); location.href="<?php echo base_url('login'); ?>"; }
             });
         }
-        setInterval(testing, 60000 / 4);
+        setInterval(testing, 15000);
+
+        // ── Video embed helper ─────────────────────────────────────
+        function embedUrl(url) {
+            if(!url) return null;
+            // YouTube watch
+            let yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([A-Za-z0-9_\-]{11})/);
+            if(yt) return 'https://www.youtube.com/embed/' + yt[1] + '?rel=0&modestbranding=1';
+            // YouTube embed already
+            if(url.includes('youtube.com/embed/')) return url;
+            // Google Drive
+            let gd = url.match(/drive\.google\.com\/file\/d\/([^\/]+)/);
+            if(gd) return 'https://drive.google.com/file/d/' + gd[1] + '/preview';
+            return url;
+        }
     </script>
-
-</head>
-
-<body class="jumping">
-    <!-- PAGE CONTAINER -->
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div id="root" class="root mn--max hd--expanded">
-
-        <!-- CONTENTS -->
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <section id="content" class="content">
-            <div class="content__header content__boxed overlapping">
-                <div class="content__wrap text-white">
-                    <!-- Page title and information -->
-                    <div class="fs-5">
-                        <a href="<?php echo base_url("application"); ?>" class="home">
-                            <i class="ti-desktop"></i> Inicio
-                        </a>
-                        <i class="ti-angle-right"></i>
-                        <span class="mb-2" id="moduloRol">Dashboard</span>
-                        <i class="ti-angle-right"></i>
-                        <span class="mb-2" id="nombreRol">Roles asignados</span>
-                    </div>
-                    <p id="descripcionRol">Roles asignados para el usuario dentro de la entidad</p>
-                    <!-- END : Page title and information -->
-                </div>
-            </div>
-            <div class="content__boxed">
-                <div class="content__wrap">
-                    <div class="card border-2 border-primaryX">
-                        <div class="card-body" id="bodyApp">

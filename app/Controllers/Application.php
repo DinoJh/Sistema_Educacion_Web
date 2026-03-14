@@ -41,11 +41,11 @@ class Application extends BaseController
         //$vistas = view('sistema/vheader',$data_header).
         //		  view('sistema/vfooter',$data_footer).
         //		  view('sistema/vmenu',$data_menu).
-        //		  view('sistema/vindex',$data_index);
+        //		  view("sistema/vindex", ["session"=>$this->session]) .
       	echo view('sistema/vheader',$data_header);
         echo view('sistema/vfooter',$data_footer);
         echo view('sistema/vmenu',$data_menu);
-        echo view('sistema/vindex',$data_index);
+        echo view("sistema/vindex", ["session"=>$this->session]) .
 
         //return $vistas;
     }
@@ -71,9 +71,9 @@ class Application extends BaseController
 			);
 		}
 		$data = array(
-			"system_name" => "CODE PUNO",
+			"system_name" => "CodeLearn",
 			"session" => $this->session,
-			"logo" => "drepuno.png",
+			"logo" => "logo-code.svg",
 			"roles2" => $roles2,
 			"contacto_datos" => "Ing. Víctor Hugo BEJAR GONZALES",
 			"contacto_celular" => "958273933",
@@ -81,7 +81,7 @@ class Application extends BaseController
 			"base" => base_url("public")
 		);
 		$vistas = view('sistema/vheader', $data) .
-			view('sistema/vindex') .
+			view("sistema/vindex", ["session"=>$this->session]) .
 			view('sistema/vfooter') .
 			view('sistema/vmenu');
 		return $vistas;
@@ -281,7 +281,7 @@ class Application extends BaseController
 			$campos = "*",
 			$tabla = "accesos a",
 			$where = array(
-				"a.acce_usua_ide" => $usua_ide,
+				"a.acce_perf_ide" => $usua_ide,
 				"a.acce_role_ide" => $role_ide,
 				"a.acce_esta_ide" => 1,
 			),
@@ -289,12 +289,12 @@ class Application extends BaseController
 		);
 		if (count($acceso) == 1) {
 			$data = array(
-				"a.acce_esta_ide" => 2,
+				"acce_esta_ide" => 2,
 			);
 			General::actualizar("accesos a", $where, $data);
 		} else {
 			$data = array(
-				"acce_usua_ide" => $usua_ide,
+				"acce_perf_ide" => $usua_ide,
 				"acce_role_ide" => $role_ide,
 				"acce_esta_ide" => 1,
 			);
