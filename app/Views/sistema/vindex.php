@@ -1,6 +1,6 @@
 <div class="text-center py-5">
     <div style="margin-bottom:1.5rem;">
-        <div style="display:inline-flex;align-items:center;justify-content:center;width:90px;height:90px;border-radius:24px;background:linear-gradient(135deg,#7c3aed,#06b6d4);font-size:2.8rem;box-shadow:0 8px 32px rgba(124,58,237,.4);">💻</div>
+        <img src="<?= base_url('public/img/logo-codePuno.gif') ?>" alt="CodePuno" style="width:110px;height:auto;filter:drop-shadow(0 8px 24px rgba(124,58,237,.4));">
     </div>
     <h1 class="fw-bold mb-2" style="font-size:2.8rem;background:linear-gradient(135deg,#a78bfa,#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">CodePuno</h1>
     <p class="mb-1" style="font-size:1.15rem;color:var(--cl-muted);">Plataforma de cursos de programación</p>

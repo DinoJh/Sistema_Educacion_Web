@@ -15,7 +15,8 @@
 <?php
 $totalAlumnos  = count(array_unique(array_column((array)$alumnos,'usua_ide')));
 $totalCursos   = count(array_unique(array_column((array)$alumnos,'curs_ide')));
-$completados   = count(array_filter((array)$alumnos, fn($a)=>$a->matr_completado));
+$completados = 0;
+foreach((array)$alumnos as $a) { if($a->matr_completado) $completados++; }
 ?>
 <div class="row g-3 mb-4">
     <div class="col-md-4">

@@ -2,7 +2,8 @@
 $lecBySecc = [];
 foreach($lecciones as $l) $lecBySecc[$l->lecc_secc_ide ?? 0][] = $l;
 $totalLecc = count($lecciones);
-$hechas = count(array_filter($progreso, fn($v)=>$v==1));
+$hechas = 0;
+foreach($progreso as $v) { if($v==1) $hechas++; }
 $pct = $totalLecc > 0 ? round(($hechas/$totalLecc)*100) : 0;
 $primeraLecc = !empty($lecciones) ? $lecciones[0] : null;
 ?>

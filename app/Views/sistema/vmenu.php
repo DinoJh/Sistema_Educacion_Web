@@ -406,8 +406,8 @@
                         <div class="mt-2 d-mn-max"></div>
 
                         <!-- Logo CodePuno -->
-                        <div class="mininav-toggle text-center py-3">
-                            <div style="width:64px;height:64px;border-radius:18px;background:linear-gradient(135deg,#7c3aed,#06b6d4);display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin:0 auto;box-shadow:0 4px 16px rgba(124,58,237,.4);">💻</div>
+                        <div class="mininav-toggle text-center py-2">
+                            <img src="<?= base_url('public/img/logo-codePuno.gif') ?>" alt="CodePuno" style="width:90px;height:auto;filter:drop-shadow(0 4px 12px rgba(124,58,237,.4));">
                         </div>
 
                         <div class="mininav-content collapse d-mn-max">

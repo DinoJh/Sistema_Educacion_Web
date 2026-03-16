@@ -618,3 +618,12 @@ in APPPATH\Controllers\Reportes.php on line 17.
  2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
  3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-14 16:55:29 --> Invalid file: lecciones/vlecciones.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('lecciones/vlecciones.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('lecciones/vlecciones', [], true)
+ 3 APPPATH\Controllers\Lecciones.php(20): view('lecciones/vlecciones', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Lecciones->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lecciones))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
