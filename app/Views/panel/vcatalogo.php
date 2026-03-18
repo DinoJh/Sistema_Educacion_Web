@@ -38,7 +38,7 @@
             <span><i class="ti-video-camera me-1"></i><?=$c->total_lecciones?> lecciones</span>
             <span><i class="ti-user me-1"></i><?=$c->total_alumnos?> alumnos</span>
             <?php if($c->promedio_nota): ?>
-            <span style="color:#f59e0b;">★ <?=$c->promedio_nota?>/20</span>
+            <span style="color:#f59e0b;cursor:pointer;" onclick="event.stopPropagation();verResenas(<?=$c->curs_ide?>,<?=htmlspecialchars(json_encode($c->curs_nombre))?>)">★ <?=$c->promedio_nota?>/20</span>
             <?php endif; ?>
         </div>
     </div>
@@ -78,4 +78,41 @@ function inscribirme(ide, btn) {
         if(r.ok){alertar(r.msg,'alert alert-success','ti-check');setTimeout(()=>cargarFuncion('/mi-panel/catalogo','Mi Panel','Buscar Cursos',''),1200);}
     });
 }
+function verResenas(curs_ide, nombre) {
+    document.getElementById('modalResenasTitle').innerHTML = '⭐ Reseñas: ' + nombre;
+    document.getElementById('modalResenasBody').innerHTML = '<div class="text-center py-4"><div class="spinner-border"></div></div>';
+    new bootstrap.Modal(document.getElementById('modalResenas')).show();
+    $.get("<?=base_url('/mi-panel/resenas/')?>"+curs_ide, function(r){
+        r = JSON.parse(r);
+        if(!r.length){
+            document.getElementById('modalResenasBody').innerHTML='<p class="text-cl-muted text-center py-3">Aún no hay reseñas para este curso.</p>';
+            return;
+        }
+        var html='';
+        r.forEach(function(x){
+            var nota = x.rese_calificacion;
+            var color = nota>=14?'#10b981':(nota>=11?'#f59e0b':'#ef4444');
+            html += '<div class="mb-3 p-3 rounded" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);">';
+            html += '<div class="d-flex align-items-center gap-2 mb-1">';
+            html += '<span class="fw-semibold small">'+x.nombre+'</span>';
+            html += '<span class="ms-auto fw-bold" style="color:'+color+'">'+nota+'/20</span>';
+            html += '<small class="text-cl-muted">'+x.fecha+'</small>';
+            html += '</div>';
+            html += '<div class="progress mb-2" style="height:4px;background:rgba(255,255,255,.06);"><div class="progress-bar" style="width:'+((nota/20)*100)+'%;background:'+color+';"></div></div>';
+            html += '<p class="small text-cl-muted mb-0">'+x.comentario+'</p>';
+            html += '</div>';
+        });
+        document.getElementById('modalResenasBody').innerHTML = html;
+    });
+}
 </script>
+
+<!-- Modal Reseñas -->
+<div class="modal fade" id="modalResenas" tabindex="-1">
+<div class="modal-dialog modal-lg"><div class="modal-content" style="background:var(--cl-bg-card);">
+  <div class="modal-header border-0">
+    <h5 class="modal-title fw-bold" id="modalResenasTitle"></h5>
+    <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+  </div>
+  <div class="modal-body" id="modalResenasBody" style="max-height:70vh;overflow-y:auto;"></div>
+</div></div></div>

@@ -93,15 +93,91 @@ class Panel extends BaseController
             foreach ($prog as $p) $progreso[$p->prog_lecc_ide] = $p->prog_completado;
         }
 
+        // Reseñas del curso
+        $resenas = $db->table('resenas r')
+            ->select('r.*, u.usua_nombres, u.usua_paterno')
+            ->join('usuarios u','u.usua_ide=r.rese_usua_ide','left')
+            ->where('r.rese_curs_ide', $curs_ide)
+            ->orderBy('r.rese_fecha','DESC')
+            ->get()->getResult();
+
+        // Reseña del alumno actual (si existe)
+        $miResena = null;
+        if ($matricula) {
+            $miResena = $db->table('resenas')
+                ->where(['rese_usua_ide'=>$this->session->usua_ide,'rese_curs_ide'=>$curs_ide])
+                ->get()->getRow();
+        }
+
         echo view('panel/vvercurso', [
             'curso'    => $curso,
             'secciones'=> $secciones,
             'lecciones'=> $lecciones,
             'matricula'=> $matricula,
             'progreso' => $progreso,
+            'resenas'  => $resenas,
+            'miResena' => $miResena,
             'session'  => $this->session,
             'base'     => base_url('public')
         ]);
+    }
+
+    public function resenas($curs_ide)
+    {
+        $db = \Config\Database::connect();
+        $resenas = $db->table('resenas r')
+            ->select('r.rese_calificacion, r.rese_comentario, r.rese_fecha,
+                CONCAT(u.usua_paterno, ", ", u.usua_nombres) as nombre')
+            ->join('usuarios u','u.usua_ide=r.rese_usua_ide','left')
+            ->where('r.rese_curs_ide', (int)$curs_ide)
+            ->orderBy('r.rese_fecha','DESC')
+            ->get()->getResultArray();
+
+        // Formatear fecha
+        foreach ($resenas as &$r) {
+            $r['fecha'] = date('d/m/Y', strtotime($r['rese_fecha']));
+            $r['comentario'] = htmlspecialchars($r['rese_comentario']);
+            $r['nombre']     = htmlspecialchars($r['nombre']);
+        }
+        echo json_encode($resenas);
+    }
+
+    public function guardarResena()
+    {
+        $curs_ide     = (int)$this->request->getPost('curs_ide');
+        $calificacion = (int)$this->request->getPost('calificacion');
+        $comentario   = trim($this->request->getPost('comentario') ?? '');
+        $usua_ide     = $this->session->usua_ide;
+
+        if ($calificacion < 0 || $calificacion > 20) {
+            echo json_encode(['ok'=>false,'msg'=>'La calificación debe ser entre 0 y 20.']);
+            return;
+        }
+        if (empty($comentario)) {
+            echo json_encode(['ok'=>false,'msg'=>'Escribe un comentario antes de guardar.']);
+            return;
+        }
+
+        $db     = \Config\Database::connect();
+        $existe = $db->table('resenas')->where(['rese_usua_ide'=>$usua_ide,'rese_curs_ide'=>$curs_ide])->get()->getRow();
+
+        if ($existe) {
+            General::actualizar('resenas',['rese_ide'=>$existe->rese_ide],[
+                'rese_calificacion' => $calificacion,
+                'rese_comentario'   => $comentario,
+                'rese_fecha'        => date('Y-m-d H:i:s'),
+            ]);
+            echo json_encode(['ok'=>true,'msg'=>'Reseña actualizada correctamente.']);
+        } else {
+            General::insertar('resenas',[
+                'rese_usua_ide'     => $usua_ide,
+                'rese_curs_ide'     => $curs_ide,
+                'rese_calificacion' => $calificacion,
+                'rese_comentario'   => $comentario,
+                'rese_fecha'        => date('Y-m-d H:i:s'),
+            ]);
+            echo json_encode(['ok'=>true,'msg'=>'¡Reseña publicada! Gracias por tu opinión.']);
+        }
     }
 
     public function matricular()

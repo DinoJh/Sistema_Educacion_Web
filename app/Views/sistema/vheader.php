@@ -98,35 +98,88 @@
                     <div class="card-body" id="bodyApp">
 
     <script>
-        // ── Core AJAX helpers ──────────────────────────────────────
-        function cargarFuncion(url, modulo, nombre, descripcion) {
-            openCargar();
-            testing();
-            $.get("<?php echo rtrim(base_url(),'/'); ?>" + url, function(data) {
-                $("#moduloRol").html(modulo);
-                $("#nombreRol").html(nombre);
-                $("#descripcionRol").html(descripcion);
-                $("#bodyApp").html(data);
-                closeCargar();
-            });
-        }
-        function openCargar(msg = "Procesando solicitud…") {
+        // ── openCargar / alertar usan Bootstrap Modal ─────────────────────────────
+        function openCargar(msg) {
+            msg = msg || "Procesando solicitud…";
             $("#openCargarMensaje").html(msg);
-            $("#openCargar").modal("show");
+            // Abrir solo si no está ya visible, para evitar apilamiento
+            if (!$("#openCargar").hasClass("show")) {
+                $("#openCargar").modal("show");
+            }
         }
-        function closeCargar() { setTimeout(function(){ $("#openCargar").modal("hide"); }, 400); }
-        function alertar(msg, clase="alert alert-success", icono="") {
+        function closeCargar() {
+            setTimeout(function(){
+                $("#openCargar").modal("hide");
+            }, 350);
+        }
+        function alertar(msg, clase, icono) {
+            clase = clase || "alert alert-success";
+            icono = icono || "";
             $("#alertarAlert").attr("class", clase);
             $("#alertarMensaje").html(msg);
-            $("#alertarIcono").attr("class", icono + " fs-5");
-            $("#alertar").modal("show");
+            $("#alertarIcono").attr("class", icono + " fs-3");
+            // Esperar que no haya ningún otro modal abriéndose
+            setTimeout(function(){
+                if (!$("#alertar").hasClass("show")) {
+                    $("#alertar").modal("show");
+                }
+            }, 50);
         }
-        function ajax(url, param, fn, open=true) {
-            if(open) openCargar();
+
+        // ── Limpia backdrops huérfanos dejados por contenido AJAX ─────────────────
+        function limpiarBackdrops() {
+            document.querySelectorAll('.modal-backdrop').forEach(function(el){ el.remove(); });
+            document.body.classList.remove('modal-open');
+            document.body.style.removeProperty('overflow');
+            document.body.style.removeProperty('padding-right');
+        }
+
+        // ── Carga de secciones vía AJAX ───────────────────────────────────────────
+        function cargarFuncion(url, modulo, nombre, descripcion) {
+            // Cerrar y destruir cualquier modal abierto en el área de contenido
+            $("#bodyApp .modal.show").each(function() {
+                try { bootstrap.Modal.getInstance(this).hide(); } catch(e) {}
+            });
+            // Pequeño delay para que Bootstrap termine de cerrar antes de navegar
+            setTimeout(function() {
+                limpiarBackdrops();
+                openCargar();
+                testing();
+                $.ajax({
+                    url: "<?php echo rtrim(base_url(),'/'); ?>" + url,
+                    method: "GET",
+                    success: function(data) {
+                        if (typeof data === "string" && data.trim() === "inactivo") {
+                            closeCargar();
+                            alert("Sesión expirada. Vuelve a iniciar sesión.");
+                            location.href = "<?php echo base_url('login'); ?>";
+                            return;
+                        }
+                        $("#moduloRol").html(modulo);
+                        $("#nombreRol").html(nombre);
+                        $("#descripcionRol").html(descripcion);
+                        $("#bodyApp").html(data);
+                        closeCargar();
+                    },
+                    error: function(xhr) {
+                        closeCargar();
+                        if (xhr.responseText && xhr.responseText.trim() !== "") {
+                            // Mostrar el error PHP real para diagnóstico
+                            $("#bodyApp").html(xhr.responseText);
+                        } else {
+                            $("#bodyApp").html('<div class="p-4"><div class="alert alert-danger">Error HTTP ' + xhr.status + ' cargando: ' + url + '</div></div>');
+                        }
+                    }
+                });
+            }, 100);
+        }
+
+        function ajax(url, param, fn, open) {
+            if (open !== false) openCargar();
             $.post("<?php echo rtrim(base_url(),'/'); ?>" + url, param, function(data){ fn(data); });
         }
-        function ajaxGet(url, param, fn, open=true) {
-            if(open) openCargar();
+        function ajaxGet(url, param, fn, open) {
+            if (open !== false) openCargar();
             $.get("<?php echo rtrim(base_url(),'/'); ?>" + url, param, function(data){ fn(data); });
         }
         function cambiarClave() {
@@ -136,29 +189,26 @@
                 anterior:$("#anterior").val(), nueva:$("#nueva").val(), repite:$("#repite").val()
             }, function(data){
                 data = JSON.parse(data);
-                alertar(data.mensaje, data.clase, data.icono);
                 closeCargar();
+                setTimeout(function(){ alertar(data.mensaje, data.clase, data.icono); }, 400);
                 $("#anterior,#nueva,#repite").val("");
             });
         }
         function testing() {
             $.post("<?php echo site_url('testing'); ?>", function(data){
-                if(data=="inactivo"){ alert("Sesión expirada."); location.href="<?php echo base_url('login'); ?>"; }
+                if(data == "inactivo"){ alert("Sesión expirada."); location.href = "<?php echo base_url('login'); ?>"; }
             });
         }
         setInterval(testing, 15000);
 
-        // ── Video embed helper ─────────────────────────────────────
+        // ── Video embed helper ─────────────────────────────────────────────────────
         function embedUrl(url) {
-            if(!url) return null;
-            // YouTube watch
+            if (!url) return null;
             let yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([A-Za-z0-9_\-]{11})/);
-            if(yt) return 'https://www.youtube.com/embed/' + yt[1] + '?rel=0&modestbranding=1';
-            // YouTube embed already
-            if(url.includes('youtube.com/embed/')) return url;
-            // Google Drive
+            if (yt) return "https://www.youtube.com/embed/" + yt[1] + "?rel=0&modestbranding=1";
+            if (url.includes("youtube.com/embed/")) return url;
             let gd = url.match(/drive\.google\.com\/file\/d\/([^\/]+)/);
-            if(gd) return 'https://drive.google.com/file/d/' + gd[1] + '/preview';
+            if (gd) return "https://drive.google.com/file/d/" + gd[1] + "/preview";
             return url;
         }
     </script>

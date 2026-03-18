@@ -1641,7 +1641,22 @@
         </div>
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- ══ MODAL CARGA ══ -->
+        <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" id="openCargar">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"><?= $system_name; ?></h5>
+                    </div>
+                    <div class="modal-body">
+                        <span class="spinner-border spinner-border-sm text-danger" role="status"></span>
+                        <span id="openCargarMensaje" class="fs-5 text-primary ms-2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ══ MODAL ALERTA ══ -->
         <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" id="alertar">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -1661,26 +1676,6 @@
                 </div>
             </div>
         </div>
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-        <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" id="openCargar">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title"><?= $system_name; ?></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <span class="spinner-border spinner-border-sm text-danger" role="status">
-                            <span class="visually-hidden">Loading...</span>
-                        </span>
-                        <span id="openCargarMensaje" class="fs-5 text-primary"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <!-- END - OFFCANVAS [ DEMO ] -->

@@ -104,7 +104,7 @@ class Application extends BaseController
         $data = $db->table('usuarios u')
             ->select('u.usua_ide, u.usua_paterno, u.usua_materno, u.usua_nombres, u.usua_user, p.perf_nombre')
             ->join('perfiles p','p.perf_ide=u.usua_perf_ide','left')
-            ->where('u.usua_esta_ide',1)->whereNull('u.usua_deleted_at')
+            ->where('u.usua_esta_ide',1)->where('u.usua_deleted_at IS NULL')
             ->orderBy('u.usua_paterno')->get()->getResult();
 
         echo Componente::Tabla('tabla_usuarios',$head,$data,5,'true','true','primary',[$botonAsignaRol],'');

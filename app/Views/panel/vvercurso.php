@@ -165,4 +165,125 @@ function matricularme(ide){
 <?php if($matricula && $primeraLecc && $primeraLecc->lecc_url): ?>
 setTimeout(function(){reproducir(<?=$primeraLecc->lecc_ide?>,'<?=$primeraLecc->lecc_tipo?>',embedUrl('<?=addslashes($primeraLecc->lecc_url??'')?>'), '<?=addslashes($primeraLecc->lecc_titulo??'')?>', '<?=addslashes($primeraLecc->lecc_descripcion??'')?>')},300);
 <?php endif; ?>
+
+// ── Reseñas ──────────────────────────────────────────────
+function guardarResena() {
+    var cal = parseInt(document.getElementById('rCalificacion').value);
+    var com = document.getElementById('rComentario').value.trim();
+    if(isNaN(cal)||cal<0||cal>20){alertar('La calificación debe ser entre 0 y 20.','alert alert-warning');return;}
+    if(!com){alertar('Escribe un comentario.','alert alert-warning');return;}
+    openCargar('Guardando reseña…');
+    $.post("<?=base_url('/mi-panel/resena')?>",{curs_ide:<?=$curso->curs_ide??0?>,calificacion:cal,comentario:com},function(r){
+        r=JSON.parse(r); closeCargar();
+        if(r.ok){alertar(r.msg,'alert alert-success','ti-check');setTimeout(()=>cargarFuncion('/mi-panel/ver/<?=$curso->curs_ide??0?>','Mi Panel','Ver Curso',''),1300);}
+        else alertar(r.msg,'alert alert-danger','ti-close');
+    });
+}
+function actualizarEstrellas(val) {
+    document.getElementById('rValLabel').innerHTML = val + '/20';
+    document.getElementById('rCalificacion').value = val;
+}
 </script>
+
+<!-- ═══════════════════ SECCIÓN DE RESEÑAS ═══════════════════ -->
+<div class="mt-4">
+<div class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2">
+    <h5 class="fw-bold mb-0">⭐ Reseñas del Curso</h5>
+    <?php
+    $totalResenas = count($resenas ?? []);
+    $promedioResenas = $totalResenas > 0 ? round(array_sum(array_column((array)$resenas,'rese_calificacion')) / $totalResenas, 1) : null;
+    ?>
+    <?php if($totalResenas > 0): ?>
+    <span class="badge" style="background:rgba(245,158,11,.15);color:#f59e0b;font-size:.85rem;padding:6px 14px;">
+        Promedio: <?=$promedioResenas?>/20 &nbsp;·&nbsp; <?=$totalResenas?> reseña(s)
+    </span>
+    <?php endif; ?>
+</div>
+
+<?php if($matricula && $matricula->matr_completado): ?>
+<!-- Formulario para dejar reseña (solo si completó el curso) -->
+<div class="card mb-4" style="border:1px solid rgba(124,58,237,.3);">
+<div class="card-body">
+    <h6 class="fw-bold mb-3">
+        <?=isset($miResena) && $miResena ? '✏️ Editar mi reseña' : '📝 Dejar mi reseña'?>
+        <small class="text-cl-muted fw-normal ms-2" style="font-size:.75rem;">Solo disponible al completar el curso</small>
+    </h6>
+    <div class="row g-3">
+        <div class="col-md-4">
+            <label class="form-label small text-cl-muted">Calificación (0 – 20)</label>
+            <div class="d-flex align-items-center gap-3">
+                <input type="range" id="rCalificacion" class="form-range flex-grow-1" min="0" max="20" step="1"
+                    value="<?=isset($miResena) && $miResena ? $miResena->rese_calificacion : 10?>"
+                    oninput="actualizarEstrellas(this.value)">
+                <span id="rValLabel" class="fw-bold" style="min-width:40px;color:var(--cl-accent2);font-size:1.1rem;">
+                    <?=isset($miResena) && $miResena ? $miResena->rese_calificacion : 10?>/20
+                </span>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <label class="form-label small text-cl-muted">Comentario *</label>
+            <textarea id="rComentario" class="form-control" rows="2"
+                placeholder="¿Qué te pareció el curso? Sé honesto, tu opinión ayuda a todos."><?=isset($miResena) && $miResena ? htmlspecialchars($miResena->rese_comentario) : ''?></textarea>
+        </div>
+    </div>
+    <div class="mt-3 text-end">
+        <button class="btn btn-primary px-4" onclick="guardarResena()">
+            <i class="ti-star me-1"></i><?=isset($miResena) && $miResena ? 'Actualizar reseña' : 'Publicar reseña'?>
+        </button>
+    </div>
+</div>
+</div>
+<?php elseif($matricula && !$matricula->matr_completado): ?>
+<div class="card mb-3" style="border:1px solid rgba(245,158,11,.2);">
+<div class="card-body py-2 d-flex align-items-center gap-2">
+    <i class="ti-info-alt" style="color:#f59e0b;"></i>
+    <small class="text-cl-muted">Completa el curso para dejar tu reseña y calificación.</small>
+</div>
+</div>
+<?php elseif(!$matricula): ?>
+<div class="card mb-3" style="border:1px solid rgba(124,58,237,.2);">
+<div class="card-body py-2 d-flex align-items-center gap-2">
+    <i class="ti-info-alt" style="color:var(--cl-accent2);"></i>
+    <small class="text-cl-muted">Inscríbete en el curso para poder dejar una reseña.</small>
+</div>
+</div>
+<?php endif; ?>
+
+<!-- Lista de reseñas públicas -->
+<?php if(!empty($resenas)): ?>
+<div class="d-flex flex-column gap-3">
+<?php foreach($resenas as $r):
+    $nota = $r->rese_calificacion;
+    $notaColor = $nota >= 14 ? '#10b981' : ($nota >= 11 ? '#f59e0b' : '#ef4444');
+    $esMia = ($r->rese_usua_ide == $session->usua_ide);
+?>
+<div class="card" style="<?=$esMia?'border:1px solid rgba(124,58,237,.35);':''?>">
+<div class="card-body">
+    <div class="d-flex align-items-start gap-3">
+        <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--cl-accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-size:.9rem;font-weight:700;flex-shrink:0;color:#fff;">
+            <?=strtoupper(substr($r->usua_nombres??'?',0,1))?>
+        </div>
+        <div class="flex-grow-1">
+            <div class="d-flex align-items-center gap-2 flex-wrap mb-1">
+                <span class="fw-semibold small"><?=htmlspecialchars($r->usua_paterno.' '.$r->usua_nombres)?></span>
+                <?php if($esMia): ?><span style="font-size:.65rem;background:rgba(124,58,237,.15);color:var(--cl-accent2);padding:2px 8px;border-radius:99px;">Tú</span><?php endif; ?>
+                <span class="fw-bold ms-auto" style="color:<?=$notaColor?>;font-size:1rem;"><?=$nota?>/20</span>
+                <small class="text-cl-muted"><?=date('d/m/Y', strtotime($r->rese_fecha))?></small>
+            </div>
+            <div class="progress mb-2" style="height:5px;background:rgba(255,255,255,.08);">
+                <div class="progress-bar" style="width:<?=($nota/20)*100?>%;background:<?=$notaColor?>;"></div>
+            </div>
+            <p class="small text-cl-muted mb-0"><?=htmlspecialchars($r->rese_comentario??'')?></p>
+        </div>
+    </div>
+</div>
+</div>
+<?php endforeach; ?>
+</div>
+<?php else: ?>
+<div class="card"><div class="card-body text-center py-4 text-cl-muted">
+    <i class="ti-comment fs-2 mb-2 d-block"></i>
+    <p class="mb-0 small">Aún no hay reseñas para este curso. ¡Sé el primero en opinar!</p>
+</div></div>
+<?php endif; ?>
+</div>

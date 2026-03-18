@@ -136,12 +136,15 @@ function verCurso(ide){cargarFuncion('/cursos/ver/'+ide,'Cursos','Gestionar Curs
 function guardarCurso(){
     var n=document.getElementById('cNombre').value.trim(), c=document.getElementById('cCate').value;
     if(!n||!c){alertar('Completa nombre y categoría.','alert alert-warning');return;}
-    openCargar(); bootstrap.Modal.getInstance(document.getElementById('modalCurso')).hide();
-    $.post("<?=base_url('/cursos/guardar')?>",{nombre:n,cate_ide:c,nivel:document.getElementById('cNivel').value,descripcion:document.getElementById('cDesc').value},function(r){
-        r=JSON.parse(r); closeCargar();
-        if(r.ok){alertar(r.msg,'alert alert-success','ti-check');setTimeout(()=>cargarFuncion('/cursos','Cursos','Mis Cursos',''),1200);}
-        else alertar(r.msg,'alert alert-danger','ti-close');
-    });
+    bootstrap.Modal.getInstance(document.getElementById('modalCurso')).hide();
+    setTimeout(function(){
+        openCargar();
+        $.post("<?=base_url('/cursos/guardar')?>",{nombre:n,cate_ide:c,nivel:document.getElementById('cNivel').value,descripcion:document.getElementById('cDesc').value},function(r){
+            r=JSON.parse(r); closeCargar();
+            if(r.ok){alertar(r.msg,'alert alert-success','ti-check');setTimeout(()=>cargarFuncion('/cursos','Cursos','Mis Cursos',''),1500);}
+            else alertar(r.msg,'alert alert-danger','ti-close');
+        });
+    }, 400);
 }
 function abrirEliminar(ide, nombre){
     document.getElementById('elimIde').value=ide;
@@ -150,11 +153,14 @@ function abrirEliminar(ide, nombre){
     new bootstrap.Modal(document.getElementById('modalEliminar')).show();
 }
 function confirmarEliminar(){
-    openCargar(); bootstrap.Modal.getInstance(document.getElementById('modalEliminar')).hide();
-    $.post("<?=base_url('/cursos/eliminar')?>",{ide:document.getElementById('elimIde').value,motivo:document.getElementById('elimMotivo').value},function(r){
-        r=JSON.parse(r); closeCargar();
-        if(r.ok){alertar(r.msg,'alert alert-success','ti-check');setTimeout(()=>cargarFuncion('/cursos','Cursos','Mis Cursos',''),1200);}
-    });
+    bootstrap.Modal.getInstance(document.getElementById('modalEliminar')).hide();
+    setTimeout(function(){
+        openCargar();
+        $.post("<?=base_url('/cursos/eliminar')?>",{ide:document.getElementById('elimIde').value,motivo:document.getElementById('elimMotivo').value},function(r){
+            r=JSON.parse(r); closeCargar();
+            if(r.ok){alertar(r.msg,'alert alert-success','ti-check');setTimeout(()=>cargarFuncion('/cursos','Cursos','Mis Cursos',''),1500);}
+        });
+    }, 400);
 }
 function restaurarCurso(ide){
     if(!confirm('¿Restaurar este curso?')) return;
@@ -162,4 +168,9 @@ function restaurarCurso(ide){
         r=JSON.parse(r);if(r.ok){alertar(r.msg,'alert alert-success');setTimeout(()=>cargarFuncion('/cursos','Cursos','Gestión de Cursos',''),1000);}
     });
 }
+<?php if(!empty($abrir_modal)): ?>
+// Abrir modal de nuevo curso automáticamente (viene de "Crear Curso")
+document.addEventListener('DOMContentLoaded',function(){setTimeout(abrirModalCurso,350);});
+if(document.readyState!=='loading') setTimeout(abrirModalCurso,350);
+<?php endif; ?>
 </script>

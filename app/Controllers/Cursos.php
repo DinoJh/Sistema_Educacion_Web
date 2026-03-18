@@ -11,6 +11,62 @@ class Cursos extends BaseController
         if ($this->session->login != md5("L0g¡NS!st3M4")) { echo "inactivo"; exit(0); }
     }
 
+    // Crear curso: muestra la lista con el modal de nuevo curso abierto
+    public function crear()
+    {
+        // Usamos el index normal y añadimos una bandera para abrir el modal automáticamente
+        $db = \Config\Database::connect();
+        $cols = $db->getFieldNames('cursos');
+        $tieneElimCol = in_array('curs_eliminado_por', $cols);
+
+        if ($tieneElimCol) {
+            $select = 'c.*, cat.cate_nombre, u.usua_nombres, u.usua_paterno,
+                e.esta_nombre, e.esta_clase,
+                ue.usua_nombres as elim_nombres, ue.usua_paterno as elim_paterno, pe.perf_nombre as elim_perfil,
+                (SELECT COUNT(*) FROM secciones s WHERE s.secc_curs_ide=c.curs_ide) as total_secciones,
+                (SELECT COUNT(*) FROM lecciones l WHERE l.lecc_curs_ide=c.curs_ide AND l.lecc_esta_ide=1) as total_lecciones,
+                (SELECT COUNT(*) FROM matriculas m WHERE m.matr_curs_ide=c.curs_ide) as total_alumnos';
+            $builder = $db->table('cursos c')
+                ->select($select)
+                ->join('categorias cat','cat.cate_ide=c.curs_cate_ide','left')
+                ->join('profesores p','p.prof_ide=c.curs_prof_ide','left')
+                ->join('usuarios u','u.usua_ide=p.prof_usua_ide','left')
+                ->join('estados e','e.esta_ide=c.curs_esta_ide','left')
+                ->join('usuarios ue','ue.usua_ide=c.curs_eliminado_por','left')
+                ->join('perfiles pe','pe.perf_ide=ue.usua_perf_ide','left');
+        } else {
+            $select = 'c.*, cat.cate_nombre, u.usua_nombres, u.usua_paterno,
+                e.esta_nombre, e.esta_clase,
+                NULL as elim_nombres, NULL as elim_paterno, NULL as elim_perfil,
+                (SELECT COUNT(*) FROM secciones s WHERE s.secc_curs_ide=c.curs_ide) as total_secciones,
+                (SELECT COUNT(*) FROM lecciones l WHERE l.lecc_curs_ide=c.curs_ide AND l.lecc_esta_ide=1) as total_lecciones,
+                (SELECT COUNT(*) FROM matriculas m WHERE m.matr_curs_ide=c.curs_ide) as total_alumnos';
+            $builder = $db->table('cursos c')
+                ->select($select)
+                ->join('categorias cat','cat.cate_ide=c.curs_cate_ide','left')
+                ->join('profesores p','p.prof_ide=c.curs_prof_ide','left')
+                ->join('usuarios u','u.usua_ide=p.prof_usua_ide','left')
+                ->join('estados e','e.esta_ide=c.curs_esta_ide','left');
+        }
+
+        if ($this->session->perf_ide == 2) {
+            $prof = $db->table('profesores')->where('prof_usua_ide', $this->session->usua_ide)->get()->getRow();
+            if ($prof) $builder->where('c.curs_prof_ide', $prof->prof_ide);
+        }
+
+        $builder->orderBy('c.curs_esta_ide ASC, c.curs_create_at DESC');
+        $cursos = $builder->get()->getResult();
+
+        $categorias = General::getData('*','categorias',['cate_esta_ide'=>1],'cate_nombre');
+        echo view('cursos/vcursos', [
+            'cursos'       => $cursos,
+            'categorias'   => $categorias,
+            'session'      => $this->session,
+            'base'         => base_url('public'),
+            'abrir_modal'  => true,   // <-- señal para abrir el modal de nuevo curso
+        ]);
+    }
+
     // Lista cursos: PROFESOR ve los suyos, ADMIN ve todos
     public function index()
     {

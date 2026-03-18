@@ -43,7 +43,11 @@ function abrirModalNuevo(perf){
 function guardarUsuario(){
     var data={perf_ide:document.getElementById('nuevoPerf').value,dni:document.getElementById('nuevoD').value,nombres:document.getElementById('nuevoN').value,paterno:document.getElementById('nuevoPa').value,materno:document.getElementById('nuevoMa').value,email:document.getElementById('nuevoE').value,celular:document.getElementById('nuevoCel').value,user:document.getElementById('nuevoU').value,pass:document.getElementById('nuevoPas').value};
     if(!data.nombres||!data.user||!data.pass){alertar('Completa los campos requeridos.','alert alert-warning');return;}
-    openCargar();bootstrap.Modal.getInstance(document.getElementById('modalNuevoUsuario')).hide();
-    $.post("<?=base_url('/usuarios/nuevo')?>",data,function(r){r=JSON.parse(r);closeCargar();if(r.ok){alertar(r.msg,'alert alert-success');setTimeout(()=>cargarFuncion('/usuarios/profesores','Usuarios','Profesores',''),1000);}else alertar(r.msg,'alert alert-danger');});
+    bootstrap.Modal.getInstance(document.getElementById('modalNuevoUsuario')).hide();
+    setTimeout(function(){
+        openCargar();
+        $.post("<?=base_url('/usuarios/nuevo')?>",data,function(r){r=JSON.parse(r);closeCargar();if(r.ok){alertar(r.msg,'alert alert-success');setTimeout(()=>cargarFuncion('/usuarios/profesores','Usuarios','Profesores',''),1500);}else alertar(r.msg,'alert alert-danger');});
+    }, 400);
+}
 }
 </script>

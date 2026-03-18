@@ -1,0 +1,12 @@
+CRITICAL - 2026-03-18 17:11:43 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::whereNull()
+in APPPATH\Controllers\Reportes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Reportes->progreso()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-18 17:15:59 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::whereNull()
+in APPPATH\Controllers\Reportes.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Reportes->progreso()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reportes))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

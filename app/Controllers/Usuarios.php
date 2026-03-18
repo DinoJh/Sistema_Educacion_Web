@@ -21,7 +21,7 @@ class Usuarios extends BaseController
                 (SELECT COUNT(*) FROM matriculas m WHERE m.matr_usua_ide=u.usua_ide) as total_cursos')
             ->join('estados e','e.esta_ide=u.usua_esta_ide','left')
             ->where('u.usua_perf_ide', 1)
-            ->whereNull('u.usua_deleted_at')
+            ->where("u.usua_deleted_at IS NULL")
             ->orderBy('u.usua_paterno')
             ->get()->getResult();
         echo view('usuarios/valumnos', [
@@ -42,7 +42,7 @@ class Usuarios extends BaseController
             ->join('estados e','e.esta_ide=u.usua_esta_ide','left')
             ->join('profesores p','p.prof_usua_ide=u.usua_ide','left')
             ->where('u.usua_perf_ide', 2)
-            ->whereNull('u.usua_deleted_at')
+            ->where("u.usua_deleted_at IS NULL")
             ->orderBy('u.usua_paterno')
             ->get()->getResult();
         echo view('usuarios/vprofesores', [

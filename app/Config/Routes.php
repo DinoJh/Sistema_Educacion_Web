@@ -68,3 +68,5 @@ if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 $routes->get('/mi-panel/catalogo',    'Panel::catalogo');
 $routes->get('/usuarios/misalumnos',  'Usuarios::misAlumnos');
 $routes->post('/cursos/restaurar', 'Cursos::restaurar');
+$routes->post('/mi-panel/resena',  'Panel::guardarResena');
+$routes->get('/mi-panel/resenas/(:num)', 'Panel::resenas/$1');

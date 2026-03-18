@@ -257,34 +257,43 @@ function previsualizarEmbed(){
 function guardarSeccion(){
     var n=document.getElementById('seccNombre').value.trim();
     if(!n){alertar('Escribe el nombre de la sección.','alert alert-warning');return;}
-    openCargar(); bootstrap.Modal.getInstance(document.getElementById('modalSeccion')).hide();
-    $.post("<?=base_url('/secciones/guardar')?>",{curs_ide:cursIdeActual,nombre:n},function(){recargarCurso(cursIdeActual);});
+    bootstrap.Modal.getInstance(document.getElementById('modalSeccion')).hide();
+    setTimeout(function(){
+        openCargar();
+        $.post("<?=base_url('/secciones/guardar')?>",{curs_ide:cursIdeActual,nombre:n},function(){recargarCurso(cursIdeActual);});
+    }, 400);
 }
 function guardarEditCurso(){
-    openCargar(); bootstrap.Modal.getInstance(document.getElementById('modalEditarCurso')).hide();
-    $.post("<?=base_url('/cursos/actualizar')?>",{
-        ide:cursIdeActual,
-        nombre:document.getElementById('eCursNombre').value,
-        nivel:document.getElementById('eCursNivel').value,
-        cate_ide:document.getElementById('eCursCate').value,
-        descripcion:document.getElementById('eCursDesc').value
-    },function(r){r=JSON.parse(r);closeCargar();alertar(r.msg,'alert alert-success');setTimeout(()=>recargarCurso(cursIdeActual),900);});
+    bootstrap.Modal.getInstance(document.getElementById('modalEditarCurso')).hide();
+    setTimeout(function(){
+        openCargar();
+        $.post("<?=base_url('/cursos/actualizar')?>",{
+            ide:cursIdeActual,
+            nombre:document.getElementById('eCursNombre').value,
+            nivel:document.getElementById('eCursNivel').value,
+            cate_ide:document.getElementById('eCursCate').value,
+            descripcion:document.getElementById('eCursDesc').value
+        },function(r){r=JSON.parse(r);closeCargar();alertar(r.msg,'alert alert-success');setTimeout(()=>recargarCurso(cursIdeActual),1000);});
+    }, 400);
 }
 function guardarLeccion(){
     var t=document.getElementById('lTitulo').value.trim();
     if(!t){alertar('Escribe el título de la lección.','alert alert-warning');return;}
-    openCargar(); bootstrap.Modal.getInstance(document.getElementById('modalLeccion')).hide();
-    $.post("<?=base_url('/lecciones/guardar')?>",{
-        curs_ide:document.getElementById('lCursIde').value,
-        secc_ide:document.getElementById('lSeccIde').value,
-        titulo:t, tipo:document.getElementById('lTipo').value,
-        url:document.getElementById('lUrl').value,
-        archivo_url:document.getElementById('lArchivoUrl').value,
-        descripcion:document.getElementById('lDesc').value,
-        duracion:document.getElementById('lDuracion').value,
-        es_preview:document.getElementById('lPreview').checked?1:0,
-        orden:document.getElementById('lOrden').value
-    },function(r){r=JSON.parse(r);recargarCurso(cursIdeActual);});
+    bootstrap.Modal.getInstance(document.getElementById('modalLeccion')).hide();
+    setTimeout(function(){
+        openCargar();
+        $.post("<?=base_url('/lecciones/guardar')?>",{
+            curs_ide:document.getElementById('lCursIde').value,
+            secc_ide:document.getElementById('lSeccIde').value,
+            titulo:t, tipo:document.getElementById('lTipo').value,
+            url:document.getElementById('lUrl').value,
+            archivo_url:document.getElementById('lArchivoUrl').value,
+            descripcion:document.getElementById('lDesc').value,
+            duracion:document.getElementById('lDuracion').value,
+            es_preview:document.getElementById('lPreview').checked?1:0,
+            orden:document.getElementById('lOrden').value
+        },function(r){r=JSON.parse(r);recargarCurso(cursIdeActual);});
+    }, 400);
 }
 function eliminarSecc(ide){
     openCargar();

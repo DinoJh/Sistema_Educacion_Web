@@ -39,7 +39,7 @@
         </div>
     </div>
     <div class="card-footer">
-        <button class="btn btn-sm <?=$pct>0?'btn-success':'btn-primary'?> w-100">
+        <button class="btn btn-sm <?=$pct>0?'btn-success':'btn-primary'?> w-100" onclick="cargarFuncion('/mi-panel/ver/<?=$m->curs_ide?>','Mi Panel','<?=addslashes($m->curs_nombre)?>','')">
             <?=$pct>0?'<i class="ti-arrow-right me-1"></i>Continuar':'<i class="ti-play me-1"></i>Comenzar'?>
         </button>
     </div>

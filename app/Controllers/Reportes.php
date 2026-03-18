@@ -14,7 +14,7 @@ class Reportes extends BaseController
     {
         $db = \Config\Database::connect();
         $stats = [
-            'total_alumnos'    => $db->table('usuarios')->where(['usua_perf_ide'=>1,'usua_esta_ide'=>1])->whereNull('usua_deleted_at')->countAllResults(),
+            'total_alumnos'    => $db->table('usuarios')->where(['usua_perf_ide'=>1,'usua_esta_ide'=>1])->where('usua_deleted_at IS NULL')->countAllResults(),
             'total_profesores' => $db->table('usuarios')->where(['usua_perf_ide'=>2,'usua_esta_ide'=>1])->countAllResults(),
             'total_cursos'     => $db->table('cursos')->where('curs_esta_ide',1)->countAllResults(),
             'total_matriculas' => $db->table('matriculas')->where('matr_esta_ide',1)->countAllResults(),
@@ -34,7 +34,7 @@ class Reportes extends BaseController
                 COUNT(pr.prog_ide) as lecciones_vistas')
             ->join('matriculas m','m.matr_usua_ide=u.usua_ide','left')
             ->join('progreso pr','pr.prog_usua_ide=u.usua_ide','left')
-            ->where('u.usua_perf_ide',1)->whereNull('u.usua_deleted_at')
+            ->where('u.usua_perf_ide',1)->where('u.usua_deleted_at IS NULL')
             ->groupBy('u.usua_ide')->orderBy('lecciones_vistas','DESC')
             ->get()->getResult();
 
