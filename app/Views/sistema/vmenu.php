@@ -1641,38 +1641,28 @@
         </div>
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-        <!-- ══ MODAL CARGA ══ -->
-        <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" id="openCargar">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title"><?= $system_name; ?></h5>
-                    </div>
-                    <div class="modal-body">
-                        <span class="spinner-border spinner-border-sm text-danger" role="status"></span>
-                        <span id="openCargarMensaje" class="fs-5 text-primary ms-2"></span>
-                    </div>
+        <!-- ══ CP-OVERLAY: CARGA ══ -->
+        <div id="cp-loading">
+            <div class="cp-box">
+                <div class="cp-box-header">
+                    <span>CodePuno</span>
+                </div>
+                <div class="cp-box-body">
+                    <span class="spinner-border spinner-border-sm text-danger me-2" role="status"></span>
+                    <span id="cp-loading-msg">Procesando solicitud…</span>
                 </div>
             </div>
         </div>
 
-        <!-- ══ MODAL ALERTA ══ -->
-        <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" id="alertar">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title"><?= $system_name; ?></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="alert alert-info" id="alertarAlert">
-                            <i id="alertarIcono" class="ti-alert fs-3"></i>
-                            <span id="alertarMensaje" class="fs-5 text-primary"></span>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
+        <!-- ══ CP-OVERLAY: ALERTA ══ -->
+        <div id="cp-alert">
+            <div class="cp-alert-box">
+                <div class="cp-alert-inner alert-info" id="cp-alert-inner">
+                    <i id="cp-alert-icon" class="ti-check"></i>
+                    <span id="cp-alert-msg"></span>
+                </div>
+                <div class="cp-alert-footer">
+                    <button class="cp-btn-cerrar" onclick="cpAlertHide()">Cerrar</button>
                 </div>
             </div>
         </div>

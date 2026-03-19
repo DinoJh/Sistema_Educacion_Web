@@ -1,0 +1,45 @@
+CRITICAL - 2026-03-19 15:34:26 --> syntax error, unexpected token "\"
+in APPPATH\Views\cursos\vvercurso.php on line 142.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('cursos/vvercurso', [], true)
+ 3 APPPATH\Controllers\Cursos.php(217): view('cursos/vvercurso', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cursos->ver('4')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-19 15:35:00 --> syntax error, unexpected token "\"
+in APPPATH\Views\cursos\vvercurso.php on line 142.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('cursos/vvercurso', [], true)
+ 3 APPPATH\Controllers\Cursos.php(217): view('cursos/vvercurso', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cursos->ver('4')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-19 15:35:53 --> syntax error, unexpected token "\"
+in APPPATH\Views\cursos\vvercurso.php on line 142.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('cursos/vvercurso', [], true)
+ 3 APPPATH\Controllers\Cursos.php(217): view('cursos/vvercurso', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cursos->ver('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-19 15:36:01 --> syntax error, unexpected token "\"
+in APPPATH\Views\cursos\vvercurso.php on line 142.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('cursos/vvercurso', [], true)
+ 3 APPPATH\Controllers\Cursos.php(217): view('cursos/vvercurso', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cursos->ver('2')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-19 15:36:04 --> syntax error, unexpected token "\"
+in APPPATH\Views\cursos\vvercurso.php on line 142.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('cursos/vvercurso', [], true)
+ 3 APPPATH\Controllers\Cursos.php(217): view('cursos/vvercurso', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Cursos->ver('3')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cursos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

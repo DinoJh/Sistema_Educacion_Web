@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="<?php echo $base; ?>/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo $base; ?>/assets/css/nifty.min.css">
+    <link rel="stylesheet" href="<?php echo $base; ?>/assets/css/cp-overlay.css">
     <link rel="stylesheet" href="<?php echo $base; ?>/assets/css/demo-purpose/demo-icons.min.css">
     <link rel="stylesheet" href="<?php echo $base; ?>/assets/vendors/themify-icons/themify-icons.min.css">
     <link rel="stylesheet" href="<?php echo $base; ?>/assets/vendors/gridjs/gridjs.min.css">
@@ -75,6 +76,8 @@
         .tipo-QUIZ    { background: rgba(239,68,68,.15); color: #ef4444; }
         /* Scrollbar */
         ::-webkit-scrollbar { width: 6px; } ::-webkit-scrollbar-track { background: var(--cl-bg-deep); } ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+
+        /* Estilos cl-overlay en /assets/css/cp-overlay.css */
     </style>
 </head>
 <body class="jumping">
@@ -98,117 +101,150 @@
                     <div class="card-body" id="bodyApp">
 
     <script>
-        // ── openCargar / alertar usan Bootstrap Modal ─────────────────────────────
+        /* ── CP-OVERLAY: funciones de carga y alerta (sin Bootstrap Modal) ─────── */
         function openCargar(msg) {
-            msg = msg || "Procesando solicitud…";
-            $("#openCargarMensaje").html(msg);
-            // Abrir solo si no está ya visible, para evitar apilamiento
-            if (!$("#openCargar").hasClass("show")) {
-                $("#openCargar").modal("show");
-            }
+            document.getElementById('cp-loading-msg').textContent = msg || 'Procesando solicitud…';
+            document.getElementById('cp-loading').classList.add('visible');
         }
         function closeCargar() {
-            setTimeout(function(){
-                $("#openCargar").modal("hide");
-            }, 350);
+            document.getElementById('cp-loading').classList.remove('visible');
+        }
+        function cpAlertHide() {
+            document.getElementById('cp-alert').classList.remove('visible');
         }
         function alertar(msg, clase, icono) {
-            clase = clase || "alert alert-success";
-            icono = icono || "";
-            $("#alertarAlert").attr("class", clase);
-            $("#alertarMensaje").html(msg);
-            $("#alertarIcono").attr("class", icono + " fs-3");
-            // Esperar que no haya ningún otro modal abriéndose
-            setTimeout(function(){
-                if (!$("#alertar").hasClass("show")) {
-                    $("#alertar").modal("show");
-                }
-            }, 50);
+            clase = clase || 'alert alert-success';
+            icono = icono || 'ti-check';
+            // Clases de color según el tipo de alerta
+            var inner = document.getElementById('cp-alert-inner');
+            inner.className = 'cp-alert-inner';
+            // Bootstrap alert class → inline styles simplificados
+            if (clase.indexOf('danger') !== -1) {
+                inner.style.background = 'rgba(239,68,68,.12)';
+                inner.style.border     = '1px solid rgba(239,68,68,.3)';
+                inner.style.color      = '#f87171';
+            } else if (clase.indexOf('warning') !== -1) {
+                inner.style.background = 'rgba(245,158,11,.12)';
+                inner.style.border     = '1px solid rgba(245,158,11,.3)';
+                inner.style.color      = '#fbbf24';
+            } else {
+                inner.style.background = 'rgba(16,185,129,.12)';
+                inner.style.border     = '1px solid rgba(16,185,129,.3)';
+                inner.style.color      = '#6ee7b7';
+            }
+            document.getElementById('cp-alert-icon').className = (icono || 'ti-check');
+            document.getElementById('cp-alert-msg').innerHTML  = msg;
+            document.getElementById('cp-alert').classList.add('visible');
         }
 
-        // ── Limpia backdrops huérfanos dejados por contenido AJAX ─────────────────
-        function limpiarBackdrops() {
+        /* ── Limpia modales Bootstrap que queden en el contenido AJAX ─────────── */
+        function limpiarModalesBodyApp() {
+            var bodyApp = document.getElementById('bodyApp');
+            if (!bodyApp) return;
+            bodyApp.querySelectorAll('.modal').forEach(function(el) {
+                try {
+                    var inst = bootstrap.Modal.getInstance(el);
+                    if (inst) { inst.dispose(); }
+                } catch(e) {}
+                el.classList.remove('show');
+                el.style.display = 'none';
+            });
+            // Limpiar backdrops que Bootstrap haya dejado al hacer el innerHTML
             document.querySelectorAll('.modal-backdrop').forEach(function(el){ el.remove(); });
             document.body.classList.remove('modal-open');
-            document.body.style.removeProperty('overflow');
-            document.body.style.removeProperty('padding-right');
+            document.body.style.overflow  = '';
+            document.body.style.paddingRight = '';
         }
 
-        // ── Carga de secciones vía AJAX ───────────────────────────────────────────
+        /* ── Carga de secciones vía AJAX ─────────────────────────────────────── */
         function cargarFuncion(url, modulo, nombre, descripcion) {
-            // Cerrar y destruir cualquier modal abierto en el área de contenido
-            $("#bodyApp .modal.show").each(function() {
-                try { bootstrap.Modal.getInstance(this).hide(); } catch(e) {}
-            });
-            // Pequeño delay para que Bootstrap termine de cerrar antes de navegar
-            setTimeout(function() {
-                limpiarBackdrops();
-                openCargar();
-                testing();
-                $.ajax({
-                    url: "<?php echo rtrim(base_url(),'/'); ?>" + url,
-                    method: "GET",
-                    success: function(data) {
-                        if (typeof data === "string" && data.trim() === "inactivo") {
-                            closeCargar();
-                            alert("Sesión expirada. Vuelve a iniciar sesión.");
-                            location.href = "<?php echo base_url('login'); ?>";
-                            return;
-                        }
-                        $("#moduloRol").html(modulo);
-                        $("#nombreRol").html(nombre);
-                        $("#descripcionRol").html(descripcion);
-                        $("#bodyApp").html(data);
-                        closeCargar();
-                    },
-                    error: function(xhr) {
-                        closeCargar();
-                        if (xhr.responseText && xhr.responseText.trim() !== "") {
-                            // Mostrar el error PHP real para diagnóstico
-                            $("#bodyApp").html(xhr.responseText);
-                        } else {
-                            $("#bodyApp").html('<div class="p-4"><div class="alert alert-danger">Error HTTP ' + xhr.status + ' cargando: ' + url + '</div></div>');
-                        }
+            limpiarModalesBodyApp();
+            openCargar();
+            testing();
+            $.ajax({
+                url:    "<?php echo rtrim(base_url(),'/'); ?>" + url,
+                method: 'GET',
+                success: function(data) {
+                    closeCargar();
+                    if (typeof data === 'string' && data.trim() === 'inactivo') {
+                        alert('Sesión expirada. Inicia sesión nuevamente.');
+                        location.href = "<?php echo base_url('login'); ?>";
+                        return;
                     }
-                });
-            }, 100);
+                    $('#moduloRol').html(modulo);
+                    $('#nombreRol').html(nombre);
+                    $('#descripcionRol').html(descripcion);
+                    // jQuery .html() ejecuta los <script> de la vista (innerHTML no lo hace)
+                    $('#bodyApp').html(data);
+                },
+                error: function(xhr) {
+                    closeCargar();
+                    var html = xhr.responseText && xhr.responseText.trim() !== ''
+                        ? xhr.responseText
+                        : '<div class="p-4"><div class="alert alert-danger">Error ' + xhr.status + ' al cargar: ' + url + '</div></div>';
+                    $('#bodyApp').html(html);
+                }
+            });
         }
 
         function ajax(url, param, fn, open) {
             if (open !== false) openCargar();
-            $.post("<?php echo rtrim(base_url(),'/'); ?>" + url, param, function(data){ fn(data); });
+            $.post("<?php echo rtrim(base_url(),'/'); ?>" + url, param, fn);
         }
         function ajaxGet(url, param, fn, open) {
             if (open !== false) openCargar();
-            $.get("<?php echo rtrim(base_url(),'/'); ?>" + url, param, function(data){ fn(data); });
+            $.get("<?php echo rtrim(base_url(),'/'); ?>" + url, param, fn);
         }
+
         function cambiarClave() {
-            openCargar("Cambiando clave…");
-            $("#cambiarClave").modal("hide");
+            openCargar('Cambiando clave…');
+            $('#cambiarClave').modal('hide');
             $.post("<?php echo base_url('/setpass'); ?>", {
-                anterior:$("#anterior").val(), nueva:$("#nueva").val(), repite:$("#repite").val()
-            }, function(data){
+                anterior: $('#anterior').val(),
+                nueva:    $('#nueva').val(),
+                repite:   $('#repite').val()
+            }, function(data) {
                 data = JSON.parse(data);
                 closeCargar();
-                setTimeout(function(){ alertar(data.mensaje, data.clase, data.icono); }, 400);
-                $("#anterior,#nueva,#repite").val("");
+                alertar(data.mensaje, data.clase, data.icono);
+                $('#anterior,#nueva,#repite').val('');
             });
         }
+
         function testing() {
             $.post("<?php echo site_url('testing'); ?>", function(data){
-                if(data == "inactivo"){ alert("Sesión expirada."); location.href = "<?php echo base_url('login'); ?>"; }
+                if (data === 'inactivo') {
+                    alert('Sesión expirada.');
+                    location.href = "<?php echo base_url('login'); ?>";
+                }
             });
         }
         setInterval(testing, 15000);
 
-        // ── Video embed helper ─────────────────────────────────────────────────────
+        /* ── Helpers para el sistema de overlays CSS propio ─────────────────── */
+        function clAbrir(id)  {
+            var el = document.getElementById(id);
+            if (el) el.classList.add('activo');
+        }
+        function clCerrar(id) {
+            var el = document.getElementById(id);
+            if (el) el.classList.remove('activo');
+        }
+        // Cierra overlay al click en el fondo oscuro
+        document.addEventListener('click', function(e) {
+            if (e.target.classList && e.target.classList.contains('cl-overlay')) {
+                e.target.classList.remove('activo');
+            }
+        });
+
+        /* ── Convierte URL de video a embed ──────────────────────────────────── */
         function embedUrl(url) {
             if (!url) return null;
-            let yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([A-Za-z0-9_\-]{11})/);
-            if (yt) return "https://www.youtube.com/embed/" + yt[1] + "?rel=0&modestbranding=1";
-            if (url.includes("youtube.com/embed/")) return url;
-            let gd = url.match(/drive\.google\.com\/file\/d\/([^\/]+)/);
-            if (gd) return "https://drive.google.com/file/d/" + gd[1] + "/preview";
+            var yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([A-Za-z0-9_\-]{11})/);
+            if (yt) return 'https://www.youtube.com/embed/' + yt[1] + '?rel=0&modestbranding=1';
+            if (url.indexOf('youtube.com/embed/') !== -1) return url;
+            var gd = url.match(/drive\.google\.com\/file\/d\/([^\/]+)/);
+            if (gd) return 'https://drive.google.com/file/d/' + gd[1] + '/preview';
             return url;
         }
     </script>

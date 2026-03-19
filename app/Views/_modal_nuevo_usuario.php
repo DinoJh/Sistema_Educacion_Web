@@ -1,8 +1,8 @@
-<div class="modal fade" id="modalNuevoUsuario" tabindex="-1">
-<div class="modal-dialog modal-lg"><div class="modal-content" style="background:var(--cl-bg-card);">
-  <div class="modal-header border-0"><h5 class="modal-title fw-bold">Nuevo Usuario</h5>
-  <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
-  <div class="modal-body">
+<!-- ═══ OVERLAY: NUEVO USUARIO (CSS puro) ═══ -->
+<div class="cl-overlay" id="ov-nuevousuario">
+<div class="cl-modal cl-modal-lg">
+  <div class="cl-modal-hdr"><h5>Nuevo Usuario</h5><button class="cl-modal-close" onclick="clCerrar('ov-nuevousuario')">✕</button></div>
+  <div class="cl-modal-body">
     <input type="hidden" id="nuevoPerf" value="1">
     <div class="row g-3">
       <div class="col-md-4"><label class="form-label small text-cl-muted">Nombres *</label><input id="nuevoN" class="form-control" placeholder="Nombres"></div>
@@ -15,8 +15,8 @@
       <div class="col-md-6"><label class="form-label small text-cl-muted">Contraseña *</label><input type="password" id="nuevoPas" class="form-control" placeholder="contraseña"></div>
     </div>
   </div>
-  <div class="modal-footer border-0">
-    <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+  <div class="cl-modal-ftr">
+    <button class="btn btn-secondary" onclick="clCerrar('ov-nuevousuario')">Cancelar</button>
     <button class="btn btn-primary" onclick="guardarUsuario()"><i class="ti-save me-1"></i>Guardar</button>
   </div>
-</div></div></div>
+</div></div>

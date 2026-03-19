@@ -118,13 +118,27 @@ function reproducir(ide, tipo, url, titulo, desc) {
     leccActual = ide;
     var area = document.getElementById('playerArea');
     if(tipo=='VIDEO' && url) {
-        area.innerHTML = '<div class="video-wrapper"><iframe src="'+url+'" allowfullscreen></iframe></div>';
+        area.innerHTML =
+            '<div class="video-wrapper">' +
+            '<iframe id="yt-frame" src="'+url+'" allowfullscreen ' +
+            'style="background:#000;" ' +
+            'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">' +
+            '</iframe></div>';
     } else if(tipo=='TEXTO') {
-        area.innerHTML = '<div class="p-4" style="min-height:300px;"><p class="text-cl-muted">Leccion de tipo texto. Contenido cargado desde base de datos.</p></div>';
+        area.innerHTML = '<div class="p-4" style="min-height:260px;"><div class="alert alert-info"><i class="ti-text me-2"></i>Lección de tipo texto — contenido en base de datos.</div></div>';
     } else if(tipo=='ARCHIVO' && url) {
-        area.innerHTML = '<div class="p-4 text-center"><i class="ti-file fs-1 text-accent"></i><p class="mt-2">Archivo disponible</p><a href="'+url+'" target="_blank" class="btn btn-primary">Descargar / Ver</a></div>';
+        area.innerHTML =
+            '<div class="p-5 text-center" style="background:#0d0f18;border-radius:12px;">' +
+            '<i class="ti-file fs-1 text-accent d-block mb-3"></i>' +
+            '<p class="text-cl-muted mb-3">Archivo adjunto a esta lección</p>' +
+            '<a href="'+url+'" target="_blank" class="btn btn-primary"><i class="ti-download me-2"></i>Descargar / Ver archivo</a>' +
+            '</div>';
     } else {
-        area.innerHTML = '<div class="p-4 text-center"><i class="ti-file fs-1 text-accent"></i><p class="mt-2 text-cl-muted">Recurso no disponible para preview.</p></div>';
+        area.innerHTML =
+            '<div class="p-5 text-center" style="background:#0d0f18;border-radius:12px;">' +
+            '<i class="ti-alert fs-1 text-cl-muted d-block mb-3"></i>' +
+            '<p class="text-cl-muted">Sin recurso disponible para esta lección.</p>' +
+            '</div>';
     }
     document.getElementById('leccTitulo').innerHTML = titulo;
     document.getElementById('leccDesc').innerHTML = desc;
