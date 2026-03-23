@@ -70,3 +70,8 @@ $routes->get('/usuarios/misalumnos',  'Usuarios::misAlumnos');
 $routes->post('/cursos/restaurar', 'Cursos::restaurar');
 $routes->post('/mi-panel/resena',  'Panel::guardarResena');
 $routes->get('/mi-panel/resenas/(:num)', 'Panel::resenas/$1');
+
+// Mi Perfil (todos los perfiles)
+$routes->get('/mi-perfil',           'Perfil::index');
+$routes->post('/mi-perfil/guardar',  'Perfil::guardar');
+$routes->post('/mi-perfil/password', 'Perfil::cambiarPassword');

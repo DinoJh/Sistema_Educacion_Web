@@ -52,6 +52,19 @@ class Application extends BaseController
             ];
         }
 
+        // Agregar "Mi Perfil" como módulo especial visible para todos
+        $modulos[99] = 'Mi Cuenta';
+        $roles2[99][] = [
+            'icono'       => 'ti-user',
+            'modulo'      => 'Mi Cuenta',
+            'rol'         => 'Mi Perfil',
+            'url'         => '/mi-perfil',
+            'ide'         => 99,
+            'nombre'      => 'Mi Perfil',
+            'descripcion' => 'Ver y editar tus datos de perfil',
+            'clase'       => 'info',
+        ];
+
         $data = [
             'system_name'     => 'CodePuno',
             'session'         => $this->session,

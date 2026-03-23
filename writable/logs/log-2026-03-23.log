@@ -1,0 +1,27 @@
+CRITICAL - 2026-03-23 18:37:55 --> syntax error, unexpected token "\"
+in APPPATH\Views\perfil\valumno.php on line 24.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('perfil/valumno', [], true)
+ 3 APPPATH\Controllers\Perfil.php(34): view('perfil/valumno', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Perfil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfil))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-23 18:38:26 --> syntax error, unexpected token "\"
+in APPPATH\Views\perfil\vprofesor.php on line 27.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('perfil/vprofesor', [], true)
+ 3 APPPATH\Controllers\Perfil.php(34): view('perfil/vprofesor', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Perfil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfil))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-03-23 18:38:51 --> syntax error, unexpected token "\"
+in APPPATH\Views\perfil\vadmin.php on line 17.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('perfil/vadmin', [], true)
+ 3 APPPATH\Controllers\Perfil.php(34): view('perfil/vadmin', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Perfil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Perfil))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
