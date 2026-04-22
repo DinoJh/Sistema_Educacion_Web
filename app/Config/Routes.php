@@ -64,14 +64,24 @@ if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
 
-// New routes added in v2
+// Routes added in v2
 $routes->get('/mi-panel/catalogo',    'Panel::catalogo');
 $routes->get('/usuarios/misalumnos',  'Usuarios::misAlumnos');
-$routes->post('/cursos/restaurar', 'Cursos::restaurar');
-$routes->post('/mi-panel/resena',  'Panel::guardarResena');
+$routes->post('/cursos/restaurar',    'Cursos::restaurar');
+$routes->post('/mi-panel/resena',     'Panel::guardarResena');
 $routes->get('/mi-panel/resenas/(:num)', 'Panel::resenas/$1');
 
 // Mi Perfil (todos los perfiles)
 $routes->get('/mi-perfil',           'Perfil::index');
 $routes->post('/mi-perfil/guardar',  'Perfil::guardar');
 $routes->post('/mi-perfil/password', 'Perfil::cambiarPassword');
+
+// ── PERFIL ASESOR ────────────────────────────────────────────────
+$routes->get('/usuarios/asesores',        'Usuarios::asesores');          // ADMIN: lista asesores
+$routes->get('/asesor/cursos',            'Asesor::cursos');              // ASESOR: ver cursos
+$routes->get('/asesor/alumnos/(:num)',    'Asesor::alumnos/$1');          // ASESOR: alumnos de un curso
+$routes->post('/asesor/formar-grupo',     'Asesor::formarGrupo');         // ASESOR: crear grupo (POST)
+$routes->get('/asesor/grupos',            'Asesor::grupos');              // ASESOR: mis grupos
+$routes->get('/asesor/chat/(:num)',       'Asesor::chat/$1');             // ASESOR/ADMIN: chat grupo
+$routes->post('/asesor/enviar-mensaje',   'Asesor::enviarMensaje');       // ASESOR/ADMIN: enviar msg (POST)
+$routes->get('/asesor/admin-grupos',      'Asesor::adminGrupos');         // ADMIN: todos los grupos

@@ -17,7 +17,7 @@ class Application extends BaseController
         }
     }
 
-    public function index()
+public function index()
     {
         $roles  = General::getRoles($this->session->perf_ide);
         $roles2 = [];
@@ -27,16 +27,30 @@ class Application extends BaseController
         $inicio = ['icono'=>'ti-home','modulo'=>'Inicio','rol'=>'Inicio','url'=>'/application','ide'=>0,'nombre'=>'Inicio','descripcion'=>'Pantalla principal','clase'=>'primary'];
 
         foreach ($roles as $reg) {
-            // Filtrar según perfil
-            if ($this->session->perf_ide == 3) { // ADMIN: sin Mi Panel ni Crear Curso
-                if (in_array($reg->role_url, ['/cursos/crear', '/mi-panel/cursos', '/mi-panel/progreso', '/application'])) continue;
+            // ── ADMIN: sin Mi Panel, sin Crear Curso, sin rutas de asesor ──
+            if ($this->session->perf_ide == 3) {
+                if (in_array($reg->role_url, [
+                    '/cursos/crear','/mi-panel/cursos','/mi-panel/progreso','/application',
+                    '/asesor/cursos','/asesor/grupos'
+                ])) continue;
             }
-            if ($this->session->perf_ide == 2) { // PROFESOR: sin Mi Panel
-                if (in_array($reg->role_url, ['/mi-panel/cursos', '/mi-panel/progreso'])) continue;
+            // ── PROFESOR: sin Mi Panel ──
+            if ($this->session->perf_ide == 2) {
+                if (in_array($reg->role_url, ['/mi-panel/cursos','/mi-panel/progreso'])) continue;
             }
-            if ($this->session->perf_ide == 1) { // ALUMNO: sin gestión
-                if (in_array($reg->role_url, ['/cursos/crear', '/lecciones', '/usuarios/alumnos', '/usuarios/profesores', '/reportes/progreso', '/categorias'])) continue;
+            // ── ALUMNO: sin gestión ──
+            if ($this->session->perf_ide == 1) {
+                if (in_array($reg->role_url, [
+                    '/cursos/crear','/lecciones','/usuarios/alumnos','/usuarios/profesores',
+                    '/reportes/progreso','/categorias','/usuarios/asesores',
+                    '/asesor/cursos','/asesor/grupos','/asesor/admin-grupos'
+                ])) continue;
             }
+            // ── ASESOR: solo sus rutas propias ──
+            if ($this->session->perf_ide == 4) {
+                if (!in_array($reg->role_url, ['/asesor/cursos','/asesor/grupos'])) continue;
+            }
+
             if ($reg->role_url == '/application') continue; // Inicio se maneja aparte
 
             $modulos[$reg->modu_ide] = $reg->modu_nombre;

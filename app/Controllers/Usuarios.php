@@ -52,6 +52,38 @@ class Usuarios extends BaseController
         ]);
     }
 
+    // ─────────────────────────────────────────────────────────
+    // NUEVO: Lista de asesores (solo ADMIN puede ver esto)
+    // ─────────────────────────────────────────────────────────
+    public function asesores()
+    {
+        // Solo ADMIN
+        if ($this->session->perf_ide != 3) { echo "Sin acceso"; exit(0); }
+
+        $db = \Config\Database::connect();
+        $asesores = $db->table('usuarios u')
+            ->select('u.usua_ide, u.usua_dni, u.usua_nombres, u.usua_paterno, u.usua_materno,
+                u.usua_email, u.usua_celular, u.usua_user, e.esta_nombre, e.esta_clase,
+                (SELECT COUNT(*) FROM grupos_asesor ga
+                    JOIN asesores a ON a.ases_ide=ga.grup_ases_ide
+                    WHERE a.ases_usua_ide=u.usua_ide) as total_grupos,
+                (SELECT COUNT(*) FROM grupo_alumnos grua
+                    JOIN grupos_asesor ga2 ON ga2.grup_ide=grua.grua_grup_ide
+                    JOIN asesores a2 ON a2.ases_ide=ga2.grup_ases_ide
+                    WHERE a2.ases_usua_ide=u.usua_ide) as total_alumnos_asesorados')
+            ->join('estados e','e.esta_ide=u.usua_esta_ide','left')
+            ->where('u.usua_perf_ide', 4)
+            ->where("u.usua_deleted_at IS NULL")
+            ->orderBy('u.usua_paterno')
+            ->get()->getResult();
+
+        echo view('usuarios/vasesores', [
+            'usuarios' => $asesores,
+            'base'     => base_url('public'),
+            'session'  => $this->session
+        ]);
+    }
+
     public function misAlumnos()
     {
         $db   = \Config\Database::connect();
@@ -137,13 +169,24 @@ class Usuarios extends BaseController
         }
         General::insertar('usuarios', $data);
         $uid = $db->insertID();
+
+        // ── Crear registro en tabla correspondiente según perfil ──
         if ($perf == 2) {
+            // PROFESOR
             General::insertar('profesores', [
                 'prof_usua_ide'  => $uid,
                 'prof_esta_ide'  => 1,
                 'prof_create_at' => date('Y-m-d H:i:s')
             ]);
+        } elseif ($perf == 4) {
+            // ASESOR
+            General::insertar('asesores', [
+                'ases_usua_ide'  => $uid,
+                'ases_esta_ide'  => 1,
+                'ases_create_at' => date('Y-m-d H:i:s')
+            ]);
         }
+
         echo json_encode(['ok'=>true, 'msg'=>'Usuario creado exitosamente.']);
     }
 }
