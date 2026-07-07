@@ -1,0 +1,79 @@
+CRITICAL - 2026-07-07 16:16:08 --> require(C:\wamp64\www\prueba\app\Config/Routes.php): Failed to open stream: No such file or directory
+in SYSTEMPATH\CodeIgniter.php on line 789.
+ 1 SYSTEMPATH\CodeIgniter.php(789): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\wamp64\\www\\prueba\\app\\Config/Routes.php): Failed to open stream: No such file or directory', 'SYSTEMPATH\\CodeIgniter.php', 789)
+ 2 SYSTEMPATH\CodeIgniter.php(789): require()
+ 3 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-07-07 16:16:08 --> require(C:\wamp64\www\prueba\app\Config/Routes.php): Failed to open stream: No such file or directory
+in SYSTEMPATH\CodeIgniter.php on line 789.
+ 1 SYSTEMPATH\CodeIgniter.php(789): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\wamp64\\www\\prueba\\app\\Config/Routes.php): Failed to open stream: No such file or directory', 'SYSTEMPATH\\CodeIgniter.php', 789)
+ 2 SYSTEMPATH\CodeIgniter.php(789): require()
+ 3 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-07-07 16:16:28 --> require(C:\wamp64\www\prueba\app\Config/Routes.php): Failed to open stream: No such file or directory
+in SYSTEMPATH\CodeIgniter.php on line 789.
+ 1 SYSTEMPATH\CodeIgniter.php(789): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\wamp64\\www\\prueba\\app\\Config/Routes.php): Failed to open stream: No such file or directory', 'SYSTEMPATH\\CodeIgniter.php', 789)
+ 2 SYSTEMPATH\CodeIgniter.php(789): require()
+ 3 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-07-07 16:16:29 --> require(C:\wamp64\www\prueba\app\Config/Routes.php): Failed to open stream: No such file or directory
+in SYSTEMPATH\CodeIgniter.php on line 789.
+ 1 SYSTEMPATH\CodeIgniter.php(789): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\wamp64\\www\\prueba\\app\\Config/Routes.php): Failed to open stream: No such file or directory', 'SYSTEMPATH\\CodeIgniter.php', 789)
+ 2 SYSTEMPATH\CodeIgniter.php(789): require()
+ 3 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-07-07 16:23:32 --> Undefined variable $fondo
+in APPPATH\Views\login\vlogin.php on line 28.
+ 1 APPPATH\Views\login\vlogin.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fondo', 'APPPATH\\Views\\login\\vlogin.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\login\\vlogin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login/vlogin', [], true)
+ 5 APPPATH\Controllers\Login.php(20): view('login/vlogin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-07-07 16:23:35 --> Undefined variable $fondo
+in APPPATH\Views\login\vlogin.php on line 28.
+ 1 APPPATH\Views\login\vlogin.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fondo', 'APPPATH\\Views\\login\\vlogin.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\login\\vlogin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login/vlogin', [], true)
+ 5 APPPATH\Controllers\Login.php(20): view('login/vlogin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-07-07 16:24:44 --> require(C:\wamp64\www\prueba\app\Config/Routes.php): Failed to open stream: No such file or directory
+in SYSTEMPATH\CodeIgniter.php on line 789.
+ 1 SYSTEMPATH\CodeIgniter.php(789): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\wamp64\\www\\prueba\\app\\Config/Routes.php): Failed to open stream: No such file or directory', 'SYSTEMPATH\\CodeIgniter.php', 789)
+ 2 SYSTEMPATH\CodeIgniter.php(789): require()
+ 3 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-07-07 16:25:08 --> Undefined variable $fondo
+in APPPATH\Views\login\vlogin.php on line 28.
+ 1 APPPATH\Views\login\vlogin.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fondo', 'APPPATH\\Views\\login\\vlogin.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\login\\vlogin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login/vlogin', [], true)
+ 5 APPPATH\Controllers\Login.php(20): view('login/vlogin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-07-07 16:25:37 --> Undefined variable $fondo
+in APPPATH\Views\login\vlogin.php on line 28.
+ 1 APPPATH\Views\login\vlogin.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fondo', 'APPPATH\\Views\\login\\vlogin.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\login\\vlogin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login/vlogin', [], true)
+ 5 APPPATH\Controllers\Login.php(20): view('login/vlogin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

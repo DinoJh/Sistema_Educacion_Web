@@ -8,9 +8,12 @@ $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->setAutoRoute(true);
-$routes->get('/', 'Login::index');
-$routes->get('/login', 'Login::index');
+$routes->get('/',          'Login::index');
+$routes->get('/login',     'Login::index');
 $routes->post('/logearse', 'Login::verificar');
+// PATCH 4: auto-registro
+$routes->post('/login/registrar',       'Login::registrar');
+$routes->get('/login/colegios/(:num)',  'Login::colegios/$1');
 $routes->get('/application',    'Application::index');
 $routes->post('/accesos',       'Application::accesos');
 $routes->post('/getroles',      'Application::getroles');
@@ -52,7 +55,6 @@ $routes->get('/mi-panel/resenas/(:num)', 'Panel::resenas/$1');
 $routes->get('/mi-perfil',              'Perfil::index');
 $routes->post('/mi-perfil/guardar',     'Perfil::guardar');
 $routes->post('/mi-perfil/password',    'Perfil::cambiarPassword');
-// Patch 1
 $routes->get('/usuarios/asesores',        'Usuarios::asesores');
 $routes->get('/asesor/cursos',            'Asesor::cursos');
 $routes->get('/asesor/alumnos/(:num)',    'Asesor::alumnos/$1');
@@ -61,7 +63,6 @@ $routes->get('/asesor/grupos',            'Asesor::grupos');
 $routes->get('/asesor/chat/(:num)',       'Asesor::chat/$1');
 $routes->post('/asesor/enviar-mensaje',   'Asesor::enviarMensaje');
 $routes->get('/asesor/admin-grupos',      'Asesor::adminGrupos');
-// Patch 2
 $routes->get('/alumno/grupos',            'Asesor::gruposAlumno');
 $routes->get('/notificaciones/count',     'Notificaciones::count');
 $routes->get('/notificaciones/lista',     'Notificaciones::lista');
@@ -69,7 +70,6 @@ $routes->post('/notificaciones/marcar',   'Notificaciones::marcar');
 $routes->post('/contacto/enviar',         'Contacto::enviar');
 $routes->get('/contacto/admin',           'Contacto::admin');
 $routes->post('/contacto/responder',      'Contacto::responder');
-// Patch 3
 $routes->post('/asesor/enviar-email',     'Asesor::enviarEmail');
 if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
