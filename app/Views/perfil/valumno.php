@@ -3,14 +3,50 @@ $tipo        = $extra->pale_tipo        ?? 'OTRO';
 $institucion = $extra->pale_institucion ?? '';
 $carrera     = $extra->pale_carrera     ?? '';
 $desc        = $extra->pale_descripcion ?? '';
+
+// Datos de institución educativa (de alumno_info)
+$sinColegio  = $aluInfo->alui_sin_colegio ?? 0;
+$ugelNombre  = $aluInfo->ugel_nombre  ?? null;
+$ugelCiudad  = $aluInfo->ugel_ciudad  ?? null;
+$coleNombre  = $aluInfo->cole_nombre  ?? $aluInfo->alui_cole_texto ?? null;
 ?>
+
+<!-- Cabecera -->
 <div class="mb-4 d-flex align-items-center gap-3">
     <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--cl-accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-size:1.6rem;font-weight:700;color:#fff;flex-shrink:0;">
         <?=strtoupper(substr($usuario->usua_nombres??'?',0,1))?>
     </div>
     <div>
         <h4 class="fw-bold mb-0"><?=htmlspecialchars($usuario->usua_nombres.' '.$usuario->usua_paterno.' '.$usuario->usua_materno)?></h4>
-        <small class="text-cl-muted"><i class="ti-user me-1"></i>Alumno &nbsp;·&nbsp; Usuario: <code style="color:var(--cl-accent2);"><?=$usuario->usua_user?></code></small>
+        <small class="text-cl-muted">
+            <i class="ti-user me-1"></i>Alumno &nbsp;·&nbsp;
+            Usuario: <code style="color:var(--cl-accent2);"><?=$usuario->usua_user?></code>
+        </small>
+    </div>
+</div>
+
+<!-- Banner institución educativa (solo lectura, siempre visible) -->
+<div class="card mb-4" style="border-left:4px solid <?=$sinColegio ? '#f59e0b' : 'var(--cl-accent2)'?>;">
+    <div class="card-body py-2 px-3">
+        <div class="d-flex align-items-center gap-2 flex-wrap">
+            <span style="font-size:1.1rem;"><?=$sinColegio ? '🎓' : '🏫'?></span>
+            <div>
+                <?php if($sinColegio): ?>
+                    <span class="fw-medium" style="font-size:.88rem;color:#f59e0b;">Alumno independiente</span>
+                    <small class="text-cl-muted d-block" style="font-size:.73rem;">No asociado a ninguna institución educativa</small>
+                <?php elseif($ugelNombre): ?>
+                    <span class="fw-medium" style="font-size:.88rem;">
+                        <?=$coleNombre ? htmlspecialchars($coleNombre) : 'Colegio no especificado'?>
+                    </span>
+                    <small class="text-cl-muted d-block" style="font-size:.73rem;">
+                        <i class="ti-location-pin me-1"></i><?=htmlspecialchars($ugelNombre)?><?=$ugelCiudad ? ' — '.$ugelCiudad : ''?>
+                    </small>
+                <?php else: ?>
+                    <span class="text-cl-muted" style="font-size:.85rem;">Institución educativa no registrada</span>
+                    <small class="text-cl-muted d-block" style="font-size:.73rem;">Puedes actualizar esta info contactando al administrador</small>
+                <?php endif; ?>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -21,15 +57,15 @@ $desc        = $extra->pale_descripcion ?? '';
     <h6 class="fw-bold mb-3">👤 Datos personales</h6>
     <div class="row g-3">
         <div class="col-12"><label class="form-label small text-cl-muted">Nombres *</label>
-            <input id="pNombres" class="form-control" value="<?=htmlspecialchars($usuario->usua_nombres??'')?>"></div>
+            <input id="pNombres" class="form-control" value="<?=htmlspecialchars($usuario->usua_nombres?:'')?>"></div>
         <div class="col-md-6"><label class="form-label small text-cl-muted">Ap. Paterno</label>
-            <input id="pPaterno" class="form-control" value="<?=htmlspecialchars($usuario->usua_paterno??'')?>"></div>
+            <input id="pPaterno" class="form-control" value="<?=htmlspecialchars($usuario->usua_paterno?:'')?>"></div>
         <div class="col-md-6"><label class="form-label small text-cl-muted">Ap. Materno</label>
-            <input id="pMaterno" class="form-control" value="<?=htmlspecialchars($usuario->usua_materno??'')?>"></div>
+            <input id="pMaterno" class="form-control" value="<?=htmlspecialchars($usuario->usua_materno?:'')?>"></div>
         <div class="col-md-6"><label class="form-label small text-cl-muted">Celular</label>
-            <input id="pCelular" class="form-control" value="<?=htmlspecialchars($usuario->usua_celular??'')?>"></div>
+            <input id="pCelular" class="form-control" value="<?=htmlspecialchars($usuario->usua_celular?:'')?>"></div>
         <div class="col-md-6"><label class="form-label small text-cl-muted">Email</label>
-            <input type="email" id="pEmail" class="form-control" value="<?=htmlspecialchars($usuario->usua_email??'')?>"></div>
+            <input type="email" id="pEmail" class="form-control" value="<?=htmlspecialchars($usuario->usua_email?:'')?>"></div>
     </div>
     <div class="text-end mt-3">
         <button class="btn btn-primary" onclick="guardarPerfil()"><i class="ti-save me-1"></i>Guardar cambios</button>
@@ -59,10 +95,10 @@ $desc        = $extra->pale_descripcion ?? '';
     <div class="row g-3">
         <div class="col-12"><label class="form-label small text-cl-muted">Soy…</label>
             <select id="pTipo" class="form-select" onchange="toggleCampos()">
-                <option value="ESTUDIANTE_COLEGIO" <?=$tipo=='ESTUDIANTE_COLEGIO'?'selected':''?>>Estudiante de colegio / secundaria</option>
+                <option value="ESTUDIANTE_COLEGIO"  <?=$tipo=='ESTUDIANTE_COLEGIO' ?'selected':''?>>Estudiante de colegio / secundaria</option>
                 <option value="ESTUDIANTE_SUPERIOR" <?=$tipo=='ESTUDIANTE_SUPERIOR'?'selected':''?>>Estudiante universitario / instituto</option>
-                <option value="PROFESIONAL" <?=$tipo=='PROFESIONAL'?'selected':''?>>Profesional / trabajador</option>
-                <option value="OTRO" <?=$tipo=='OTRO'?'selected':''?>>Otro</option>
+                <option value="PROFESIONAL"         <?=$tipo=='PROFESIONAL'        ?'selected':''?>>Profesional / trabajador</option>
+                <option value="OTRO"                <?=$tipo=='OTRO'               ?'selected':''?>>Otro</option>
             </select>
         </div>
         <div class="col-12" id="campoInstitucion">
@@ -86,23 +122,23 @@ $desc        = $extra->pale_descripcion ?? '';
 
 <script>
 function toggleCampos() {
-    var t = document.getElementById('pTipo').value;
+    var t  = document.getElementById('pTipo').value;
     var ci = document.getElementById('campoInstitucion');
     var cc = document.getElementById('campoCarrera');
     var li = document.getElementById('labelInstitucion');
     if (t === 'OTRO') {
-        ci.style.display = 'none'; cc.style.display = 'none';
+        ci.style.display='none'; cc.style.display='none';
     } else {
-        ci.style.display = ''; cc.style.display = '';
-        if (t === 'ESTUDIANTE_COLEGIO') {
-            li.textContent = 'Nombre del colegio / institución';
-            document.getElementById('pCarrera').closest('div').querySelector('label').textContent = 'Año / Grado';
-        } else if (t === 'ESTUDIANTE_SUPERIOR') {
-            li.textContent = 'Universidad / Instituto';
-            document.getElementById('pCarrera').closest('div').querySelector('label').textContent = 'Carrera';
+        ci.style.display=''; cc.style.display='';
+        if (t==='ESTUDIANTE_COLEGIO') {
+            li.textContent='Nombre del colegio / institución';
+            cc.querySelector('label').textContent='Año / Grado';
+        } else if (t==='ESTUDIANTE_SUPERIOR') {
+            li.textContent='Universidad / Instituto';
+            cc.querySelector('label').textContent='Carrera';
         } else {
-            li.textContent = 'Empresa / Organización';
-            document.getElementById('pCarrera').closest('div').querySelector('label').textContent = 'Cargo / Rol';
+            li.textContent='Empresa / Organización';
+            cc.querySelector('label').textContent='Cargo / Rol';
         }
     }
 }
@@ -118,11 +154,11 @@ function guardarPerfil() {
         email:       document.getElementById('pEmail').value,
         tipo:        document.getElementById('pTipo').value,
         institucion: document.getElementById('pInstitucion') ? document.getElementById('pInstitucion').value : '',
-        carrera:     document.getElementById('pCarrera') ? document.getElementById('pCarrera').value : '',
+        carrera:     document.getElementById('pCarrera')     ? document.getElementById('pCarrera').value     : '',
         descripcion: document.getElementById('pDesc').value,
-    }, function(r) {
-        r = JSON.parse(r); closeCargar();
-        alertar(r.msg, r.ok ? 'alert alert-success' : 'alert alert-danger', r.ok ? 'ti-check' : 'ti-close');
+    }, function(r){
+        r=JSON.parse(r); closeCargar();
+        alertar(r.msg, r.ok?'alert alert-success':'alert alert-danger', r.ok?'ti-check':'ti-close');
     });
 }
 function cambiarPass() {
@@ -131,10 +167,10 @@ function cambiarPass() {
         actual:  document.getElementById('passActual').value,
         nueva:   document.getElementById('passNueva').value,
         repite:  document.getElementById('passRepite').value,
-    }, function(r) {
-        r = JSON.parse(r); closeCargar();
-        alertar(r.msg, r.ok ? 'alert alert-success' : 'alert alert-danger', r.ok ? 'ti-check' : 'ti-close');
-        if (r.ok) { document.getElementById('passActual').value=''; document.getElementById('passNueva').value=''; document.getElementById('passRepite').value=''; }
+    }, function(r){
+        r=JSON.parse(r); closeCargar();
+        alertar(r.msg, r.ok?'alert alert-success':'alert alert-danger', r.ok?'ti-check':'ti-close');
+        if(r.ok){ document.getElementById('passActual').value=''; document.getElementById('passNueva').value=''; document.getElementById('passRepite').value=''; }
     });
 }
 </script>

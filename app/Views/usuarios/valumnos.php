@@ -1,72 +1,114 @@
 <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
     <div><h4 class="fw-bold mb-1">👥 Alumnos</h4>
     <small class="text-cl-muted"><?=count($usuarios)?> registrado(s)</small></div>
-    <button class="btn btn-primary" onclick="clAbrir('ov-nuevousuario');document.getElementById('nuevoPerf').value=1"><i class="ti-plus me-1"></i>Nuevo Alumno</button>
+    <button class="btn btn-primary" onclick="clAbrir('ov-nuevousuario');document.getElementById('nuevoPerf').value=1">
+        <i class="ti-plus me-1"></i>Nuevo Alumno
+    </button>
 </div>
+
 <div class="card"><div class="card-body p-0">
 <table class="table mb-0">
 <thead><tr>
-    <th>Alumno</th><th>DNI</th><th>Usuario</th><th>Email</th><th>Cursos</th><th>Estado</th><th>Acciones</th>
+    <th>Alumno</th>
+    <th>DNI</th>
+    <th>Usuario</th>
+    <th>Email</th>
+    <th>UGEL / Institución</th>
+    <th>Cursos</th>
+    <th>Estado</th>
+    <th>Acciones</th>
 </tr></thead>
 <tbody>
 <?php foreach($usuarios as $u): ?>
 <tr>
-    <td><div class="d-flex align-items-center gap-2">
-        <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--cl-accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex-shrink:0;"><?=strtoupper(substr($u->usua_nombres,0,1))?></div>
-        <div><div class="fw-medium"><?=htmlspecialchars($u->usua_paterno.' '.$u->usua_materno.', '.$u->usua_nombres)?></div></div>
-    </div></td>
+    <td>
+        <div class="d-flex align-items-center gap-2">
+            <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--cl-accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex-shrink:0;">
+                <?=strtoupper(substr($u->usua_nombres,0,1))?>
+            </div>
+            <div>
+                <!-- Nombre clickeable → abre modal perfil -->
+                <div class="fw-medium" style="cursor:pointer;color:var(--cl-accent2);"
+                     onclick="verPerfil(<?=$u->usua_ide?>,'<?=addslashes(htmlspecialchars($u->usua_paterno.' '.$u->usua_nombres))?>')">
+                    <?=htmlspecialchars($u->usua_paterno.' '.$u->usua_materno.', '.$u->usua_nombres)?>
+                </div>
+            </div>
+        </div>
+    </td>
     <td><small class="text-cl-muted"><?=$u->usua_dni?></small></td>
     <td><code style="font-size:.78rem;color:var(--cl-accent2);"><?=$u->usua_user?></code></td>
     <td><small><?=$u->usua_email?></small></td>
+    <td>
+        <?php if(!empty($u->alui_sin_colegio)): ?>
+            <span class="badge" style="background:rgba(245,158,11,.15);color:#f59e0b;font-size:.7rem;">Independiente</span>
+        <?php elseif(!empty($u->ugel_nombre)): ?>
+            <div style="font-size:.78rem;" class="fw-medium"><?=htmlspecialchars($u->ugel_nombre)?></div>
+            <?php if(!empty($u->cole_nombre) || !empty($u->alui_cole_texto)): ?>
+            <small class="text-cl-muted"><?=htmlspecialchars($u->cole_nombre ?? $u->alui_cole_texto)?></small>
+            <?php endif; ?>
+        <?php else: ?>
+            <span class="text-cl-muted" style="font-size:.75rem;">—</span>
+        <?php endif; ?>
+    </td>
     <td><span class="badge" style="background:rgba(124,58,237,.15);color:var(--cl-accent2);"><?=$u->total_cursos?> cursos</span></td>
     <td><span class="badge bg-<?=$u->esta_clase?>"><?=$u->esta_nombre?></span></td>
     <td>
-        <button class="btn btn-xs btn-outline-warning me-1" style="padding:2px 8px;font-size:.7rem;" onclick="cambiarEstado(<?=$u->usua_ide?>,<?=$u->esta_nombre=='ACTIVO'?2:1?>)"><?=$u->esta_nombre=='ACTIVO'?'Suspender':'Activar'?></button>
-        <button class="btn btn-xs btn-outline-danger" style="padding:2px 8px;font-size:.7rem;" onclick="eliminarUsuario(<?=$u->usua_ide?>)">Eliminar</button>
+        <button class="btn btn-xs btn-outline-warning me-1" style="padding:2px 8px;font-size:.7rem;"
+                onclick="cambiarEstado(<?=$u->usua_ide?>,<?=$u->esta_nombre=='ACTIVO'?2:1?>)">
+            <?=$u->esta_nombre=='ACTIVO'?'Suspender':'Activar'?>
+        </button>
+        <button class="btn btn-xs btn-outline-danger" style="padding:2px 8px;font-size:.7rem;"
+                onclick="eliminarUsuario(<?=$u->usua_ide?>)">
+            Eliminar
+        </button>
     </td>
 </tr>
 <?php endforeach; ?>
-<?php if(empty($usuarios)): ?><tr><td colspan="7" class="text-center py-4 text-cl-muted">No hay alumnos registrados.</td></tr><?php endif; ?>
+<?php if(empty($usuarios)): ?>
+<tr><td colspan="8" class="text-center py-4 text-cl-muted">No hay alumnos registrados.</td></tr>
+<?php endif; ?>
 </tbody>
 </table>
 </div></div>
 
 <?php include __DIR__.'/../_modal_nuevo_usuario.php'; ?>
+<?php include __DIR__.'/../_modal_ver_perfil.php'; ?>
+
 <script>
-function cambiarEstado(ide,esta){
+function cambiarEstado(ide, esta) {
     openCargar();
-    $.post("<?=base_url('/usuarios/cambiarestado')?>",{ide:ide,esta:esta},function(){
+    $.post("<?=base_url('/usuarios/cambiarestado')?>", {ide:ide, esta:esta}, function(){
         closeCargar();
         alertar('Estado actualizado.','alert alert-success','ti-check');
-        setTimeout(()=>cargarFuncion('/usuarios/alumnos','Usuarios','Alumnos',''),900);
+        setTimeout(()=>cargarFuncion('/usuarios/alumnos','Usuarios','Alumnos',''), 900);
     });
 }
-function eliminarUsuario(ide){
+function eliminarUsuario(ide) {
     if(!confirm('¿Eliminar este usuario?')) return;
     openCargar();
-    $.post("<?=base_url('/usuarios/eliminar')?>",{ide:ide},function(r){
+    $.post("<?=base_url('/usuarios/eliminar')?>", {ide:ide}, function(r){
         r=JSON.parse(r); closeCargar();
-        if(r.ok){alertar(r.msg,'alert alert-success','ti-check');setTimeout(()=>cargarFuncion('/usuarios/alumnos','Usuarios','Alumnos',''),1000);}
+        if(r.ok){ alertar(r.msg,'alert alert-success','ti-check'); setTimeout(()=>cargarFuncion('/usuarios/alumnos','Usuarios','Alumnos',''),1000); }
     });
 }
-function guardarUsuario(){
-    var data={
+function guardarUsuario() {
+    var data = {
         perf_ide:document.getElementById('nuevoPerf').value,
-        dni:document.getElementById('nuevoD').value,
-        nombres:document.getElementById('nuevoN').value,
-        paterno:document.getElementById('nuevoPa').value,
-        materno:document.getElementById('nuevoMa').value,
-        email:document.getElementById('nuevoE').value,
-        celular:document.getElementById('nuevoCel').value,
-        user:document.getElementById('nuevoU').value,
-        pass:document.getElementById('nuevoPas').value
+        dni:     document.getElementById('nuevoD').value,
+        nombres: document.getElementById('nuevoN').value,
+        paterno: document.getElementById('nuevoPa').value,
+        materno: document.getElementById('nuevoMa').value,
+        email:   document.getElementById('nuevoE').value,
+        celular: document.getElementById('nuevoCel').value,
+        user:    document.getElementById('nuevoU').value,
+        pass:    document.getElementById('nuevoPas').value
     };
-    if(!data.nombres||!data.user||!data.pass){alertar('Completa los campos requeridos.','alert alert-warning','ti-alert');return;}
+    if(!data.nombres||!data.user||!data.pass){ alertar('Completa los campos requeridos.','alert alert-warning','ti-alert'); return; }
     clCerrar('ov-nuevousuario');
     openCargar();
-    $.post("<?=base_url('/usuarios/nuevo')?>",data,function(r){
+    $.post("<?=base_url('/usuarios/nuevo')?>", data, function(r){
         r=JSON.parse(r); closeCargar();
-        if(r.ok){alertar(r.msg,'alert alert-success','ti-check');setTimeout(()=>cargarFuncion('/usuarios/alumnos','Usuarios','Alumnos',''),1200);}
+        if(r.ok){ alertar(r.msg,'alert alert-success','ti-check'); setTimeout(()=>cargarFuncion('/usuarios/alumnos','Usuarios','Alumnos',''),1200); }
         else alertar(r.msg,'alert alert-danger','ti-close');
     });
 }

@@ -12,14 +12,21 @@ class Usuarios extends BaseController
         if ($this->session->login != md5("L0g¡NS!st3M4")) { echo "inactivo"; exit(0); }
     }
 
+    // ── ALUMNOS — ahora incluye UGEL y colegio ──────────────────
     public function alumnos()
     {
         $db = \Config\Database::connect();
         $alumnos = $db->table('usuarios u')
             ->select('u.usua_ide, u.usua_dni, u.usua_nombres, u.usua_paterno, u.usua_materno,
                 u.usua_email, u.usua_celular, u.usua_user, e.esta_nombre, e.esta_clase,
+                ai.alui_sin_colegio, ai.alui_cole_texto,
+                ug.ugel_nombre, ug.ugel_ciudad,
+                co.cole_nombre,
                 (SELECT COUNT(*) FROM matriculas m WHERE m.matr_usua_ide=u.usua_ide) as total_cursos')
-            ->join('estados e','e.esta_ide=u.usua_esta_ide','left')
+            ->join('estados e',      'e.esta_ide=u.usua_esta_ide',    'left')
+            ->join('alumno_info ai', 'ai.alui_usua_ide=u.usua_ide',  'left')
+            ->join('ugeles ug',      'ug.ugel_ide=ai.alui_ugel_ide', 'left')
+            ->join('colegios co',    'co.cole_ide=ai.alui_cole_ide',  'left')
             ->where('u.usua_perf_ide', 1)
             ->where("u.usua_deleted_at IS NULL")
             ->orderBy('u.usua_paterno')
@@ -39,8 +46,8 @@ class Usuarios extends BaseController
                 u.usua_email, u.usua_user, e.esta_nombre, e.esta_clase,
                 p.prof_especialidad, p.prof_grado,
                 (SELECT COUNT(*) FROM cursos c WHERE c.curs_prof_ide=p.prof_ide AND c.curs_esta_ide=1) as total_cursos')
-            ->join('estados e','e.esta_ide=u.usua_esta_ide','left')
-            ->join('profesores p','p.prof_usua_ide=u.usua_ide','left')
+            ->join('estados e',    'e.esta_ide=u.usua_esta_ide',    'left')
+            ->join('profesores p', 'p.prof_usua_ide=u.usua_ide',   'left')
             ->where('u.usua_perf_ide', 2)
             ->where("u.usua_deleted_at IS NULL")
             ->orderBy('u.usua_paterno')
@@ -52,14 +59,9 @@ class Usuarios extends BaseController
         ]);
     }
 
-    // ─────────────────────────────────────────────────────────
-    // NUEVO: Lista de asesores (solo ADMIN puede ver esto)
-    // ─────────────────────────────────────────────────────────
     public function asesores()
     {
-        // Solo ADMIN
         if ($this->session->perf_ide != 3) { echo "Sin acceso"; exit(0); }
-
         $db = \Config\Database::connect();
         $asesores = $db->table('usuarios u')
             ->select('u.usua_ide, u.usua_dni, u.usua_nombres, u.usua_paterno, u.usua_materno,
@@ -76,7 +78,6 @@ class Usuarios extends BaseController
             ->where("u.usua_deleted_at IS NULL")
             ->orderBy('u.usua_paterno')
             ->get()->getResult();
-
         echo view('usuarios/vasesores', [
             'usuarios' => $asesores,
             'base'     => base_url('public'),
@@ -89,11 +90,7 @@ class Usuarios extends BaseController
         $db   = \Config\Database::connect();
         $prof = $db->table('profesores')->where('prof_usua_ide', $this->session->usua_ide)->get()->getRow();
         if (!$prof) {
-            echo view('usuarios/vmisalumnos', [
-                'alumnos' => [],
-                'base'    => base_url('public'),
-                'session' => $this->session
-            ]);
+            echo view('usuarios/vmisalumnos', ['alumnos'=>[],'base'=>base_url('public'),'session'=>$this->session]);
             return;
         }
         $alumnos = $db->table('matriculas m')
@@ -103,12 +100,10 @@ class Usuarios extends BaseController
                 m.matr_completado, m.matr_fecha,
                 (SELECT COUNT(*) FROM progreso pr
                     JOIN lecciones ll ON ll.lecc_ide=pr.prog_lecc_ide
-                    WHERE pr.prog_usua_ide=u.usua_ide
-                    AND ll.lecc_curs_ide=c.curs_ide
+                    WHERE pr.prog_usua_ide=u.usua_ide AND ll.lecc_curs_ide=c.curs_ide
                     AND pr.prog_completado=1) as lecc_hechas,
                 (SELECT COUNT(*) FROM lecciones ll2
-                    WHERE ll2.lecc_curs_ide=c.curs_ide
-                    AND ll2.lecc_esta_ide=1
+                    WHERE ll2.lecc_curs_ide=c.curs_ide AND ll2.lecc_esta_ide=1
                     AND ll2.lecc_tipo != 'QUIZ') as total_lecc")
             ->join('usuarios u','u.usua_ide=m.matr_usua_ide')
             ->join('cursos c','c.curs_ide=m.matr_curs_ide')
@@ -116,7 +111,6 @@ class Usuarios extends BaseController
             ->where('m.matr_esta_ide', 1)
             ->orderBy('u.usua_paterno, c.curs_nombre')
             ->get()->getResult();
-
         echo view('usuarios/vmisalumnos', [
             'alumnos' => $alumnos,
             'base'    => base_url('public'),
@@ -163,30 +157,14 @@ class Usuarios extends BaseController
             ->where('usua_user', $data['usua_user'])
             ->orWhere('usua_email', $data['usua_email'])
             ->get()->getRow();
-        if ($existe) {
-            echo json_encode(['ok'=>false, 'msg'=>'Usuario o email ya existe.']);
-            return;
-        }
+        if ($existe) { echo json_encode(['ok'=>false,'msg'=>'Usuario o email ya existe.']); return; }
         General::insertar('usuarios', $data);
         $uid = $db->insertID();
-
-        // ── Crear registro en tabla correspondiente según perfil ──
         if ($perf == 2) {
-            // PROFESOR
-            General::insertar('profesores', [
-                'prof_usua_ide'  => $uid,
-                'prof_esta_ide'  => 1,
-                'prof_create_at' => date('Y-m-d H:i:s')
-            ]);
+            General::insertar('profesores', ['prof_usua_ide'=>$uid,'prof_esta_ide'=>1,'prof_create_at'=>date('Y-m-d H:i:s')]);
         } elseif ($perf == 4) {
-            // ASESOR
-            General::insertar('asesores', [
-                'ases_usua_ide'  => $uid,
-                'ases_esta_ide'  => 1,
-                'ases_create_at' => date('Y-m-d H:i:s')
-            ]);
+            General::insertar('asesores', ['ases_usua_ide'=>$uid,'ases_esta_ide'=>1,'ases_create_at'=>date('Y-m-d H:i:s')]);
         }
-
-        echo json_encode(['ok'=>true, 'msg'=>'Usuario creado exitosamente.']);
+        echo json_encode(['ok'=>true,'msg'=>'Usuario creado exitosamente.']);
     }
 }

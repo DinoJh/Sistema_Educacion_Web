@@ -67,8 +67,8 @@
     $ingresar = Componente::Boton("", "submit", "primary mb-2", "fas fa-check", "Ingresa al sistema");
 
     // Botón nuevo: registrarse como estudiante
-    $registrar = '<button type="button" class="btn btn-outline-secondary w-100 mt-1"
-        style="border-left:6px solid #6c757d;font-size:.85rem;"
+    $registrar = '<button type="button" class="btn btn-primary w-100 mt-1"
+        style="font-size:.85rem;"
         onclick="$(\'#modalRegistro\').modal(\'show\')">
         <i class="fas fa-user-plus me-1"></i> Crear cuenta de estudiante
     </button>';
