@@ -75,3 +75,4 @@ if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
 $routes->get('/perfil/ver/(:num)', 'Perfil::ver/$1');
+$routes->post('/usuarios/reenviar-bienvenida', 'Usuarios::reenviarBienvenida');

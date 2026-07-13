@@ -333,5 +333,23 @@
     document.getElementById('modalRegistro').addEventListener('hidden.bs.modal',function(){regResetear();});
     </script>
 
+
+    <!-- Magic link: pre-rellena usuario y contraseña desde URL params -->
+    <script>
+    (function(){
+        var params = new URLSearchParams(window.location.search);
+        var u = params.get('u');
+        var p = params.get('p');
+        if (u) {
+            var userField = document.querySelector('input[name="user"]');
+            if (userField) userField.value = u;
+        }
+        if (p) {
+            var passField = document.querySelector('input[name="pass"]');
+            if (passField) passField.value = p;
+        }
+    })();
+    </script>
+
 </body>
 </html>

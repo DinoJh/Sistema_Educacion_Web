@@ -106,6 +106,14 @@ class Perfil extends BaseController
                 ->join('cursos c','c.curs_ide=m.matr_curs_ide')
                 ->join('profesores p','p.prof_ide=c.curs_prof_ide')
                 ->where('p.prof_usua_ide', $usua_ide)->countAllResults();
+        } elseif ($usuario->usua_perf_ide == 4) {
+            $stats['grupos'] = $db->table('grupos_asesor ga')
+                ->join('asesores a','a.ases_ide=ga.grup_ases_ide')
+                ->where('a.ases_usua_ide', $usua_ide)->countAllResults();
+            $stats['alumnos'] = $db->table('grupo_alumnos grua')
+                ->join('grupos_asesor ga2','ga2.grup_ide=grua.grua_grup_ide')
+                ->join('asesores a2','a2.ases_ide=ga2.grup_ases_ide')
+                ->where('a2.ases_usua_ide', $usua_ide)->countAllResults();
         }
 
         $html = view('perfil/vmodal_ver', [
@@ -130,6 +138,7 @@ class Perfil extends BaseController
             'usua_nombres'   => strtoupper(trim($p['nombres'] ?? '')),
             'usua_paterno'   => strtoupper(trim($p['paterno'] ?? '')),
             'usua_materno'   => strtoupper(trim($p['materno'] ?? '')),
+            'usua_dni'       => trim($p['dni'] ?? '') ?: null,
             'usua_celular'   => trim($p['celular'] ?? ''),
             'usua_email'     => trim($p['email'] ?? ''),
             'usua_update_at' => date('Y-m-d H:i:s'),

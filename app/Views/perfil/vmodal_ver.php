@@ -1,19 +1,17 @@
 <?php
-// Renderizado como fragmento HTML para inyectar en el modal del admin
-$perf   = $usuario->usua_perf_ide;
+$perf       = $usuario->usua_perf_ide;
 $perfNombre = $usuario->perf_nombre ?? 'Usuario';
 
-$colores = [1=>'#06b6d4',2=>'#10b981',3=>'#f59e0b',4=>'#a78bfa'];
+$colores = [1=>'#06b6d4', 2=>'#10b981', 3=>'#f59e0b', 4=>'#a78bfa'];
 $color   = $colores[$perf] ?? '#94a3b8';
 
-// Datos institución educativa del alumno
-$sinColegio = $aluInfo->alui_sin_colegio ?? 0;
+$sinColegio = (int)($aluInfo->alui_sin_colegio ?? 0);
 $ugelNombre = $aluInfo->ugel_nombre      ?? null;
 $ugelCiudad = $aluInfo->ugel_ciudad      ?? null;
 $coleNombre = $aluInfo->cole_nombre      ?? $aluInfo->alui_cole_texto ?? null;
 ?>
 
-<!-- Cabecera del perfil -->
+<!-- Cabecera -->
 <div class="d-flex align-items-center gap-3 mb-4">
     <div style="width:56px;height:56px;border-radius:50%;flex-shrink:0;
                 background:linear-gradient(135deg,<?=$color?>,<?=$color?>88);
@@ -37,7 +35,7 @@ $coleNombre = $aluInfo->cole_nombre      ?? $aluInfo->alui_cole_texto ?? null;
     </div>
 </div>
 
-<!-- Estadísticas rápidas (solo alumno y profesor) -->
+<!-- Estadísticas (alumno y profesor) -->
 <?php if(!empty($stats)): ?>
 <div class="row g-2 mb-4">
     <?php if($perf == 1): ?>
@@ -72,13 +70,26 @@ $coleNombre = $aluInfo->cole_nombre      ?? $aluInfo->alui_cole_texto ?? null;
             <small class="text-cl-muted" style="font-size:.68rem;">Alumnos totales</small>
         </div>
     </div>
+    <?php elseif($perf == 4): ?>
+    <div class="col-6">
+        <div class="p-2 rounded text-center" style="background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.15);">
+            <div class="fw-bold" style="font-size:1.2rem;color:#a78bfa;"><?=$stats['grupos']??0?></div>
+            <small class="text-cl-muted" style="font-size:.68rem;">Grupos formados</small>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="p-2 rounded text-center" style="background:rgba(124,58,237,.08);border:1px solid rgba(124,58,237,.15);">
+            <div class="fw-bold" style="font-size:1.2rem;color:var(--cl-accent2);"><?=$stats['alumnos']??0?></div>
+            <small class="text-cl-muted" style="font-size:.68rem;">Alumnos asesorados</small>
+        </div>
+    </div>
     <?php endif; ?>
 </div>
 <?php endif; ?>
 
 <!-- Datos personales -->
 <div class="card mb-3"><div class="card-body py-2 px-3">
-    <div class="fw-bold mb-2" style="font-size:.8rem;color:var(--cl-muted);text-transform:uppercase;letter-spacing:.05em;">
+    <div class="fw-bold mb-2" style="font-size:.78rem;color:var(--cl-muted);text-transform:uppercase;letter-spacing:.05em;">
         <i class="ti-user me-1"></i>Datos personales
     </div>
     <div class="row g-2" style="font-size:.83rem;">
@@ -109,47 +120,37 @@ $coleNombre = $aluInfo->cole_nombre      ?? $aluInfo->alui_cole_texto ?? null;
     </div>
 </div></div>
 
-<!-- Institución educativa (solo alumno) -->
+<!-- ── ALUMNO: institución y perfil ── -->
 <?php if($perf == 1): ?>
-<div class="card mb-3" style="border-left:3px solid <?=$sinColegio?'#f59e0b':'var(--cl-accent2)'?>;"><div class="card-body py-2 px-3">
-    <div class="fw-bold mb-2" style="font-size:.8rem;color:var(--cl-muted);text-transform:uppercase;letter-spacing:.05em;">
+<div class="card mb-3" style="border-left:3px solid <?=$sinColegio?'#f59e0b':($ugelNombre?'var(--cl-accent2)':'rgba(255,255,255,.1)')?>;"><div class="card-body py-2 px-3">
+    <div class="fw-bold mb-2" style="font-size:.78rem;color:var(--cl-muted);text-transform:uppercase;letter-spacing:.05em;">
         <i class="ti-location-pin me-1"></i>Institución educativa
     </div>
     <?php if($sinColegio): ?>
-        <div style="font-size:.85rem;color:#f59e0b;font-weight:600;">🎓 Alumno independiente</div>
+        <div class="fw-semibold" style="color:#f59e0b;">🎓 Alumno independiente</div>
         <small class="text-cl-muted">No asociado a ninguna institución educativa</small>
     <?php elseif($ugelNombre): ?>
-        <div style="font-size:.85rem;font-weight:600;">🏫 <?=htmlspecialchars($coleNombre ?? 'Colegio no especificado')?></div>
+        <div class="fw-semibold">🏫 <?=htmlspecialchars($coleNombre ?? 'Colegio no especificado')?></div>
         <small class="text-cl-muted">
-            <i class="ti-location-pin me-1"></i><?=htmlspecialchars($ugelNombre)?><?=$ugelCiudad?' — '.$ugelCiudad:''?>
+            <i class="ti-location-pin me-1"></i><?=htmlspecialchars($ugelNombre)?><?=$ugelCiudad?' — '.htmlspecialchars($ugelCiudad):''?>
         </small>
     <?php else: ?>
         <span class="text-cl-muted" style="font-size:.82rem;">No registró institución educativa</span>
     <?php endif; ?>
 </div></div>
-<?php endif; ?>
 
-<!-- Perfil académico del alumno -->
-<?php if($perf == 1 && $extra): ?>
-<?php
-$tipos = ['ESTUDIANTE_COLEGIO'=>'Estudiante de colegio','ESTUDIANTE_SUPERIOR'=>'Estudiante universitario','PROFESIONAL'=>'Profesional','OTRO'=>'Otro'];
-$tipo  = $extra->pale_tipo ?? 'OTRO';
-?>
-<?php if($extra->pale_institucion || $extra->pale_carrera || $extra->pale_descripcion): ?>
+<?php if($extra && ($extra->pale_institucion || $extra->pale_descripcion)): ?>
+<?php $tipos=['ESTUDIANTE_COLEGIO'=>'Estudiante de colegio','ESTUDIANTE_SUPERIOR'=>'Estudiante universitario','PROFESIONAL'=>'Profesional','OTRO'=>'Otro']; ?>
 <div class="card mb-3"><div class="card-body py-2 px-3">
-    <div class="fw-bold mb-2" style="font-size:.8rem;color:var(--cl-muted);text-transform:uppercase;letter-spacing:.05em;">
+    <div class="fw-bold mb-2" style="font-size:.78rem;color:var(--cl-muted);text-transform:uppercase;letter-spacing:.05em;">
         <i class="ti-book me-1"></i>Perfil académico
     </div>
     <div style="font-size:.83rem;">
-        <div class="mb-1"><span class="text-cl-muted">Tipo:</span> <span class="ms-1"><?=$tipos[$tipo]??$tipo?></span></div>
-        <?php if($extra->pale_institucion): ?>
-        <div class="mb-1"><span class="text-cl-muted">Institución:</span> <span class="ms-1"><?=htmlspecialchars($extra->pale_institucion)?></span></div>
-        <?php endif; ?>
-        <?php if($extra->pale_carrera): ?>
-        <div class="mb-1"><span class="text-cl-muted">Carrera/Grado:</span> <span class="ms-1"><?=htmlspecialchars($extra->pale_carrera)?></span></div>
-        <?php endif; ?>
+        <div class="mb-1"><span class="text-cl-muted">Tipo:</span> <span class="ms-1"><?=$tipos[$extra->pale_tipo??'OTRO']??'Otro'?></span></div>
+        <?php if($extra->pale_institucion): ?><div class="mb-1"><span class="text-cl-muted">Institución:</span> <span class="ms-1"><?=htmlspecialchars($extra->pale_institucion)?></span></div><?php endif; ?>
+        <?php if($extra->pale_carrera):     ?><div class="mb-1"><span class="text-cl-muted">Carrera:</span>     <span class="ms-1"><?=htmlspecialchars($extra->pale_carrera)?></span></div><?php endif; ?>
         <?php if($extra->pale_descripcion): ?>
-        <div class="mt-2 p-2 rounded" style="background:rgba(255,255,255,.04);font-size:.8rem;color:var(--cl-muted);font-style:italic;">
+        <div class="mt-2 p-2 rounded" style="background:rgba(255,255,255,.04);font-size:.78rem;color:var(--cl-muted);font-style:italic;">
             "<?=htmlspecialchars($extra->pale_descripcion)?>"
         </div>
         <?php endif; ?>
@@ -158,24 +159,41 @@ $tipo  = $extra->pale_tipo ?? 'OTRO';
 <?php endif; ?>
 <?php endif; ?>
 
-<!-- Datos del profesor -->
-<?php if($perf == 2 && $extra): ?>
-<?php if($extra->prof_especialidad || $extra->prof_grado || $extra->prof_biografia): ?>
+<!-- ── PROFESOR: especialidad y bio ── -->
+<?php if($perf == 2 && $extra && ($extra->prof_especialidad || $extra->prof_biografia)): ?>
 <div class="card mb-3"><div class="card-body py-2 px-3">
-    <div class="fw-bold mb-2" style="font-size:.8rem;color:var(--cl-muted);text-transform:uppercase;letter-spacing:.05em;">
+    <div class="fw-bold mb-2" style="font-size:.78rem;color:var(--cl-muted);text-transform:uppercase;letter-spacing:.05em;">
         <i class="ti-graduation me-1"></i>Datos del profesor
     </div>
     <div style="font-size:.83rem;">
         <?php if($extra->prof_especialidad): ?><div class="mb-1"><span class="text-cl-muted">Especialidad:</span> <span class="ms-1"><?=htmlspecialchars($extra->prof_especialidad)?></span></div><?php endif; ?>
-        <?php if($extra->prof_grado): ?>      <div class="mb-1"><span class="text-cl-muted">Grado:</span>        <span class="ms-1"><?=htmlspecialchars($extra->prof_grado)?></span></div><?php endif; ?>
-        <?php if($extra->prof_area): ?>       <div class="mb-1"><span class="text-cl-muted">Área:</span>         <span class="ms-1"><?=htmlspecialchars($extra->prof_area)?></span></div><?php endif; ?>
-        <?php if($extra->prof_web): ?>        <div class="mb-1"><span class="text-cl-muted">Web:</span>          <a href="<?=htmlspecialchars($extra->prof_web)?>" target="_blank" class="ms-1" style="color:var(--cl-accent2);"><?=htmlspecialchars($extra->prof_web)?></a></div><?php endif; ?>
-        <?php if($extra->prof_biografia): ?>
-        <div class="mt-2 p-2 rounded" style="background:rgba(255,255,255,.04);font-size:.8rem;color:var(--cl-muted);">
+        <?php if($extra->prof_grado):        ?><div class="mb-1"><span class="text-cl-muted">Grado:</span>        <span class="ms-1"><?=htmlspecialchars($extra->prof_grado)?></span></div><?php endif; ?>
+        <?php if($extra->prof_area):         ?><div class="mb-1"><span class="text-cl-muted">Área:</span>         <span class="ms-1"><?=htmlspecialchars($extra->prof_area)?></span></div><?php endif; ?>
+        <?php if($extra->prof_web):          ?><div class="mb-1"><span class="text-cl-muted">Web:</span>          <a href="<?=htmlspecialchars($extra->prof_web)?>" target="_blank" class="ms-1" style="color:var(--cl-accent2);"><?=htmlspecialchars($extra->prof_web)?></a></div><?php endif; ?>
+        <?php if($extra->prof_biografia):    ?>
+        <div class="mt-2 p-2 rounded" style="background:rgba(255,255,255,.04);font-size:.78rem;color:var(--cl-muted);">
             <?=nl2br(htmlspecialchars($extra->prof_biografia))?>
         </div>
         <?php endif; ?>
     </div>
 </div></div>
 <?php endif; ?>
+
+<!-- ── ASESOR: grupos formados ── -->
+<?php if($perf == 4): ?>
+<div class="card mb-3"><div class="card-body py-2 px-3">
+    <div class="fw-bold mb-2" style="font-size:.78rem;color:var(--cl-muted);text-transform:uppercase;letter-spacing:.05em;">
+        <i class="ti-layers me-1"></i>Actividad de asesoría
+    </div>
+    <div style="font-size:.83rem;">
+        <div class="mb-1">
+            <span class="text-cl-muted">Grupos formados:</span>
+            <strong class="ms-1" style="color:#a78bfa;"><?=$stats['grupos']??0?></strong>
+        </div>
+        <div>
+            <span class="text-cl-muted">Alumnos asesorados:</span>
+            <strong class="ms-1" style="color:var(--cl-accent2);"><?=$stats['alumnos']??0?></strong>
+        </div>
+    </div>
+</div></div>
 <?php endif; ?>

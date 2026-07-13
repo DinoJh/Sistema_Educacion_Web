@@ -43,7 +43,9 @@
                 <?=strtoupper(substr($u->usua_nombres,0,1))?>
             </div>
             <div>
-                <div class="fw-medium">
+                <!-- Nombre clickeable → modal perfil -->
+                <div class="fw-medium" style="cursor:pointer;color:var(--cl-accent2);"
+                     onclick="verPerfil(<?=$u->usua_ide?>,'<?=addslashes(htmlspecialchars($u->usua_paterno.' '.$u->usua_nombres))?>')">
                     <?=htmlspecialchars($u->usua_paterno.' '.$u->usua_materno.', '.$u->usua_nombres)?>
                 </div>
                 <small class="text-cl-muted" style="font-size:.7rem;">Asesor</small>
@@ -89,6 +91,7 @@
 <?php endif; ?>
 
 <?php include __DIR__.'/../_modal_nuevo_usuario.php'; ?>
+<?php include __DIR__.'/../_modal_ver_perfil.php'; ?>
 
 <script>
 function cambiarEstadoAsesor(ide, esta) {
