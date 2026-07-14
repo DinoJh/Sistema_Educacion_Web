@@ -340,7 +340,6 @@ HTML;
             return false;
         }
     }
-}
 
     // POST /usuarios/reenviar-bienvenida — reenvía correo de acceso
     public function reenviarBienvenida()
